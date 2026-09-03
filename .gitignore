@@ -1,0 +1,23 @@
+# 環境變數與金鑰
+.env
+
+# Python 虛擬環境
+.venv/
+.uv-cache/
+
+# Python 快取
+__pycache__/
+*.pyc
+
+# 驗證與除錯過程產生的暫存檔
+validation_report.yaml
+report_utf8.txt
+report_readable.txt
+
+# 依照 Data Retention 原則：以下是「工作用暫存檔」，每次執行都會被覆蓋，
+# 不長期保存進 repo。真正要保留的正式副本在 data/daily_brief/日期.json，
+# 那個資料夾不在這份清單裡，會正常被 git 追蹤。
+data/raw_articles.json
+data/stage1_results.json
+data/clusters_ranked.json
+data/daily_brief.json

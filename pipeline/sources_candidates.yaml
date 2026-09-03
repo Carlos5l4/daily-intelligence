@@ -1,0 +1,191 @@
+# Phase 1 候選來源清單
+# 這份清單交給 validate_sources.py 執行,只有通過驗證的項目才會進入正式 sources.yaml
+# credibility / personal_weight 為人工預先標註,腳本不會自動判斷這兩項
+
+candidates:
+
+  # ── AI & Technology ──────────────────────────────
+  - id: openai_news
+    name: "OpenAI News"
+    url: "https://openai.com/news/rss.xml"
+    category: ai_technology
+    credibility: high
+    personal_weight: 0.8
+  - id: google_ai_blog
+    name: "Google AI Blog"
+    url: "https://blog.google/technology/ai/rss/"
+    category: ai_technology
+    credibility: high
+    personal_weight: 0.8
+  - id: hacker_news
+    name: "Hacker News (Front Page)"
+    url: "https://news.ycombinator.com/rss"
+    category: ai_technology
+    credibility: medium
+    personal_weight: 0.5
+  - id: techcrunch
+    name: "TechCrunch"
+    url: "https://techcrunch.com/feed/"
+    category: ai_technology
+    credibility: medium
+    personal_weight: 0.5
+  - id: the_verge
+    name: "The Verge"
+    url: "https://www.theverge.com/rss/index.xml"
+    category: ai_technology
+    credibility: medium
+    personal_weight: 0.4
+
+  # ── Restaurant & Retail ───────────────────────────
+  - id: qsr_magazine
+    name: "QSR Magazine"
+    url: "https://www.qsrmagazine.com/feed/"
+    category: restaurant_retail
+    credibility: medium
+    personal_weight: 0.9
+  - id: nations_restaurant_news
+    name: "Nation's Restaurant News"
+    url: "https://www.nrn.com/rss.xml"
+    category: restaurant_retail
+    credibility: medium
+    personal_weight: 0.9
+  - id: businessweekly_tw
+    name: "商業周刊"
+    url: "https://www.businessweekly.com.tw/rss.aspx"
+    category: restaurant_retail
+    credibility: medium
+    personal_weight: 0.7
+
+  # ── HR & Organization ─────────────────────────────
+  - id: mol_gov_tw
+    name: "勞動部全球資訊網"
+    url: "https://www.mol.gov.tw/rss.xml"
+    category: hr_organization
+    credibility: high
+    personal_weight: 1.0
+  - id: hr_bartender
+    name: "HR Bartender"
+    url: "https://www.hrbartender.com/feed/"
+    category: hr_organization
+    credibility: medium
+    personal_weight: 0.8
+  - id: shrm_news
+    name: "SHRM"
+    url: "https://www.shrm.org/rss/pages/rss.aspx"
+    category: hr_organization
+    credibility: high
+    personal_weight: 0.7
+
+  # ── Markets & Economy ─────────────────────────────
+  - id: cnyes
+    name: "鉅亨網"
+    url: "https://www.cnyes.com/rss/cat/tw_stock"
+    category: markets_economy
+    credibility: medium
+    personal_weight: 0.4
+  - id: marketwatch
+    name: "MarketWatch"
+    url: "https://www.marketwatch.com/rss/topstories"
+    category: markets_economy
+    credibility: medium
+    personal_weight: 0.3
+  - id: federal_reserve
+    name: "Federal Reserve Press Releases"
+    url: "https://www.federalreserve.gov/feeds/press_all.xml"
+    category: markets_economy
+    credibility: high
+    personal_weight: 0.4
+
+  # ── Major News ────────────────────────────────────
+  - id: ltn_all
+    name: "自由時報即時新聞"
+    url: "https://news.ltn.com.tw/rss/all.xml"
+    category: major_news
+    credibility: medium
+    personal_weight: 0.3
+  - id: bbc_chinese
+    name: "BBC 中文網"
+    url: "https://www.bbc.com/zhongwen/trad/index.xml"
+    category: major_news
+    credibility: high
+    personal_weight: 0.3
+
+  # ── 補充候選：填補上一輪驗證後的三個缺口類別 ──
+  # 以下網址未經確認，交給 validate_sources.py 實際測試，測不出來就代表要繼續換
+  - id: managertoday
+    name: "經理人月刊"
+    url: "https://www.managertoday.com.tw/rss/"
+    category: hr_organization
+    credibility: medium
+    personal_weight: 0.8
+  - id: cheers_tw
+    name: "Cheers快樂工作人"
+    url: "https://www.cheers.com.tw/rss.xml"
+    category: hr_organization
+    credibility: medium
+    personal_weight: 0.7
+  - id: moneydj_tw_stock
+    name: "MoneyDJ理財網 台股新聞"
+    url: "https://www.moneydj.com/kmdj/rss/newsrss.aspx?svc=NR"
+    category: markets_economy
+    credibility: medium
+    personal_weight: 0.4
+  - id: cw_tw
+    name: "天下雜誌"
+    url: "https://www.cw.com.tw/rss"
+    category: restaurant_retail
+    credibility: high
+    personal_weight: 0.6
+
+  # ── 第二輪補充：使用者提供的 2022 年清單，重新測試 ──
+  - id: managertoday_v2
+    name: "經理人月刊(修正版網址)"
+    url: "https://www.managertoday.com.tw/rss"
+    category: hr_organization
+    credibility: medium
+    personal_weight: 0.8
+  - id: bnext
+    name: "數位時代"
+    url: "https://www.bnext.com.tw/rss"
+    category: ai_technology
+    credibility: high
+    personal_weight: 0.6
+  - id: thenewslens
+    name: "The News Lens 關鍵評論網"
+    url: "https://feeds.feedburner.com/TheNewsLens"
+    category: major_news
+    credibility: medium
+    personal_weight: 0.4
+  - id: startuplatte
+    name: "創新拿鐵"
+    url: "http://feeds.feedburner.com/startuplatte/uhfA"
+    category: ai_technology
+    credibility: medium
+    personal_weight: 0.3
+  - id: playpcesor
+    name: "電腦玩物"
+    url: "http://feeds.feedburner.com/playpc"
+    category: ai_technology
+    credibility: medium
+    personal_weight: 0.4
+
+  # ── 第三輪補充：用 Google News 關鍵字 RSS 取代死守單一媒體網站 ──
+  # 用 site: 限定在幾家可信媒體範圍內搜尋，避免內容農場/垃圾訊息
+  - id: gnews_tw_stock
+    name: "Google News - 台股(限定媒體)"
+    url: "https://news.google.com/rss/search?q=%E5%8F%B0%E8%82%A1%20%28site%3Acna.com.tw%20OR%20site%3Altn.com.tw%20OR%20site%3Audn.com%29&hl=zh-TW&gl=TW&ceid=TW:zh-Hant"
+    category: markets_economy
+    credibility: high
+    personal_weight: 0.4
+  - id: gnews_restaurant
+    name: "Google News - 餐飲業(限定媒體)"
+    url: "https://news.google.com/rss/search?q=%E9%A4%90%E9%A3%B2%E6%A5%AD%20%28site%3Acna.com.tw%20OR%20site%3Altn.com.tw%20OR%20site%3Audn.com%29&hl=zh-TW&gl=TW&ceid=TW:zh-Hant"
+    category: restaurant_retail
+    credibility: high
+    personal_weight: 0.9
+  - id: gnews_labor_law
+    name: "Google News - 勞基法(限定媒體)"
+    url: "https://news.google.com/rss/search?q=%E5%8B%9E%E5%9F%BA%E6%B3%95%20%28site%3Acna.com.tw%20OR%20site%3Altn.com.tw%20OR%20site%3Audn.com%29&hl=zh-TW&gl=TW&ceid=TW:zh-Hant"
+    category: hr_organization
+    credibility: high
+    personal_weight: 1.0

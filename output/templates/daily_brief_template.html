@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日情報 — 2026.09.03</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700;900&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper: #F3EEE1;
+    --paper-dark: #EAE3D0;
+    --ink: #201D18;
+    --ink-soft: #4A453C;
+    --rule: #C9BFA5;
+    --accent: #7A2A28;
+    --accent-soft: #9C6B4E;
+  }
+
+  *{box-sizing:border-box;}
+
+  body{
+    margin:0;
+    background: var(--paper-dark);
+    color: var(--ink);
+    font-family: 'Source Serif 4', Georgia, serif;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  .sheet{
+    max-width: 900px;
+    margin: 0 auto;
+    background: var(--paper);
+    padding: 40px 48px 60px;
+    box-shadow: 0 0 40px rgba(0,0,0,0.08);
+  }
+
+  /* ---------- Masthead ---------- */
+  .masthead{ text-align:center; padding-bottom: 18px; }
+  .masthead .eyebrow-line{
+    display:flex; justify-content:space-between; align-items:center;
+    font-size:12px; letter-spacing:0.08em; color: var(--ink-soft);
+    border-bottom: 1px solid var(--rule); padding-bottom: 8px; margin-bottom: 14px;
+  }
+  .masthead h1{
+    font-family:'Noto Serif TC', serif; font-weight:900; font-size: 54px;
+    letter-spacing: 0.02em; margin: 4px 0 6px; line-height:1;
+  }
+  .masthead .subtitle{ font-style: italic; color: var(--ink-soft); font-size: 15px; margin-bottom: 14px; }
+  .masthead .rules{ border: none; border-top: 3px solid var(--ink); margin: 0 0 3px; }
+  .masthead .rules.thin{ border-top: 1px solid var(--ink); margin-bottom: 0; }
+
+  /* ---------- Today in 30 Seconds ---------- */
+  .brief-box{
+    margin: 26px 0 34px; padding: 20px 24px;
+    border-top: 2px solid var(--ink); border-bottom: 2px solid var(--ink);
+    background: var(--paper-dark);
+  }
+  .brief-box .label{
+    font-family:'Noto Serif TC', serif; font-weight:700; font-size: 13px;
+    letter-spacing: 0.14em; color: var(--accent); margin-bottom: 8px;
+  }
+  .brief-box p{ font-size: 17px; line-height:1.75; margin:0; }
+  .brief-box p::first-letter{
+    font-family:'Noto Serif TC', serif; font-weight:900; font-size: 46px;
+    float:left; line-height:0.8; padding-right:8px; padding-top:4px; color: var(--accent);
+  }
+
+  /* ---------- Front-page picks ---------- */
+  .frontpage-label{ display:flex; align-items:center; gap:14px; margin-bottom:18px; }
+  .frontpage-label h2{
+    font-family:'Noto Serif TC', serif; font-weight:900; font-size: 16px;
+    letter-spacing:0.1em; margin:0; color: var(--ink);
+  }
+  .frontpage-label .line{ flex:1; border-top: 2px solid var(--ink); }
+  .frontpage-label .sub{ font-size:11.5px; color:var(--ink-soft); font-style:italic; white-space:nowrap; }
+
+  .top3{
+    display:grid; grid-template-columns: 1.5fr 1fr; gap: 32px;
+    padding-bottom: 30px; margin-bottom: 36px; border-bottom: 3px double var(--ink);
+  }
+  .pill-tag{
+    display:inline-block; font-size:12px; font-weight:600; letter-spacing:0.02em;
+    color:#fff; background: var(--accent-soft); border-radius: 999px;
+    padding: 2px 12px; margin-bottom: 8px;
+  }
+  .lead-story h2{ font-family:'Noto Serif TC', serif; font-size: 28px; line-height:1.25; margin: 0 0 10px; }
+  .lead-story .score{
+    display:inline-block; font-size:12px; color:var(--ink-soft);
+    border:1px solid var(--rule); padding:2px 8px; margin-bottom: 12px;
+  }
+  .lead-story p{ font-size:15.5px; line-height:1.75; margin: 0 0 10px; }
+  .lead-story .why-me{
+    font-size:15px; line-height:1.7; padding-left:14px;
+    border-left: 3px solid var(--accent-soft); color: var(--ink); margin-bottom:12px;
+  }
+  .lead-story .why-me b{ color:var(--accent); font-style:normal; }
+  .lead-story .extra{ font-size:14px; line-height:1.7; margin:0 0 8px; }
+  .lead-story .extra b{ font-weight:600; }
+  .lead-story .keywords{ font-size:12px; color:var(--ink-soft); margin-top:10px; }
+
+  .side-stories{ display:flex; flex-direction:column; gap: 20px; }
+  .side-story{ padding-top: 14px; border-top: 1px solid var(--rule); }
+  .side-story:first-child{ border-top:none; padding-top:0; }
+  .side-story h3{ font-family:'Noto Serif TC', serif; font-size: 18px; line-height:1.3; margin: 0 0 6px; }
+  .side-story p{ font-size:13.5px; line-height:1.6; color: var(--ink-soft); margin:0; }
+
+  /* ---------- Category sections ---------- */
+  .body-label{ text-align:center; margin: 6px 0 30px; }
+  .body-label span{
+    font-size:11px; letter-spacing:0.2em; color:var(--ink-soft);
+    border-top:1px solid var(--rule); border-bottom:1px solid var(--rule);
+    padding: 4px 0; display:block;
+  }
+
+  .category-block{ margin-bottom: 46px; }
+  .section-head{
+    background: var(--ink); color: var(--paper);
+    padding: 11px 18px; margin-bottom: 20px;
+  }
+  .section-head h2{
+    font-family:'Noto Serif TC', serif; font-weight:700; font-size: 20px;
+    letter-spacing: 0.1em; margin:0;
+  }
+
+  .article-columns{ column-count: 2; column-gap: 34px; column-rule: 1px solid var(--rule); }
+
+  /* Each article is a <details> disclosure — collapsed by default, expandable for full analysis */
+  .article{ break-inside: avoid; margin-bottom: 20px; }
+  .article summary{
+    list-style:none; cursor:pointer; position:relative; padding-right:22px;
+  }
+  .article summary::-webkit-details-marker{ display:none; }
+  .article summary::after{
+    content:"展開 ＋"; position:absolute; right:0; top:2px;
+    font-size:11px; color:var(--accent); white-space:nowrap;
+  }
+  .article[open] summary::after{ content:"收合 －"; }
+  .article h3{ font-family:'Noto Serif TC', serif; font-size: 16px; line-height:1.35; margin: 0 22px 5px 0; }
+  .article .meta{ font-size: 11px; color: var(--ink-soft); margin-bottom: 7px; }
+  .article summary p{ font-size: 13.5px; line-height:1.6; margin: 0 0 10px; color: var(--ink-soft); }
+  .article .expand-body{
+    margin-top: 10px; padding-top: 10px; border-top: 1px dashed var(--rule);
+  }
+  .article .expand-body p{ font-size: 13.5px; line-height:1.65; margin: 0 0 8px; }
+  .article .expand-body b{ color: var(--accent); font-weight:600; }
+  .article .why-me-inline{ color: var(--ink); }
+  .article .keywords{ font-size:11.5px; color:var(--ink-soft); margin-top:6px; }
+
+  /* ---------- Footer ---------- */
+  .colophon{
+    margin-top: 30px; padding-top: 16px; border-top: 1px solid var(--ink);
+    display:flex; justify-content:space-between; font-size: 11.5px; color: var(--ink-soft);
+  }
+
+  @media (max-width: 720px){
+    .sheet{ padding: 26px 20px 40px; }
+    .masthead h1{ font-size: 38px; }
+    .top3{ grid-template-columns: 1fr; gap:24px; }
+    .article-columns{ column-count:1; }
+    .colophon{ flex-direction:column; gap:4px; }
+    .frontpage-label .sub{ display:none; }
+  }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <!-- Masthead -->
+  <div class="masthead">
+    <div class="eyebrow-line">
+      <span>第 087 期</span>
+      <span>PERSONAL DAILY INTELLIGENCE(每日情報)</span>
+      <span>2026年9月3日 星期四</span>
+    </div>
+    <h1>每日情報</h1>
+    <div class="subtitle">今天分析 186 則資訊,篩出 13 則值得你注意 · 預估閱讀時間 7 分鐘</div>
+    <hr class="rules">
+    <hr class="rules thin">
+  </div>
+
+  <!-- Today in 30 Seconds -->
+  <div class="brief-box">
+    <div class="label">今日三十秒</div>
+    <p>勞動部預告修正部分工時勞工加班費計算方式,連鎖餐飲業首當其衝;Anthropic 釋出新一代 Agent 工具鏈,企業內部知識管理應用場景明顯擴大;美國聯準會維持利率不變但釋出鴿派訊號,亞股同步走揚。</p>
+  </div>
+
+  <!-- Front-page picks -->
+  <div class="frontpage-label">
+    <h2>頭版精選</h2>
+    <div class="line"></div>
+    <span class="sub">跨類別綜合評選,不重複出現於下方分類區塊</span>
+  </div>
+
+  <div class="top3">
+    <div class="lead-story">
+      <span class="pill-tag">人力資源與組織管理</span>
+      <h2>勞動部預告修法:部分工時者加班費採「比例計算」,連鎖業界估將全面調整排班制度</h2>
+      <span class="score">重要度 92 · 相關度 96</span>
+      <p>勞動部本週預告《勞動基準法施行細則》部分條文修正草案,明確規範部分工時勞工加班費應以比例方式計算,而非比照全職人員固定基數。草案預告期 60 天,預計最快明年第一季上路。</p>
+      <p class="why-me"><b>對你來說:</b>這直接影響連鎖門市排班與人事成本結構,尤其是門市尖峰時段大量倚賴部分工時人力的品牌。建議提前檢視現行排班 SOP,並評估是否需要在修法上路前調整計薪邏輯與門市主管的排班訓練內容。</p>
+      <p class="extra"><b>可能造成的影響:</b>若草案如期上路,人事成本模型需重新試算,部分品牌可能提前在第四季啟動排班制度調整專案。</p>
+      <p class="extra"><b>接下來該觀察:</b>60 天預告期間是否有業界公會提出意見,以及正式條文與草案版本是否有出入。</p>
+      <div class="keywords">關鍵字:勞基法施行細則、部分工時、加班費計算</div>
+    </div>
+    <div class="side-stories">
+      <div class="side-story">
+        <span class="pill-tag" style="background:var(--ink)">人工智慧與科技</span>
+        <h3>Anthropic 釋出企業知識庫整合工具,強化跨部門文件檢索能力</h3>
+        <p>新工具鏈可將內部文件、對話紀錄整合為可查詢知識庫,對制度文件量大的企業具參考價值。</p>
+      </div>
+      <div class="side-story">
+        <span class="pill-tag" style="background:var(--ink)">市場與總體經濟</span>
+        <h3>聯準會維持利率不變,釋出年底前降息可能性</h3>
+        <p>市場解讀為鴿派訊號,亞股早盤同步走揚,台股電子權值股表現領漲。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="body-label"><span>以下為今日完整分類報導,不含上方頭版精選之 3 則 · 點擊標題可展開完整分析</span></div>
+
+  <!-- HR & Organization -->
+  <div class="category-block">
+    <div class="section-head"><h2>人力資源與組織管理</h2></div>
+    <div class="article-columns">
+
+      <details class="article">
+        <summary>
+          <h3>104人力銀行發布餐飲業秋季徵才報告:門市儲備幹部需求年增 18%</h3>
+          <div class="meta">104人力銀行 · 09:12</div>
+          <p>連鎖餐飲品牌對儲備幹部職缺需求明顯上升,反映展店計畫回溫。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事:</b>104人力銀行發布秋季徵才調查,連鎖餐飲業「儲備幹部/儲備店長」職缺數較去年同期成長 18%,是所有餐飲相關職缺中成長幅度最高的類別。</p>
+          <p class="why-me-inline"><b>對你來說:</b>可作為你評估儲備幹部培訓班規模與招募節奏的外部參照數據,尤其若展店計畫回溫是產業普遍現象,培訓量能可能需要提前規劃。</p>
+          <p><b>可能造成的影響:</b>培訓資源與合格講師可能出現排擠效應,較早規劃的品牌會較有優勢。</p>
+          <p><b>接下來該觀察:</b>下一季度徵才數據是否延續此趨勢,或僅為單季波動。</p>
+          <div class="keywords">關鍵字:儲備幹部、餐飲徵才、展店</div>
+        </div>
+      </details>
+
+      <details class="article">
+        <summary>
+          <h3>SHRM(美國人力資源管理協會)發布 2026 員工訓練趨勢報告:微學習採用率首次過半</h3>
+          <div class="meta">SHRM(美國人力資源管理協會) · 07:40</div>
+          <p>企業教育訓練正從長時數課程轉向情境式微學習模組。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事:</b>SHRM(美國人力資源管理協會)調查顯示,採用「微學習」(單一模組 5-10 分鐘)作為主要訓練形式的企業比例首次突破 50%,較三年前成長近一倍。</p>
+          <p class="why-me-inline"><b>對你來說:</b>與你正在推動的跨品牌訓練制度統一化方向可互相參照,尤其是主管培訓的模組化設計——把長時數課程拆解成可獨立使用的短模組,可能同時解決「跨品牌共用」與「門市時間破碎」兩個問題。</p>
+          <p><b>可能造成的影響:</b>傳統整天式訓練課程的邊際效益可能持續下降,教材開發方式需要相應調整。</p>
+          <p><b>接下來該觀察:</b>是否有具體成效數據(留任率、考核分數)佐證微學習的效果,而不只是採用率上升。</p>
+          <div class="keywords">關鍵字:微學習、教育訓練、模組化課程</div>
+        </div>
+      </details>
+
+      <details class="article">
+        <summary>
+          <h3>HR Bartender(人資部落格)：主管流動率與「到職90天訓練完整度」高度相關</h3>
+          <div class="meta">HR Bartender(人資部落格) · 昨日 21:05</div>
+          <p>新任主管到職前90天的訓練密度是留任率的關鍵預測因子。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事:</b>文章彙整多份研究指出,新任主管到職後 90 天內接受的結構化訓練時數,與一年後的留任率呈顯著正相關。</p>
+          <p class="why-me-inline"><b>對你來說:</b>可作為門市主管訓練 SOP 設計時,90 天關鍵期課程配置的參考依據——如果目前的主管訓練集中在到職第一週,可能錯過了真正影響留任的時間窗口。</p>
+          <p><b>可能造成的影響:</b>若重新設計訓練時程,可能需要調整培訓預算在時間軸上的分配方式。</p>
+          <p><b>接下來該觀察:</b>研究是否有針對餐飲/零售這類高流動率產業的細分數據。</p>
+          <div class="keywords">關鍵字:主管流動率、到職訓練、留任率</div>
+        </div>
+      </details>
+
+    </div>
+  </div>
+
+  <!-- Restaurant & Retail -->
+  <div class="category-block">
+    <div class="section-head"><h2>餐飲與零售</h2></div>
+    <div class="article-columns">
+
+      <details class="article">
+        <summary>
+          <h3>QSR Magazine(美國連鎖餐飲產業雜誌):美國連鎖速食品牌導入 AI 排班系統,人事成本降 6%</h3>
+          <div class="meta">QSR Magazine(美國連鎖餐飲產業雜誌) · 昨日 22:15</div>
+          <p>多家美國連鎖品牌採用 AI 排班工具後,回報人力成本顯著下降。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事:</b>QSR Magazine(美國連鎖餐飲產業雜誌)報導多家美國連鎖速食品牌導入 AI 排班系統後,平均人事成本下降 6%,主要來自加班費與人力閒置時段的優化。</p>
+          <p class="why-me-inline"><b>對你來說:</b>與勞動部修法議題形成對照——AI 排班工具或許是因應加班費計算變更的可行解方之一,值得列入評估項目。</p>
+          <p><b>可能造成的影響:</b>若台灣同業陸續跟進導入,可能形成排班效率的競爭差距。</p>
+          <p><b>接下來該觀察:</b>是否有台灣本地化的排班系統解決方案,以及導入成本與回收期。</p>
+          <div class="keywords">關鍵字:AI排班、人事成本、連鎖速食</div>
+        </div>
+      </details>
+
+      <details class="article">
+        <summary>
+          <h3>商周:台灣連鎖餐飲品牌併購案增加,中型品牌成收購熱門標的</h3>
+          <div class="meta">商業周刊 · 06:50</div>
+          <p>中型連鎖品牌因展店規模與資本結構的落差,成為併購熱門對象。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事:</b>商周分析報導指出,今年以來台灣連鎖餐飲業併購案件數較去年增加,中型品牌(10-30家門市規模)是主要收購標的。</p>
+          <p class="why-me-inline">與你的關注領域關聯度較低,列入僅供參考。</p>
+          <div class="keywords">關鍵字:餐飲併購、中型連鎖品牌</div>
+        </div>
+      </details>
+
+      <details class="article">
+        <summary>
+          <h3>Nation's Restaurant News(美國餐飲產業媒體):消費者對「開放廚房」體驗設計偏好上升</h3>
+          <div class="meta">Nation's Restaurant News(美國餐飲產業媒體) · 昨日 18:40</div>
+          <p>調查顯示消費者願為透明化製程體驗支付更高單價。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事:</b>調查顯示消費者對能看見製作過程的「開放廚房」設計偏好持續上升,並願意為此類體驗支付較高單價。</p>
+          <p class="why-me-inline"><b>對你來說:</b>可作為門市體驗設計/品牌記憶點規劃時的外部趨勢參考,尤其若旗下品牌正在思考新店型或展店規格更新。</p>
+          <p><b>可能造成的影響:</b>新店裝修規格可能需要納入透明化製程的空間規劃考量。</p>
+          <p><b>接下來該觀察:</b>此趨勢在亞洲市場(尤其台灣)是否有相似的消費者調查數據佐證。</p>
+          <div class="keywords">關鍵字:開放廚房、消費者體驗、門市設計</div>
+        </div>
+      </details>
+
+    </div>
+  </div>
+
+  <!-- AI & Technology -->
+  <div class="category-block">
+    <div class="section-head"><h2>人工智慧與科技</h2></div>
+    <div class="article-columns">
+
+      <details class="article">
+        <summary>
+          <h3>Google 發布 Gemini 教育訓練應用案例集,聚焦企業內部知識傳承</h3>
+          <div class="meta">Google AI Blog(Google人工智慧官方部落格) · 08:05</div>
+          <p>案例集彙整多家企業使用 Gemini 建立內部教材與問答系統的做法。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事:</b>Google 發布一份案例集,收錄多家企業使用 Gemini 建立內部知識庫、教材生成與問答系統的實作方式。</p>
+          <p class="why-me-inline"><b>對你來說:</b>可作為你評估 AI 工具導入教育訓練體系時的實作參考案例,尤其是「用 AI 輔助生成訓練教材」這個具體應用場景。</p>
+          <p><b>可能造成的影響:</b>教材製作流程可能可以部分自動化,但仍需要人工審核確保內容符合實際門市情境。</p>
+          <p><b>接下來該觀察:</b>案例集中是否有零售/餐飲產業的具體導入範例。</p>
+          <div class="keywords">關鍵字:Gemini、企業知識庫、教材生成</div>
+        </div>
+      </details>
+
+      <details class="article">
+        <summary>
+          <h3>Hacker News(科技社群論壇)熱議:小型團隊如何用 Agent 工具鏈取代傳統 SOP 文件</h3>
+          <div class="meta">Hacker News(科技社群論壇) · 昨日 19:30</div>
+          <p>討論串聚焦於用可執行流程取代靜態文件,降低 SOP 維護成本。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事:</b>Hacker News(科技社群論壇)上一則熱門討論串,分享多個小型團隊用 AI Agent 工具鏈取代傳統靜態 SOP 文件的實務經驗。</p>
+          <p class="why-me-inline"><b>對你來說:</b>直接呼應你正在思考的「制度統一化如何用 AI 工具落地」這個問題——與其寫一份跨品牌都要遵守的靜態文件,或許可以設計成 AI 輔助執行的流程本身。</p>
+          <p><b>可能造成的影響:</b>SOP 維護方式若轉向「可執行流程」,需要重新評估現有制度文件的轉換成本。</p>
+          <p><b>接下來該觀察:</b>是否有非科技業(尤其服務業)的具體導入案例可參考。</p>
+          <div class="keywords">關鍵字:AI Agent、SOP、流程自動化</div>
+        </div>
+      </details>
+
+      <details class="article">
+        <summary>
+          <h3>OpenAI 更新 API 定價結構,長文本處理成本下降</h3>
+          <div class="meta">OpenAI Blog(OpenAI官方部落格) · 昨日 16:20</div>
+          <p>新定價針對長文本輸入場景調降成本。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事:</b>OpenAI 調整 API 定價結構,長文本輸入場景的處理成本較先前下降。</p>
+          <p class="why-me-inline">與你的關注領域關聯度較低,列入僅供參考。</p>
+          <div class="keywords">關鍵字:OpenAI、API定價</div>
+        </div>
+      </details>
+
+    </div>
+  </div>
+
+  <!-- Markets & Economy -->
+  <div class="category-block">
+    <div class="section-head"><h2>市場與總體經濟</h2></div>
+    <div class="article-columns">
+
+      <details class="article">
+        <summary>
+          <h3>鉅亨網:台股電子權值股領漲,外資單週買超逾 200 億元</h3>
+          <div class="meta">鉅亨網 · 13:20</div>
+          <p>受聯準會鴿派訊號激勵,外資大幅回補台股電子權值股部位。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事:</b>聯準會鴿派訊號公布後,外資本週大幅回補台股電子權值股部位,單週買超逾 200 億元。</p>
+          <p class="why-me-inline">與你的關注領域關聯度較低,列入僅供參考。</p>
+          <div class="keywords">關鍵字:台股、外資買超、電子權值股</div>
+        </div>
+      </details>
+
+      <details class="article">
+        <summary>
+          <h3>MarketWatch(美國財經媒體):美國核心 CPI 略高於預期,市場關注後續政策路徑</h3>
+          <div class="meta">MarketWatch(美國財經媒體) · 昨日 20:30</div>
+          <p>數據公布後市場對降息幅度預期略有下修。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事:</b>美國核心 CPI 年增率公布結果略高於市場預期,美股早盤震盪,市場對後續降息幅度的預期略有下修。</p>
+          <p class="why-me-inline">與你的關注領域關聯度較低,列入僅供參考。</p>
+          <div class="keywords">關鍵字:CPI、聯準會、降息預期</div>
+        </div>
+      </details>
+
+    </div>
+  </div>
+
+  <!-- Major News -->
+  <div class="category-block">
+    <div class="section-head"><h2>台灣與全球重大新聞</h2></div>
+    <div class="article-columns">
+
+      <details class="article">
+        <summary>
+          <h3>颱風動態:中央氣象署發布海上颱風警報,週末影響北台灣機率提高</h3>
+          <div class="meta">自由時報 · 昨日 17:00</div>
+          <p>氣象署表示颱風路徑仍有變數,週末是否登陸尚待確認。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事:</b>中央氣象署發布海上颱風警報,依目前路徑預測,週末影響北台灣的機率較前一次預報提高。</p>
+          <p class="why-me-inline"><b>對你來說:</b>可能影響週末門市營運與外送服務調度,建議提前留意氣象署後續更新公告,並確認各門市的颱風營運應變 SOP 是否需要啟動。</p>
+          <p><b>接下來該觀察:</b>週五晚間氣象署是否發布陸上警報,以及最新路徑預測。</p>
+          <div class="keywords">關鍵字:颱風警報、門市營運應變</div>
+        </div>
+      </details>
+
+    </div>
+  </div>
+
+  <div class="colophon">
+    <span>每日情報 · 私人情報摘要,不對外公開發布</span>
+    <span>由 Gemini 分析生成 · 內容僅供參考</span>
+  </div>
+
+</div>
+</body>
+</html>

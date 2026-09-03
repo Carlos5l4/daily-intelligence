@@ -1,0 +1,57 @@
+name: Daily Intelligence
+
+on:
+  schedule:
+    # UTC 23:00 = 台灣時間隔日早上 07:00
+    - cron: "0 23 * * *"
+  workflow_dispatch:
+    # 允許在 GitHub 網頁上手動點擊執行，方便測試不用等排程時間到
+
+permissions:
+  contents: write   # 需要寫入權限才能把產出的 HTML / daily_brief 存回 repo
+
+jobs:
+  run-daily-brief:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20   # 正常應該 3-5 分鐘內完成，設 20 分鐘避免卡死的任務吃光額度
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run daily pipeline
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python run_daily.py
+
+      - name: Archive daily_brief.json for long-term retention
+        run: |
+          mkdir -p data/daily_brief
+          today=$(date -u +%Y-%m-%d)
+          if [ -f data/daily_brief.json ]; then
+            cp data/daily_brief.json "data/daily_brief/${today}.json"
+          fi
+
+      - name: Commit and push results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/ data/daily_brief/ logs/
+          git diff --quiet --cached || git commit -m "Daily brief: $(date -u +%Y-%m-%d)"
+          git push
+
+      - name: Upload run summary as workflow artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: run-summary-${{ github.run_id }}
+          path: logs/run_summary/
+          retention-days: 30
