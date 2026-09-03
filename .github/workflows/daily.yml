@@ -2,8 +2,8 @@ name: Daily Intelligence
 
 on:
   schedule:
-    # UTC 23:00 = 台灣時間隔日早上 07:00
-    - cron: "0 23 * * *"
+    # UTC 00:30 = 台灣時間當天早上 08:30
+    - cron: "30 0 * * *"
   workflow_dispatch:
     # 允許在 GitHub 網頁上手動點擊執行，方便測試不用等排程時間到
 
