@@ -109,7 +109,7 @@ def patch_daily_brief_stats(daily_brief_path: str, raw_articles_path: str, stage
 def build_run_summary(status: str, failed_step: str | None,
                        raw_articles_path: str, stage1_path: str,
                        clusters_path: str, daily_brief_path: str,
-                       html_generated: bool) -> dict:
+                       html_generated: bool, line_sent: bool) -> dict:
     raw = load_json_safe(raw_articles_path) or {}
     stage1 = load_json_safe(stage1_path) or {}
     clusters = load_json_safe(clusters_path) or {}
@@ -147,6 +147,7 @@ def build_run_summary(status: str, failed_step: str | None,
             "stage2_total_tokens": brief_usage.get("stage2_total_tokens"),
         },
         "html_generated": html_generated,
+        "line_sent": line_sent,
     }
 
 
@@ -176,6 +177,7 @@ Stage 1 tokens:          {g['stage1_total_tokens']}
 Stage 2 tokens:          {g['stage2_total_tokens']}
 
 HTML generated:          {'Yes' if summary['html_generated'] else 'No'}
+LINE sent:               {'Yes' if summary['line_sent'] else 'No'}
 
 Total status:            {summary['status']}
 {f"Failed at step:          {summary['failed_step']}" if summary['failed_step'] else ""}
@@ -205,6 +207,8 @@ def main():
     parser.add_argument("--total-candidates", type=int, default=13)
     parser.add_argument("--top-count", type=int, default=3)
     parser.add_argument("--skip-html", action="store_true", help="除錯用，只跑到 Stage 2 不產生 HTML")
+    parser.add_argument("--skip-line", action="store_true", help="除錯用，不發送 LINE 通知")
+    parser.add_argument("--line-site-url", default=None, help="LINE 通知裡附的固定網址，不給則跳過 LINE 步驟")
     args = parser.parse_args()
 
     failed_step = None
@@ -264,10 +268,21 @@ def main():
         else:
             html_generated = True
 
+    # LINE 通知失敗不影響整體 pipeline 狀態判定（見 line_generator.py 裡的說明），
+    # 只是另外記錄一個 line_sent 欄位進 Run Summary，讓你自己決定要不要在意。
+    line_sent = False
+    if html_generated and not args.skip_line and args.line_site_url:
+        ok, _ = run_step("LINE 通知", [
+            PYTHON, "notify/line_generator.py", args.daily_brief, "--site-url", args.line_site_url,
+        ])
+        line_sent = ok
+        if not ok:
+            print("⚠ LINE 通知發送失敗，但 Daily Brief 本體已產生成功，不影響整體狀態。", file=sys.stderr)
+
     status = "SUCCESS" if not failed_step else "FAILED"
 
     summary = build_run_summary(status, failed_step, args.raw_articles, args.stage1_results,
-                                 args.clusters, args.daily_brief, html_generated)
+                                 args.clusters, args.daily_brief, html_generated, line_sent)
     print_run_summary(summary)
     save_run_summary(summary)
 

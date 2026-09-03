@@ -6,7 +6,7 @@
 <title>每日情報 — {{ date }}</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700;900&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700;900&family=Noto+Sans+TC:wght@400;500;700;900&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
 <style>
   :root{
     --paper: #F3EEE1; --paper-dark: #EAE3D0; --ink: #201D18; --ink-soft: #4A453C;
@@ -46,7 +46,7 @@
   .top3-block:last-of-type{ border-bottom: 3px double var(--ink); margin-bottom: 36px; }
   .pill-tag{ display:inline-block; font-size:12px; font-weight:600; letter-spacing:0.02em;
     color:#fff; background: var(--accent-soft); border-radius: 999px; padding: 2px 12px; margin-bottom: 8px; }
-  .top3-block h2{ font-family:'Noto Serif TC', serif; font-weight:700; font-size: 24px; line-height:1.3; margin: 0 0 10px; }
+  .top3-block h2{ font-family:'Noto Sans TC', sans-serif; font-weight:700; font-size: 24px; line-height:1.4; letter-spacing:0.01em; margin: 0 0 10px; }
   .top3-block .score{ display:inline-block; font-size:12px; color:var(--ink-soft);
     border:1px solid var(--rule); padding:2px 8px; margin-bottom: 12px; }
   .top3-block p{ font-size:15px; line-height:1.75; margin: 0 0 10px; }
@@ -72,7 +72,7 @@
   .article summary::after{ content:"展開 ＋"; position:absolute; right:0; top:2px;
     font-size:11px; color:var(--accent); white-space:nowrap; }
   .article[open] summary::after{ content:"收合 －"; }
-  .article h3{ font-family:'Noto Serif TC', serif; font-weight:700; font-size: 16px; line-height:1.35; margin: 0 22px 5px 0; }
+  .article h3{ font-family:'Noto Sans TC', sans-serif; font-weight:700; font-size: 16px; line-height:1.5; letter-spacing:0.01em; margin: 0 22px 5px 0; }
   .article .meta{ font-size: 11px; color: var(--ink-soft); margin-bottom: 7px; }
   .article summary p{ font-size: 13.5px; line-height:1.6; margin: 0 0 10px; color: var(--ink-soft); }
   .article .expand-body{ margin-top: 10px; padding-top: 10px; border-top: 1px dashed var(--rule); }

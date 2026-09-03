@@ -57,15 +57,23 @@ DEEP_ANALYSIS_PROMPT = """你是一個新聞情報分析助手。以下是一篇
 # 你的任務
 產生以下欄位，全部使用繁體中文，語氣直接、有判斷、不要空泛：
 
-1. one_sentence_summary：一句話講完這則新聞在講什麼(30字內)
-2. what_happened：具體發生了什麼事(2-3句話，只陳述事實，不要加入你的評論)
-3. why_it_matters：這件事為什麼重要——對這個領域/產業整體而言(2-3句話)
-4. why_it_matters_to_me：針對上方使用者背景，這件事具體跟他的哪個關注領域有關、
+1. headline_zh：把上方標題翻譯成繁體中文。這個欄位絕對不能是英文原文，
+   也不能留空。專有名詞、產品名稱、公司名稱可以保留英文，但必須融入完整的
+   中文句子中，不是「翻譯一半、英文一半」的混雜句子，更不能整句照抄原文標題。
+   範例：
+   - 原文「Nvidia to Acquire Hugging Face」→ 正確：「輝達（Nvidia）宣布將併購Hugging Face」
+   - 原文「Claude for Commerce Agents」→ 正確：「Anthropic推出「Claude for Commerce Agents」商務代理工具」
+   - 錯誤示範（絕對不要這樣做）：直接輸出「Nvidia to Acquire Hugging Face」（完全沒翻譯）
+   如果原文標題本身已經是繁體中文，直接使用或做小幅潤飾即可。
+2. one_sentence_summary：一句話講完這則新聞在講什麼(30字內)
+3. what_happened：具體發生了什麼事(2-3句話，只陳述事實，不要加入你的評論)
+4. why_it_matters：這件事為什麼重要——對這個領域/產業整體而言(2-3句話)
+5. why_it_matters_to_me：針對上方使用者背景，這件事具體跟他的哪個關注領域有關、
    可能帶來什麼影響或值得思考的點(2-3句話)。
    如果老實說關聯性不強，直接寫「與你的關注領域關聯度較低，列入僅供參考」，不要硬掰關聯。
-5. potential_impact：如果這個趨勢/事件持續發展，可能造成什麼影響(1-2句話)
-6. what_to_watch_next：接下來應該觀察什麼指標或後續發展(1句話)
-7. keywords：3-5個關鍵字
+6. potential_impact：如果這個趨勢/事件持續發展，可能造成什麼影響(1-2句話)
+7. what_to_watch_next：接下來應該觀察什麼指標或後續發展(1句話)
+8. keywords：3-5個關鍵字
 
 # 重要原則
 - 只根據上方提供的文章內容進行分析，不要編造文章沒提到的細節或數據
@@ -74,6 +82,7 @@ DEEP_ANALYSIS_PROMPT = """你是一個新聞情報分析助手。以下是一篇
 
 # 輸出格式(只輸出JSON)
 {{
+  "headline_zh": "...",
   "one_sentence_summary": "...",
   "what_happened": "...",
   "why_it_matters": "...",
@@ -156,17 +165,26 @@ def analyze_cluster(client, cluster: dict, raw_by_id: dict, source_credibility_n
 
     parsed, usage = call_gemini_json(client, prompt, model)
 
+    headline_zh = parsed.get("headline_zh") or primary["title"]
+    # 簡單啟發式檢查：如果翻譯結果裡英文字母佔比過高，很可能 AI 沒有真的翻譯，
+    # 印出警告方便你在燒機測試時追蹤這個問題還有沒有反覆發生。
+    ascii_ratio = sum(1 for c in headline_zh if c.isascii() and c.isalpha()) / max(len(headline_zh), 1)
+    if ascii_ratio > 0.75:
+        print(f"    ⚠ 標題翻譯可能沒有生效（英文字母佔比 {ascii_ratio:.0%}）：{headline_zh[:40]}", file=sys.stderr)
+
     sources = []
+    seen_source_names = set()
     for aid in cluster["article_ids"]:
         a = raw_by_id.get(aid)
-        if a:
+        if a and a["source_name"] not in seen_source_names:
             sources.append({"name": a["source_name"], "url": a["url"], "published_at": a.get("published_at")})
+            seen_source_names.add(a["source_name"])
 
     item = {
         "item_id": cluster["cluster_id"],
         "cluster_id": cluster["cluster_id"],
         "category": cluster["category"],
-        "headline": primary["title"],
+        "headline": headline_zh,
         "one_sentence_summary": parsed.get("one_sentence_summary"),
         "what_happened": parsed.get("what_happened"),
         "why_it_matters": parsed.get("why_it_matters"),
