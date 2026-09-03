@@ -93,11 +93,10 @@ def main():
                 seen.append(translated)
         return seen
 
+    items = brief["items"]
     for item in items:
         item["unique_source_names"] = dedupe_source_names(item.get("sources", []))
 
-
-    items = brief["items"]
     top3_items = [it for it in items if it.get("is_top3")]
     top3_ids = {it["item_id"] for it in top3_items}
 
