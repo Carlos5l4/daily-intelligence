@@ -54,7 +54,11 @@
     border-left: 3px solid var(--accent-soft); color: var(--ink); margin-bottom:12px; }
   .top3-block .why-me b{ color:var(--accent); font-style:normal; }
   .top3-block .extra b{ font-weight:600; color: var(--accent); }
-  .top3-block .keywords, .top3-block .sources-line{ font-size:12px; color:var(--ink-soft); margin-top:6px; }
+  .top3-block .sources-line{ font-size:12px; color:var(--ink-soft); margin-top:6px; }
+  .sources-line a, .article .meta a{
+    color: var(--accent-soft); text-decoration: none; border-bottom: 1px dotted var(--accent-soft);
+  }
+  .sources-line a:hover, .article .meta a:hover{ color: var(--accent); border-bottom-style: solid; }
 
   .body-label{ text-align:center; margin: 6px 0 30px; }
   .body-label span{ font-size:11px; letter-spacing:0.2em; color:var(--ink-soft);
@@ -125,8 +129,7 @@
     <p class="why-me"><b>對你來說：</b>{{ item.why_it_matters_to_me }}</p>
     <p class="extra"><b>可能造成的影響：</b>{{ item.potential_impact }}</p>
     <p class="extra"><b>接下來該觀察：</b>{{ item.what_to_watch_next }}</p>
-    <div class="keywords">關鍵字：{{ item.keywords|join('、') }}</div>
-    <div class="sources-line">來源：{% for s in item.sources|unique(attribute='name') %}{{ translate_source(s.name) }}{% if not loop.last %}、{% endif %}{% endfor %}</div>
+    <div class="sources-line">來源：{% for s in item.sources|unique(attribute='name') %}<a href="{{ s.url }}" target="_blank" rel="noopener">{{ translate_source(s.name) }}</a>{% if not loop.last %}、{% endif %}{% endfor %}</div>
   </div>
   {% endfor %}
   {% endif %}
@@ -154,7 +157,7 @@
           <p><b>可能造成的影響：</b>{{ item.potential_impact }}</p>
           <p><b>接下來該觀察：</b>{{ item.what_to_watch_next }}</p>
           {% endif %}
-          <div class="keywords">關鍵字：{{ item.keywords|join('、') }}</div>
+          <p class="sources-line">原文連結：{% for s in item.sources|unique(attribute='name') %}<a href="{{ s.url }}" target="_blank" rel="noopener">{{ translate_source(s.name) }}</a>{% if not loop.last %}、{% endif %}{% endfor %}</p>
         </div>
       </details>
       {% endfor %}
