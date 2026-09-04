@@ -1,82 +1,89 @@
 {
   "date": "2026-09-04",
   "issue_number": 1,
-  "generated_at": "2026-09-04T02:36:11.947326+00:00",
-  "today_in_30_seconds": "台股今日展現強韌抗跌實力！受到美股收高激勵，加上台積電ADR小漲0.36%的帶動下，台指期夜盤一口氣大漲668點。投顧分析指出，隨著AI實質訂單陸續兌現，為台股提供扎實的基本面支撐，後市表現持續看俏。",
+  "generated_at": "2026-09-04T05:01:14.791840+00:00",
+  "today_in_30_seconds": "今日焦點新聞：勞動部對前官員謝宜容的免職處分遭法院撤銷，批其未審先判程序瑕疵；產業方面，矽光子與CPO技術預計在2028年迎來爆發期，將複製強勁的市場供需失衡現象；而在金融市場，受惠美股收高與AI實質訂單兌現，台股展現出強韌的抗跌力道。",
   "top3_item_ids": [
-    "solo_ae772702ca5db07f",
-    "solo_252a8d4d05484a9e",
-    "c012"
+    "c0129",
+    "c0213",
+    "c0153"
   ],
   "items": [
     {
-      "item_id": "solo_ae772702ca5db07f",
-      "cluster_id": "solo_ae772702ca5db07f",
-      "category": "markets_economy",
-      "headline": "台積電ADR微幅上漲0.36%，帶動台指期夜盤強勢大漲668點",
-      "one_sentence_summary": "台積電ADR小漲0.36%，激勵台指期夜盤勁揚668點。",
-      "what_happened": "台積電ADR小幅收紅上漲0.36%。受此帶動，台指期夜盤大漲668點。",
-      "why_it_matters": "台積電ADR與台指期夜盤的連動表現，通常反映國際資金對台股半導體與大盤後市的短期信心與避險情緒。",
-      "why_it_matters_to_me": "這直接對應你關注的台股與美股大盤動態及費城半導體指數，可作為你評估隔日台股開盤與半導體族群動向的短期投資決策參考。",
-      "potential_impact": "若夜盤大漲情緒延續，可能帶動次日台股現貨開高走高，強化短期多方氣勢。",
-      "what_to_watch_next": "觀察次日台股現貨開盤後能否續強以及成交量能變化。",
-      "importance_score": 69.0,
+      "item_id": "c0129",
+      "cluster_id": "c0129",
+      "category": "hr_organization",
+      "headline": "勞動部前官員謝宜容涉職場霸凌遭記兩大過免職，台北高等行政法院認定程序違法並撤銷處分",
+      "one_sentence_summary": "勞動部對謝宜容祭出免職處分遭法院撤銷，法官指其未審先判。",
+      "what_happened": "勞動部先前因職場霸凌案對涉案人員謝宜容記兩大過並予以免職。台北高等行政法院審理後，認定勞動部的處分程序存在「未審先判」的問題，因此裁定撤銷原免職處分。",
+      "why_it_matters": "此案凸顯政府機關或企業在處理重大職場霸凌與懲戒懲處時，若未落嚴謹且合法的正當法律程序，處分結果極易在司法審查中遭到翻盤。",
+      "why_it_matters_to_me": "這直接觸及你的「人力資源制度與教育訓練方法論」關注領域。作為HRBP，此案提醒在處理職場霸凌與重大懲戒案件時，調查程序必須絕對嚴謹、符合正當程序，避免因「未審先判」導致懲處無效或衍生後續法律風險。",
+      "potential_impact": "未來公家機關與企業在處理內部霸凌或違紀案件時，將更依賴外部客觀調查與嚴格程序，以降低行政訴訟或勞資爭議敗訴的風險。",
+      "what_to_watch_next": "觀察勞動部後續是否會針對北高行判決提起上訴，以及行政法院後續更審的見解。",
+      "importance_score": 79.2,
       "personal_relevance_score": 95,
       "keywords": [
-        "台積電ADR",
-        "台指期夜盤",
-        "美股動態",
-        "台股大盤"
+        "職場霸凌",
+        "勞動部",
+        "免職處分",
+        "行政訴訟",
+        "人力資源合規"
       ],
       "sources": [
         {
-          "name": "Google News - 台股(限定媒體)",
-          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE8tc0pDc01ISEVUYmRBaDNnTUlLY01IbnRtWlk0U0Q4ZzhWeXZmUjFDVGdXMG5qTEZ6clRMSHF2alpqbUhoVDVfZmljVXlIRnBvWEhYTVpfS2p4NFhtMU5UckZ5VkY0TkRZbWp5XzluV202YmFkOFdYR2FR?oc=5",
-          "published_at": "2026-09-03T23:28:20+00:00"
+          "name": "The News Lens 關鍵評論網",
+          "url": "https://www.thenewslens.com/article/269971",
+          "published_at": "2026-09-04T04:09:00+00:00"
+        },
+        {
+          "name": "Google News - 勞基法(限定媒體)",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBTb1BpTG9GVjRKZXBGeVdHZ0t0c1QtZlNZbDNlb1RmNzJoVkNMQ09jTmdGQzdEUFI5dlBuUV9BbnV2QThHaWRzVXhhc2x2MUVr0gFWQVVfeXFMT3dsMGhlY0Q5SjdaYVZQS2YyS1JaNkxfMXVnTGthOGJKRjIzdy1wdzJPeEJuQWpvd3Y3WURNME9yM29kakJGYnFVRWhXQkdCUnQzZVZrd3c?oc=5",
+          "published_at": "2026-09-03T11:28:23+00:00"
         }
       ],
       "is_top3": true
     },
     {
-      "item_id": "solo_252a8d4d05484a9e",
-      "cluster_id": "solo_252a8d4d05484a9e",
+      "item_id": "c0213",
+      "cluster_id": "c0213",
       "category": "markets_economy",
-      "headline": "台積電ADR微幅上漲0.36%，帶動台指期夜盤強勢大漲668點",
-      "one_sentence_summary": "台積電ADR小漲0.36%，推動台指期夜盤勁揚668點。",
-      "what_happened": "台積電美國存託憑證（ADR）小幅上漲0.36%。受此帶動，台指期夜盤強勢大漲668點。",
-      "why_it_matters": "台積電ADR與台指期夜盤的走勢通常是隔日台股開盤的重要領先指標，反映出國際資金對台股半導體與大盤的短期信心。",
-      "why_it_matters_to_me": "這直接與你的美股與台股大盤動態投資決策相關，顯示半導體族群與期貨夜盤的強勁表現，可作為明日盤勢操作的參考依據。",
-      "potential_impact": "若夜盤漲勢延續，有助於帶動次日台股現貨開高，激發市場投資人信心與成交量。",
-      "what_to_watch_next": "接下來應觀察台股次日開盤後的現貨表現以及費城半導體指數的後續走勢。",
-      "importance_score": 69.0,
+      "headline": "矽光子技術預計於2028年爆發，CPO封裝技術將重現市場供需失衡的狂潮",
+      "one_sentence_summary": "矽光子與CPO技術預計於2028年迎來爆發，將複製強勁的市場供需失衡現象。",
+      "what_happened": "媒體報導指出矽光子技術將在2028年噴發，並提到共同封裝光學（CPO）將複製供需失衡的狂潮，該領域也被黃仁勳點名為下一個兆美元商機。",
+      "why_it_matters": "隨著AI運算需求激增，傳統銅線傳輸面臨瓶頸，矽光子與CPO技術被視為突破頻寬與能耗限制的關鍵解方，將成為半導體與AI基礎設施的下一個兵家必爭之地。",
+      "why_it_matters_to_me": "與你的台美股投資關注領域高度相關，特別是費城半導體指數與AI硬體供應鏈的長線投資布局決策，可作為評估次世代半導體題材的參考依據。",
+      "potential_impact": "相關供應鏈將迎來龐大的資本支出與訂單需求，進一步推動半導體產業的技術轉型與市值成長。",
+      "what_to_watch_next": "觀察相關半導體廠在矽光子與CPO技術的研發進展、客戶導入時程及實際出貨狀況。",
+      "importance_score": 73.0,
       "personal_relevance_score": 95,
       "keywords": [
-        "台積電ADR",
-        "台指期夜盤",
-        "台股大盤",
-        "費城半導體指數"
+        "矽光子",
+        "CPO",
+        "半導體",
+        "AI硬體",
+        "費城半導體"
       ],
       "sources": [
         {
-          "name": "Google News - 台股(限定媒體)",
-          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5LeDBvV1lCTXJBb184eWdyX2Z2MlV6dHA5YTdHbmo3bE9iQTJ1TUVwU2ZMT29JaWlfZzdNR0JOY2g2Q3JZa2RiUnJ3SHBHa0xmTjdmdTRUY3pmdkxw0gFiQVVfeXFMTnFrZkp1ZjhhT3hTSFVQU2hDcW8zQ253dy1ZSDRoNWp6SENtYS1ZVjMzaGhZOG82aG5uVElhdkpOSkhhMU5mcTNnWUM2M3ViaHVsZlVCUVR5T29zem83dC0yUmc?oc=5",
-          "published_at": "2026-09-03T23:26:35+00:00"
+          "name": "Google News - 勞基法(限定媒體)",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE0ySDVOQmNGR1ZRMmREVE5lTlF0LXlsRE9oYzlpMzhwYm1FLVNjSEs2bkd4RUpJR1llbktsY3ZvdEFUQUsxQzdiVS1pTVBZanhY?oc=5",
+          "published_at": "2026-09-04T03:00:01+00:00"
         }
       ],
       "is_top3": true
     },
     {
-      "item_id": "c012",
-      "cluster_id": "c012",
+      "item_id": "c0153",
+      "cluster_id": "c0153",
       "category": "markets_economy",
-      "headline": "美股收高帶動台積電ADR小漲，投顧指出AI訂單實質兌現展現台股強韌基本面",
-      "one_sentence_summary": "美股收高與台積電ADR小漲，投顧分析AI訂單兌現使台股具備強韌表現。",
-      "what_happened": "美股收高，帶動台積電ADR小漲。投顧分析指出，隨著AI訂單實際兌現，顯示出台股具備強勁的市場韌性。",
-      "why_it_matters": "這反映出AI相關實質營收與訂單正持續落地，成為支撐台股與半導體相關資產表現的重要基本面動能。",
-      "why_it_matters_to_me": "這直接呼應了你關注的台美股大盤動態與半導體指數表現，AI訂單的實際兌現可作為評估相關科技類股投資價值的重要參考依據。",
-      "potential_impact": "若AI訂單持續穩定兌現，將有助於維持台股與半導體類股的行情韌性與投資信心。",
-      "what_to_watch_next": "持續觀察後續美股大盤走勢、費城半導體指數表現以及供應鏈實際營收數據是否符合AI訂單預期。",
-      "importance_score": 68.0,
+      "headline": "美股收高帶動台積電ADR小漲，投顧指出AI訂單已實質兌現展現台股強韌性",
+      "one_sentence_summary": "美股收高與AI訂單兌現，使台股展現抗跌韌性。",
+      "what_happened": "美股收高，台積電ADR小幅上漲。投顧分析指出，隨著AI訂單實際兌現，台股表現出強勁的市場韌性。",
+      "why_it_matters": "顯示AI相關應用的需求已從題材走向實質營收貢獻，為半導體與整體大盤提供基本面支撐。",
+      "why_it_matters_to_me": "這直接呼應了你對台美股大盤動態與半導體指數的投資關注，AI訂單的兌現情況可作為評估半導體相關持股基本面與大盤走勢的重要參考依據。",
+      "potential_impact": "若AI訂單持續穩定兌現，將有助於支撐半導體類股及台美股大盤的後續表現。",
+      "what_to_watch_next": "持續觀察後續美股走勢、台積電營收表現以及AI相關供應鏈的實際出貨數據。",
+      "importance_score": 69.0,
       "personal_relevance_score": 95,
       "keywords": [
         "美股",
@@ -95,104 +102,46 @@
       "is_top3": true
     },
     {
-      "item_id": "c013",
-      "cluster_id": "c013",
+      "item_id": "c0175",
+      "cluster_id": "c0175",
       "category": "markets_economy",
-      "headline": "官員談話化解升息疑慮，台股在台積電領軍下強彈近750點並收復5日線",
-      "one_sentence_summary": "受沃勒談話化解升息疑慮激勵，台股在台積電帶領下開高強彈近750點。",
-      "what_happened": "聯準會理事沃勒的談話降低了市場對升息的疑慮。受此激勵，台股開高並一度強彈近750點，由台積電領軍收復5日線。",
-      "why_it_matters": "總體經濟面關於利率政策的風向轉變，直接影響資金面與股市信心，尤其是科技權值股的短期走勢。",
-      "why_it_matters_to_me": "這直接符合你關注台股大盤動態與美股政策動向的投資決策需求，有助於評估整體市場資金風險偏好的變化。",
-      "potential_impact": "若降息或利率疑慮解除，有望帶動全球股市與台股的回穩與反彈氣勢。",
-      "what_to_watch_next": "持續觀察美國聯準會官員後續談話及總經數據對利率預期的影響。",
-      "importance_score": 68.0,
-      "personal_relevance_score": 95,
-      "keywords": [
-        "台股",
-        "台積電",
-        "沃勒",
-        "升息疑慮",
-        "5日線"
-      ],
-      "sources": [
-        {
-          "name": "Google News - 台股(限定媒體)",
-          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5GTzZBS0NjUHF3M01xblhxX20tX090S05VLUpSeGotc3gyYUthcUhVMXh1VE1EaGtqS1Q2N3NzWlp3QzBhZGE4VkJKTldjRnVL?oc=5",
-          "published_at": "2026-09-04T01:14:23+00:00"
-        }
-      ],
-      "is_top3": false
-    },
-    {
-      "item_id": "c019",
-      "cluster_id": "c019",
-      "category": "markets_economy",
-      "headline": "台股遭遇三大法人賣超637.11億元",
-      "one_sentence_summary": "三大法人單日賣超台股達637.11億元。",
-      "what_happened": "台股於今日遭受三大法人合計賣超637.11億元。相關資訊由中央社報導。",
-      "why_it_matters": "法人大幅賣超通常反映機構法人對短期市場風險的擔憂，可能導致大盤指數出現劇烈波動與下行壓力。",
-      "why_it_matters_to_me": "這直接與你關注的台股與美股大盤動態及費城半導體指數等投資決策相關，顯示大盤正面臨法人資金撤出的賣壓，需評估持倉風險。與餐飲零售、HRBP等工作領域關聯度較低。",
-      "potential_impact": "若法人賣超趨勢持續，可能進一步擴大台股短期的修正幅度與市場觀望氣氛。",
-      "what_to_watch_next": "接下來應觀察三大法人後續是否持續賣超，以及台股大盤與費城半導體指數的支撐力道。",
-      "importance_score": 66.8,
-      "personal_relevance_score": 95,
-      "keywords": [
-        "三大法人",
-        "賣超",
-        "台股",
-        "證券市場"
-      ],
-      "sources": [
-        {
-          "name": "Google News - 台股(限定媒體)",
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBwbGlWVnROYnNUak1Ma2dyd0VHZGNsMTZQYXBlR1d5bl9rR2RHRkZrZDRHRnBpSDRhcE0xQkNEdUFEMm1pc243cjctYTl4cVZmenllSkhrenVULXlESmc?oc=5",
-          "published_at": "2026-09-03T07:05:00+00:00"
-        }
-      ],
-      "is_top3": false
-    },
-    {
-      "item_id": "solo_8c389fcd3eb30ee7",
-      "cluster_id": "solo_8c389fcd3eb30ee7",
-      "category": "restaurant_retail",
-      "headline": "甲骨文餐廳策略資深總監Amber Trendell：運用數據與AI強化餐廳營運，並保有人的溫度",
-      "one_sentence_summary": "餐飲業應結合數據與AI來輔助營運決策，在提升效率的同時保持人本溫度。",
-      "what_happened": "甲骨文餐廳策略資深總監Amber Trendell發表文章，探討餐廳如何透過雲端數據與內嵌AI工具來應對多變的需求。文章指出，AI與數據的價值在於輔助經營者的判斷、減少員工操作摩擦、優化成本管理，而非取代人工。",
-      "why_it_matters": "對連鎖餐飲與零售產業而言，將POS、庫存、勞動力與外部市場數據進行整合，並透過AI進行異常管理（Detect-Diagnose-Recommend），能有效在成本收緊的環境下提升營運效率與利潤率。",
-      "why_it_matters_to_me": "這篇文章高度契合你身為品牌管理與HRBP的背景，特別是文中強調員工系統設計應簡單直覺、減少日常工作的認知與行政負擔以降低培訓成本，這對餐飲零售業的人資制度與教育訓練方法論有直接的啟發。此外，文中提到的AI與自動化工具在連鎖餐飲現場的落地應用，也呼應了你對AI Agent與自動化工具實務應用的關注。",
-      "potential_impact": "若餐飲零售業者全面導入數據與AI自動化管理，將能顯著降低營運摩擦與人事浪費，加速第一線決策的速度與精準度。",
-      "what_to_watch_next": "觀察未來大型連鎖餐飲集團在整合POS與勞動力系統時，AI輔助工具實際帶動的勞動成本節省幅度與員工留存率變化。",
-      "importance_score": 59.0,
-      "personal_relevance_score": 95,
-      "keywords": [
-        "AI Agent",
-        "連鎖餐飲營運",
-        "人力資源優化",
-        "數據驅動決策",
-        "成本管理"
-      ],
-      "sources": [
-        {
-          "name": "QSR Magazine",
-          "url": "https://www.qsrmagazine.com/story/using-data-and-ai-to-strengthen-restaurant-operations-without-losing-the-human-touch/",
-          "published_at": "2026-09-03T14:21:29+00:00"
-        }
-      ],
-      "is_top3": false
-    },
-    {
-      "item_id": "solo_1454e219a19a02b6",
-      "cluster_id": "solo_1454e219a19a02b6",
-      "category": "ai_technology",
-      "headline": "希格諾與GMI Cloud合作，部署72台NVIDIA HGX B300系統推進台灣AI算力建設",
-      "one_sentence_summary": "希格諾攜手GMI Cloud部署72台NVIDIA HGX B300系統，強化台灣AI算力基礎建設。",
-      "what_happened": "希格諾與全球AI雲端服務商GMI Cloud展開合作。雙方將在台灣部署72台NVIDIA HGX B300系統，以加速台灣的AI算力基礎建設。",
-      "why_it_matters": "此舉擴增了台灣高階AI伺服器與算力基礎設施的規模，顯示出市場對新一代NVIDIA架構系統的需求與實際落地進展。",
-      "why_it_matters_to_me": "與你的美股投資關注領域（特別是費城半導體指數與AI硬體供應鏈）相關，可作為AI算力硬體實際部署與雲端服務商擴張的動態參考。",
-      "potential_impact": "隨著高階NVIDIA系統的密集部署，將進一步推升相關AI硬體供應鏈的業務動能與算力供給量。",
-      "what_to_watch_next": "觀察後續實際裝機進度以及GMI Cloud在台灣市場的算力服務商機與客戶採用狀況。",
+      "headline": "台積電ADR微幅上漲0.36%，台指期夜盤強勢大漲668點",
+      "one_sentence_summary": "台積電ADR小幅收紅，帶動台指期夜盤強彈668點。",
+      "what_happened": "台積電ADR在美股交易中小幅上漲0.36%。受此與相關美股動態影響，台指期夜盤出現勁揚，指數大漲668點。",
+      "why_it_matters": "台積電ADR與台指期夜盤的大幅波動，通常反映出國際資金對台股半導體與大盤後市的強烈信心與即時避險或追價情緒。",
+      "why_it_matters_to_me": "這直接對應到你關注的台美股大盤動態與費城半導體指數投資決策參考，夜盤的大幅勁揚顯示短線市場情緒偏多，可作為隔日開盤與持倉調整的重要參考。",
+      "potential_impact": "若夜盤強彈情緒延續至隔日開盤，可能帶動台股現貨市場全面反彈，激勵半導體類股表現。",
+      "what_to_watch_next": "觀察隔日台股開盤後現貨市場能否延續夜盤氣勢，以及費城半導體指數的後續走勢。",
       "importance_score": 69.0,
-      "personal_relevance_score": 90,
+      "personal_relevance_score": 95,
+      "keywords": [
+        "台積電ADR",
+        "台指期夜盤",
+        "美股動態",
+        "費城半導體指數"
+      ],
+      "sources": [
+        {
+          "name": "Google News - 台股(限定媒體)",
+          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE8tc0pDc01ISEVUYmRBaDNnTUlLY01IbnRtWlk0U0Q4ZzhWeXZmUjFDVGdXMG5qTEZ6clRMSHF2alpqbUhoVDVfZmljVXlIRnBvWEhYTVpfS2p4NFhtMU5UckZ5VkY0TkRZbWp5XzluV202YmFkOFdYR2FR?oc=5",
+          "published_at": "2026-09-03T23:28:20+00:00"
+        }
+      ],
+      "is_top3": false
+    },
+    {
+      "item_id": "c0195",
+      "cluster_id": "c0195",
+      "category": "ai_technology",
+      "headline": "希格諾與GMI Cloud合作部署NVIDIA HGX B300系統，擴增台灣AI算力基礎建設",
+      "one_sentence_summary": "希格諾攜手GMI Cloud部署72台NVIDIA HGX B300系統，加速台灣AI算力建設。",
+      "what_happened": "希格諾與全球AI雲端服務商GMI Cloud展開合作。雙方將共同部署72台NVIDIA HGX B300系統，藉此加速台灣在AI領域的算力基礎建設。",
+      "why_it_matters": "此舉代表台灣的高階AI算力基礎建設持續擴張，透過導入最新世代的NVIDIA硬體，能大幅提升國內雲端與AI運算服務的能量。",
+      "why_it_matters_to_me": "與你的關注領域關聯度較低，列入僅供參考。雖然你關注美股與費城半導體指數，但此新聞屬於台灣在地基礎建設合作案的商情宣傳，對即時投資決策的參考價值有限。",
+      "potential_impact": "隨著高階NVIDIA晶片系統的擴大部署，台灣的AI雲端服務能量與相關硬體供應鏈應用將持續深化。",
+      "what_to_watch_next": "後續應觀察這批NVIDIA HGX B300系統的實際運作上線時間及其帶動的雲端服務營收效益。",
+      "importance_score": 69.0,
+      "personal_relevance_score": 95,
       "keywords": [
         "希格諾",
         "GMI Cloud",
@@ -209,82 +158,197 @@
       "is_top3": false
     },
     {
-      "item_id": "c022",
-      "cluster_id": "c022",
-      "category": "hr_organization",
-      "headline": "勞動部前官員謝宜容涉職場霸凌遭記2大過免職，北高行認定未審先判撤銷處分",
-      "one_sentence_summary": "謝宜容涉職場霸凌遭免職案，北高行認定勞動部程序違法予以撤銷。",
-      "what_happened": "勞動部前官員謝宜容因涉嫌職場霸凌被記2大過免職。台北高等行政法院審理後，認定勞動部當時的處分屬於「未審先判」，因此判決撤銷免職處分。",
-      "why_it_matters": "此案凸顯政府機關在處理職場霸凌與內部懲處時，若未嚴格遵循法定程序與正當法律程序，處分結果極易在行政訴訟中遭到司法撤銷。",
-      "why_it_matters_to_me": "與你的「人力資源制度與教育訓練方法論」高度相關。這提醒HR在處理內部重大違紀或職場霸凌調查時，必須確保調查程序的合法性與客觀性，避免因行政瑕疵導致懲處無效。",
-      "potential_impact": "未來公私部門在處理職場霸凌或重大懲處案件時，將被迫拉高調查標準與程序正義，以防範行政訴訟翻盤。",
-      "what_to_watch_next": "勞動部後續是否針對北高行的判決提起上訴，以及行政法院後續的判決理由細節。",
-      "importance_score": 68.0,
-      "personal_relevance_score": 90,
+      "item_id": "c0172",
+      "cluster_id": "c0172",
+      "category": "markets_economy",
+      "headline": "三大法人同步賣超台股達637.11億元",
+      "one_sentence_summary": "三大法人於台股單日大幅賣超637.11億元。",
+      "what_happened": "台股市場遭遇三大法人調節，單日賣超金額達到637.11億元。相關證券市場動態顯示出資金流向的變化。",
+      "why_it_matters": "法人大舉賣超反映機構法人對當前台股盤勢的保守態度與資金撤出跡象，直接影響大盤短期走勢與市場流動性。",
+      "why_it_matters_to_me": "這直接攸關你個人在台股與美股大盤動態的投資決策參考，顯示台股短線賣壓沉重，需留意整體投資組合的風險控管與資金配置。",
+      "potential_impact": "若法人賣超趨勢持續，可能導致大盤指數進一步下修，加劇市場觀望與波動氣氛。",
+      "what_to_watch_next": "持續觀察三大法人後續的買賣超動向及台股指數支撐力道。",
+      "importance_score": 68.2,
+      "personal_relevance_score": 95,
       "keywords": [
-        "職場霸凌",
-        "勞動部",
-        "免職處分",
-        "北高行",
-        "人力資源法規"
+        "三大法人",
+        "賣超",
+        "台股",
+        "證券"
       ],
       "sources": [
         {
-          "name": "Google News - 勞基法(限定媒體)",
-          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBTb1BpTG9GVjRKZXBGeVdHZ0t0c1QtZlNZbDNlb1RmNzJoVkNMQ09jTmdGQzdEUFI5dlBuUV9BbnV2QThHaWRzVXhhc2x2MUVr0gFWQVVfeXFMT3dsMGhlY0Q5SjdaYVZQS2YyS1JaNkxfMXVnTGthOGJKRjIzdy1wdzJPeEJuQWpvd3Y3WURNME9yM29kakJGYnFVRWhXQkdCUnQzZVZrd3c?oc=5",
-          "published_at": "2026-09-03T11:28:23+00:00"
+          "name": "Google News - 台股(限定媒體)",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBwbGlWVnROYnNUak1Ma2dyd0VHZGNsMTZQYXBlR1d5bl9rR2RHRkZrZDRHRnBpSDRhcE0xQkNEdUFEMm1pc243cjctYTl4cVZmenllSkhrenVULXlESmc?oc=5",
+          "published_at": "2026-09-03T07:05:00+00:00"
         }
       ],
       "is_top3": false
     },
     {
-      "item_id": "solo_0870a683c395a242",
-      "cluster_id": "solo_0870a683c395a242",
-      "category": "hr_organization",
-      "headline": "全中教呼籲廢除校事會議制度，認為現行修補已無法解決教育現場問題",
-      "one_sentence_summary": "全國中等學校教師產業工會公開呼籲廢除校事會議，認為持續修法已無法解決根本問題。",
-      "what_happened": "針對校事會議的修法研商，全國中等學校教師產業工會（全中教）公開表態，呼籲直接廢除校事會議，並指出相關制度的修補已無法解決現存問題。",
-      "why_it_matters": "此事件反映出教育界對現行不適任教師處理機制與行政調查程序的強烈不滿，突顯出勞資或教育管理制度在執行層面的結構性困境。",
-      "why_it_matters_to_me": "與你的關注領域關聯度較低，列入僅供參考。",
-      "potential_impact": "若教育團體訴求持續發酵，可能迫使主管機關重新檢討甚至大刀闊斧改革校園行政與懲戒調查制度。",
-      "what_to_watch_next": "後續主管機關針對校事會議存廢的政策回應與修法方向。",
-      "importance_score": 65.0,
-      "personal_relevance_score": 90,
+      "item_id": "c0147",
+      "cluster_id": "c0147",
+      "category": "markets_economy",
+      "headline": "台股跌破4萬6大關！大立光與南電領軍下跌，共1423檔股票收黑，大盤指數終場下跌307點",
+      "one_sentence_summary": "台股重挫跌破4萬6千點，逾1400檔股票齊跌，指數收跌307點。",
+      "what_happened": "台股失守4萬6千點關卡，在大立光、南電等權值股領跌下，共有1423家上市公司下跌，終場加權指數下跌307點。",
+      "why_it_matters": "大盤單日大跌且出現千家以上公司齊跌的局面，反映出市場賣壓沉重與整體盤勢的轉弱，影響投資人信心。",
+      "why_it_matters_to_me": "這直接牽涉到你關注的台股大盤動態與投資決策參考，大盤重挫與多數個股齊跌顯示系統性風險上升，短線需評估持股部位的風險控管。",
+      "potential_impact": "若賣壓持續擴散，可能引發進一步的停損賣壓，加劇台股短期的修正力道。",
+      "what_to_watch_next": "觀察大盤能否迅速止穩回守重要關卡，以及成交量與權值股的表態。",
+      "importance_score": 67.4,
+      "personal_relevance_score": 95,
       "keywords": [
-        "校事會議",
-        "全中教",
-        "教育政策",
-        "教師權益",
-        "制度改革"
+        "台股",
+        "大盤動態",
+        "大立光",
+        "南電",
+        "投資決策"
       ],
       "sources": [
         {
-          "name": "Google News - 勞基法(限定媒體)",
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9ES1RrLW1mVHN3MW1qOFBFVW1HczhuVnFqdzZEMTRORFBWQWVJbnJjbVRQeFU0Zk1QcHFCNEZ3RUhJdHNmSHp5b05RZlFvVmd0MGpTTThLSWhnUdIBX0FVX3lxTE5haTNPaElQYkdzcnkyZGw4Nk05QVdESHRNWlMzdF9vQzZXMTBoMDREZ3RkVkhuN3g2X3c2QTdENnY1UDZ6RGJUdFRISmUzSF8tNGhkTWxKS0V5YUFMaS1r?oc=5",
-          "published_at": "2026-09-03T12:49:52+00:00"
+          "name": "Google News - 台股(限定媒體)",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFA0UUxHYXUzZzVOZ3QyR29MQ3lsb0doa3pxX2pIeXEydnhuLXZYS3FPMFQxamlCd3hmRm1JMmgwdGFMclJzQ0phbmRxLXBwUG1QY3V1VXhwUUlKUGI0Vjg40gFkQVVfeXFMTVROMDZmTWJxWE1fQ2lFWTNpTjZFUkpCSEJmV2cwUWt4Mm9wQU9wcU5IX3lzb3V2SlFKLWp0VUVMYWZpQVBVRXBYcEt4a2hCNEs2Y1djajY0bEJJZHlUR2w1WHpqcA?oc=5",
+          "published_at": "2026-09-03T05:50:00+00:00"
         }
       ],
       "is_top3": false
     },
     {
-      "item_id": "solo_c811c0fb63c944df",
-      "cluster_id": "solo_c811c0fb63c944df",
+      "item_id": "c0178",
+      "cluster_id": "c0178",
       "category": "restaurant_retail",
-      "headline": "餐飲勞動力管理平台Harri完成全美2,112家Jack in the Box據點的企業級部署",
-      "one_sentence_summary": "餐飲勞動力管理平台Harri歷時五個月，完成連鎖品牌Jack in the Box全美兩千多家店的系統導入。",
-      "what_happened": "勞動力管理平台Harri宣布，已於2025年12月1日完成全美2,112家Jack in the Box據點的企業級部署。這項涵蓋超過70個加盟組織的專案在五個月內透過三個階段順利完成，並與現有的Qu、R365和DnA技術進行整合。",
-      "why_it_matters": "這顯示大型連鎖餐飲業對於跨區域法規遵循與數據驅動的即時勞動力優化需求正在快速增長。在五個月內完成數千家據點的系統上線，證明了高度複雜的餐飲營運能透過標準化SaaS工具實現快速數位轉型。",
-      "why_it_matters_to_me": "這直接呼應了你對「連鎖餐飲/零售產業趨勢」與「人力資源制度與教育訓練方法論」的關注。該案例展示了行動優先（Mobile-first）的排班預測與日常勞動力優化工具如何落地，對你思考如何透過自動化工具減輕現場店經理負擔、提升人資管理效率極具參考價值。",
-      "potential_impact": "若此類勞動力優化與系統整合模式普及，將大幅降低連鎖餐飲業的管理摩擦成本，並提高人力配置的精準度。",
-      "what_to_watch_next": "觀察Jack in the Box導入Harri後在勞動力成本控制與店經理工作效率上的具體量化成效。",
-      "importance_score": 56.0,
-      "personal_relevance_score": 90,
+      "headline": "餐飲業面臨後疫情效應：外送普及、失業者湧入開店與廚房自動化轉型",
+      "one_sentence_summary": "餐飲業受後疫情效應衝擊，出現外送取代內用、失業者搶開新店及廚房被迫自動化等現象。",
+      "what_happened": "文章指出餐飲業在後疫情時期正經歷結構性轉變。具體現象包含外送行為取代傳統內用、大量失業人口湧入餐飲業開店創業，以及廚房端被迫導入自動化技術。",
+      "why_it_matters": "這些現象顯示餐飲業的經營門檻、競爭生態與勞動結構正在重組，迫使整體產業從依賴人工轉向數位化與自動化以維持營運。",
+      "why_it_matters_to_me": "這直接呼應了你關注的「連鎖餐飲/零售產業趨勢」與「AI Agent與自動化工具應用」。廚房自動化的趨勢將改變基層人力需求，對身為HRBP的你在餐飲零售業的人力資源配置、教育訓練方法論及自動化轉型策略上，帶來全新的挑戰與思考點。",
+      "potential_impact": "若此趨勢持續，餐飲業的倒閉率與新開店競爭將更為激烈，同時也將加速廚房自動化設備與外送平台的整合。",
+      "what_to_watch_next": "觀察餐飲業自動化設備的滲透率變化，以及失業者創業潮後的市場淘汰與留存率。",
+      "importance_score": 67.0,
+      "personal_relevance_score": 95,
+      "keywords": [
+        "後疫情效應",
+        "餐飲業趨勢",
+        "廚房自動化",
+        "外送取代內用",
+        "失業者創業"
+      ],
+      "sources": [
+        {
+          "name": "Google News - 餐飲業(限定媒體)",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE54TUp4dFdTbjhvczZWSVdFV0YtRnZreWNILVpNSDVCS0hSa0UtVnFLTTh5WmNUYTRwSDRlS1RjSHVrMmdlclk0YkJPWUVJZThFRHNCWXpUVWNobUpqZHdZUXM5WDnSAWRBVV95cUxOeE1KeHRXU244b3M2VklXRVdGLUZ2a3ljSC1aTUg1QktIUmtFLVZxS004eVpjVGE0cEg0ZUtUY0h1azJnZXJZNGJCT1lFSWU4RURzQll6VFVjaG1KamR3WVFzOVg5?oc=5",
+          "published_at": "2026-09-04T01:10:54+00:00"
+        }
+      ],
+      "is_top3": false
+    },
+    {
+      "item_id": "c030",
+      "cluster_id": "c030",
+      "category": "ai_technology",
+      "headline": "OpenAI推出功能強大且備受爭議的新模型Astra",
+      "one_sentence_summary": "OpenAI發表號稱開創電腦與瀏覽器使用新紀元的新模型Astra。",
+      "what_happened": "OpenAI發表了名為Astra的新模型，聲稱其代表了電腦與瀏覽器使用的新領域。官方表示該模型能以無與倫比的速度、準確性與安全性來處理各項任務。",
+      "why_it_matters": "此舉標誌著AI模型在作業系統與瀏覽器自動化操作上的技術升級，可能進一步推動AI Agent在實際應用場景中的落地。",
+      "why_it_matters_to_me": "這直接呼應了你對AI Agent與自動化工具應用的關注，未來此類模型若能導入企業內部系統，將對行政流程自動化與HR人力資源制度的數位轉型帶來實質影響。",
+      "potential_impact": "若電腦與瀏覽器自動化模型普及，將大幅改變知識工作者的日常工作流程，並加速各產業的自動化轉型。",
+      "what_to_watch_next": "觀察Astra的實際企業應用案例、效能評測以及市場與監管機構對其爭議點的反應。",
+      "importance_score": 65.0,
+      "personal_relevance_score": 95,
+      "keywords": [
+        "OpenAI",
+        "Astra",
+        "AI Agent",
+        "瀏覽器自動化",
+        "人工智慧"
+      ],
+      "sources": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/09/03/openai-launches-astra-its-powerful-and-controversial-new-model/",
+          "published_at": "2026-09-03T18:01:45+00:00"
+        }
+      ],
+      "is_top3": false
+    },
+    {
+      "item_id": "c0130",
+      "cluster_id": "c0130",
+      "category": "hr_organization",
+      "headline": "打破時空限制的AI非同步面試：人資專家看好包容性招募",
+      "one_sentence_summary": "AI非同步面試能提升招募效率與包容性，但企業導入須留意演算法偏見與個資風險。",
+      "what_happened": "文章指出AI非同步面試打破了時空限制，有助於提升招募效率與包容性。然而，企業在導入時必須應對演算法偏見及個資風險，並參考歐盟規範建立治理框架以平衡技術效益與人權保障。",
+      "why_it_matters": "這代表招募流程正加速走向自動化與數位化，如何在提升效率的同時兼顧法規遵循與公平性，成為企業導入AI工具的重要課題。",
+      "why_it_matters_to_me": "這與你的「人力資源制度與教育訓練方法論」及「AI Agent與自動化工具應用」高度相關。在規劃招募流程自動化時，除了評估AI非同步面試帶來的效率提升，你也需要特別注意演算法偏見與個資保護的合規風險。",
+      "potential_impact": "若此趨勢持續發展，非同步面試將成為常態，迫使企業必須建立更完善的AI治理與人資合規框架。",
+      "what_to_watch_next": "觀察後續是否有更多企業導入AI非同步面試，以及相關法規與治理框架的具體落實方式。",
+      "importance_score": 61.0,
+      "personal_relevance_score": 95,
+      "keywords": [
+        "AI非同步面試",
+        "招募效率",
+        "包容性招募",
+        "演算法偏見",
+        "人資制度"
+      ],
+      "sources": [
+        {
+          "name": "The News Lens 關鍵評論網",
+          "url": "https://www.thenewslens.com/article/269952",
+          "published_at": "2026-09-04T04:00:00+00:00"
+        }
+      ],
+      "is_top3": false
+    },
+    {
+      "item_id": "c069",
+      "cluster_id": "c069",
+      "category": "restaurant_retail",
+      "headline": "QSR雜誌評選出2026年最佳的20個連鎖加盟品牌與交易機會",
+      "one_sentence_summary": "QSR雜誌公布2026年20個最佳連鎖加盟品牌，凸顯市場轉向考驗實質單店獲利與營運紀律。",
+      "what_happened": "QSR Magazine公布了2026年最佳的20個加盟交易名單與評選標準。在通膨與高人事成本壓力下，加盟主更加看重單店獲利、保守穩健的財務表現及總部的營運支援，而非單純的行銷故事。",
+      "why_it_matters": "這反映出連鎖餐飲與零售業的加盟生態正在轉型，從過去靠擴張動能吸引投資，轉為嚴格檢驗單店經濟效益、數位化自動工具與營運抗壓性的存續能力。",
+      "why_it_matters_to_me": "這直接呼應你對「連鎖餐飲/零售產業趨勢」與「人力資源制度與教育訓練方法論」的關注。品牌在面對高 labor 成本時簡化營運、導入AI與數位化點餐系統（如Taco John's與Shipley Do-Nuts），以及發展標準化培訓，是思考餐飲零售業能否規模化與維持基層人力效能的重要參考。",
+      "potential_impact": "未來不具備強固單店獲利模型與數位整合能力的連鎖品牌將加速被淘汰，具備簡化作業流程與良好毛利的品牌則會持續吸引經驗豐富的多店加盟主。",
+      "what_to_watch_next": "接下來應觀察餐飲零售加盟主在融資成本上升與labor壓力下，導入AI點餐與自動化工具的實際投資回報率（ROI）。",
+      "importance_score": 59.0,
+      "personal_relevance_score": 95,
+      "keywords": [
+        "連鎖餐飲",
+        "加盟商機",
+        "單店經濟效益",
+        "QSR Magazine",
+        "營運自動化"
+      ],
+      "sources": [
+        {
+          "name": "QSR Magazine",
+          "url": "https://www.qsrmagazine.com/story/qsrs-20-best-franchise-deals-for-2026/",
+          "published_at": "2026-09-03T12:13:49+00:00"
+        }
+      ],
+      "is_top3": false
+    },
+    {
+      "item_id": "c049",
+      "cluster_id": "c049",
+      "category": "hr_organization",
+      "headline": "餐飲勞動力管理平台Harri完成美國連鎖速食Jack in the Box全系統2,112家分店的企業級部署",
+      "one_sentence_summary": "Harri在短短5個月內完成Jack in the Box全美2,112家分店的勞動力管理平台部署。",
+      "what_happened": "餐飲業勞動力管理平台Harri宣布，已完成美國連鎖速食品牌Jack in the Box全美2,112家分店的企業級部署。這項歷時五個月的導入專案涵蓋70多家加盟組織，整合了Qu、R365與DnA等現有技術，提供行動優先的排班、勞動力預測與即時最佳化功能。",
+      "why_it_matters": "這項大規模系統的快速導入，證明了大型連鎖餐飲在面臨跨司法管轄區合規與複雜營運需求時，透過SaaS平台實現數據驅動的勞動力最佳化已成為可行且高效的標準。",
+      "why_it_matters_to_me": "這直接呼應了你對「連鎖餐飲/零售產業趨勢」與「人力資源制度與教育訓練方法論」的關注。該平台主打透過行動優先介面降低店經理負擔、實現「日內勞動力最佳化」（intra-day labor optimization）並主動監控合規，這對餐飲零售業的HRBP在思考如何運用自動化工具提升現場營運效率與店經理留任率，具有高度的參考價值。",
+      "potential_impact": "若此類高效率的勞動力管理平台普及，連鎖餐飲業將能大幅降低人力成本、提升排班靈活性，並改善店經理的日常工作體驗。",
+      "what_to_watch_next": "觀察Jack in the Box在全面導入Harri平台後，其分店的人力成本效率、店經理流動率以及實際營業額的提升數據。",
+      "importance_score": 57.0,
+      "personal_relevance_score": 95,
       "keywords": [
         "Harri",
         "Jack in the Box",
         "勞動力管理",
         "連鎖餐飲",
-        "餐飲科技"
+        "HRTech"
       ],
       "sources": [
         {
@@ -296,117 +360,44 @@
       "is_top3": false
     },
     {
-      "item_id": "c006",
-      "cluster_id": "c006",
+      "item_id": "c065",
+      "cluster_id": "c065",
       "category": "restaurant_retail",
-      "headline": "8月份高達51位餐飲業高階主管異動，包含Pizza Hut、Dave & Buster's與HTeaO的執行長異動",
-      "one_sentence_summary": "8月份餐飲業高階主管異動頻繁，多個知名連鎖品牌如Pizza Hut等更換執行長。",
-      "what_happened": "8月份共有51位餐飲業高階主管發生職務異動。其中包括Pizza Hut、Dave & Buster's以及HTeaO等連鎖餐飲品牌的執行長（CEO）更迭。",
-      "why_it_matters": "高階主管頻繁異動通常反映出餐飲零售業在面對市場競爭與經營壓力時，積極調整領導團隊以尋求新的策略方向與營運突破。",
-      "why_it_matters_to_me": "這與你的連鎖餐飲與零售產業趨勢關注領域高度相關，高層換血往往會帶動組織重整與人才流動，值得觀察後續是否引發連鎖品牌的策略轉型或人才布局變化。",
-      "potential_impact": "連鎖餐飲品牌頻繁更換高階領導人，可能加速產業內的營運模式變革、數位化轉型或成本結構調整。",
-      "what_to_watch_next": "持續觀察主要連鎖餐飲集團新任執行長上任後的營運策略與接下來幾季的財報表現。",
-      "importance_score": 55.0,
-      "personal_relevance_score": 90,
+      "headline": "Oracle餐廳策略資深總監：如何利用數據與AI強化餐廳營運並保有溫暖的人性化服務",
+      "one_sentence_summary": "大型連鎖餐飲應結合數據與AI工具來輔助營運決策，而非取代人類的直覺判斷。",
+      "what_happened": "Oracle Restaurants策略資深總監Amber Trendell撰文指出，餐廳可透過整合POS、庫存、勞動力等多方數據與嵌入式AI，來即時調整庫存、人力與菜單。AI的角色在於協助營運團隊自動偵測異常、診斷原因並提出建議，而非取代人類的直覺與決策權。",
+      "why_it_matters": "對連鎖餐飲與零售產業而言，單靠人工檢視各據點與繁雜報表已不敷成本，透過數據中台與AI進行「異常管理」能有效緊縮利潤、精準控制勞動力與成本，同時維持服務品質。",
+      "why_it_matters_to_me": "這篇文章高度契合你的「連鎖餐飲/零售產業趨勢」、「AI Agent與自動化工具應用」以及「人力資源制度」三大關注領域。文中提到如何透過系統簡化基層員工的操作介面來降低流動率、減少教育訓練成本，並利用精準的排班與勞動力數據在不影響服務下降低人事開支，對身為HRBP的你在餐飲零售業推動自動化與優化員工體驗時極具參考價值。",
+      "potential_impact": "若餐飲零售業者普遍導入此類AI與數據整合方案，將能顯著提升營運效率、降低行政負擔，並使第一線員工有更多時間專注於顧客服務與團隊支援。",
+      "what_to_watch_next": "觀察大型餐飲連鎖品牌實際導入AI輔助營運決策工具後，在勞動力成本控制與員工留存率上的實際成效。",
+      "importance_score": 56.0,
+      "personal_relevance_score": 95,
       "keywords": [
-        "餐飲業",
-        "高階主管異動",
-        "Pizza Hut",
-        "執行長",
-        "連鎖零售"
+        "AI Agent",
+        "連鎖餐飲營運",
+        "人力資源優化",
+        "數據中台",
+        "成本管理"
       ],
       "sources": [
         {
-          "name": "Nation's Restaurant News",
-          "url": "https://www.nrn.com/restaurant-executives/51-restaurant-executives-on-the-move-in-august-including-ceo-changes-at-pizza-hut-dave-buster-s-and-hteao",
-          "published_at": "2026-09-03T15:35:40+00:00"
-        }
-      ],
-      "is_top3": false
-    },
-    {
-      "item_id": "c002",
-      "cluster_id": "c002",
-      "category": "ai_technology",
-      "headline": "Legora運用GPT-6 Astra在數分鐘內審閱41份文件",
-      "one_sentence_summary": "Legora使用GPT-6 Astra快速完成財務文件審閱並大幅提升效能。",
-      "what_happened": "Legora在財務審閱工作流程中，使用GPT-6 Astra在數分鐘內審閱了41份文件。在此過程中，它成功找出了所有4項預埋的錯誤，並將整體效能提升了近40%。",
-      "why_it_matters": "這顯示出次世代AI模型在處理複雜且具備精確度要求的財務文件審閱時，展現出極高的自動化處理能力與效率，大幅縮短人工審查的時間。",
-      "why_it_matters_to_me": "這直接呼應了你對「AI Agent與自動化工具應用」的關注，展示了自動化工具在專業工作流程（如財務文件審查）中的實際落地成效。對身為品牌管理與HRBP的你而言，這類高階AI工具未來若導入行政或內部合規審查流程，將能顯著提升部門營運效率與教育訓練的數位化轉型方向。",
-      "potential_impact": "隨著高階AI模型在專業工作流程中的準確率與效率提升，各產業將加速導入自動化工具以取代部分繁複的審查作業，進一步改變知識工作者的工作型態。",
-      "what_to_watch_next": "觀察此類高階AI模型在企業實際運作中的普及率，以及其對各產業勞動生產力與人力編制帶來的實際變革。",
-      "importance_score": 87.1,
-      "personal_relevance_score": 85,
-      "keywords": [
-        "GPT-6 Astra",
-        "Legora",
-        "AI自動化工具",
-        "財務審閱",
-        "工作流程優化"
-      ],
-      "sources": [
-        {
-          "name": "OpenAI News",
-          "url": "https://openai.com/index/legora-financial-statement-review-with-astra",
-          "published_at": "2026-09-03T12:00:00+00:00"
-        },
-        {
-          "name": "Hacker News (Front Page)",
-          "url": "https://openai.com/index/gpt-6-astra/",
-          "published_at": "2026-09-03T18:41:05+00:00"
-        },
-        {
-          "name": "TechCrunch",
-          "url": "https://techcrunch.com/2026/09/03/openai-launches-astra-its-powerful-and-controversial-new-model/",
-          "published_at": "2026-09-03T18:01:45+00:00"
-        },
-        {
-          "name": "The Verge",
-          "url": "https://www.theverge.com/ai-artificial-intelligence/989601/openai-gpt-6-astra-release",
-          "published_at": "2026-09-03T18:00:00+00:00"
-        }
-      ],
-      "is_top3": false
-    },
-    {
-      "item_id": "solo_482b3fc6d69e13a8",
-      "cluster_id": "solo_482b3fc6d69e13a8",
-      "category": "ai_technology",
-      "headline": "輝達（Nvidia）確認將以129億美元併購Hugging Face",
-      "one_sentence_summary": "輝達宣布以129億美元收購擁有龐大開發者與模型數量的Hugging Face。",
-      "what_happened": "輝達官方證實將以129億美元的價格收購Hugging Face。該平台目前託管超過300萬個模型，並擁有超過1,800萬名開發者使用。",
-      "why_it_matters": "這顯示硬體巨頭輝達正進一步向下整合AI軟體生態與開發者社群，鞏固其在人工智慧產業鏈中的主導地位。",
-      "why_it_matters_to_me": "這直接呼應你對AI Agent與自動化工具應用的關注，特別是底層模型與開發者生態的整併，同時這筆大型科技併購案也對你關注的美股大盤與半導體動態具有指標性影響。",
-      "potential_impact": "大型硬體商與開源AI平台的深度結合，可能加速AI工具與Agent的普及與商業化落地。",
-      "what_to_watch_next": "後續監管機構對於此筆129億美元大型併購案的審查進度與市場反應。",
-      "importance_score": 68.0,
-      "personal_relevance_score": 85,
-      "keywords": [
-        "Nvidia",
-        "Hugging Face",
-        "企業併購",
-        "AI生態系",
-        "美股"
-      ],
-      "sources": [
-        {
-          "name": "TechCrunch",
-          "url": "https://techcrunch.com/2026/09/03/nvidia-confirms-it-will-buy-hugging-face-for-12-9-billion/",
-          "published_at": "2026-09-03T12:42:45+00:00"
+          "name": "QSR Magazine",
+          "url": "https://www.qsrmagazine.com/story/using-data-and-ai-to-strengthen-restaurant-operations-without-losing-the-human-touch/",
+          "published_at": "2026-09-03T14:21:29+00:00"
         }
       ],
       "is_top3": false
     }
   ],
   "stats": {
-    "total_articles_collected": 1760,
-    "total_after_stage1": 177,
+    "total_articles_collected": 1762,
+    "total_after_stage1": 187,
     "total_selected": 13,
     "estimated_reading_minutes": 6
   },
   "usage": {
-    "stage2_tokens_in": 12738,
-    "stage2_tokens_out": 5033,
-    "stage2_total_tokens": 17771
+    "stage2_tokens_in": 22388,
+    "stage2_tokens_out": 5391,
+    "stage2_total_tokens": 27779
   }
 }
