@@ -21,15 +21,25 @@ Phase 3: Normalize — 正規化階段
 
 這支檔案不做任何「該不該保留這篇文章」的判斷（那是 dedupe_basic.py 的責任），
 只負責把不同來源、格式不統一的原始資料，轉換成後續模組都看得懂的固定格式。
+
+例外：「週報/週末回顧」型文章不算判斷該不該保留，而是體裁本身就不是「每日新訊」，
+所以在這裡直接濾掉，不進入 raw_articles.json，也不會消耗 Stage1 的 Gemini 額度。
 """
 
 import hashlib
 import re
 from datetime import datetime, timezone
 
-# Hacker News RSS 的 description 固定是這種「留言連結」樣板，沒有實際摘要內容，
-# 送進 Gemini 沒有意義，偵測到就當作空字串處理，讓 Stage 1 知道只能依賴標題判斷。
 _HN_BOILERPLATE_RE = re.compile(r'^<a href="[^"]*">Comments</a>$', re.IGNORECASE)
+
+RECAP_KEYWORDS = [
+    "週末精選", "週報", "本週回顧", "上週回顧", "一週回顧", "週末回顧", "本周回顧",
+]
+
+
+def is_recap_article(title: str, description: str) -> bool:
+    text = (title or "") + (description or "")
+    return any(kw in text for kw in RECAP_KEYWORDS)
 
 
 def make_article_id(url: str) -> str:
@@ -37,12 +47,10 @@ def make_article_id(url: str) -> str:
 
 
 def strip_html(text: str | None) -> str:
-    """移除 HTML 標籤，保留純文字。RSS 摘要/內文常混雜 <img>、<a> 等標籤，
-    這些對 Gemini 分類沒有幫助，只會浪費 token，統一在正規化階段清乾淨。"""
     if not text:
         return ""
-    text = re.sub(r"<[^>]+>", " ", text)   # 移除標籤
-    text = re.sub(r"\s+", " ", text)        # 合併多餘空白
+    text = re.sub(r"<[^>]+>", " ", text)
+    text = re.sub(r"\s+", " ", text)
     return text.strip()
 
 
@@ -56,7 +64,7 @@ def extract_published_at(entry) -> str | None:
 def extract_description(entry) -> str:
     raw = entry.get("summary", "") or entry.get("description", "") or ""
     if _HN_BOILERPLATE_RE.match(raw.strip()):
-        return ""  # Hacker News 的樣板留言連結，不是真的摘要
+        return ""
     return strip_html(raw)
 
 
@@ -76,7 +84,11 @@ def normalize_entry(entry, source: dict, fetched_at: str) -> dict | None:
     url = entry.get("link")
     title = entry.get("title")
     if not url or not title:
-        # 沒有連結或標題的 item 無法使用，直接捨棄
+        return None
+
+    description = extract_description(entry).strip()
+
+    if is_recap_article(title, description):
         return None
 
     return {
@@ -86,7 +98,7 @@ def normalize_entry(entry, source: dict, fetched_at: str) -> dict | None:
         "category": source.get("category"),
         "title": title.strip(),
         "url": url,
-        "description": extract_description(entry).strip(),
+        "description": description,
         "content": extract_content(entry),
         "author": extract_author(entry),
         "published_at": extract_published_at(entry),
@@ -95,10 +107,6 @@ def normalize_entry(entry, source: dict, fetched_at: str) -> dict | None:
 
 
 def normalize_all(fetch_results: list[dict]) -> list[dict]:
-    """
-    輸入 fetch_all() 的回傳值，輸出攤平後的 RawArticle 清單。
-    fetch_error 不為 None 的來源（抓取失敗）會被跳過，不會產生任何文章。
-    """
     articles = []
     for result in fetch_results:
         if result["fetch_error"]:
