@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日情報 — 2026-09-08</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700;900&family=Noto+Sans+TC:wght@400;500;700;900&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper: #F3EEE1; --paper-dark: #EAE3D0; --ink: #201D18; --ink-soft: #4A453C;
+    --rule: #C9BFA5; --accent: #7A2A28; --accent-soft: #9C6B4E;
+  }
+  *{box-sizing:border-box;}
+  body{ margin:0; background: var(--paper-dark); color: var(--ink);
+    font-family: 'Source Serif 4', Georgia, serif; -webkit-font-smoothing:antialiased; }
+  .sheet{ max-width: 900px; margin: 0 auto; background: var(--paper);
+    padding: 40px 48px 60px; box-shadow: 0 0 40px rgba(0,0,0,0.08); }
+
+  .masthead{ text-align:center; padding-bottom: 18px; }
+  .masthead .eyebrow-line{ display:flex; justify-content:space-between; align-items:center;
+    font-size:12px; letter-spacing:0.08em; color: var(--ink-soft);
+    border-bottom: 1px solid var(--rule); padding-bottom: 8px; margin-bottom: 14px; }
+  .masthead h1{ font-family:'Noto Serif TC', serif; font-weight:900; font-size: 54px;
+    letter-spacing: 0.02em; margin: 4px 0 6px; line-height:1; }
+  .masthead .subtitle{ font-style: italic; color: var(--ink-soft); font-size: 15px; margin-bottom: 14px; }
+  .masthead .rules{ border: none; border-top: 3px solid var(--ink); margin: 0 0 3px; }
+  .masthead .rules.thin{ border-top: 1px solid var(--ink); margin-bottom: 0; }
+
+  .brief-box{ margin: 26px 0 34px; padding: 20px 24px;
+    border-top: 2px solid var(--ink); border-bottom: 2px solid var(--ink); background: var(--paper-dark); }
+  .brief-box .label{ font-family:'Noto Serif TC', serif; font-weight:700; font-size: 13px;
+    letter-spacing: 0.14em; color: var(--accent); margin-bottom: 8px; }
+  .brief-box p{ font-size: 17px; line-height:1.75; margin:0; }
+  .brief-box p::first-letter{ font-family:'Noto Serif TC', serif; font-weight:900; font-size: 46px;
+    float:left; line-height:0.8; padding-right:8px; padding-top:4px; color: var(--accent); }
+
+  .frontpage-label{ display:flex; align-items:center; gap:14px; margin-bottom:18px; }
+  .frontpage-label h2{ font-family:'Noto Serif TC', serif; font-weight:900; font-size: 16px;
+    letter-spacing:0.1em; margin:0; color: var(--ink); }
+  .frontpage-label .line{ flex:1; border-top: 2px solid var(--ink); }
+  .frontpage-label .sub{ font-size:11.5px; color:var(--ink-soft); font-style:italic; white-space:nowrap; }
+
+  .top3-block{ padding-bottom: 24px; margin-bottom: 30px; border-bottom: 1px solid var(--rule); }
+  .top3-block:last-of-type{ border-bottom: 3px double var(--ink); margin-bottom: 36px; }
+  .pill-tag{ display:inline-block; font-size:12px; font-weight:600; letter-spacing:0.02em;
+    color:#fff; background: var(--accent-soft); border-radius: 999px; padding: 2px 12px; margin-bottom: 8px; }
+  .top3-block h2{ font-family:'Noto Sans TC', sans-serif; font-weight:700; font-size: 24px; line-height:1.4; letter-spacing:0.01em; margin: 0 0 10px; }
+  .top3-block .score{ display:inline-block; font-size:12px; color:var(--ink-soft);
+    border:1px solid var(--rule); padding:2px 8px; margin-bottom: 12px; }
+  .top3-block p{ font-size:15px; line-height:1.75; margin: 0 0 10px; }
+  .top3-block .why-me{ font-size:15px; line-height:1.7; padding-left:14px;
+    border-left: 3px solid var(--accent-soft); color: var(--ink); margin-bottom:12px; }
+  .top3-block .why-me b{ color:var(--accent); font-style:normal; }
+  .top3-block .extra b{ font-weight:600; color: var(--accent); }
+  .top3-block .sources-line{ font-size:12px; color:var(--ink-soft); margin-top:6px; }
+  .sources-line a, .article .meta a{
+    color: var(--accent-soft); text-decoration: none; border-bottom: 1px dotted var(--accent-soft);
+  }
+  .sources-line a:hover, .article .meta a:hover{ color: var(--accent); border-bottom-style: solid; }
+
+  .body-label{ text-align:center; margin: 6px 0 30px; }
+  .body-label span{ font-size:11px; letter-spacing:0.2em; color:var(--ink-soft);
+    border-top:1px solid var(--rule); border-bottom:1px solid var(--rule); padding: 4px 0; display:block; }
+
+  .category-block{ margin-bottom: 46px; }
+  .section-head{ background: var(--ink); color: var(--paper); padding: 11px 18px; margin-bottom: 20px; }
+  .section-head h2{ font-family:'Noto Serif TC', serif; font-weight:700; font-size: 20px;
+    letter-spacing: 0.1em; margin:0; }
+
+  .article-columns{ column-count: 2; column-gap: 34px; column-rule: 1px solid var(--rule); }
+  .article{ break-inside: avoid; margin-bottom: 20px; }
+  .article summary{ list-style:none; cursor:pointer; position:relative; padding-right:22px; }
+  .article summary::-webkit-details-marker{ display:none; }
+  .article summary::after{ content:"展開 ＋"; position:absolute; right:0; top:2px;
+    font-size:11px; color:var(--accent); white-space:nowrap; }
+  .article[open] summary::after{ content:"收合 －"; }
+  .article h3{ font-family:'Noto Sans TC', sans-serif; font-weight:700; font-size: 16px; line-height:1.5; letter-spacing:0.01em; margin: 0 22px 5px 0; }
+  .article .meta{ font-size: 11px; color: var(--ink-soft); margin-bottom: 7px; }
+  .article summary p{ font-size: 13.5px; line-height:1.6; margin: 0 0 10px; color: var(--ink-soft); }
+  .article .expand-body{ margin-top: 10px; padding-top: 10px; border-top: 1px dashed var(--rule); }
+  .article .expand-body p{ font-size: 13.5px; line-height:1.65; margin: 0 0 8px; }
+  .article .expand-body b{ color: var(--accent); font-weight:600; }
+  .article .keywords{ font-size:11.5px; color:var(--ink-soft); margin-top:6px; }
+
+  .colophon{ margin-top: 30px; padding-top: 16px; border-top: 1px solid var(--ink);
+    display:flex; justify-content:space-between; font-size: 11.5px; color: var(--ink-soft); }
+
+  @media (max-width: 720px){
+    .sheet{ padding: 26px 20px 40px; } .masthead h1{ font-size: 38px; }
+    .article-columns{ column-count:1; } .colophon{ flex-direction:column; gap:4px; }
+    .frontpage-label .sub{ display:none; }
+  }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <div class="masthead">
+    <div class="eyebrow-line">
+      <span>第 001 期</span>
+      <span>PERSONAL DAILY INTELLIGENCE(每日情報)</span>
+      <span>2026年9月8日 星期二</span>
+    </div>
+    <h1>每日情報</h1>
+    <div class="subtitle">今天分析 224 則資訊，篩出 13 則值得你注意 · 預估閱讀時間 6 分鐘</div>
+    <hr class="rules"><hr class="rules thin">
+  </div>
+
+  <div class="brief-box">
+    <div class="label">今日三十秒</div>
+    <p>今日台股展現強旺多頭氣勢，在權值雙王領軍下展開猛烈攻勢。台積電大漲30元，帶動早盤指數飆漲逾600點，一舉突破47000點大關。同時，受惠於輝達重金押注AI ASIC並進攻機櫃級市場，聯發科亮燈漲停，成為盤面另一大亮點。在雙王強勢表態與外資大買883億元資金助陣下，今日台股氣勢如虹，締造亮眼漲勢。</p>
+  </div>
+
+  
+  <div class="frontpage-label">
+    <h2>頭版精選</h2>
+    <div class="line"></div>
+    <span class="sub">跨類別綜合評選，不重複出現於下方分類區塊</span>
+  </div>
+
+  
+  <div class="top3-block">
+    <span class="pill-tag">市場與總體經濟</span>
+    <h2>聯發科觸及4855元漲停帶動台股大漲逾200點，輝達重金押注AI ASIC並進攻機櫃級市場</h2>
+    <span class="score">重要度 66 · 相關度 100</span>
+    <p>聯發科股價觸及漲停4855元，單檔貢獻台股大盤超過200點。此次行情受惠於輝達重金押注AI ASIC，並進一步攻佔機櫃級市場的產業趨勢。</p>
+    <p class="why-me"><b>對你來說：</b>直接對應你關注的台股大盤動態與半導體指數投資決策，聯發科的強勢及輝達在ASIC與機櫃級的佈局，是評估AI硬體供應鏈資金動能的重要指標。</p>
+    <p class="extra"><b>可能造成的影響：</b>若輝達的AI ASIC與機櫃級策略持續擴大，將進一步推升相關半導體供應鏈的營運動能與股價評價。</p>
+    <p class="extra"><b>接下來該觀察：</b>觀察輝達後續在AI ASIC市場的訂單規模以及台股半導體權值股的成交量能延續性。</p>
+    <div class="sources-line">來源：<a href="https://news.google.com/rss/articles/CBMiUEFVX3lxTFBVN1dSX2hWZW95eE5PZTZvOXR5Y2ltYzlnX01jRktlMEpWNXM0OXU3aHFJOEFrSWd5RE9SSWs4RV9TNkI3Qkx6cURVZVhWdE160gFWQVVfeXFMTXRuQXdRVm1mSGkxdHphX0Z3d2pTT2dndEVScG16dGQyNUlSZUFXV1VWVUI4RlZkSjUyUkxNWXJ1MEhuLXNkYXJieFFYdFdiYUl5VnFKQUE?oc=5" target="_blank" rel="noopener">Google News - 台股(限定媒體)</a></div>
+  </div>
+  
+  <div class="top3-block">
+    <span class="pill-tag">市場與總體經濟</span>
+    <h2>台股權值雙王帶動多頭攻勢，外資單日大舉買超883億元</h2>
+    <span class="score">重要度 64 · 相關度 100</span>
+    <p>台股由雙王領軍帶動多頭行情，單日獲得外資大力買超883億元助陣。市場呈現明顯的上攻態勢。</p>
+    <p class="why-me"><b>對你來說：</b>這直接攸關你個人在台股的投資決策與大盤動態觀察，外資的大幅資金流入是評估台股短線多頭氣勢與權值股表現的重要訊號。</p>
+    <p class="extra"><b>可能造成的影響：</b>若外資資金持續匯入且雙王續強，有望進一步推升台股指數並帶動整體市場的投資信心。</p>
+    <p class="extra"><b>接下來該觀察：</b>接下來應持續觀察外資是否能持續買超，以及台股權值雙王的後續走勢與成交量能變化。</p>
+    <div class="sources-line">來源：<a href="https://news.google.com/rss/articles/CBMiUEFVX3lxTE91YlF0RTdzRk5TR0d3YUhwbnpoU1phZEtLOEgyS21kd3ROVHdDb3RmZkRNYWljcXdwYjRJZlczcHh5VlR4ZXRKQndCSmhOdmE20gFWQVVfeXFMUE41eEt1QWtnNFpHX04yM1hVZzZJTGQ0elJwc3B4SXZfNXZsZ0dHdFhnc3ktUnMxUkxqRHJBVENMR3VvZTFOSVluamFaUjRnWXh6cjZxUnc?oc=5" target="_blank" rel="noopener">Google News - 台股(限定媒體)</a></div>
+  </div>
+  
+  <div class="top3-block">
+    <span class="pill-tag">市場與總體經濟</span>
+    <h2>台積電強漲30元帶動台股早盤大漲逾600點，指數正式站上47000點大關</h2>
+    <span class="score">重要度 64 · 相關度 100</span>
+    <p>台積電股價早盤上漲30元。受此帶動，台股早盤指數大漲超過600點，成功站上47000點關卡。</p>
+    <p class="why-me"><b>對你來說：</b>這直接對應到你關注的台股大盤動態與半導體指數投資決策，顯示大盤多頭氣勢延續，可作為資產配置與持股續抱或調節的參考依據。</p>
+    <p class="extra"><b>可能造成的影響：</b>若權值股與半導體動能持續，將進一步推升市場投資情緒與大盤指數表現。</p>
+    <p class="extra"><b>接下來該觀察：</b>觀察台積電後續股價續航力以及成交量能是否能支撐大盤穩居47000點之上。</p>
+    <div class="sources-line">來源：<a href="https://news.google.com/rss/articles/CBMiXkFVX3lxTE1PWGlSYmY0S0F3M2pHNnY4ZTRVdFYyWG1fNjNRNlBUWFl0OGt4TXVtaWRscEdvZWk5SkYtSFhYQ3p5V2pDcGI2U29adFJlLXpjYzd6WUF4OGdiSW1KcGc?oc=5" target="_blank" rel="noopener">Google News - 台股(限定媒體)</a></div>
+  </div>
+  
+  
+
+  <div class="body-label"><span>以下為今日完整分類報導，不含上方頭版精選 · 點擊標題可展開完整分析</span></div>
+
+  
+  
+  <div class="category-block">
+    <div class="section-head"><h2>人力資源與組織管理</h2></div>
+    <div class="article-columns">
+      
+      <details class="article">
+        <summary>
+          <h3>台灣新鮮人職缺逼近九十五萬筆，但青年失業率仍突破一成</h3>
+          <div class="meta">Google News - 餐飲業(限定媒體)</div>
+          <p>求職市場職缺數近九十五萬，但青年失業率仍高於百分之十。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>根據報導，目前新鮮人職缺數量接近九十五萬筆。然而，青年失業率仍然維持在百分之十以上。</p>
+          
+          <p><b>對你來說：</b>這直接與你的HRBP與教育訓練方法論關注領域高度相關，顯示企業在招募新鮮人時面臨挑戰，且內部培訓與 onboarding（新人引導）機制必須更加強健，才能有效將這群求職青年轉化為即戰力。</p>
+          <p><b>可能造成的影響：</b>若結構性失業與學用落差持續擴大，企業招募成本將持續攀升，且基層流動率可能惡化。</p>
+          <p><b>接下來該觀察：</b>觀察後續勞動部針對青年就業的相關補助政策，以及各產業針對新鮮人實際到職率與留任率的統計數據。</p>
+          
+          <p class="sources-line">原文連結：<a href="https://news.google.com/rss/articles/CBMiW0FVX3lxTE9wRWhBTXlOelI3Q2thODdGOWxDZndxSnNFdk9SREhDZkxRVjNJSFNCdTJuQVZvYmNTcjhfWHEtZ2NRVUNqUDN1anZ5YkFzRnVZd2gzYktuX3pNRzDSAWBBVV95cUxOWlVBSG1XbVM4R1FxMUtiQXdINTlWN0JhajRaNHlSaDlBTzV5RUVhOEpTNUczSFgzSVVISk82bTAtQ1NFRjhTcFktWEo4dzd3Z2xhQWM4ZENlQ2NRaVBTRnQ?oc=5" target="_blank" rel="noopener">Google News - 餐飲業(限定媒體)</a></p>
+        </div>
+      </details>
+      
+      <details class="article">
+        <summary>
+          <h3>德國青年轉變升學觀念，16%放棄大學改選技職以尋求AI難以取代的手藝</h3>
+          <div class="meta">Google News - 餐飲業(限定媒體)</div>
+          <p>受AI威脅影響，16%德國青年放棄大學轉選技職，追求不可被取代的手藝。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>德國青年近期改變了傳統的升學路徑，有16%的學生選擇捨棄大學學歷，轉而投入技職教育體系。這群年輕人主要的考量是希望習得無法輕易被人工智慧取代的實作手藝。</p>
+          
+          <p><b>對你來說：</b>這與你的「人力資源制度與教育訓練方法論」高度相關。當青年更傾向具體手藝而非純學歷時，企業未來在人才招募、內部教育訓練的設計上，必須重新思考如何對接這群具備實作技能的新生代勞動力。</p>
+          <p><b>可能造成的影響：</b>若此趨勢持續，技職教育的價值將被重新評估，並可能緩解特定實作型產業（如餐飲、零售、工程技術等）面臨的人才結構轉變。</p>
+          <p><b>接下來該觀察：</b>觀察後續各國青年升學意向的數據變化，以及企業對技職人才的薪資與晉升制度是否做出調整。</p>
+          
+          <p class="sources-line">原文連結：<a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE1yOG9mTmpUbVBJNTkxdUY1YjBKc2Y4WW1DV0ZuSWRkbG9iM3VOeWhwUUF1WnJwTV9WYzNjQXJ4eVZ1M3Q5OHljOFppTVpleFlpVG1wbGJ6ZnNJb0kxOFc00gFkQVVfeXFMTTBiaG5uODlKT1B2WVdCS3plZE1GaEhHbS1hMVdzU21TSld6UHdJWHFpZ1VtbnJZRU1UTnBKeElnVHNZQWhVak56ejhtek5tenUxSlVMZXdMZzZaRXRQOEdWWk1Jdg?oc=5" target="_blank" rel="noopener">Google News - 餐飲業(限定媒體)</a></p>
+        </div>
+      </details>
+      
+      <details class="article">
+        <summary>
+          <h3>美國就業市場出現罕見逆轉，青年藍領比白領更容易找到工作，大學文憑不再吃香</h3>
+          <div class="meta">Google News - 餐飲業(限定媒體)</div>
+          <p>美國就業市場出現逆轉，青年藍領職缺比白領更好找。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>美國就業市場出現罕見逆轉現象，年輕人找工作時，藍領職缺變得比白領職缺還要容易上手。大學文憑在現今的求職市場中似乎不再像過去那般吃香。</p>
+          
+          <p><b>對你來說：</b>這對身為HRBP的你而言，涉及人才招募策略、薪酬結構與教育訓練方法論的調整思考；特別是餐飲與零售業基層人力流動與藍領招募的實務，可藉此觀察勞動力供給的結構性變化。</p>
+          <p><b>可能造成的影響：</b>若此趨勢持續，將改變年輕世代的職涯規劃路徑，並迫使企業重新評估學歷門檻與藍領職位的薪資福利條件。</p>
+          <p><b>接下來該觀察：</b>持續觀察後續美國勞動市場的薪資成長率及各產業的職缺開缺結構變化。</p>
+          
+          <p class="sources-line">原文連結：<a href="https://news.google.com/rss/articles/CBMiUEFVX3lxTE5vY1NIak1FR1ZiTEYtci1WTzdKc2xpUTNzT0JhZVBWbUtBLXdMV1lBTmd1Zko5aDhOeGV0OTdRYk1aYWZNNjN6Q19RU1M5OWJR?oc=5" target="_blank" rel="noopener">Google News - 餐飲業(限定媒體)</a></p>
+        </div>
+      </details>
+      
+      <details class="article">
+        <summary>
+          <h3>立法院創下最長延會紀錄卻效率低落，高達2597件勞權、兒少與減稅法案卡在委員會待審</h3>
+          <div class="meta">Google News - 勞基法(限定媒體)</div>
+          <p>立法院創下最長延會卻高達2597件法案滯留委員會待審。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>立法院經歷了最長的延會期，但有高達2597件法案滯留在委員會中等待審查。這導致包含勞權、兒少福利以及減稅等重要法案全面遭到延宕。</p>
+          
+          <p>與你的關注領域關聯度較低，列入僅供參考。</p>
+          
+          <p class="sources-line">原文連結：<a href="https://news.google.com/rss/articles/CBMiakFVX3lxTE1kd1AtRkIwdDFIYlFMR1pidVRzWlFHWUtRelV1M1VhNDR6WjFlUVRfRU5Nbm5RSEdIdl9WM3dEY0I4WWF4SUtaRFBtV1FvblZBbzc5bkpMeHFyMS01S0NFYnkwR1B6aUFFSnfSAW9BVV95cUxQY0ZOQ3JLLVBhNWItMjlvb2s3aXd3NlBodHV6WmVWU2JFbGZwYld1Q05Sc3luenZJb2psSzA0QzJrYlBQRFRTcHZqQ0ZXd0IyUGdOTWlyek55U0E2Rm04WW5TNVBjZkx6WkNIRlZfc28?oc=5" target="_blank" rel="noopener">Google News - 勞基法(限定媒體)</a></p>
+        </div>
+      </details>
+      
+    </div>
+  </div>
+  
+  
+  
+  <div class="category-block">
+    <div class="section-head"><h2>餐飲與零售</h2></div>
+    <div class="article-columns">
+      
+      <details class="article">
+        <summary>
+          <h3>台灣大哥大與三商餐飲合作，導入AI語音接單系統</h3>
+          <div class="meta">Google News - 餐飲業(限定媒體)</div>
+          <p>台灣大哥大協助三商餐飲導入AI語音接單，解決尖峰與非營業時間的訂餐需求。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>台灣大哥大宣佈攜手三商餐飲，共同導入AI語音接單服務。此系統主要用以承接餐廳尖峰時刻以及非營業時間的顧客訂餐需求。</p>
+          
+          <p><b>對你來說：</b>這直接呼應了你對「AI Agent與自動化工具應用」以及「連鎖餐飲/零售產業趨勢」的關注。在人力資源管理層面，餐飲業導入AI語音接單有助於緩解第一線服務人員的招募壓力與尖峰時刻的工作負荷，值得思考這類自動化工具如何改變門市的人力配置與教育訓練方法。</p>
+          <p><b>可能造成的影響：</b>若此模式普及，將有效降低連鎖餐飲業者的漏單率與人力成本，並推動餐飲服務走向全年無休的自動化接單時代。</p>
+          <p><b>接下來該觀察：</b>觀察三商餐飲導入後的實際營運成效、顧客接受度，以及是否會擴大應用至旗下更多品牌或帶動同業跟進。</p>
+          
+          <p class="sources-line">原文連結：<a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTFBaVTZvdk1FUWd6T2xJSzlhU2VoaDJmWFFYSVdCN3JtNFAzckJaQWVDU3Q2Z2pabjBSTGtVWTcwbkI4Z0Vsdk90OGtvV09za0Z4d2ozRXJha2NsQQ?oc=5" target="_blank" rel="noopener">Google News - 餐飲業(限定媒體)</a></p>
+        </div>
+      </details>
+      
+      <details class="article">
+        <summary>
+          <h3>統一集團與日本龜甲萬深化合作，將35年夥伴關係從台灣拓展至中國市場</h3>
+          <div class="meta">Google News - 餐飲業(限定媒體)</div>
+          <p>統一與日本龜甲萬深化35年合作，正式將版圖從台灣延伸至中國市場。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>統一企業與日本龜甲萬醞釀35年的合作關係迎來新進展，雙方決定將合作範疇從台灣市場進一步走向中國，開啟下一個階段的發展。</p>
+          
+          <p><b>對你來說：</b>與你的連鎖餐飲/零售產業趨勢關注領域高度相關，可觀察大型集團在中國市場的通路整合與品牌結盟策略，作為零售餐飲供應鏈布局的參考。</p>
+          <p><b>可能造成的影響：</b>未來可能帶動兩大集團在兩岸餐飲供應鏈與通路資源的深度整合，加劇調味品市場的競爭態勢。</p>
+          <p><b>接下來該觀察：</b>後續雙方在中國市場的實際產品推出進度與通路鋪設成效。</p>
+          
+          <p class="sources-line">原文連結：<a href="https://news.google.com/rss/articles/CBMiW0FVX3lxTE9EbmNTTWVFVk4yLVRmWGptRW81ZEE5NXY4QXVjUnZuT0p5empBam9KUkpXc01jbTl0Z1U4UldoNl9SMlNhRmx4TTFRZ0RaSlBRYWZ3NnluUUtJbm8?oc=5" target="_blank" rel="noopener">Google News - 餐飲業(限定媒體)</a></p>
+        </div>
+      </details>
+      
+      <details class="article">
+        <summary>
+          <h3>王品集團攜手Uber Eats不到四個月訂單破50萬筆，旗下19個品牌再推買一送一優惠</h3>
+          <div class="meta">Google News - 餐飲業(限定媒體)</div>
+          <p>王品集團與Uber Eats合作不到四個月即累積近50萬筆訂單，再推19品牌買一送一促銷。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>王品集團與外送平台Uber Eats合作不到四個月，累積訂單量已逼近50萬筆。雙方近期再度合作，旗下19個品牌將共同推出買一送一的優惠活動。</p>
+          
+          <p><b>對你來說：</b>這直接呼應你關注的「連鎖餐飲/零售產業趨勢」，展現餐飲業如何藉由外送平台數位工具快速獲客與放大營業額；對於你的品牌管理工作而言，也可思考實體餐飲品牌在數位轉型與外送通路經營上的資源配置與人力調配模式。</p>
+          <p><b>可能造成的影響：</b>若聯合促銷成效顯著，將加速更多大型連鎖餐飲深化與外送平台的獨家或深度合作，改變餐飲業者的行銷與通路策略。</p>
+          <p><b>接下來該觀察：</b>後續需觀察這波買一送一優惠結束後的自然訂單留存率，以及外送平台對餐飲業者的實質毛利影響。</p>
+          
+          <p class="sources-line">原文連結：<a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE02OTRpSmJvYUgzSXEtVzk2UjVTWXZtRFNoekY3amY5LXVQd3c4NTZKRmkydmdSLV96NXFJTXYyc2gwRDRIdkMtdkwyUEhkSEZUNEdkTDRwd2Z2QdIBX0FVX3lxTE1LZWJ2OVlFdEhqcVRYRnlBUWppU3ZBWFFEZGw4ZzYzMEo2MW1qaFF2UWUtUmh2eVdKNWVTZ0dGcy1OaGxnV3FtUlk1S2owS1pQR2JWY2VMX0w2WFdFOWo4?oc=5" target="_blank" rel="noopener">Google News - 餐飲業(限定媒體)</a></p>
+        </div>
+      </details>
+      
+      <details class="article">
+        <summary>
+          <h3>台灣旗艦餐飲評鑑「500盤2026」將於9月21日全面發布，並首度結合跨界盤後派對</h3>
+          <div class="meta">Google News - 餐飲業(限定媒體)</div>
+          <p>台灣餐飲界盛事「500盤2026」評鑑將於9月21日正式登場，公布重量級評審名單與活動亮點。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>台灣餐飲評鑑活動「500盤2026」預定於9月21日全面發布。本次活動不僅曝光了重量級評審陣容，更規劃了跨界的「盤後派對」來引爆市場熱潮。</p>
+          
+          <p>與你的關注領域關聯度較低，列入僅供參考。</p>
+          
+          <p class="sources-line">原文連結：<a href="https://news.google.com/rss/articles/CBMiUEFVX3lxTE5JV0Z0RDVTM25QeVlBUEJzZGJmclZ3eWdtV1k2UzJDQlFMWWtldUtaVVZ3MWxKOW1DR3drdFp2WXBpRmJMV3U5MzQ0MnBiQ25m0gFWQVVfeXFMUHJ3VEw2LUlXM2tuX2ktMEgzTkh2YW9KRnVPb2U4dWxZZGQtbE4wcVJCb2p3RFJIQ3dRZndIS3pmTWdCUHl2NFlfNDF3LWI1ZzQ2YkdybVE?oc=5" target="_blank" rel="noopener">Google News - 餐飲業(限定媒體)</a></p>
+        </div>
+      </details>
+      
+    </div>
+  </div>
+  
+  
+  
+  <div class="category-block">
+    <div class="section-head"><h2>人工智慧與科技</h2></div>
+    <div class="article-columns">
+      
+      <details class="article">
+        <summary>
+          <h3>科技業描繪衣領錄音與眼鏡辨識等應用的「後智慧手機時代」</h3>
+          <div class="meta">Google News - 餐飲業(限定媒體)</div>
+          <p>科技業描繪衣領錄音與眼鏡辨識等應用的後智慧手機時代已然到來。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>科技業近期描繪了「後智慧手機時代」的願景，其中包含衣領錄音、眼鏡辨識以及手環聽對話等創新科技應用。這些新形態的穿戴式裝置與互動方式正在被業界積極探索。</p>
+          
+          <p>與你的關注領域關聯度較低，列入僅供參考。</p>
+          
+          <p class="sources-line">原文連結：<a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE1SVU9UWnNKTkY4V3VhbVV4djB5LTRiTFRaODlWU2t4VWY2MnlhSl9zZVg1Rnh5ZjZwVUlxcTF3NU50ajA4aExMd3pCVTRleDVOcXFoUTZ3ZjVSb1FMdFNj0gFkQVVfeXFMTlNzSTN5Ti04c0JwSy0zUFZCd3NhNzk1dEdlR1pseERxaENSY1c0Qml4R3FTdXYwUkhHTzB1cEJQVjZmWjdaYVlYbGZvcVRuYWROeWJMam9uTXFHMTBveGNjbHBtRw?oc=5" target="_blank" rel="noopener">Google News - 餐飲業(限定媒體)</a></p>
+        </div>
+      </details>
+      
+    </div>
+  </div>
+  
+  
+  
+  <div class="category-block">
+    <div class="section-head"><h2>市場與總體經濟</h2></div>
+    <div class="article-columns">
+      
+      <details class="article">
+        <summary>
+          <h3>費城半導體指數強勢大漲，帶動台股開高走高大漲878點</h3>
+          <div class="meta">Google News - 台股(限定媒體)</div>
+          <p>受費半大漲激勵，台股開高走高大漲878點，法人指高檔震盪伺機攻高。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>受費城半導體指數大漲激勵，台股於盤中開高走高，終場大漲878點。法人分析指出，目前台股處於高檔震盪格局，後續有望伺機再攻高。</p>
+          
+          <p><b>對你來說：</b>這直接符合你關注的美股大盤動態與費城半導體指數走向，可作為你評估台美股投資決策時的重要參考依據。</p>
+          <p><b>可能造成的影響：</b>若費半強勢格局延續，有助於維持台股科技類股的高檔熱度與投資人信心。</p>
+          <p><b>接下來該觀察：</b>持續觀察費城半導體指數的後續走勢以及台股成交量能變化。</p>
+          
+          <p class="sources-line">原文連結：<a href="https://news.google.com/rss/articles/CBMiUEFVX3lxTE5Fd3ZJQi0yT0Q0VGE0UlNFand5ZUxESEdPZW50SFBKQk1qanV3T19Pd29iWVlVMjNldnRXNHFVbHh3Mk9La3RSSW9oNzd4X1Zl0gFWQVVfeXFMUFRWV1dFcUpFM25UWXpaeEhGdEtyWG9TWkFRNi1CZlAwdW5vMjZJWFh1ZmFuN1lIQ2NIRVRmY18tbFRFNW94d29VbEZVd3VpdktDeUwwVFE?oc=5" target="_blank" rel="noopener">Google News - 台股(限定媒體)</a></p>
+        </div>
+      </details>
+      
+    </div>
+  </div>
+  
+  
+  
+  
+
+  <div class="colophon">
+    <span>每日情報 · 私人情報摘要，不對外公開發布</span>
+    <span>由 Gemini 分析生成 · 內容僅供參考</span>
+  </div>
+
+</div>
+</body>
+</html>
