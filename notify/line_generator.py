@@ -35,6 +35,7 @@ CATEGORY_NAMES = {
     "hr_organization": "HR組織",
     "markets_economy": "市場經濟",
     "major_news": "重大新聞",
+    "world_affairs": "世界大事",
 }
 
 WEEKDAY_ZH = ["一", "二", "三", "四", "五", "六", "日"]

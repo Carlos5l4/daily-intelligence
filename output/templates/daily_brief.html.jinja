@@ -50,9 +50,9 @@
   .top3-block .score{ display:inline-block; font-size:12px; color:var(--ink-soft);
     border:1px solid var(--rule); padding:2px 8px; margin-bottom: 12px; }
   .top3-block p{ font-size:15px; line-height:1.75; margin: 0 0 10px; }
-  .top3-block .why-me{ font-size:15px; line-height:1.7; padding-left:14px;
+  .top3-block .highlight{ font-size:15px; line-height:1.7; padding-left:14px;
     border-left: 3px solid var(--accent-soft); color: var(--ink); margin-bottom:12px; }
-  .top3-block .why-me b{ color:var(--accent); font-style:normal; }
+  .top3-block .highlight b{ color:var(--accent); font-style:normal; }
   .top3-block .extra b{ font-weight:600; color: var(--accent); }
   .top3-block .sources-line{ font-size:12px; color:var(--ink-soft); margin-top:6px; }
   .sources-line a, .article .meta a{
@@ -126,8 +126,7 @@
     <h2>{{ item.headline }}</h2>
     <span class="score">重要度 {{ item.importance_score|round|int }} · 相關度 {{ item.personal_relevance_score|round|int }}</span>
     <p>{{ item.what_happened }}</p>
-    <p class="why-me"><b>對你來說：</b>{{ item.why_it_matters_to_me }}</p>
-    <p class="extra"><b>可能造成的影響：</b>{{ item.potential_impact }}</p>
+    <p class="highlight"><b>可能造成的影響：</b>{{ item.potential_impact }}</p>
     <p class="extra"><b>接下來該觀察：</b>{{ item.what_to_watch_next }}</p>
     <div class="sources-line">來源：{% for s in item.sources|unique(attribute='name') %}<a href="{{ s.url }}" target="_blank" rel="noopener">{{ translate_source(s.name) }}</a>{% if not loop.last %}、{% endif %}{% endfor %}</div>
   </div>
@@ -150,13 +149,8 @@
         </summary>
         <div class="expand-body">
           <p><b>發生什麼事：</b>{{ item.what_happened }}</p>
-          {% if '關聯度較低' in item.why_it_matters_to_me %}
-          <p>{{ item.why_it_matters_to_me }}</p>
-          {% else %}
-          <p><b>對你來說：</b>{{ item.why_it_matters_to_me }}</p>
           <p><b>可能造成的影響：</b>{{ item.potential_impact }}</p>
           <p><b>接下來該觀察：</b>{{ item.what_to_watch_next }}</p>
-          {% endif %}
           <p class="sources-line">原文連結：{% for s in item.sources|unique(attribute='name') %}<a href="{{ s.url }}" target="_blank" rel="noopener">{{ translate_source(s.name) }}</a>{% if not loop.last %}、{% endif %}{% endfor %}</p>
         </div>
       </details>

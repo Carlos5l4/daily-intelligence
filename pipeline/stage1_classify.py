@@ -44,7 +44,12 @@ PROMPT_TEMPLATE = """你是一個新聞情報分析助手，任務是幫使用�
 以下是今天收集到的 {article_count} 則文章(標題+摘要)。請針對每一篇進行：
 
 1. 分類到以下其中一個類別：
-   ai_technology / restaurant_retail / hr_organization / markets_economy / major_news
+   ai_technology / restaurant_retail / hr_organization / markets_economy / major_news / world_affairs
+
+   world_affairs 專指「值得一般人每天關注的世界大事」，例如重大戰爭/地緣政治衝突、
+   氣候變遷重大進展或災害、奧運等大型國際賽事、重大國際政策/高峰會決議等。
+   跟 major_news 的差別：major_news 是台灣本地或一般性的重大新聞，
+   world_affairs 是「國際級、影響範圍跨國」的大事。
 
 2. 事件分組(cluster_id)：
    如果多篇文章報導的是「同一件事」(例如同一場記者會、同一則公司公告被不同媒體轉述)，
@@ -72,6 +77,10 @@ PROMPT_TEMPLATE = """你是一個新聞情報分析助手，任務是幫使用�
    - 這個分數跟 Impact Score 要獨立判斷，不要因為一則新聞很熱門就給高分
    - 如果真的關聯性很低，誠實給低分(0-20都可以)，不要為了讓每篇都「看起來有用」而勉強拉高
    - 給分時用一句話(personal_relevance_reason)簡短說明為什麼相關或不相關
+   - 例外：category 為 world_affairs 的文章，這個分數不是看跟使用者工作/理財的關聯度，
+     而是看「這件事對一般人來說夠不夠格算世界大事、值得每天被看到」：
+     真正重大的戰爭/地緣政治發展、氣候重大災害或進展、奧運等級的國際賽事給70-90分；
+     一般國際新聞給40-60分；瑣碎或地方性的國際八卦給20分以下。
 
 # 輸出格式
 請只輸出 JSON，不要有其他文字或 markdown 標記，格式如下：

@@ -152,3 +152,21 @@ sources:
   priority: core
   needs_article_fetch: false
   personal_weight: 1.0
+- id: bbc_world
+  name: BBC World News
+  url: https://feeds.bbci.co.uk/news/world/rss.xml
+  category: world_affairs
+  language: en
+  credibility: high
+  priority: core
+  needs_article_fetch: false
+  personal_weight: 0.5
+- id: gnews_world_affairs
+  name: Google News - 國際焦點(限定媒體)
+  url: https://news.google.com/rss/search?q=%E5%9C%8B%E9%9A%9B%E7%84%A6%E9%BB%9E%20OR%20%E5%9C%8B%E9%9A%9B%E6%83%85%E5%8B%A2%20%28site%3Acna.com.tw%20OR%20site%3Abbc.com%20OR%20site%3Altn.com.tw%29&hl=zh-TW&gl=TW&ceid=TW:zh-Hant
+  category: world_affairs
+  language: zh
+  credibility: high
+  priority: core
+  needs_article_fetch: false
+  personal_weight: 0.5

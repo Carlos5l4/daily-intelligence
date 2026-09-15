@@ -4,8 +4,8 @@ stage2_analyze.py
 Phase 5: Stage 2 深度分析
 
 只處理 score.py 篩選出的候選（預設13則），逐篇呼叫 Gemini，
-產生完整的 DailyBriefItem：What Happened / Why It Matters / Why It Matters To Me /
-Potential Impact / What To Watch Next / Keywords。
+產生完整的 DailyBriefItem：What Happened / Why It Matters /
+Potential Impact(細緻化的影響分析) / What To Watch Next / Keywords。
 
 這裡是逐篇呼叫（不是像 Stage 1 那樣一次批次），原因：
 1. 免費層級的 RPM（每分鐘請求數）有限制，逐篇之間需要節流（time.sleep），
@@ -68,17 +68,21 @@ DEEP_ANALYSIS_PROMPT = """你是一個新聞情報分析助手。以下是一篇
 2. one_sentence_summary：一句話講完這則新聞在講什麼(30字內)
 3. what_happened：具體發生了什麼事(2-3句話，只陳述事實，不要加入你的評論)
 4. why_it_matters：這件事為什麼重要——對這個領域/產業整體而言(2-3句話)
-5. why_it_matters_to_me：針對上方使用者背景，這件事具體跟他的哪個關注領域有關、
-   可能帶來什麼影響或值得思考的點(2-3句話)。
-   如果老實說關聯性不強，直接寫「與你的關注領域關聯度較低，列入僅供參考」，不要硬掰關聯。
-6. potential_impact：如果這個趨勢/事件持續發展，可能造成什麼影響(1-2句話)
-7. what_to_watch_next：接下來應該觀察什麼指標或後續發展(1句話)
-8. keywords：3-5個關鍵字
+5. potential_impact：如果這個趨勢/事件持續發展，可能造成什麼具體影響(4-6句話，
+   這是整份分析裡最重要的欄位，要寫得細緻、具體、有層次，不要空泛)。請依序涵蓋：
+   (a) 短期影響：接下來1-3個月內，誰會先感受到、會有什麼具體變化
+   (b) 中長期影響：如果趨勢延續，半年到一年後可能演變成什麼局面
+   (c) 受影響的對象或層面：明確點出是消費者、產業/供應鏈、政策法規、市場信心
+       還是其他哪個具體對象/層面受到影響，以及影響的方向(利多/利空/中性)
+   如果是世界大事類新聞（跟使用者工作/理財沒有直接關聯的國際大事），
+   仍要照上述三點認真分析其全球/區域影響，不要因為跟使用者工作無直接關聯就寫得敷衍。
+6. what_to_watch_next：接下來應該觀察什麼指標或後續發展(1句話)
+7. keywords：3-5個關鍵字
 
 # 重要原則
 - 只根據上方提供的文章內容進行分析，不要編造文章沒提到的細節或數據
-- why_it_matters_to_me 這欄是整份分析裡最重要的部分，要真的做到「針對這個人」，
-  不是套版式的「這對所有人都很重要」
+- potential_impact 是整份分析裡使用者最重視的欄位，寧可精簡也不要注水，
+  每一點都要講到具體的「誰、會怎樣」，不要寫「可能帶來一定程度的影響」這種空話
 
 # 輸出格式(只輸出JSON)
 {{
@@ -86,7 +90,6 @@ DEEP_ANALYSIS_PROMPT = """你是一個新聞情報分析助手。以下是一篇
   "one_sentence_summary": "...",
   "what_happened": "...",
   "why_it_matters": "...",
-  "why_it_matters_to_me": "...",
   "potential_impact": "...",
   "what_to_watch_next": "...",
   "keywords": ["...", "..."]
@@ -188,7 +191,6 @@ def analyze_cluster(client, cluster: dict, raw_by_id: dict, source_credibility_n
         "one_sentence_summary": parsed.get("one_sentence_summary"),
         "what_happened": parsed.get("what_happened"),
         "why_it_matters": parsed.get("why_it_matters"),
-        "why_it_matters_to_me": parsed.get("why_it_matters_to_me"),
         "potential_impact": parsed.get("potential_impact"),
         "what_to_watch_next": parsed.get("what_to_watch_next"),
         "importance_score": cluster["global_importance"],

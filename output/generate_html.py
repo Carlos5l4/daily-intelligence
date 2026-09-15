@@ -21,7 +21,7 @@ from pathlib import Path
 
 from jinja2 import Environment, FileSystemLoader
 
-CATEGORY_ORDER = ["hr_organization", "restaurant_retail", "ai_technology", "markets_economy", "major_news"]
+CATEGORY_ORDER = ["hr_organization", "restaurant_retail", "ai_technology", "markets_economy", "major_news", "world_affairs"]
 
 CATEGORY_NAMES = {
     "ai_technology": "人工智慧與科技",
@@ -29,6 +29,7 @@ CATEGORY_NAMES = {
     "hr_organization": "人力資源與組織管理",
     "markets_economy": "市場與總體經濟",
     "major_news": "台灣與全球重大新聞",
+    "world_affairs": "世界大事",
 }
 
 SOURCE_TRANSLATIONS = {
@@ -43,6 +44,7 @@ SOURCE_TRANSLATIONS = {
     "MarketWatch": "美國財經媒體",
     "Federal Reserve Press Releases": "美國聯準會新聞稿",
     "Delivery Hero": "德國外送平台集團",
+    "BBC World News": "BBC國際新聞",
 }
 
 WEEKDAY_ZH = ["一", "二", "三", "四", "五", "六", "日"]
