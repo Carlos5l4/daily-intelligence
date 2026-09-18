@@ -1,0 +1,32 @@
+{
+  "date": "2026-09-18",
+  "run_at": "2026-09-18T00:25:05.377945+00:00",
+  "status": "SUCCESS",
+  "failed_step": null,
+  "sources": {
+    "attempted": 19,
+    "succeeded": 18,
+    "failed": 1,
+    "failures": [
+      {
+        "name": "MarketWatch",
+        "error": "連線失敗: 400 Client Error: Bad Request for url: https://feeds.marketwatch.com/marketwatch/topstories"
+      }
+    ]
+  },
+  "pipeline": {
+    "raw_articles_fetched": 1926,
+    "after_recency_and_dedupe": 352,
+    "stage1_kept": 254,
+    "stage1_dropped": 98,
+    "news_clusters": 187,
+    "stage2_analyzed": 13,
+    "final_brief_items": 13
+  },
+  "gemini_usage": {
+    "stage1_total_tokens": 78568,
+    "stage2_total_tokens": 20397
+  },
+  "html_generated": true,
+  "line_sent": true
+}
