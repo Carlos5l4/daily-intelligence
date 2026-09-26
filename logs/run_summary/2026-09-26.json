@@ -1,0 +1,27 @@
+{
+  "date": "2026-09-26",
+  "run_at": "2026-09-26T00:23:27.199641+00:00",
+  "status": "SUCCESS",
+  "failed_step": null,
+  "sources": {
+    "attempted": 19,
+    "succeeded": 19,
+    "failed": 0,
+    "failures": []
+  },
+  "pipeline": {
+    "raw_articles_fetched": 1954,
+    "after_recency_and_dedupe": 273,
+    "stage1_kept": 178,
+    "stage1_dropped": 95,
+    "news_clusters": 128,
+    "stage2_analyzed": 13,
+    "final_brief_items": 13
+  },
+  "gemini_usage": {
+    "stage1_total_tokens": 60039,
+    "stage2_total_tokens": 21723
+  },
+  "html_generated": true,
+  "line_sent": true
+}
