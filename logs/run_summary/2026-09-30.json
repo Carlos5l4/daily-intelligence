@@ -1,0 +1,32 @@
+{
+  "date": "2026-09-30",
+  "run_at": "2026-09-30T00:31:33.777491+00:00",
+  "status": "SUCCESS",
+  "failed_step": null,
+  "sources": {
+    "attempted": 19,
+    "succeeded": 18,
+    "failed": 1,
+    "failures": [
+      {
+        "name": "自由時報即時新聞",
+        "error": "連線失敗: 403 Client Error: Forbidden for url: https://news.ltn.com.tw/rss/all.xml"
+      }
+    ]
+  },
+  "pipeline": {
+    "raw_articles_fetched": 1921,
+    "after_recency_and_dedupe": 290,
+    "stage1_kept": 231,
+    "stage1_dropped": 59,
+    "news_clusters": 152,
+    "stage2_analyzed": 13,
+    "final_brief_items": 13
+  },
+  "gemini_usage": {
+    "stage1_total_tokens": 62846,
+    "stage2_total_tokens": 20044
+  },
+  "html_generated": true,
+  "line_sent": true
+}
