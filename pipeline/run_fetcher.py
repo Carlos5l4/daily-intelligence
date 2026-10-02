@@ -82,6 +82,7 @@ def main():
     print(f"  總共抓到: {stats['total_fetched']} 則", file=sys.stderr)
     print(f"  被時間過濾: {stats['dropped_by_recency_filter']} 則（超過 {args.recency_hours} 小時）", file=sys.stderr)
     print(f"  被去重過濾: {stats['dropped_by_dedupe']} 則", file=sys.stderr)
+    print(f"  被單一來源上限過濾: {stats['dropped_by_source_cap']} 則", file=sys.stderr)
     print(f"  最終保留: {stats['final_count']} 則", file=sys.stderr)
     print(f"\n已寫入 {output_path}", file=sys.stderr)
 

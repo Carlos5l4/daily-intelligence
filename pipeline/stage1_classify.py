@@ -32,6 +32,39 @@ from google.genai import types
 
 PERSONAL_RELEVANCE_KEEP_THRESHOLD = 50
 
+# 輸出上限拉高，避免文章多的日子回應被截斷（372則約需 2-3 萬 token，留足餘裕）
+MAX_OUTPUT_TOKENS = 65536
+
+# 用 response_schema 強制 Gemini 依結構輸出（constrained decoding），
+# 從根本避免「少引號、多逗號」這類 JSON 語法錯誤。2026-10-02 因此類錯誤整天失敗後加入。
+STAGE1_SCHEMA = types.Schema(
+    type=types.Type.OBJECT,
+    properties={
+        "articles": types.Schema(
+            type=types.Type.ARRAY,
+            items=types.Schema(
+                type=types.Type.OBJECT,
+                properties={
+                    "id": types.Schema(type=types.Type.STRING),
+                    "category": types.Schema(
+                        type=types.Type.STRING,
+                        enum=["ai_technology", "restaurant_retail", "hr_organization",
+                              "markets_economy", "major_news", "world_affairs"],
+                    ),
+                    "cluster_id": types.Schema(type=types.Type.STRING),
+                    "impact_score": types.Schema(type=types.Type.INTEGER),
+                    "novelty_score": types.Schema(type=types.Type.INTEGER),
+                    "personal_relevance_score": types.Schema(type=types.Type.INTEGER),
+                    "personal_relevance_reason": types.Schema(type=types.Type.STRING),
+                },
+                required=["id", "category", "cluster_id", "impact_score",
+                          "novelty_score", "personal_relevance_score", "personal_relevance_reason"],
+            ),
+        )
+    },
+    required=["articles"],
+)
+
 
 PROMPT_TEMPLATE = """你是一個新聞情報分析助手，任務是幫使用者從大量文章中做初步分類與評分。
 
@@ -76,7 +109,7 @@ PROMPT_TEMPLATE = """你是一個新聞情報分析助手，任務是幫使用�
    請注意：
    - 這個分數跟 Impact Score 要獨立判斷，不要因為一則新聞很熱門就給高分
    - 如果真的關聯性很低，誠實給低分(0-20都可以)，不要為了讓每篇都「看起來有用」而勉強拉高
-   - 給分時用一句話(personal_relevance_reason)簡短說明為什麼相關或不相關
+   - 給分時用一句話(personal_relevance_reason)簡短說明為什麼相關或不相關，限 30 字以內
    - 例外：category 為 world_affairs 的文章，這個分數不是看跟使用者工作/理財的關聯度，
      而是看「這件事對一般人來說夠不夠格算世界大事、值得每天被看到」：
      真正重大的戰爭/地緣政治發展、氣候重大災害或進展、奧運等級的國際賽事給70-90分；
@@ -120,6 +153,32 @@ def build_prompt(articles: list[dict], profile: dict) -> str:
     )
 
 
+def salvage_articles(text: str) -> list[dict]:
+    """
+    JSON 整體解析失敗時的備援：逐一撈出「完整的」文章物件，丟掉斷掉的尾巴。
+    沒撈到的文章會被 merge_with_raw_articles 標記為 drop，不影響整體流程。
+    """
+    decoder = json.JSONDecoder()
+    start = text.find("[")
+    if start == -1:
+        return []
+    salvaged = []
+    i = start + 1
+    while i < len(text):
+        while i < len(text) and text[i] in " \t\r\n,":
+            i += 1
+        if i >= len(text) or text[i] != "{":
+            break
+        try:
+            obj, end = decoder.raw_decode(text, i)
+        except json.JSONDecodeError:
+            break
+        if isinstance(obj, dict) and "id" in obj:
+            salvaged.append(obj)
+        i = end
+    return salvaged
+
+
 def call_gemini(prompt: str, model: str, api_key: str) -> tuple[dict, dict]:
     """回傳 (解析後的 JSON dict, usage 統計 dict)"""
     client = genai.Client(api_key=api_key)
@@ -129,6 +188,8 @@ def call_gemini(prompt: str, model: str, api_key: str) -> tuple[dict, dict]:
         contents=prompt,
         config=types.GenerateContentConfig(
             response_mime_type="application/json",
+            response_schema=STAGE1_SCHEMA,
+            max_output_tokens=MAX_OUTPUT_TOKENS,
         ),
     )
 
@@ -140,12 +201,25 @@ def call_gemini(prompt: str, model: str, api_key: str) -> tuple[dict, dict]:
             "total_tokens": response.usage_metadata.total_token_count,
         }
 
+    # 印出結束原因：MAX_TOKENS = 輸出被截斷；STOP = 正常結束
+    finish_reason = None
+    if response.candidates:
+        finish_reason = str(response.candidates[0].finish_reason)
+    usage["finish_reason"] = finish_reason
+    print(f"Gemini 結束原因: {finish_reason}，輸出 token: {usage.get('output_tokens')}", file=sys.stderr)
+
+    text = response.text or ""
     try:
-        parsed = json.loads(response.text)
+        parsed = json.loads(text)
     except json.JSONDecodeError as e:
-        raise RuntimeError(
-            f"Gemini 回傳的內容不是合法 JSON，無法解析。原始回應前500字：\n{response.text[:500]}"
-        ) from e
+        salvaged = salvage_articles(text)
+        if not salvaged:
+            raise RuntimeError(
+                f"Gemini 回傳的內容不是合法 JSON，且無法搶救。結束原因：{finish_reason}。原始回應前500字：\n{text[:500]}"
+            ) from e
+        print(f"  ⚠ JSON 不完整（{e}），已搶救 {len(salvaged)} 則完整結果，其餘標記為 drop", file=sys.stderr)
+        usage["salvaged"] = True
+        parsed = {"articles": salvaged}
 
     return parsed, usage
 
