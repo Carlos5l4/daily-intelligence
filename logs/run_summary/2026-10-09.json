@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-09",
+  "run_at": "2026-10-09T00:23:50.564935+00:00",
+  "status": "SUCCESS",
+  "failed_step": null,
+  "sources": {
+    "attempted": 19,
+    "succeeded": 18,
+    "failed": 1,
+    "failures": [
+      {
+        "name": "Hacker News (Front Page)",
+        "error": "連線失敗: 419 Client Error:  for url: https://news.ycombinator.com/rss"
+      }
+    ]
+  },
+  "pipeline": {
+    "raw_articles_fetched": 1952,
+    "after_recency_and_dedupe": 297,
+    "stage1_kept": 237,
+    "stage1_dropped": 60,
+    "news_clusters": 187,
+    "stage2_analyzed": 13,
+    "final_brief_items": 13
+  },
+  "gemini_usage": {
+    "stage1_total_tokens": 66654,
+    "stage2_total_tokens": 20585
+  },
+  "html_generated": true,
+  "line_sent": true
+}
