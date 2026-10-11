@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-11",
+  "run_at": "2026-10-11T00:22:51.908897+00:00",
+  "status": "SUCCESS",
+  "failed_step": null,
+  "sources": {
+    "attempted": 19,
+    "succeeded": 14,
+    "failed": 5,
+    "failures": [
+      {
+        "name": "Hacker News (Front Page)",
+        "error": "連線失敗: 419 Client Error:  for url: https://news.ycombinator.com/rss"
+      },
+      {
+        "name": "Google News - 台股(限定媒體)",
+        "error": "連線失敗: 503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=%E5%8F%B0%E8%82%A1%20%28site%3Acna.com.tw%20OR%20site%3Altn.com.tw%20OR%20site%3Audn.com%29&hl=zh-TW&gl=TW&ceid=TW:zh-Hant"
+      },
+      {
+        "name": "Google News - 餐飲業(限定媒體)",
+        "error": "連線失敗: 503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=%E9%A4%90%E9%A3%B2%E6%A5%AD%20%28site%3Acna.com.tw%20OR%20site%3Altn.com.tw%20OR%20site%3Audn.com%29&hl=zh-TW&gl=TW&ceid=TW:zh-Hant"
+      },
+      {
+        "name": "Google News - 勞基法(限定媒體)",
+        "error": "連線失敗: 503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=%E5%8B%9E%E5%9F%BA%E6%B3%95%20%28site%3Acna.com.tw%20OR%20site%3Altn.com.tw%20OR%20site%3Audn.com%29&hl=zh-TW&gl=TW&ceid=TW:zh-Hant"
+      },
+      {
+        "name": "Google News - 國際焦點(限定媒體)",
+        "error": "連線失敗: 503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=%E5%9C%8B%E9%9A%9B%E7%84%A6%E9%BB%9E%20OR%20%E5%9C%8B%E9%9A%9B%E6%83%85%E5%8B%A2%20%28site%3Acna.com.tw%20OR%20site%3Abbc.com%20OR%20site%3Altn.com.tw%29&hl=zh-TW&gl=TW&ceid=TW:zh-Hant"
+      }
+    ]
+  },
+  "pipeline": {
+    "raw_articles_fetched": 1576,
+    "after_recency_and_dedupe": 102,
+    "stage1_kept": 49,
+    "stage1_dropped": 53,
+    "news_clusters": 41,
+    "stage2_analyzed": 13,
+    "final_brief_items": 13
+  },
+  "gemini_usage": {
+    "stage1_total_tokens": 23985,
+    "stage2_total_tokens": 18800
+  },
+  "html_generated": true,
+  "line_sent": true
+}
