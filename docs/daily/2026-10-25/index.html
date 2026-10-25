@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日情報 — 2026-10-25</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700;900&family=Noto+Sans+TC:wght@400;500;700;900&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper: #F3EEE1; --paper-dark: #EAE3D0; --ink: #201D18; --ink-soft: #4A453C;
+    --rule: #C9BFA5; --accent: #7A2A28; --accent-soft: #9C6B4E;
+  }
+  *{box-sizing:border-box;}
+  body{ margin:0; background: var(--paper-dark); color: var(--ink);
+    font-family: 'Source Serif 4', Georgia, serif; -webkit-font-smoothing:antialiased; }
+  .sheet{ max-width: 900px; margin: 0 auto; background: var(--paper);
+    padding: 40px 48px 60px; box-shadow: 0 0 40px rgba(0,0,0,0.08); }
+
+  .masthead{ text-align:center; padding-bottom: 18px; }
+  .masthead .eyebrow-line{ display:flex; justify-content:space-between; align-items:center;
+    font-size:12px; letter-spacing:0.08em; color: var(--ink-soft);
+    border-bottom: 1px solid var(--rule); padding-bottom: 8px; margin-bottom: 14px; }
+  .masthead h1{ font-family:'Noto Serif TC', serif; font-weight:900; font-size: 54px;
+    letter-spacing: 0.02em; margin: 4px 0 6px; line-height:1; }
+  .masthead .subtitle{ font-style: italic; color: var(--ink-soft); font-size: 15px; margin-bottom: 14px; }
+  .masthead .rules{ border: none; border-top: 3px solid var(--ink); margin: 0 0 3px; }
+  .masthead .rules.thin{ border-top: 1px solid var(--ink); margin-bottom: 0; }
+
+  .brief-box{ margin: 26px 0 34px; padding: 20px 24px;
+    border-top: 2px solid var(--ink); border-bottom: 2px solid var(--ink); background: var(--paper-dark); }
+  .brief-box .label{ font-family:'Noto Serif TC', serif; font-weight:700; font-size: 13px;
+    letter-spacing: 0.14em; color: var(--accent); margin-bottom: 8px; }
+  .brief-box p{ font-size: 17px; line-height:1.75; margin:0; }
+  .brief-box p::first-letter{ font-family:'Noto Serif TC', serif; font-weight:900; font-size: 46px;
+    float:left; line-height:0.8; padding-right:8px; padding-top:4px; color: var(--accent); }
+
+  .frontpage-label{ display:flex; align-items:center; gap:14px; margin-bottom:18px; }
+  .frontpage-label h2{ font-family:'Noto Serif TC', serif; font-weight:900; font-size: 16px;
+    letter-spacing:0.1em; margin:0; color: var(--ink); }
+  .frontpage-label .line{ flex:1; border-top: 2px solid var(--ink); }
+  .frontpage-label .sub{ font-size:11.5px; color:var(--ink-soft); font-style:italic; white-space:nowrap; }
+
+  .top3-block{ padding-bottom: 24px; margin-bottom: 30px; border-bottom: 1px solid var(--rule); }
+  .top3-block:last-of-type{ border-bottom: 3px double var(--ink); margin-bottom: 36px; }
+  .pill-tag{ display:inline-block; font-size:12px; font-weight:600; letter-spacing:0.02em;
+    color:#fff; background: var(--accent-soft); border-radius: 999px; padding: 2px 12px; margin-bottom: 8px; }
+  .top3-block h2{ font-family:'Noto Sans TC', sans-serif; font-weight:700; font-size: 24px; line-height:1.4; letter-spacing:0.01em; margin: 0 0 10px; }
+  .top3-block .score{ display:inline-block; font-size:12px; color:var(--ink-soft);
+    border:1px solid var(--rule); padding:2px 8px; margin-bottom: 12px; }
+  .top3-block p{ font-size:15px; line-height:1.75; margin: 0 0 10px; }
+  .top3-block .highlight{ font-size:15px; line-height:1.7; padding-left:14px;
+    border-left: 3px solid var(--accent-soft); color: var(--ink); margin-bottom:12px; }
+  .top3-block .highlight b{ color:var(--accent); font-style:normal; }
+  .top3-block .extra b{ font-weight:600; color: var(--accent); }
+  .top3-block .sources-line{ font-size:12px; color:var(--ink-soft); margin-top:6px; }
+  .sources-line a, .article .meta a{
+    color: var(--accent-soft); text-decoration: none; border-bottom: 1px dotted var(--accent-soft);
+  }
+  .sources-line a:hover, .article .meta a:hover{ color: var(--accent); border-bottom-style: solid; }
+
+  .body-label{ text-align:center; margin: 6px 0 30px; }
+  .body-label span{ font-size:11px; letter-spacing:0.2em; color:var(--ink-soft);
+    border-top:1px solid var(--rule); border-bottom:1px solid var(--rule); padding: 4px 0; display:block; }
+
+  .category-block{ margin-bottom: 46px; }
+  .section-head{ background: var(--ink); color: var(--paper); padding: 11px 18px; margin-bottom: 20px; }
+  .section-head h2{ font-family:'Noto Serif TC', serif; font-weight:700; font-size: 20px;
+    letter-spacing: 0.1em; margin:0; }
+
+  .article-columns{ column-count: 2; column-gap: 34px; column-rule: 1px solid var(--rule); }
+  .article{ break-inside: avoid; margin-bottom: 20px; }
+  .article summary{ list-style:none; cursor:pointer; position:relative; padding-right:22px; }
+  .article summary::-webkit-details-marker{ display:none; }
+  .article summary::after{ content:"展開 ＋"; position:absolute; right:0; top:2px;
+    font-size:11px; color:var(--accent); white-space:nowrap; }
+  .article[open] summary::after{ content:"收合 －"; }
+  .article h3{ font-family:'Noto Sans TC', sans-serif; font-weight:700; font-size: 16px; line-height:1.5; letter-spacing:0.01em; margin: 0 22px 5px 0; }
+  .article .meta{ font-size: 11px; color: var(--ink-soft); margin-bottom: 7px; }
+  .article summary p{ font-size: 13.5px; line-height:1.6; margin: 0 0 10px; color: var(--ink-soft); }
+  .article .expand-body{ margin-top: 10px; padding-top: 10px; border-top: 1px dashed var(--rule); }
+  .article .expand-body p{ font-size: 13.5px; line-height:1.65; margin: 0 0 8px; }
+  .article .expand-body b{ color: var(--accent); font-weight:600; }
+  .article .keywords{ font-size:11.5px; color:var(--ink-soft); margin-top:6px; }
+
+  .colophon{ margin-top: 30px; padding-top: 16px; border-top: 1px solid var(--ink);
+    display:flex; justify-content:space-between; font-size: 11.5px; color: var(--ink-soft); }
+
+  @media (max-width: 720px){
+    .sheet{ padding: 26px 20px 40px; } .masthead h1{ font-size: 38px; }
+    .article-columns{ column-count:1; } .colophon{ flex-direction:column; gap:4px; }
+    .frontpage-label .sub{ display:none; }
+  }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <div class="masthead">
+    <div class="eyebrow-line">
+      <span>第 001 期</span>
+      <span>PERSONAL DAILY INTELLIGENCE(每日情報)</span>
+      <span>2026年10月25日 星期日</span>
+    </div>
+    <h1>每日情報</h1>
+    <div class="subtitle">今天分析 159 則資訊，篩出 13 則值得你注意 · 預估閱讀時間 6 分鐘</div>
+    <hr class="rules"><hr class="rules thin">
+  </div>
+
+  <div class="brief-box">
+    <div class="label">今日三十秒</div>
+    <p>台股本週重挫逾千點，傳統AI概念股逆勢展現抗跌韌性，同時受惠於強勁的AI需求與外銷訂單帶動，上季經濟成長率預估上看13%。然而，亮眼經濟數據背後，台灣工作年齡人口正面臨每日驟減618人、每退2人僅補1人的嚴重勞動力危機。經濟成長與缺工衝擊交織，成為當前台灣發展的關鍵挑戰。</p>
+  </div>
+
+  
+  <div class="frontpage-label">
+    <h2>頭版精選</h2>
+    <div class="line"></div>
+    <span class="sub">跨類別綜合評選，不重複出現於下方分類區塊</span>
+  </div>
+
+  
+  <div class="top3-block">
+    <span class="pill-tag">市場與總體經濟</span>
+    <h2>台股單週重挫逾千點，老AI族群展現抗跌力道</h2>
+    <span class="score">重要度 69 · 相關度 95</span>
+    <p>台股在近期交易中單週重挫超過一千點。在此大盤修正的背景下，被歸類為「老AI」的相關族群逆勢表現，相對大盤抗跌。</p>
+    <p class="highlight"><b>可能造成的影響：</b>(a) 短期影響：台股大盤面臨顯著下行壓力，投資人恐慌情緒上升，短線資金可能集中流向抗跌的AI概念股或防禦型標的。(b) 中長期影響：若大盤修正持續，老AI族群能否持續維持抗跌並轉為攻擊發起點，將成為多頭信心恢復的重要觀察指標，影響整體半導體與科技股的資金動能。(c) 受影響的對象或層面：市場信心偏向保守，台股投資人與科技供應鏈族群面臨震盪風險，整體市場信心呈現短線利空、老AI族群相對中性偏多的格局。</p>
+    <p class="extra"><b>接下來該觀察：</b>接下來應持續觀察大盤能否止跌回穩，以及老AI族群是否能維持抗跌量能並帶動整體科技股反彈。</p>
+    <div class="sources-line">來源：<a href="https://ec.ltn.com.tw/article/breakingnews/5615673" target="_blank" rel="noopener">自由時報即時新聞</a>、<a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTE5ubF9aZ0JQRTVoZlBfRDduT3poUmg0M3pZOFRnME8xOTMzc2JwWXdvbDZpQkk0RXBmeHJONXEtRV9IazdiY2lJZF9JQk90dlVCaXNmcUtWcHc?oc=5" target="_blank" rel="noopener">Google News - 台股(限定媒體)</a></div>
+  </div>
+  
+  <div class="top3-block">
+    <span class="pill-tag">人力資源與組織管理</span>
+    <h2>台灣勞動力拉警報：工作年齡人口每日減少618人，退休2人僅能補1人</h2>
+    <span class="score">重要度 68 · 相關度 95</span>
+    <p>根據自由時報報導，台灣工作年齡人口呈現每日減少618人的趨勢。在人口結構轉變下，勞動市場出現每有2人退休、卻僅有1人遞補的嚴重人力落差。</p>
+    <p class="highlight"><b>可能造成的影響：</b>(a) 短期影響：連鎖餐飲與零售等勞力密集產業將首當其衝，面臨更嚴峻的招募困難與人事成本上升，部分門市恐因人力不足被迫縮短營業時間。(b) 中長期影響：企業若無法透過自動化與AI Agent工具解決人力缺口，將陷入營運規模受限、甚至被迫轉型的壓力；同時，人力資源部門必須徹底改變招募與教育訓練方法論，轉向高齡勞動力再運用與流程自動化。(c) 受影響對象與層面：產業與供應鏈面臨長期利空，勞動力短缺將迫使企業加速資本支出於自動化設備，並考驗政府在勞動與移民政策上的應對能力。</p>
+    <p class="extra"><b>接下來該觀察：</b>觀察後續勞動參與率變化以及餐飲零售業導入自動化工具與AI Agent的普及速度。</p>
+    <div class="sources-line">來源：<a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTFBUY3BzN3p3MkhDNWU3c0ZEQ1dyOUR6N2xjWW5HNmpUVUtQNVRfdVBLbktUTGZtdTdBT09qLTBnQXZSdDZ4ZGdseXM5YUwwODNEb2thNkw5Sks?oc=5" target="_blank" rel="noopener">Google News - 餐飲業(限定媒體)</a></div>
+  </div>
+  
+  <div class="top3-block">
+    <span class="pill-tag">市場與總體經濟</span>
+    <h2>受惠AI需求暢旺與外銷訂單表現亮眼，上季經濟成長率預估上看13%</h2>
+    <span class="score">重要度 66 · 相關度 95</span>
+    <p>根據經濟日報報導，在人工智慧（AI）需求持續暢旺以及外銷訂單表現亮眼的雙重帶動下，預測上季經濟成長率上看13%。這顯示科技出口導向的相關產業在該季度展現強勁的成長動能。</p>
+    <p class="highlight"><b>可能造成的影響：</b>(a) 短期影響：接下來1-3個月內，半導體與AI硬體供應鏈廠商將率先感受到訂單與營收的實質成長，資本市場對科技股的信心也將獲得支撐。(b) 中長期影響：若此一成長動能延續，半年到一年後將帶動整體科技製造業的擴產需求，並進一步外溢至周邊服務業與國內消費市場。(c) 受影響的對象或層面：科技供應鏈與半導體產業迎來明確利多；市場信心因宏觀經濟數據亮眼而獲得提振；對於非科技導向的傳統內需產業則影響相對中性。</p>
+    <p class="extra"><b>接下來該觀察：</b>接下來應持續觀察實際公布的外銷訂單金額、半導體出口數據以及相關科技大廠的財報表現。</p>
+    <div class="sources-line">來源：<a href="https://news.google.com/rss/articles/CBMiW0FVX3lxTE1sQW5YOVNVTVNVOFBQdjYxcmlxNjl5aV9YZzE0bFYxYWR0TDR4bWVtNmt1VUtqUmk5NUNsMVNSekhzanpMcmhxRno3UlpOYXRINkpkMUFsQnlyNEHSAWBBVV95cUxQcHI3a0xxWDE3UVg2cDlOQUJMMlkzUXhETDVhQkdhMnF2VzVGMklfQXZLVVY2RjJ5LVNBRGpJNmNlX0Z1SFZHdU5vNmsyOEgtdU96TjY1NVVzNU4yLUJCbE4?oc=5" target="_blank" rel="noopener">Google News - 餐飲業(限定媒體)</a></div>
+  </div>
+  
+  
+
+  <div class="body-label"><span>以下為今日完整分類報導，不含上方頭版精選 · 點擊標題可展開完整分析</span></div>
+
+  
+  
+  <div class="category-block">
+    <div class="section-head"><h2>人力資源與組織管理</h2></div>
+    <div class="article-columns">
+      
+      <details class="article">
+        <summary>
+          <h3>公股銀行祭出休假獎金，員工特休放滿可額外領取2.8萬元</h3>
+          <div class="meta">Google News - 勞基法(限定媒體)</div>
+          <p>公股銀行推出放滿特休即可領取2.8萬元獎金的福利措施。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>某公股銀行推出大手筆的休假獎金福利。員工只要將特休假放滿，即可額外獲得2.8萬元的獎金。</p>
+          <p><b>可能造成的影響：</b>(a) 短期影響：接下來1-3個月內，該公股銀行的員工休假率將顯著提升，並在金融就職市場中塑造友善職場的形象，吸引求職者關注。(b) 中長期影響：半年到一年後，若成效良好，可能迫使其他公股及民營金融同業跟進類似的休假獎金或強制休假激勵機制，進一步改變整體金融業的休假文化與人力調度模式。(c) 受影響的對象與層面：金融產業的人力資源管理制度將受到正面影響（利多），有助於降低員工過勞與流動率，同時提升企業雇主品牌價值。</p>
+          <p><b>接下來該觀察：</b>觀察其他公股銀行或民營金融機構是否跟進推出類似的休假激勵獎金政策。</p>
+          <p class="sources-line">原文連結：<a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxQeF9QYkgxV3ZqUEEtS0lRYmFWR25wYTdLRGRFSkJDQXYwcTFGQzhlUXVNeWdIS1JzdnlMVmVMUHlxTDZkTnRjRzJXYXRxSFhfLXZ5NjFWcmt1VXZnVFN4X2dtZzJpRmRxLXBSSlY0RDMxNDktelN0YjduTS1RRnRtbdIBX0FVX3lxTFB1Z3gyeExydDdUOHBqY3FYMzkxUGltcm82LXJSMXpZdFVibm0tM0RjdFRFbmZXbWlNZktTOE5vZkFCR25zcUVfTzNNcS1LYkNURDA4d08zZFZhZWh1WXdZ?oc=5" target="_blank" rel="noopener">Google News - 勞基法(限定媒體)</a></p>
+        </div>
+      </details>
+      
+      <details class="article">
+        <summary>
+          <h3>行庫加碼生育補助搶救少子化，今年前八月超過760人申請</h3>
+          <div class="meta">Google News - 勞基法(限定媒體)</div>
+          <p>公股行庫加碼生育補助奏效，今年前八個月已有超過760人提出申請。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>為應對少子化危機，各大行庫紛紛推出加碼生育補助政策。根據統計，今年前八個月已有超過760人申請相關補助。</p>
+          <p><b>可能造成的影響：</b>(a) 短期影響：各大行庫的員工福利滿意度與申請件數將持續上升，並吸引求職者關注。(b) 中長期影響：其他產業的企業可能面臨人才對標壓力，逐步跟進加碼生育或育兒補助福利以提升競爭力。(c) 受影響的對象或層面：政策法規與產業勞動福利層面轉為利多，有助於改善職場生育友善環境。</p>
+          <p><b>接下來該觀察：</b>觀察其他產業是否跟進加碼生育補助以及行庫整體留任率的變化。</p>
+          <p class="sources-line">原文連結：<a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxQVzc3NXRYS3dhRkRrY0NBb3hiV3ZnMTRNb1IxQVRjUFBsRS1FdVRicmt5dDZQRmtFOFA4UnZObUdfOGFseXNVWkpmWDZQT2E5NFNGUDl6THN2T2RQdzFlai1uUUU3XzhLZWxYUWh2cUExcmIwLTU1Y192MWFJbUozdNIBX0FVX3lxTE8zVzl0QTNIMm9fT1VDbzBadzQ2R05kaVdMWUttZFRpT05yM2s4aU1CNjJTTUpIaVF3OXlGRGNMRVR3QWt3SU5vWExvbXd6NE9ZX0hZc3BNQUt6MjFKOE4w?oc=5" target="_blank" rel="noopener">Google News - 勞基法(限定媒體)</a></p>
+        </div>
+      </details>
+      
+      <details class="article">
+        <summary>
+          <h3>《黑白大廚2》主廚孫鍾元獲破格升遷，正式入列韓國新世界集團專業高階主管</h3>
+          <div class="meta">Google News - 餐飲業(限定媒體)</div>
+          <p>因參與《黑白大廚2》受到矚目的主廚孫鍾元，獲韓國新世界集團破格拔擢為專業高階主管。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>韓國知名主廚孫鍾元因出演節目《黑白大廚2》獲得高度關注，近期獲得新世界集團破格升遷，正式列入集團的專業高階主管名單中。這項人事異動顯示出該集團對其餐飲專業與個人品牌的高度肯定。</p>
+          <p><b>可能造成的影響：</b>(a) 短期影響：接下來1-3個月內，新世界集團旗下的餐飲品牌與相關事業體將因孫鍾元的升遷獲得高度媒體曝光，吸引消費者目光並帶動話題討論度。(b) 中長期影響：半年到一年後，這項人事布局可能作為餐飲零售集團吸引頂尖廚藝人才的指標案例，推動更多企業建立將明星主廚納入高階管理或品牌策略核心的機制。(c) 受影響的對象或層面：連鎖餐飲與零售產業的品牌經營及人才晉升機制將受到正面激勵，對相關企業的品牌形象與市場吸引力帶來利多影響。</p>
+          <p><b>接下來該觀察：</b>觀察孫鍾元升任新世界集團高階主管後的具體職掌範圍，以及是否帶動集團餐飲品牌策略的實質調整。</p>
+          <p class="sources-line">原文連結：<a href="https://news.google.com/rss/articles/CBMiXEFVX3lxTE9lc25XbHdVOVpnb1lZR0VhTkE1YkltR1h4VnlWOWhBLTRGTEZCR0JkazdON1hyWldLWEJRMEZHa29uTDJNUWtUeGxwRGZkOUEtbnB3RDBLeFhDTjlD?oc=5" target="_blank" rel="noopener">Google News - 餐飲業(限定媒體)</a></p>
+        </div>
+      </details>
+      
+    </div>
+  </div>
+  
+  
+  
+  <div class="category-block">
+    <div class="section-head"><h2>餐飲與零售</h2></div>
+    <div class="article-columns">
+      
+      <details class="article">
+        <summary>
+          <h3>餐飲業3年增加7.2萬名從業人員，但薪資水準持續敬陪末座</h3>
+          <div class="meta">Google News - 餐飲業(限定媒體)</div>
+          <p>餐飲業3年內大增7.2萬名勞動力，薪資卻依然墊底，反映缺工與低薪困境並存。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>根據自由時報報導，餐飲業在過去3年內增加了7.2萬名從業人員，然而整體工資水準仍然持續墊底。同時，文章標題也點出「AI有點遠」的現象，顯示產業在面對缺工時，人力擴張速度快但薪資成長牛步。</p>
+          <p><b>可能造成的影響：</b>(a) 短期影響：餐飲業者將持續面臨基層人力招募壓力，因薪資墊底而導致流動率居高不下，HR部門必須更頻繁處理招募與離職作業。(b) 中長期影響：若無法透過自動化或AI Agent優化營運流程、提高單店產值，低薪與缺工的惡性循環將拖累整體產業服務品質與獲利能力。(c) 受影響的對象或層面：連鎖餐飲基層從業人員面臨薪資停滯的利空；餐飲企業經營者的毛利率與人力成本將持續承受雙重壓力。</p>
+          <p><b>接下來該觀察：</b>後續應觀察餐飲業薪資調整幅度，以及連鎖集團導入自動化與AI工具以提升人均產值的實際進展。</p>
+          <p class="sources-line">原文連結：<a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTE9ZeU1CUm5YakgwLWFmUWhSRjBBX2FCNmMwNmNBZ0p5QXBfcW1EVkRmRHFnVEE1X2EtR0lfblhZc0NqQkZucEpyelIzQmJ1djM1cVRqODR3QWY?oc=5" target="_blank" rel="noopener">Google News - 餐飲業(限定媒體)</a></p>
+        </div>
+      </details>
+      
+      <details class="article">
+        <summary>
+          <h3>公平會否決Grab併購foodpanda台灣業務，Uber關鍵持股成破局主因</h3>
+          <div class="meta">The News Lens 關鍵評論網</div>
+          <p>公平會因Uber持有Grab股份恐限縮競爭，正式否決Grab併購foodpanda台灣業務。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>公平會決議禁止Grab併購foodpanda台灣業務。核心理由為Uber持有Grab約13.1%股份，結合後恐降低Grab與Uber Eats之間的競爭並產生協調配合疑慮，且Grab提出的承諾無法化解此問題。</p>
+          <p><b>可能造成的影響：</b>(a)短期影響：foodpanda台灣業務將維持獨立營運，短期內外送市場雙雄對峙的競爭格局不變，相關員工與合作店家暫時不會面臨組織重組與合約變動。 (b)中長期影響：若Grab與Uber體系無法透過併購擴張，台灣外送市場將持續依賴現有業者各自投入資源打價格戰與拓展服務，整體零售外送生態系的整併腳步將大幅放緩。 (c)受影響的對象或層面：消費者（中性，維持雙平台競爭，短期內較無壟斷漲價疑慮）、連鎖餐飲與零售商家（中性，不需重新適應新平台規則）、市場政策法規（利多，凸顯公平會嚴審跨國平台資本與交叉持股的決心）。</p>
+          <p><b>接下來該觀察：</b>後續應觀察foodpanda台灣業務是否會尋找其他無反壟斷疑慮的買家接手，以及Uber與Grab在股權結構上的下一步調整。</p>
+          <p class="sources-line">原文連結：<a href="https://www.thenewslens.com/article/270731" target="_blank" rel="noopener">The News Lens 關鍵評論網</a></p>
+        </div>
+      </details>
+      
+    </div>
+  </div>
+  
+  
+  
+  <div class="category-block">
+    <div class="section-head"><h2>人工智慧與科技</h2></div>
+    <div class="article-columns">
+      
+      <details class="article">
+        <summary>
+          <h3>TechCrunch盤點可直接整合至文字訊息中的頂尖AI Agent清單</h3>
+          <div class="meta">TechCrunch(美國科技媒體)</div>
+          <p>TechCrunch整理並列出多款能直接整合進文字訊息中的各領域頂尖AI Agent。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>TechCrunch發布了一份報導，整理了目前市場上最受關注的AI Agent清單。這些AI Agent的特色在於能夠直接植入使用者的文字訊息中，應用範圍涵蓋一般個人助理、家庭、旅遊以及工作協作等不同領域。</p>
+          <p><b>可能造成的影響：</b>(a) 短期影響：接下來1-3個月內，一般消費者與科技早期採用者將更頻繁地在通訊軟體中測試各類AI Agent，帶動相關通訊整合工具的使用率上升。(b) 中長期影響：半年到一年後，這類整合式AI Agent可能成為各大軟體平台與通訊軟體的標準配備，進一步改變企業提供客服、旅遊預訂與工作協作的商業模式。(c) 受影響的對象或層面：消費者將獲得更便利的對話式服務體驗（利多）；傳統軟體與App開發商面臨介面被通訊軟體內建AI Agent邊緣化的風險（利空）；整體軟體產業的AI應用滲透率將進一步加速。</p>
+          <p><b>接下來該觀察：</b>觀察各大通訊軟體平台是否開放更多第三方AI Agent的整合 API 或推出官方原生工具。</p>
+          <p class="sources-line">原文連結：<a href="https://techcrunch.com/2026/10/24/all-the-ai-agents-that-can-live-in-your-text-messages/" target="_blank" rel="noopener">TechCrunch(美國科技媒體)</a></p>
+        </div>
+      </details>
+      
+      <details class="article">
+        <summary>
+          <h3>工研院為銜接大型語言模型開發中介軟體</h3>
+          <div class="meta">Google News - 國際焦點(限定媒體)</div>
+          <p>工研院針對大型語言模型開發出專屬的中介軟體，以利系統順利銜接。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>工研院近期開發了一款中介軟體，主要功能在於銜接大型語言模型。該技術旨在改善大型語言模型與現有系統或應用的整合過程。</p>
+          <p><b>可能造成的影響：</b>(a) 短期影響：接下來1-3個月內，國內關注AI Agent與自動化工具應用的軟體開發商與系統整合商，將會優先評估此中介軟體的相容性與導入可行性，以測試其是否能簡化AI串接流程。(b) 中長期影響：如果此類中介軟體技術成熟並普及，半年到一年後將有效降低企業導入大型語言模型的開發成本與時間，加速各行各業自動化工作流程的部署。(c) 受影響的對象或層面：產業供應鏈中的軟體服務商與企業IT部門將迎來技術整合的利多，有助於提升台灣在AI應用工具開發領域的產業競爭力。</p>
+          <p><b>接下來該觀察：</b>觀察該中介軟體的實際導入案例、技術細節公開狀況，以及後續是否有國內外廠商進行技術授權或商業化合作。</p>
+          <p class="sources-line">原文連結：<a href="https://news.google.com/rss/articles/CBMiU0FVX3lxTE1KZC02aFktZTZQbzZaZkVSY1BOV01zb1cwRDlvMngxd0NVeFZrMUd6aUlTV0pDZm5ZeGhZLWswUWF0M1JlRmEzNzZrUW1IeUpCR044?oc=5" target="_blank" rel="noopener">Google News - 國際焦點(限定媒體)</a></p>
+        </div>
+      </details>
+      
+      <details class="article">
+        <summary>
+          <h3>Block推出聽起來極其逼真的全新語音模型</h3>
+          <div class="meta">TechCrunch(美國科技媒體)</div>
+          <p>Block發表了一款能直接在MacBook M4 Max上本地運行的全新語音模型。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>Block官方表示，其開發的全新語音模型具備極高的擬真度，且能夠直接在MacBook M4 Max裝置上本地運行。這項技術展現了語音AI模型在終端設備上的執行效能突破。</p>
+          <p><b>可能造成的影響：</b>(a) 短期影響：接下來1-3個月內，擁有MacBook M4 Max等高階硬體的開發者與早期採用者將率先進行本地測試，評估其運算效能與語音擬真度。(b) 中長期影響：半年到一年後，若此類本地端語音模型普及，將加速AI Agent與自動化工具在終端設備的落地，減少對雲端API的依賴並降低營運成本。(c) 受影響的對象或層面：AI軟體開發商與硬體製造商（如Apple）迎來利多，有助於推動邊緣AI（Edge AI）的應用發展與終端裝置升級需求。</p>
+          <p><b>接下來該觀察：</b>觀察該語音模型的實際開源狀態、API開放時程，以及在更多邊緣運算硬體上的效能表現。</p>
+          <p class="sources-line">原文連結：<a href="https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human/" target="_blank" rel="noopener">TechCrunch(美國科技媒體)</a></p>
+        </div>
+      </details>
+      
+    </div>
+  </div>
+  
+  
+  
+  <div class="category-block">
+    <div class="section-head"><h2>市場與總體經濟</h2></div>
+    <div class="article-columns">
+      
+      <details class="article">
+        <summary>
+          <h3>台股大跌近4,000點是否為進場時機？法人看好11月行情並點名3大布局方向</h3>
+          <div class="meta">Google News - 台股(限定媒體)</div>
+          <p>台股近期大跌近4,000點，法人看好11月行情並點名三大布局方向。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>台股近期遭遇大幅回檔，點數跌幅接近4,000點。法人機構針對此波跌勢發表看法，看好隨之而來的11月行情，並點名了三個具體的布局方向。</p>
+          <p><b>可能造成的影響：</b>(a) 短期影響：接下來1個月內，市場信心將面臨劇烈震盪，散戶與法人資金將在法人點名的3大布局方向中重新洗牌與試探性進場。(b) 中長期影響：半年到一年後，若法人點名的方向順利發酵，將帶動台股指數逐步走出谷底；反之若跌勢持續，市場將轉趨保守。(c) 受影響的對象或層面：直接影響台股投資人與法人機構的市場信心，屬於市場信心與資金配置層面的利多/中性訊號。</p>
+          <p><b>接下來該觀察：</b>觀察法人點名的3大布局方向實際資金流入狀況以及大盤成交量變化。</p>
+          <p class="sources-line">原文連結：<a href="https://news.google.com/rss/articles/CBMiUEFVX3lxTE5wdnotOUhfbmhtRFJ0QVppZzllb2hkUkY0RVNTRGdkRXVid3N0ZDRIMkJ4RU1sVXVNZ1hKbUtEZ3l6ZG5GSnNSdU80VkozNlN50gFWQVVfeXFMT0NFR1Nwdk1oNGk2eU5LWWMtellZNEJlQ1NyRS14STktNFhuaXZOTm5YZ1dISUpVdWwwSlRNV1R4X3l3cnQzZU9XWkMwVGFFYTI4TDhpUFE?oc=5" target="_blank" rel="noopener">Google News - 台股(限定媒體)</a></p>
+        </div>
+      </details>
+      
+      <details class="article">
+        <summary>
+          <h3>台股衝破3萬點引發AI行情過熱擔憂，熱門ETF 0050同遭點名關注</h3>
+          <div class="meta">Google News - 台股(限定媒體)</div>
+          <p>台股因AI行情過熱登上3萬點引發市場擔憂，連0050也成討論焦點。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>台股指數突破3萬點大關，市場對過度集中於AI的強勁行情產生居高思危的擔憂情緒。在此波漲勢中，市場代表性ETF 0050亦被點名討論其波動與風險。</p>
+          <p><b>可能造成的影響：</b>(a) 短期影響：接下來1-3個月內，散戶與機構投資人對高基期權值股及0050等ETF的操作將轉趨謹慎，市場震盪幅度可能加大。(b) 中長期影響：半年到一年後，若AI實質獲利無法跟上股價漲幅，可能引發多殺多或資金從科技股流出尋找防禦型標的的板塊輪動。(c) 受影響對象或層面：市場信心與一般投資人將直接受情緒面波動影響，面臨資本利得回吐的潛在利空壓力。</p>
+          <p><b>接下來該觀察：</b>觀察台股大盤與0050的成交量變化、外資動向以及美股費城半導體指數的走勢表現。</p>
+          <p class="sources-line">原文連結：<a href="https://news.google.com/rss/articles/CBMiU0FVX3lxTFBOOGY3cmVBVTlFSWNoQk9HU0MwWUNEWE90UVd5UjJtTzFGV0R4RTVRTXJHQm5OSkVyek1NRzh1MlNuQ2thY1FmNlFscXNEb3NhOE5Z0gFYQVVfeXFMUFVhYjVMRkw0NnJ5QzVPYkhiQ3daVlhBYm01WXhiVzJIVjdCS2pHOGFHSTNkc25xN0hPNnAwTTRqS3UyRjlzRUplSGlkN21SbXdBTzYzbGYyZA?oc=5" target="_blank" rel="noopener">Google News - 台股(限定媒體)</a></p>
+        </div>
+      </details>
+      
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+
+  <div class="colophon">
+    <span>每日情報 · 私人情報摘要，不對外公開發布</span>
+    <span>由 Gemini 分析生成 · 內容僅供參考</span>
+  </div>
+
+</div>
+</body>
+</html>
