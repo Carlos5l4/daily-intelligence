@@ -1,0 +1,402 @@
+{
+  "date": "2026-10-27",
+  "issue_number": 1,
+  "generated_at": "2026-10-27T00:23:06.652408+00:00",
+  "today_in_30_seconds": "台灣製造業三年內大減4.8萬名勞工，推升工資增長超過一成；其中，護國神山台積電的強大擴廠效應，更直接磁吸在地勞動力，讓傳統虱目魚產業面臨缺工存亡危機。面對嚴峻的缺工浪潮，台灣最新就業數據顯示，整體成長已非靠青年世代，而是由45歲以上的中高齡族群大幅年增17.8萬人強力撐盤，勞動市場結構正迎來劇烈翻轉。",
+  "top3_item_ids": [
+    "c097",
+    "c103",
+    "c087"
+  ],
+  "items": [
+    {
+      "item_id": "c097",
+      "cluster_id": "c097",
+      "category": "hr_organization",
+      "headline": "勞動力倒計時：台灣製造業三年內減少4.8萬人，工資大幅增加13.08%",
+      "one_sentence_summary": "台灣製造業面臨勞動力短缺，三年內減少4.8萬人並推升工資增長13.08%。",
+      "what_happened": "根據報導指出，台灣製造業在三年內勞動力減少了4.8萬人，同時平均工資大幅增加了13.08%。這反映出勞動市場結構性缺工與人力成本上升的現況。",
+      "why_it_matters": "這顯示傳統產業與製造業正面臨嚴峻的人口結構與缺工壓力，勞動力減少直接推高了用人成本，逼迫企業加速轉型或尋求替代方案。",
+      "potential_impact": "(a) 短期影響：企業人事成本顯著上升，迫使資方必須重新檢視薪資結構與招募預算，基層與第一線人力短缺的問題將直接衝擊產能與營運效率。(b) 中長期影響：若缺工與薪資上漲趨勢持續，企業將被迫加速導入自動化設備與AI Agent來替代部分人力，進而改變整體生產與作業流程。(c) 受影響的對象或層面：製造業供應鏈面臨成本上升與利潤壓縮的利空，而自動化設備與AI技術供應商則迎來市場需求增加的利多。",
+      "what_to_watch_next": "後續需觀察製造業缺工數據的擴散速度，以及企業導入自動化與AI工具的資本支出成長情形。",
+      "importance_score": 70.0,
+      "personal_relevance_score": 95,
+      "keywords": [
+        "製造業",
+        "勞動力短缺",
+        "工資增長",
+        "AI自動化"
+      ],
+      "sources": [
+        {
+          "name": "Google News - 餐飲業(限定媒體)",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1Kd2dRdWhEWGFtQnhFaE02NDR1TFNpNldnTGpkNFo4SlA2cXZlU29LbENJckVzazkwcXgxZkNtOGdtMFhBRFlYWGdkeVBfQ0ZEWU9NNzh6YXE?oc=5",
+          "published_at": "2026-10-26T09:18:35+00:00"
+        }
+      ],
+      "is_top3": true
+    },
+    {
+      "item_id": "c103",
+      "cluster_id": "c103",
+      "category": "hr_organization",
+      "headline": "台積電擴廠搶人效應，導致虱目魚產業面臨存亡危機",
+      "one_sentence_summary": "台積電擴廠產生的強大搶人效應，對傳統虱目魚產業造成勞動力短缺的存亡危機。",
+      "what_happened": "台積電因擴廠需求強力吸引在地勞動力，導致傳統的虱目魚產業面臨缺工困境，進而引發產業存亡危機。",
+      "why_it_matters": "突顯了高科技產業擴張對傳統勞力密集產業（如農業與餐飲供應鏈上游）造成的排擠效應，反映出基層勞動市場的結構性失衡。",
+      "potential_impact": "(a) 短期影響：接下來1-3個月內，在地虱目魚養殖與加工業者將直接面臨嚴重缺工、人事成本暴增的壓力，部分小型業者可能因無法負荷而面臨停業或減產。(b) 中長期影響：如果高科技擴廠的磁吸效應持續，半年到一年後將導致傳統水產供應鏈萎縮、在地餐飲業者的在地食材成本上升，甚至改變地方產業生態。(c) 受影響的對象或層面：產業/供應鏈面臨利空衝擊，傳統農業與水產養殖業者的勞動力成本與生存空間遭受嚴重擠壓。",
+      "what_to_watch_next": "觀察台積電在地招募規模的擴張速度，以及傳統水產養殖業是否能透過調高薪資或自動化緩解缺工危機。",
+      "importance_score": 68.0,
+      "personal_relevance_score": 95,
+      "keywords": [
+        "台積電",
+        "擴廠搶人",
+        "虱目魚產業",
+        "缺工危機",
+        "產業衝擊"
+      ],
+      "sources": [
+        {
+          "name": "Google News - 餐飲業(限定媒體)",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1rRTF3Rm9SQVlGaHBpWG5hNGcxd05LTEpqNW10NnY2WHVHTDJzXzgzeGtBYWN1clozbFpzVkwwUmJGelpoYWRJTlFiU0VTQk5manotOXQzMC15NEXSAWBBVV95cUxPQldrTXRkTGZpVUR2enFXSi1JVUk4RDZ2ZnMwWThoZnA0VWJ0b2ZQUENSUHJHLVMyU1VUYU5sZFEwQWtvNW9YalI1Yzh2U1JvaTRQX19nVzJjei1Bb3cwZzk?oc=5",
+          "published_at": "2026-10-26T21:30:00+00:00"
+        }
+      ],
+      "is_top3": true
+    },
+    {
+      "item_id": "c087",
+      "cluster_id": "c087",
+      "category": "hr_organization",
+      "headline": "台灣就業市場結構轉變，45歲以上中高齡就業人口年增17.8萬人撐起成長主力",
+      "one_sentence_summary": "台灣最新就業數據顯示，整體就業成長主要由45歲以上中高齡族群撐盤，年增達17.8萬人。",
+      "what_happened": "根據經濟日報報導，台灣就業市場的成長主要依靠中高齡族群支撐，其中45歲以上就業人口較前一年同期增加17.8萬人。這顯示勞動市場結構正朝向高齡化與中高齡勞動參與率提升的方向發展。",
+      "why_it_matters": "這反映出少子化與高齡化趨勢下，中高齡勞動力已成為支撐台灣整體經濟與產業運作不可或缺的核心力量，直接衝擊企業的人力資源配置與用人策略。",
+      "potential_impact": "(a) 短期影響：缺工壓力沉重的連鎖餐飲與零售業，將更積極調整招募管道以吸引中高齡求職者，並開始檢視店鋪現場的職務再設計。(b) 中長期影響：企業HR必須全面翻新教育訓練方法論與人才留任制度，針對中高齡員工設計專屬的技能培訓與健康管理機制，以因應勞動力老齡化帶來的營運挑戰。(c) 受影響對象或層面：連鎖餐飲與零售業的勞動結構（中性偏利多，緩解缺工）、企業人力資源制度（利多，促使制度成熟化），以及政府勞動政策法規（利多，推動中高齡就業專法落實）。",
+      "what_to_watch_next": "後續應觀察各產業針對中高齡勞動力的職務再設計補助申請情況，以及餐飲零售業在實務上的留任率變化。",
+      "importance_score": 67.0,
+      "personal_relevance_score": 95,
+      "keywords": [
+        "中高齡就業",
+        "勞動力市場",
+        "餐飲零售業",
+        "人力資源"
+      ],
+      "sources": [
+        {
+          "name": "Google News - 餐飲業(限定媒體)",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9hN0o2dE1pTXBQSjk3ZDBiZzM1LUJ1Y3FnWTNZdXJtZmNCSEstM2JmNDBOWGVDSjlIaTR1S3JmNlc5czNuTnIya19tT1gzandNVEgyd2lTckRBY0k?oc=5",
+          "published_at": "2026-10-26T11:43:03+00:00"
+        }
+      ],
+      "is_top3": true
+    },
+    {
+      "item_id": "c090",
+      "cluster_id": "c090",
+      "category": "hr_organization",
+      "headline": "喬山總經理羅光廷專訪：三代接班計畫需先至餐飲事業歷練",
+      "one_sentence_summary": "喬山總經理羅光廷在專訪中透露，家族三代接班人選會先安排至餐飲事業進行歷練。",
+      "what_happened": "喬山總經理羅光廷接受經濟日報專訪，內容提及家族企業的三代接班規劃，安排接班人選先前往餐飲事業單位進行實務練兵。",
+      "why_it_matters": "此專訪揭示了傳統製造業大廠在世代交替與跨足多元事業經營時的人才培訓策略，對於家族企業治理與接班人養成具備參考價值。",
+      "potential_impact": "(a) 短期影響：喬山內部接班梯隊與餐飲事業單位的管理互動將受到關注，可能帶動相關人資制度與歷練機制的檢視。(b) 中長期影響：若三代接班歷練模式成形，將成為該企業長期組織穩定與跨領域布局的核心人才策略。(c) 受影響對象與層面：對內部組織人資制度與企業治理方向為中性偏多，有助於釐清傳統產業接班人的養成路徑。",
+      "what_to_watch_next": "觀察後續喬山在餐飲事業群的投資布局以及接班人選的實際管理成效。",
+      "importance_score": 66.0,
+      "personal_relevance_score": 95,
+      "keywords": [
+        "喬山",
+        "羅光廷",
+        "三代接班",
+        "餐飲事業",
+        "人才培訓"
+      ],
+      "sources": [
+        {
+          "name": "Google News - 餐飲業(限定媒體)",
+          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE82UkZfU2JJTkI5Q05GQ3pGNTI5RXU5Y1hvOXdaaWFTSlRHZ2wxdE16NFoxcmFSUnAyNzduUjJZM21NVVNScjJMQU02cDB2cWx6NHBWQzc3RmhBY3UzaWRNNGJKd09xb1dqQm1MX0tSSmxTRXJVSjhzU2FR?oc=5",
+          "published_at": "2026-10-26T17:44:13+00:00"
+        }
+      ],
+      "is_top3": false
+    },
+    {
+      "item_id": "c079",
+      "cluster_id": "c079",
+      "category": "markets_economy",
+      "headline": "AI核心供應鏈仍是投資配置核心，市場修正無損基本面",
+      "one_sentence_summary": "AI核心供應鏈維持投資配置價值，近期市場修正並非基本面轉弱。",
+      "what_happened": "市場近期出現修正，但分析指出AI核心供應鏈的基本面並未轉弱，仍是投資配置的重要方向。",
+      "why_it_matters": "這釐清了市場波動與實際產業基本面的差異，有助於投資人釐清AI供應鏈的真實價值，避免因短期價格修正而誤判趨勢。",
+      "potential_impact": "短期內（1-3個月），AI概念股與費城半導體指數可能持續隨市場情緒震盪，投資人需承受較高的波動度。中長期來看（半年至一年），若基本面支撐力道延續，資金將重新回流具實質獲利能力的AI核心供應鏈。此趨勢主要影響資本市場信心與半導體產業供應鏈，對市場信心偏向利多，能有效緩解恐慌性拋售。",
+      "what_to_watch_next": "接下來應密切觀察費城半導體指數走勢以及AI供應鏈大廠的實際財報營收表現。",
+      "importance_score": 63.0,
+      "personal_relevance_score": 95,
+      "keywords": [
+        "AI供應鏈",
+        "投資配置",
+        "市場修正",
+        "基本面",
+        "半導體"
+      ],
+      "sources": [
+        {
+          "name": "Google News - 台股(限定媒體)",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE92WHhUeWhKanh0b1Z5QzdyekNGUnczenZ3ckJhb0VZTFh0aVp2VVM4OXFaSUR6Nm84VGp4TXFJYjNTMGJUcnZhUTZtWGNHSmwy0gFWQVVfeXFMT2d6YXBPQzY3MEZaN1JnOVpOUEFQSTg3Ti0xZzJDWWhNMDQ2RXZ2VGRjdVFmRWZNWHNkbVdkdHdNTE00dzlNajdGUlpyUWk3MUtWYmxuN2c?oc=5",
+          "published_at": "2026-10-26T02:39:38+00:00"
+        }
+      ],
+      "is_top3": false
+    },
+    {
+      "item_id": "c076",
+      "cluster_id": "c076",
+      "category": "markets_economy",
+      "headline": "永豐投顧指出美日韓重量級科技股財報與台股法說將登場，預估指數區間落在4.5萬至4.8萬點",
+      "one_sentence_summary": "美日韓科技股財報與台股法說密集登場，永豐投顧預估大盤指數區間為45K-48K。",
+      "what_happened": "重量級的美、日、韓科技公司即將公布財報，同時台灣股市也迎來一系列的企業法說會。永豐投顧針對此波財報與法說潮，預估台股指數的運行區間將落在45,000至48,000點。",
+      "why_it_matters": "跨國科技巨頭的財報數據與台股法說釋出的展望，是評估全球半導體景氣與大盤走勢的重要風向球，直接牽動投資市場的資金配置與信心。",
+      "potential_impact": "(a) 短期影響：接下來1-3個月內，美日韓科技大廠的財報結果與台股法說釋出的指引，將直接牽動台股與美股大盤的劇烈波動，特別是費城半導體指數相關概念股將面臨首波資金重新評價與短線震盪。(b) 中長期影響：半年到一年後，若財報與法說印證AI硬體與供應鏈需求持續擴張，將推動指數朝預估區間上緣靠攏；反之若需求不如預期，則可能引發修正。(c) 受影響的對象或層面：市場信心與台美股投資人將直接受到財報優劣的利多或利空衝擊，科技供應鏈廠商的股價評價也將隨法說展望進行修正。",
+      "what_to_watch_next": "接下來應密切觀察美日韓重量級科技股的實際財報數據、法說會釋出的對外展望，以及台股指數在預估區間內的成交量變化。",
+      "importance_score": 62.0,
+      "personal_relevance_score": 95,
+      "keywords": [
+        "台股法說",
+        "科技股財報",
+        "永豐投顧",
+        "大盤指數",
+        "費城半導體"
+      ],
+      "sources": [
+        {
+          "name": "Google News - 台股(限定媒體)",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE8wTlBfTVZOa2JWM3BVT0dTT1d1OWhoZTVBQ2NlbkZKZFBXdWxXY2h2RjBvTXZrbWR4X0Q3cTA4eTcyQ0dYejhjT05Mek9NTlBT0gFWQVVfeXFMTlBzQnZUZjdIdkxkcTVpdEEyTEtxWU5CRW1GVU1VdElBeGVHRk52cjhpcVlqa3cwQWZnNEllU0pHYkpseGVETHNsNHlQdEs0N1h0LXdYS0E?oc=5",
+          "published_at": "2026-10-26T04:45:02+00:00"
+        }
+      ],
+      "is_top3": false
+    },
+    {
+      "item_id": "c072",
+      "cluster_id": "c072",
+      "category": "markets_economy",
+      "headline": "美股盤前止跌翻紅，台股後市有望回穩",
+      "one_sentence_summary": "美股盤前止跌翻紅，市場關注台股明天的走勢是否能免受恐慌影響。",
+      "what_happened": "美股在盤前交易中止跌翻紅，市場情緒出現轉變。外界開始關注此一走勢是否能為即將開盤的台股帶來安定作用。",
+      "why_it_matters": "美股作為全球金融市場與台股的重要風向球，其盤前翻紅有助於緩解投資人的恐慌情緒，對台股短線信心具備直接的指引作用。",
+      "potential_impact": "(a) 短期影響：接下來1-3個月內，台股投資人與散戶恐慌情緒將獲得緩解，台股開盤壓力減輕，大盤及費城半導體相關成分股有望止穩。(b) 中長期影響：若美股後續維持反彈格局，半年到一年後有助於鞏固全球股市的多頭信心，降低非理性賣壓頻率。(c) 受影響的對象或層面：市場信心與台美股投資人受到直接影響，方向偏向短期利多，有助於穩定台股短線盤勢。",
+      "what_to_watch_next": "觀察美股開盤後的實際漲跌幅表現以及費城半導體指數的收盤動向。",
+      "importance_score": 61.6,
+      "personal_relevance_score": 95,
+      "keywords": [
+        "美股",
+        "台股",
+        "市場信心",
+        "費城半導體指數"
+      ],
+      "sources": [
+        {
+          "name": "Google News - 台股(限定媒體)",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9FZ0pBRHBwU0IzU09KWEN2dzRtb3JTQVU3emxQbHFGX2NkS01kMjdnTEFFV3lUWktwRkQ5S0tzelpTT0xaTGhJcHh4RWV0SVJ4N1V0U2EzZ3NoaU1DckxZ0gFkQVVfeXFMTURlTEt1QlJ3S3JlandSTTg3T0VYaGI3Z0VjRTFlYU9wRU9LaDFJdDJtYU9LcGZrMGZJbzZKRTVmT1pLVUVVSnRvbkhyckNobGV4QWlDQW9Nb0t5dlBjQnJ5NTFtdw?oc=5",
+          "published_at": "2026-10-26T10:08:24+00:00"
+        }
+      ],
+      "is_top3": false
+    },
+    {
+      "item_id": "c073",
+      "cluster_id": "c073",
+      "category": "markets_economy",
+      "headline": "台股跌破季線，分析指出長線支撐仍在呼籲投資人無需過度驚慌",
+      "one_sentence_summary": "台股近日跌破季線，市場分析認為長線多頭結構有撐，提醒投資人無須過度恐慌。",
+      "what_happened": "台股指數近期跌破季線技術支撐位。相關媒體與市場分析隨即發布報導，向投資人信心喊話，強調長線走勢仍有支撐。",
+      "why_it_matters": "季線作為台股中長期的重要多空分水嶺，跌破往往會打擊短線市場信心與引發技術性賣壓。此類新聞反映市場對大盤波動的敏感度，有助於評估散戶與機構投資人的情緒變化。",
+      "potential_impact": "(a) 短期影響：接下來1-3個月內，技術派投資人與融資維持率偏低的散戶會先感受到壓力，市場可能出現融資斷頭與短線震盪加劇的現象。(b) 中長期影響：如果半年到一年後基本面（如企業盈餘、總體經濟）持續向上，指數將重新站回季線；反之若基本面轉弱，則可能進一步擴大為中期修正走勢。(c) 受影響的對象或層面：主要影響台股投資人與整體市場信心的方向偏向中性至短期利空，具體取決於後續量能與基本面數據表現。",
+      "what_to_watch_next": "接下來應觀察成交量能是否萎縮、法人籌碼動向以及指數能否迅速站回季線。",
+      "importance_score": 60.2,
+      "personal_relevance_score": 95,
+      "keywords": [
+        "台股",
+        "季線",
+        "股市跌幅",
+        "投資信心",
+        "技術分析"
+      ],
+      "sources": [
+        {
+          "name": "Google News - 台股(限定媒體)",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5WQ2c3NVkxV0Y1bUdyQXdST21XbGt2YVZiVWc5VUVuZTRRay1ZTlh6cGpKeWpqVVBqb00xRDZzN1BUTkNpQ2lmcDlWWjlNRU9mQk94ZUIybWs?oc=5",
+          "published_at": "2026-10-26T20:39:49+00:00"
+        }
+      ],
+      "is_top3": false
+    },
+    {
+      "item_id": "c134",
+      "cluster_id": "c134",
+      "category": "world_affairs",
+      "headline": "以色列與美國即將舉行大選，選舉結果將牽動全球局勢",
+      "one_sentence_summary": "以色列與美國將在兩週內相繼舉行選舉，其結果將深刻影響全球地緣政治與經濟。",
+      "what_happened": "未來兩週內，以色列與美國這兩個不同大洲的國家將分別進行選舉。分析指出，這兩場選舉的結果將對全球地緣政治與經濟走向產生決定性的影響。",
+      "why_it_matters": "美以兩國的政治權力更迭或政策延續，直接牽動中東局勢、國際外交與全球貿易環境，對全球宏觀經濟與資本市場具有舉足輕重的外溢效果。",
+      "potential_impact": "(a) 短期影響：選舉前後市場與地緣政治高度觀望，相關國家的政策走向與發言將直接牽動全球金融市場與投資人信心。(b) 中長期影響：新政府上台後的具體外交政策與經濟法規調整，將重新塑造全球供應鏈安全、國際貿易協定以及區域安全秩序。(c) 受影響的對象或層面：政策法規與市場信心將面臨顯著波動，國際金融市場與全球地緣政治格局將承受直接的利多或利空衝擊。",
+      "what_to_watch_next": "密切關注以色列與美國大選的最終投票結果及新政府的外交與經濟政策走向。",
+      "importance_score": 72.0,
+      "personal_relevance_score": 90,
+      "keywords": [
+        "以色列選舉",
+        "美國大選",
+        "地緣政治",
+        "全球經濟"
+      ],
+      "sources": [
+        {
+          "name": "BBC World News",
+          "url": "https://www.bbc.co.uk/news/articles/crlykey9jywqo?at_medium=RSS&at_campaign=rss",
+          "published_at": "2026-10-26T16:30:34+00:00"
+        }
+      ],
+      "is_top3": false
+    },
+    {
+      "item_id": "c001",
+      "cluster_id": "c001",
+      "category": "ai_technology",
+      "headline": "Greptile利用GPT-6 Astra將錯誤偵測延伸至程式碼審查之外",
+      "one_sentence_summary": "Greptile透過GPT-6 Astra、Daybreak與Codex優化軟體測試、安全性與減少重工。",
+      "what_happened": "Greptile採用了OpenAI的GPT-6 Astra來測試使用者工作流程，同時利用Daybreak強化安全性，並藉由Codex減少程式碼重工。",
+      "why_it_matters": "這顯示出AI Agent與自動化工具在軟體開發生命週期中的應用範圍，已從單純的程式碼審查擴展至完整的使用者工作流程測試與安全防護。",
+      "potential_impact": "(a) 短期影響：接下來1-3個月內，軟體開發團隊與QA測試人員將率先感受到自動化工作流程測試帶來的效率提升，手動測試的負擔將顯著減輕。(b) 中長期影響：半年到一年後，若此類AI模型與自動化工具持續普及，軟體開發與維護的成本結構將發生根本性改變，重工率大幅下降，產品迭代速度加快。(c) 受影響的對象或層面：軟體開發產業鏈與企業內部工程團隊將面臨利多，開發效率與程式碼品質的提升有助於降低維運成本，同時也對傳統軟體測試與品質保證（QA）的職能配置帶來轉型壓力。",
+      "what_to_watch_next": "接下來應觀察GPT-6 Astra在實際軟體開發場景中的穩定性，以及企業導入後的實際良率與重工減少幅度。",
+      "importance_score": 65.0,
+      "personal_relevance_score": 90,
+      "keywords": [
+        "Greptile",
+        "GPT-6 Astra",
+        "自動化工具",
+        "錯誤偵測",
+        "軟體開發"
+      ],
+      "sources": [
+        {
+          "name": "OpenAI News",
+          "url": "https://openai.com/index/greptile-code-review-codex-astra",
+          "published_at": "2026-10-26T22:00:00+00:00"
+        }
+      ],
+      "is_top3": false
+    },
+    {
+      "item_id": "c062",
+      "cluster_id": "c062",
+      "category": "world_affairs",
+      "headline": "巴西總統盧拉意外勝選，將面對敵對國會與兩極化國家",
+      "one_sentence_summary": "巴西總統盧拉意外贏得第四次大選，但將面臨敵對國會與國家分裂的挑戰。",
+      "what_happened": "巴西總統盧拉在選舉中意外獲勝，取得第四次大選勝利。然而，他即將面對一個充滿敵意的國會以及一個高度兩極化的國家。",
+      "why_it_matters": "這反映出拉丁美洲最大經濟體在政治上的持續分裂與對立，選舉結果可能對其內政推進與區域地緣政治產生深遠影響。",
+      "potential_impact": "(a) 短期影響：接下來1-3個月內，巴西國內政壇將因國會敵對狀態而陷入僵局，政策推動面臨阻礙，並持續牽動市場對拉丁美洲政經穩定的敏感神經。(b) 中長期影響：如果兩極化情況持續延續，半年到一年後可能導致行政與立法權力嚴重內耗，削弱政府推動重大經濟改革的能力。(c) 受影響的對象或層面：政策法規與市場信心將受到直接衝擊，整體影響偏向中性至利空，特別是外資對巴西市場的投資信心可能因政治不確定性而轉趨保守。",
+      "what_to_watch_next": "觀察新政府與敵對國會之間的互動關係以及內閣組成的政治妥協程度。",
+      "importance_score": 88.3,
+      "personal_relevance_score": 85,
+      "keywords": [
+        "巴西總統大選",
+        "盧拉",
+        "拉丁美洲政治",
+        "國會對立"
+      ],
+      "sources": [
+        {
+          "name": "BBC 中文網",
+          "url": "https://www.bbc.com/zhongwen/articles/cwj34v4lvvlgo/trad?at_medium=RSS&at_campaign=rss",
+          "published_at": "2026-10-26T10:13:36+00:00"
+        },
+        {
+          "name": "The News Lens 關鍵評論網",
+          "url": "https://www.thenewslens.com/article/270732",
+          "published_at": "2026-10-26T10:36:00+00:00"
+        },
+        {
+          "name": "BBC World News",
+          "url": "https://www.bbc.co.uk/news/articles/ckm23y3mg1yyo?at_medium=RSS&at_campaign=rss",
+          "published_at": "2026-10-26T21:02:47+00:00"
+        }
+      ],
+      "is_top3": false
+    },
+    {
+      "item_id": "c119",
+      "cluster_id": "c119",
+      "category": "world_affairs",
+      "headline": "塞爾維亞執政12年的民粹右翼領袖武契奇在學生主導的抗議運動中輸掉選舉",
+      "one_sentence_summary": "塞爾維亞執政12年的領導人武契奇承認在被視為國家未來公投的選舉中落敗。",
+      "what_happened": "塞爾維亞執政12年的民粹右翼領袖武契奇表示，其政黨已經「清楚」輸掉了這次被視為國家未來走向公投的選舉。這次選舉是在學生主導的抗議運動背景下舉行的，最終導致執政黨落敗，塞爾維亞出現政黨輪替的慶祝活動。",
+      "why_it_matters": "這標誌著長期主導塞爾維亞政壇的民粹政權倒台，且由基層學生運動成功驅動政治變天，對於東歐及巴爾幹半島的民主化進程具有示範性意義。",
+      "potential_impact": "(a) 短期影響：接下來1-3個月內，塞爾維亞政權將面臨權力交接與新政府組閣期，國內社會情緒高漲，民眾與學生運動團體將密切監督舊勢力清算與新政府的政策走向。(b) 中長期影響：半年到一年後，新政府的外交政策（尤其是歐盟加入進程與對外地緣政治立場）可能出現重大調整，進而影響巴爾幹半導體的區域穩定與外資投資意願。(c) 受影響的對象或層面：政策法規與市場信心層面將轉趨中性偏多，國際投資人對該國法治與民主改革的信心有望提升，但政權交替初期仍需留意政策延續性的不確定性。",
+      "what_to_watch_next": "接下來應觀察新政府的組閣進展及其對外外交政策與歐盟整合的具體表態。",
+      "importance_score": 80.0,
+      "personal_relevance_score": 85,
+      "keywords": [
+        "塞爾維亞",
+        "武契奇",
+        "學生抗議運動",
+        "政黨輪替"
+      ],
+      "sources": [
+        {
+          "name": "BBC World News",
+          "url": "https://www.bbc.co.uk/news/articles/cw5yn3xlprpmo?at_medium=RSS&at_campaign=rss",
+          "published_at": "2026-10-26T14:34:52+00:00"
+        },
+        {
+          "name": "Google News - 國際焦點(限定媒體)",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1YdGk4MHhqT1N1aTNXU1BxWXNlRkhQV1lCVjJ2enZlampRMFZKTTF5TUtNWG9fNl82NmdnbGVTOE1sV2ZSWnJQN1V3V1RrUFkwa1M4M3RCTlQ3cGs4NEZ3?oc=5",
+          "published_at": "2026-10-26T03:23:00+00:00"
+        }
+      ],
+      "is_top3": false
+    },
+    {
+      "item_id": "c061",
+      "cluster_id": "c061",
+      "category": "world_affairs",
+      "headline": "中共五中全會開幕：十三年反腐後如何持續從嚴治黨？",
+      "one_sentence_summary": "中共五中全會開幕，專家指出未指定接班人反映出習近平面臨維持權威與權力中心的兩難。",
+      "what_happened": "中共五中全會正式開幕，探討在經歷十三年反腐後如何繼續「從嚴治黨」。受訪專家分析認為，中國政壇至今缺乏明確接班人，凸顯出不指定接班人有助於維持最高權威，但同時也可能帶來權力繼承的隱憂。",
+      "why_it_matters": "領導層的接班布局與政治權力穩定度，是評估中國政治走向、政策延續性以及總體經濟環境的重要指標，直接牽動外資與市場對其政經局勢的信心。",
+      "potential_impact": "(a) 短期影響：接下來1-3個月內，市場與外資將緊盯五中全會釋出的政策風向與人事變動訊號，政治不確定性可能使市場信心維持觀望態度。(b) 中長期影響：半年到一年後，若接班人選依舊不明朗，權力集中與繼承風險將持續存在，可能加劇政策的高度不確定性並影響企業投資意願。(c) 受影響的對象或層面：主要影響市場信心與政策法規走向，對整體宏觀政經環境與外資投資意願構成中性偏空的壓力。",
+      "what_to_watch_next": "觀察五中全會公報中對於政治權力布局、人事調整以及經濟政策走向的具體結論。",
+      "importance_score": 78.5,
+      "personal_relevance_score": 85,
+      "keywords": [
+        "中共五中全會",
+        "習近平",
+        "接班人",
+        "從嚴治黨",
+        "中國政壇"
+      ],
+      "sources": [
+        {
+          "name": "BBC 中文網",
+          "url": "https://www.bbc.com/zhongwen/articles/ckx2q587wvrqo/trad?at_medium=RSS&at_campaign=rss",
+          "published_at": "2026-10-26T05:07:40+00:00"
+        },
+        {
+          "name": "BBC World News",
+          "url": "https://www.bbc.co.uk/news/articles/c6n8djd1078ro?at_medium=RSS&at_campaign=rss",
+          "published_at": "2026-10-26T07:40:57+00:00"
+        }
+      ],
+      "is_top3": false
+    }
+  ],
+  "stats": {
+    "total_articles_collected": 1979,
+    "total_after_stage1": 156,
+    "total_selected": 13,
+    "estimated_reading_minutes": 6
+  },
+  "usage": {
+    "stage2_tokens_in": 12730,
+    "stage2_tokens_out": 5588,
+    "stage2_total_tokens": 18318
+  }
+}
