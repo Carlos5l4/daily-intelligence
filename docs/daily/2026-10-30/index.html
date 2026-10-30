@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日情報 — 2026-10-30</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700;900&family=Noto+Sans+TC:wght@400;500;700;900&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper: #F3EEE1; --paper-dark: #EAE3D0; --ink: #201D18; --ink-soft: #4A453C;
+    --rule: #C9BFA5; --accent: #7A2A28; --accent-soft: #9C6B4E;
+  }
+  *{box-sizing:border-box;}
+  body{ margin:0; background: var(--paper-dark); color: var(--ink);
+    font-family: 'Source Serif 4', Georgia, serif; -webkit-font-smoothing:antialiased; }
+  .sheet{ max-width: 900px; margin: 0 auto; background: var(--paper);
+    padding: 40px 48px 60px; box-shadow: 0 0 40px rgba(0,0,0,0.08); }
+
+  .masthead{ text-align:center; padding-bottom: 18px; }
+  .masthead .eyebrow-line{ display:flex; justify-content:space-between; align-items:center;
+    font-size:12px; letter-spacing:0.08em; color: var(--ink-soft);
+    border-bottom: 1px solid var(--rule); padding-bottom: 8px; margin-bottom: 14px; }
+  .masthead h1{ font-family:'Noto Serif TC', serif; font-weight:900; font-size: 54px;
+    letter-spacing: 0.02em; margin: 4px 0 6px; line-height:1; }
+  .masthead .subtitle{ font-style: italic; color: var(--ink-soft); font-size: 15px; margin-bottom: 14px; }
+  .masthead .rules{ border: none; border-top: 3px solid var(--ink); margin: 0 0 3px; }
+  .masthead .rules.thin{ border-top: 1px solid var(--ink); margin-bottom: 0; }
+
+  .brief-box{ margin: 26px 0 34px; padding: 20px 24px;
+    border-top: 2px solid var(--ink); border-bottom: 2px solid var(--ink); background: var(--paper-dark); }
+  .brief-box .label{ font-family:'Noto Serif TC', serif; font-weight:700; font-size: 13px;
+    letter-spacing: 0.14em; color: var(--accent); margin-bottom: 8px; }
+  .brief-box p{ font-size: 17px; line-height:1.75; margin:0; }
+  .brief-box p::first-letter{ font-family:'Noto Serif TC', serif; font-weight:900; font-size: 46px;
+    float:left; line-height:0.8; padding-right:8px; padding-top:4px; color: var(--accent); }
+
+  .frontpage-label{ display:flex; align-items:center; gap:14px; margin-bottom:18px; }
+  .frontpage-label h2{ font-family:'Noto Serif TC', serif; font-weight:900; font-size: 16px;
+    letter-spacing:0.1em; margin:0; color: var(--ink); }
+  .frontpage-label .line{ flex:1; border-top: 2px solid var(--ink); }
+  .frontpage-label .sub{ font-size:11.5px; color:var(--ink-soft); font-style:italic; white-space:nowrap; }
+
+  .top3-block{ padding-bottom: 24px; margin-bottom: 30px; border-bottom: 1px solid var(--rule); }
+  .top3-block:last-of-type{ border-bottom: 3px double var(--ink); margin-bottom: 36px; }
+  .pill-tag{ display:inline-block; font-size:12px; font-weight:600; letter-spacing:0.02em;
+    color:#fff; background: var(--accent-soft); border-radius: 999px; padding: 2px 12px; margin-bottom: 8px; }
+  .top3-block h2{ font-family:'Noto Sans TC', sans-serif; font-weight:700; font-size: 24px; line-height:1.4; letter-spacing:0.01em; margin: 0 0 10px; }
+  .top3-block .score{ display:inline-block; font-size:12px; color:var(--ink-soft);
+    border:1px solid var(--rule); padding:2px 8px; margin-bottom: 12px; }
+  .top3-block p{ font-size:15px; line-height:1.75; margin: 0 0 10px; }
+  .top3-block .highlight{ font-size:15px; line-height:1.7; padding-left:14px;
+    border-left: 3px solid var(--accent-soft); color: var(--ink); margin-bottom:12px; }
+  .top3-block .highlight b{ color:var(--accent); font-style:normal; }
+  .top3-block .extra b{ font-weight:600; color: var(--accent); }
+  .top3-block .sources-line{ font-size:12px; color:var(--ink-soft); margin-top:6px; }
+  .sources-line a, .article .meta a{
+    color: var(--accent-soft); text-decoration: none; border-bottom: 1px dotted var(--accent-soft);
+  }
+  .sources-line a:hover, .article .meta a:hover{ color: var(--accent); border-bottom-style: solid; }
+
+  .body-label{ text-align:center; margin: 6px 0 30px; }
+  .body-label span{ font-size:11px; letter-spacing:0.2em; color:var(--ink-soft);
+    border-top:1px solid var(--rule); border-bottom:1px solid var(--rule); padding: 4px 0; display:block; }
+
+  .category-block{ margin-bottom: 46px; }
+  .section-head{ background: var(--ink); color: var(--paper); padding: 11px 18px; margin-bottom: 20px; }
+  .section-head h2{ font-family:'Noto Serif TC', serif; font-weight:700; font-size: 20px;
+    letter-spacing: 0.1em; margin:0; }
+
+  .article-columns{ column-count: 2; column-gap: 34px; column-rule: 1px solid var(--rule); }
+  .article{ break-inside: avoid; margin-bottom: 20px; }
+  .article summary{ list-style:none; cursor:pointer; position:relative; padding-right:22px; }
+  .article summary::-webkit-details-marker{ display:none; }
+  .article summary::after{ content:"展開 ＋"; position:absolute; right:0; top:2px;
+    font-size:11px; color:var(--accent); white-space:nowrap; }
+  .article[open] summary::after{ content:"收合 －"; }
+  .article h3{ font-family:'Noto Sans TC', sans-serif; font-weight:700; font-size: 16px; line-height:1.5; letter-spacing:0.01em; margin: 0 22px 5px 0; }
+  .article .meta{ font-size: 11px; color: var(--ink-soft); margin-bottom: 7px; }
+  .article summary p{ font-size: 13.5px; line-height:1.6; margin: 0 0 10px; color: var(--ink-soft); }
+  .article .expand-body{ margin-top: 10px; padding-top: 10px; border-top: 1px dashed var(--rule); }
+  .article .expand-body p{ font-size: 13.5px; line-height:1.65; margin: 0 0 8px; }
+  .article .expand-body b{ color: var(--accent); font-weight:600; }
+  .article .keywords{ font-size:11.5px; color:var(--ink-soft); margin-top:6px; }
+
+  .colophon{ margin-top: 30px; padding-top: 16px; border-top: 1px solid var(--ink);
+    display:flex; justify-content:space-between; font-size: 11.5px; color: var(--ink-soft); }
+
+  @media (max-width: 720px){
+    .sheet{ padding: 26px 20px 40px; } .masthead h1{ font-size: 38px; }
+    .article-columns{ column-count:1; } .colophon{ flex-direction:column; gap:4px; }
+    .frontpage-label .sub{ display:none; }
+  }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <div class="masthead">
+    <div class="eyebrow-line">
+      <span>第 001 期</span>
+      <span>PERSONAL DAILY INTELLIGENCE(每日情報)</span>
+      <span>2026年10月30日 星期五</span>
+    </div>
+    <h1>每日情報</h1>
+    <div class="subtitle">今天分析 294 則資訊，篩出 13 則值得你注意 · 預估閱讀時間 6 分鐘</div>
+    <hr class="rules"><hr class="rules thin">
+  </div>
+
+  <div class="brief-box">
+    <div class="label">今日三十秒</div>
+    <p>今天焦點關注人才發展與產業升級。台積電疾呼打造國家級AI人才庫，期盼推動台灣成為全球AI神經樞紐；同時，勞動部積極布局全齡就業，南分署銀髮中心成功協助十年未就業的女高管重返職場並化身真人圖書，高分署也同步啟動大專青年預聘計畫，讓學生在學期間就能兼顧實務學習與穩定薪資。從尖端科技到全齡勞動力，台灣正全面為未來產業儲備關鍵實力。</p>
+  </div>
+
+  
+  <div class="frontpage-label">
+    <h2>頭版精選</h2>
+    <div class="line"></div>
+    <span class="sub">跨類別綜合評選，不重複出現於下方分類區塊</span>
+  </div>
+
+  
+  <div class="top3-block">
+    <span class="pill-tag">人工智慧與科技</span>
+    <h2>台積電呼籲建立國家級AI人才庫，力拼台灣成為全球AI神經樞紐</h2>
+    <span class="score">重要度 69 · 相關度 95</span>
+    <p>台積電公開呼籲建立國家級AI人才庫，期望藉此提升台灣在人工智慧領域的戰略地位，並將台灣打造成為全球AI神經樞紐。此項倡議聚焦於強化台灣整體的AI發展與人才布局。</p>
+    <p class="highlight"><b>可能造成的影響：</b>(a) 短期影響：接下來1-3個月內，產官學界將針對AI人才培育與國家級人才庫的建置框架展開討論，相關教育機構與科技主管機關會先感受到政策推動的壓力與方向轉變。(b) 中長期影響：半年到一年後，若政策逐步落實，將帶動國內大專院校與培訓機構開設更多針對性的AI與半導體實務課程，並吸引更多國際研發資源靠攏台灣。(c) 受影響的對象與層面：產業供應鏈與政策法規面臨利多轉機，台灣科技業的長期人才供給穩定度將獲得提升，對整體半導體與AI硬體生態系形成結構性利多。</p>
+    <p class="extra"><b>接下來該觀察：</b>觀察政府部門是否針對「國家AI人才庫」提出具體的政策預算、執行方案或產學合作細節。</p>
+    <div class="sources-line">來源：<a href="https://news.google.com/rss/articles/CBMiXkFVX3lxTE1LcG1OdDRQdlBCSENjX05RWXo4NG1SSVdyMWZEdHFxbEw3eUsyQWJISzRpMjV5MEIyNzJGMmN6SXJGc3VTVWhfMGttanktY0hhVkVLaGtQd3Nicy1sTGc?oc=5" target="_blank" rel="noopener">Google News - 國際焦點(限定媒體)</a></div>
+  </div>
+  
+  <div class="top3-block">
+    <span class="pill-tag">人力資源與組織管理</span>
+    <h2>南分署銀髮中心協助離開職場近10年的女高管化身真人圖書，讓生命經驗轉化為前行力量</h2>
+    <span class="score">重要度 63 · 相關度 95</span>
+    <p>一名女性高階主管因照顧家人而離開職場將近10年。近期在勞動部勞動力發展署雲嘉南分署銀髮人才資源中心的協助下，成功重返職場並化身為「真人圖書」，分享其寶貴的生命經驗。</p>
+    <p class="highlight"><b>可能造成的影響：</b>(a) 短期影響：勞動部南分署等相關單位將持續推廣銀髮人才再運用與真人圖書案例，鼓勵更多二度就業或中高齡者參與職場重返計畫。同時，相關企業HR部門會增加對中高齡高階人才的關注，評估彈性工時或顧問性質的職缺安排。(b) 中長期影響：若此類成功案例持續複製，將有助於改善台灣勞動參與率，並促使更多企業修正既往的用人偏見，建立更包容的高齡及二度就業勞動力管理制度。(c) 受影響的對象或層面：政策法規與人力資源管理層面呈利多，有助於緩解國內特定產業的高階與專業人才短缺壓力。</p>
+    <p class="extra"><b>接下來該觀察：</b>後續勞動部針對中高齡與二度就業高階人才的再就業輔導成效，以及企業界對此類人才的實際進用接受度。</p>
+    <div class="sources-line">來源：<a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTFBoRmJPU3FMLWJTR0xPLTNXQThGTGhLVzYtQmwta2ZyRjRacTIyWmJjVDJwcEhRN0dKT05hX2FyUU1QNU9OLUI0aEJ1ZU5XQnRKQXA1REhBSWdCUQ?oc=5" target="_blank" rel="noopener">Google News - 勞基法(限定媒體)</a></div>
+  </div>
+  
+  <div class="top3-block">
+    <span class="pill-tag">人力資源與組織管理</span>
+    <h2>勞動部勞動力發展署高分署推動大專青年預聘計畫，讓學生在學期間即可領取薪資</h2>
+    <span class="score">重要度 62 · 相關度 95</span>
+    <p>勞動部勞動力發展署高分署正式推動「大專青年預聘計畫」，主打大專青年在學期間參與即可獲得薪水。此計畫旨在協助青年提前接軌職場。</p>
+    <p class="highlight"><b>可能造成的影響：</b>(a) 短期影響：接下來1-3個月內，區域內的合作企業與大專院校將陸續啟動宣導與媒合，有參與計畫的企業能優先補實部分基層人力。 (b) 中長期影響：半年到一年後若規模擴大，有助於形塑穩定的校園到職場的轉銜管道，降低企業重新培訓新人的成本。 (c) 受影響的對象或層面：對參與計畫的餐飲零售等缺工產業屬利多，能實質緩解部分人力壓力；對求職青年則是利多，可提前累積職場經驗並獲得經濟支持；對整體勞動市場政策法規面而言，有助於推動實習與就業接軌的制度化。</p>
+    <p class="extra"><b>接下來該觀察：</b>觀察後續企業參與家數、釋出職缺數量以及實際媒合成功率。</p>
+    <div class="sources-line">來源：<a href="https://news.google.com/rss/articles/CBMiZEFVX3lxTE5GOFVMMk05OE8tT0Q4T1U1aWFDdVpiZDUxZTRINzVhT1Z0cC1jWmtuMVp1UUlnSm1namtJRGF4ekQtZ01NTXpCMkNPVmZ4aHo3T3lLSlR3RkpHb0VJV0ZLeGlPaG3SAWpBVV95cUxQUWxSYzF5b2gtMFZKczhmT1lscG1pY3dJVzRJR3ZyQnRvbV9jRXFaX0dvazRaUG5XbjBrLXFHOEl4MmpTLUp6cXdTaGVmZ2NpRmEzSS1WT1ZVeW9ETVp5VzBvUzNuaUp5ZG5n?oc=5" target="_blank" rel="noopener">Google News - 勞基法(限定媒體)</a></div>
+  </div>
+  
+  
+
+  <div class="body-label"><span>以下為今日完整分類報導，不含上方頭版精選 · 點擊標題可展開完整分析</span></div>
+
+  
+  
+  <div class="category-block">
+    <div class="section-head"><h2>人力資源與組織管理</h2></div>
+    <div class="article-columns">
+      
+      <details class="article">
+        <summary>
+          <h3>國票金控拒絕前董事長退職金申請並研擬新制</h3>
+          <div class="meta">Google News - 勞基法(限定媒體)</div>
+          <p>國票金控拒絕前董座退職金申請，並針對新任董總研擬適用新辦法。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>國票金控拒絕向前董事長發放退職金，同時針對新任董事長與總經理研擬了適用的全新退職金辦法。此舉引發外界關於是否有差別待遇的議論。</p>
+          <p><b>可能造成的影響：</b>(a) 短期影響：接下來1-3個月內，國票金控內部的高階經理人薪酬與退職規範將受到主管機關與市場高度檢視，前董座是否會採取法律或申訴行動將是焦點。
+(b) 中長期影響：半年到一年後，此事件可能促使公股或民營金融機構重新檢視並修訂董事長與總經理的退職金與離職補償辦法，建立更明確的法規依據以避免爭議。
+(c) 受影響的對象或層面：政策法規與市場信心面受影響，對金融業高階經理人制度帶來中性偏緊的規範壓力，並影響投資人對該公司治理透明度的評價。</p>
+          <p><b>接下來該觀察：</b>後續觀察前董事長是否針對退職金拒絕案提出法律訴訟或正式申訴，以及國票金控新版董總退職辦法之具體內容與主管機關態度。</p>
+          <p class="sources-line">原文連結：<a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTFBNVG85TWRKSktPRHRnLWFFT18tS1VwSHU1T1dRR3ZDdHhzQ1VtaUVKcUxoMTg0YkppM29sam9hbVBuVFRGeUpvQy0xX2M3aldtWnRHNW8xeV8wUdIBX0FVX3lxTE5TMTBBQ0U1UnFrMDRvU0dESWRodXYtTmhqcUVrSmtyWFBPN2hYNjhFbE9JbjZYNHFHcEJVZlNSQndQazBtTzlBRlMtZkVaQXc4RkItZ19MOHF5ZVYtNkx3?oc=5" target="_blank" rel="noopener">Google News - 勞基法(限定媒體)</a></p>
+        </div>
+      </details>
+      
+      <details class="article">
+        <summary>
+          <h3>勞團檢視六都勞動政見，點名台南勞動違規率高且應降低對中央依賴</h3>
+          <div class="meta">Google News - 勞基法(限定媒體)</div>
+          <p>勞團檢視六都勞動政見，指出台南勞動違規率偏高並呼籲減少依賴中央。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>勞動團體公開檢視六都的勞動政見。其中點名台南市的勞動違規率偏高，並認為地方政府應降低對中央的依靠。</p>
+          <p><b>可能造成的影響：</b>(a) 短期影響：台南市及其他五都的勞動主管機關將面臨民意與勞團的質疑，短期內可能針對高違規產業加強勞動檢查。(b) 中長期影響：若地方政府加強勞動稽查與法規執行，將促使企業（特別是連鎖餐飲與零售業等勞力密集產業）必須加速改善勞動條件與合規制度。(c) 受影響的對象或層面：政策法規面趨嚴，企業的人事合規成本將上升（利空），而勞工的勞動權益保障則有望提升（利多）。</p>
+          <p><b>接下來該觀察：</b>後續各縣市政府針對勞團質疑所提出的具體改善政策與勞動稽查頻率。</p>
+          <p class="sources-line">原文連結：<a href="https://news.google.com/rss/articles/CBMie0FVX3lxTE43Q2pTTXdvOXBFMzVDZm5DMWloNkZReVpVV1IwUmhDMHc4ZndKUHhubHdMVTByRG9fU2R5Rmt4a1dtNUlVdmhrYWRxaDhMQm1oU0NCY3llUUVaYmFMTE5VamhXbjdZVWxNRXlMaXpIMkhyQjhfTEJhVUg2cw?oc=5" target="_blank" rel="noopener">Google News - 勞基法(限定媒體)</a></p>
+        </div>
+      </details>
+      
+    </div>
+  </div>
+  
+  
+  
+  <div class="category-block">
+    <div class="section-head"><h2>餐飲與零售</h2></div>
+    <div class="article-columns">
+      
+      <details class="article">
+        <summary>
+          <h3>甜甜圈店員揮拳未遭炎上反而熱銷，公關危機背後折射出服務業的深層痛點</h3>
+          <div class="meta">Google News - 勞基法(限定媒體)</div>
+          <p>甜甜圈店員揮拳事件未受負評反而大賣，反映出服務業基層長期承受的痛點。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>一家甜甜圈店的店員發生揮拳事件，但該事件非但沒有引發網路炎上，反而帶動了產品熱賣，凸顯出公關危機處理的獨特轉折與服務業的現況。</p>
+          <p><b>可能造成的影響：</b>(a) 短期影響：1-3個月內餐飲與零售業的基層員工與管理階層會開始重新檢視面對奧客時的應對SOP，社群媒體上也將掀起關於服務業勞動尊嚴的討論。(b) 中長期影響：半年到一年後，部分企業可能調整顧客服務條款與員工保護政策，減少第一線服務人員遭受無理對待的壓力。(c) 受影響對象與層面：連鎖餐飲與零售產業的勞資關係與第一線管理制度將朝向「保障員工尊嚴」的方向調整，對整體服務業的現場管理與人力資源留任產生中性偏多的影響。</p>
+          <p><b>接下來該觀察：</b>觀察後續是否有更多餐飲零售品牌調整其客服處理機制與員工保護政策。</p>
+          <p class="sources-line">原文連結：<a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE9jbmZoNndSZjJ5Zi1VQ1FsUHpNVGxsbThac3o5SUtLc1IxZU9tUWlvaXkyajcxWGU5X0dNMmFOVFc4d3l3X2VVN1RVNXVjSXIteXRhMlNjT0xFZ9IBX0FVX3lxTFBwV1JTTF9Cdi1OUDFCUlFNWEc0M1pVMTVCajU1TXp1Q0RuYnZSaFNGV2RSZWJWSklraTROY3BTUjg3cV9IUndVTlFPRHIzbXBuNTk5ZGtqZi1BeTFScDRJ?oc=5" target="_blank" rel="noopener">Google News - 勞基法(限定媒體)</a></p>
+        </div>
+      </details>
+      
+      <details class="article">
+        <summary>
+          <h3>DoorDash宣布將以170億美元收購Instacart</h3>
+          <div class="meta">Nation's Restaurant News(美國餐飲產業媒體)</div>
+          <p>DoorDash將以170億美元現金加股票收購Instacart，大幅擴展雜貨外送業務。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>DoorDash宣布將以170億美元的現金加股票交易收購Instacart。該公司表示，這項收購將能大大擴展其不斷成長的雜貨外送業務，並對當地店家和消費者帶來好處。</p>
+          <p><b>可能造成的影響：</b>(a) 短期影響：交易公佈後1-3個月內，雙方用戶與合作店家將開始關注系統整合細節，市場對外送產業的整併預期將顯著升溫。(b) 中長期影響：半年到一年後，若交易順利完成，將形成更具規模經濟的雜貨外送巨獸，改變供應鏈議價能力。(c) 受影響的對象或層面：消費者將面臨平台服務範圍的重新洗牌（中性）；零售商與供應鏈將受到更集中的通路渠道影響（利空或利多視合作條款而定）；整體外送與零售市場信心將因產業整合而提升（利多）。</p>
+          <p><b>接下來該觀察：</b>觀察這起170億美元現金加股票交易的監管審查進度以及後續的系統與業務整合規劃。</p>
+          <p class="sources-line">原文連結：<a href="https://www.nrn.com/restaurant-technology/doordash-to-acquire-instacart-for-17b" target="_blank" rel="noopener">Nation's Restaurant News(美國餐飲產業媒體)</a></p>
+        </div>
+      </details>
+      
+    </div>
+  </div>
+  
+  
+  
+  <div class="category-block">
+    <div class="section-head"><h2>人工智慧與科技</h2></div>
+    <div class="article-columns">
+      
+      <details class="article">
+        <summary>
+          <h3>經濟日報將於11月25日舉辦創新論壇，聚焦AI驅動企業核心大腦</h3>
+          <div class="meta">Google News - 餐飲業(限定媒體)</div>
+          <p>經濟日報將於11月25日舉辦創新論壇，探討如何利用AI驅動企業核心大腦。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>經濟日報公告將於11月25日舉辦以「駕馭AI 驅動企業核心大腦」為主題的創新論壇。文章未提及其他詳細議程、講者陣容或與會企業名單。</p>
+          <p><b>可能造成的影響：</b>(a) 短期影響：在活動於11月25日登場前後的1至3個月內，參與論壇的企業與相關軟體服務商可能會展示更多AI在企業決策與自動化上的應用案例，吸引關注AI轉型的經理人目光。(b) 中長期影響：如果論壇中所提倡的「AI驅動企業核心大腦」概念持續發酵，半年到一年後可能加速各產業（包含餐飲與零售業）導入自動化工作流程與AI Agent的普及率，進而促使企業重新檢視組織編制與教育訓練方法。(c) 受影響的對象或層面：主要影響產業內的企業經營者、品牌管理者與HR部門，影響方向為中性偏利多，有助於推動數位轉型與提升營運效率的思維普及。</p>
+          <p><b>接下來該觀察：</b>觀察11月25日論壇實際揭露的企業AI應用案例、參與廠商名單及其後續推出的具體自動化工具或解決方案。</p>
+          <p class="sources-line">原文連結：<a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxOM1djSkE1TE1wYWpIbnN4YWYxTGhoZEZZeXhHTnBBVmV4MC1JSk41eVpPMlBwM1VqOHNXNDFaLWdJdC1Ua0FBcWZBZ0M0emhieFBld1FWbm5SUk52VVhmam05Zi05V19zajktV3FNOHRxQ0Fuc1BCODVZc2xUXzMweWZSeDc1czNHMFZCdDVRRzTSAV9BVV95cUxQRkktaTJaQ2FPQzEzalFsX3BJTHgyNDJFTmNyOHJ4OWd2Q0NVbHFjSEo3Z1ByV0wxbHZOYllkSGI0SHcyOWRWVlpFYVl4NlJRRURNYlBfcjlWd3RWd3pmcw?oc=5" target="_blank" rel="noopener">Google News - 餐飲業(限定媒體)</a></p>
+        </div>
+      </details>
+      
+      <details class="article">
+        <summary>
+          <h3>勤業眾信建議企業採用制度與工具雙軌並進方式落實AI治理</h3>
+          <div class="meta">Google News - 餐飲業(限定媒體)</div>
+          <p>勤業眾信針對AI治理提出建議，認為企業應採取制度與工具雙軌並進。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>勤業眾信針對企業如何進行AI治理提出建議，指出應採取制度與工具雙軌並進的做法。相關報導已在經濟日報金融脈動專區發布。</p>
+          <p><b>可能造成的影響：</b>(a) 短期影響：接下來1-3個月內，企業內部的法遵、資安與HR部門將開始檢視現行的AI使用規範，評估導入相應的管理工具。(b) 中長期影響：半年到一年後，落實AI治理的企業將建立起標準作業流程，有助於降低營運風險並提升AI應用的效率。(c) 受影響的對象或層面：產業中的企業主與資安/法遵部門為主要受影響對象，整體趨勢偏向利多，有助於推動企業更穩健地導入自動化與AI工具。</p>
+          <p><b>接下來該觀察：</b>觀察後續是否有更多具體的AI治理工具落地案例或相關法規指引出爐。</p>
+          <p class="sources-line">原文連結：<a href="https://news.google.com/rss/articles/CBMid0FVX3lxTE1hczNHQm5KeEExc3huOHNnQUsyZ205Vms1SG9zNVhpcDdmVDNkUjJ5ZTN0NlNUMEthY2UwZGhxUC04MEhEQ18wMk9nazVvSjlTczVZbnB6dEs1M2dURHF3a2UwajFQZ2RwaG8wTDZDWDBMMld3TzZN?oc=5" target="_blank" rel="noopener">Google News - 餐飲業(限定媒體)</a></p>
+        </div>
+      </details>
+      
+    </div>
+  </div>
+  
+  
+  
+  <div class="category-block">
+    <div class="section-head"><h2>市場與總體經濟</h2></div>
+    <div class="article-columns">
+      
+      <details class="article">
+        <summary>
+          <h3>那斯達克盤前暴跌連動台指期夜盤重挫，引發市場對台股走勢的恐慌</h3>
+          <div class="meta">TechCrunch(美國科技媒體)、MarketWatch(美國財經媒體)、Google News - 台股(限定媒體)</div>
+          <p>那斯達克盤前暴跌與台指期夜盤走綠，引發市場對台股隔日開盤走勢的擔憂。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>美國那斯達克指數在盤前出現暴跌，連帶使台指期夜盤表現失色、臉綠下跌。市場擔憂此波美股跌勢將對隔日台股開盤造成強大壓力。</p>
+          <p><b>可能造成的影響：</b>(a) 短期影響：接下來1-3個月內，台股與費城半導體指數高度連動的科技權值股將首當其衝，面臨龐大的停損與調節賣壓，市場波動度顯著放大。(b) 中長期影響：若美股跌勢擴大為波段修正，將拖累整體台股大盤的估值與多頭氣勢，迫使投資人保守看待科技股後市。(c) 受影響的對象或層面：市場信心將轉趨悲觀，直接衝擊台股投資人的風險偏好與資金配置，屬於明顯的短線利空消息。</p>
+          <p><b>接下來該觀察：</b>觀察美股開盤後的實際跌幅、收盤表現以及費城半導體指數的支撐力道。</p>
+          <p class="sources-line">原文連結：<a href="https://techcrunch.com/2026/10/29/andy-jassy-says-prime-video-is-on-track-to-earn-tens-of-billions-of-dollars/" target="_blank" rel="noopener">TechCrunch(美國科技媒體)</a>、<a href="https://www.marketwatch.com/story/amazons-bold-cloud-forecast-isnt-enough-to-stave-off-a-stock-drop-ee23c1bb?mod=mw_rss_topstories" target="_blank" rel="noopener">MarketWatch(美國財經媒體)</a>、<a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTFBxb2FwY3hrclBNaHpDczBFOTdwd1dQM0ZOcnJSb29pSWpoY3BaSHE4UzZWOFNseEJnUnhHa1VFeGxPQWl2T3V0eWJpRVJJM1hhRU12bVNpV3R1YTZacENF0gFkQVVfeXFMTnMzdWtvOGMySU9XdnpOYkZkSmdVeUxTWHR1MjVLaFNCQzFHV1lfTUM5MVl0M2tXVlRpZ0N2cVZ4a1h4TDh3ZTNzMlFXZ3RWblFCNHk1ZVNTM2w2NWFzX3RtSTlyUQ?oc=5" target="_blank" rel="noopener">Google News - 台股(限定媒體)</a></p>
+        </div>
+      </details>
+      
+      <details class="article">
+        <summary>
+          <h3>輝達（Nvidia）支持京元電投資25億元在美國德州設立半導體測試產能</h3>
+          <div class="meta">Google News - 國際焦點(限定媒體)</div>
+          <p>輝達支持京元電子投資25億美元於美國德州設置半導體測試產能。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>京元電子獲得輝達（Nvidia）的支持，計畫投資25億美元在美國德州建立半導體測試產能。此舉將擴展其在美國本土的封測服務能量。</p>
+          <p><b>可能造成的影響：</b>(a) 短期影響：相關半導體設備供應商與建廠工程概念股將率先感受到訂單或市場關注度提升，京元電在美國的資本支出計畫成為市場焦點。(b) 中長期影響：半年到一年後，隨著德州測試產能逐步布建，台灣封測廠的海外布局模式將轉變為更緊密的在地化配套，進一步改變全球半導體分工樣貌。(c) 受影響的對象或層面：半導體供應鏈與台股相關類股呈現利多，對於台灣科技業的海外人才配置與跨國HR制度亦將帶來實質的海外在地化管理挑戰。</p>
+          <p><b>接下來該觀察：</b>觀察京元電赴美投資的實際建廠進度、資金到位情形，以及輝達後續對其他供應鏈夥伴的在地化產能要求。</p>
+          <p class="sources-line">原文連結：<a href="https://news.google.com/rss/articles/CBMiXkFVX3lxTFBWdzd5eUtuNkZMczJqRC1DUTBIZVpmVzBIak9mVFFFeFRUc3QtSHp5bTV5cXdLRkdEYTc1bzZHdFhpb294Sndub0FldGYxMURLdE5qSmxFZDZ4V04wdnc?oc=5" target="_blank" rel="noopener">Google News - 國際焦點(限定媒體)</a></p>
+        </div>
+      </details>
+      
+      <details class="article">
+        <summary>
+          <h3>「台灣週」活動將於11月3日開幕，透過45場活動深化台灣與國際資本市場連結</h3>
+          <div class="meta">Google News - 國際焦點(限定媒體)</div>
+          <p>台灣週將於11/3開幕，舉辦45場活動深化台灣與國際資本市場連結。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>台灣週將於11月3日正式開幕。本次活動總計規劃了45場系列活動，主要目的在於深化台灣與國際資本市場之間的連結。</p>
+          <p><b>可能造成的影響：</b>(a) 短期影響：在活動舉辦的1至3個月內，參與的金融機構與上市企業將率先接觸國際投資人，增加市場曝光度與資本關注。(b) 中長期影響：半年至一年後，若能成功吸引實質外資流入或促成跨國合作案，將有助於活絡台股資本市場流動性並提升評價。(c) 受影響對象與層面：主要影響層面為資本市場信心與金融產業供應鏈，對台股整體國際資金動能帶來中性偏多的影響。</p>
+          <p><b>接下來該觀察：</b>觀察台灣週活動期間實際促成的國際投資規模以及外資後續對台股的資金動向。</p>
+          <p class="sources-line">原文連結：<a href="https://news.google.com/rss/articles/CBMiXkFVX3lxTE1wVEdibFVmVGl6dzk5SGlBdm9QNEMtM3lsQlNTdXFqUW8wU3ltWThZMGdvUTA3S0VRY2dKZThoSG5YVXpNUnVRaUx5NnVwUWJ6ei1GMjB0VE9jcXlpQmc?oc=5" target="_blank" rel="noopener">Google News - 國際焦點(限定媒體)</a></p>
+        </div>
+      </details>
+      
+      <details class="article">
+        <summary>
+          <h3>台灣景氣燈號創下史上最長紀錄，連續第十個月亮出代表景氣熱絡的紅燈，國發會看好企業接單與投資動能持續熱絡。</h3>
+          <div class="meta">Google News - 餐飲業(限定媒體)</div>
+          <p>台灣景氣燈號連十月亮紅燈，國發會看好企業接單與投資動能續熱。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>國發會公布最新景氣對策信號，創下史上最長的連續十個月亮出紅燈紀錄。官方看好當前企業接單暢旺，且整體投資動能將持續保持熱絡。</p>
+          <p><b>可能造成的影響：</b>(a) 短期影響：接下來1-3個月內，台股與相關供應鏈企業的營收及財報表現將持續受到市場高度檢視，投資人信心維持穩健。(b) 中長期影響：若景氣熱絡態勢延續至半年到一年後，企業資本支出與擴廠計畫將進一步帶動人力需求與薪酬調整，連帶影響零售與餐飲內需消費市場。(c) 受影響的對象或層面：整體產業供應鏈與台股市場信心偏向利多，企業人力資源與薪酬策略也將因應景氣擴張而需調整留才方針。</p>
+          <p><b>接下來該觀察：</b>持續觀察後續每月的景氣對策信號燈號變化以及企業實際的資本支出與接單表現。</p>
+          <p class="sources-line">原文連結：<a href="https://news.google.com/rss/articles/CBMiW0FVX3lxTE1QTlFJaGdmRXNsUUNYcmExUnAxVzdHdElPTFFhNjd1d2hFdmdaWTdEWDBsV09DSVZkQW5SUUpFTzFnMjk3QXJkbFIyVHE3MkJxbUNfaVMwWGhaclnSAWBBVV95cUxQbi0wblZmMEFRNzhTZGQtWDNhTWt5RHBQZVB4T0YxT3NQRzFVQ1FmSENTVTZfVGc1LUZYejFZUjB0bjdVN21rc3JPNTM0Umh4S2Z0Yk91VEl5WkNXR1M0NU8?oc=5" target="_blank" rel="noopener">Google News - 餐飲業(限定媒體)</a></p>
+        </div>
+      </details>
+      
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+
+  <div class="colophon">
+    <span>每日情報 · 私人情報摘要，不對外公開發布</span>
+    <span>由 Gemini 分析生成 · 內容僅供參考</span>
+  </div>
+
+</div>
+</body>
+</html>
