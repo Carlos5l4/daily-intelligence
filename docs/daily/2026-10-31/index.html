@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日情報 — 2026-10-31</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700;900&family=Noto+Sans+TC:wght@400;500;700;900&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper: #F3EEE1; --paper-dark: #EAE3D0; --ink: #201D18; --ink-soft: #4A453C;
+    --rule: #C9BFA5; --accent: #7A2A28; --accent-soft: #9C6B4E;
+  }
+  *{box-sizing:border-box;}
+  body{ margin:0; background: var(--paper-dark); color: var(--ink);
+    font-family: 'Source Serif 4', Georgia, serif; -webkit-font-smoothing:antialiased; }
+  .sheet{ max-width: 900px; margin: 0 auto; background: var(--paper);
+    padding: 40px 48px 60px; box-shadow: 0 0 40px rgba(0,0,0,0.08); }
+
+  .masthead{ text-align:center; padding-bottom: 18px; }
+  .masthead .eyebrow-line{ display:flex; justify-content:space-between; align-items:center;
+    font-size:12px; letter-spacing:0.08em; color: var(--ink-soft);
+    border-bottom: 1px solid var(--rule); padding-bottom: 8px; margin-bottom: 14px; }
+  .masthead h1{ font-family:'Noto Serif TC', serif; font-weight:900; font-size: 54px;
+    letter-spacing: 0.02em; margin: 4px 0 6px; line-height:1; }
+  .masthead .subtitle{ font-style: italic; color: var(--ink-soft); font-size: 15px; margin-bottom: 14px; }
+  .masthead .rules{ border: none; border-top: 3px solid var(--ink); margin: 0 0 3px; }
+  .masthead .rules.thin{ border-top: 1px solid var(--ink); margin-bottom: 0; }
+
+  .brief-box{ margin: 26px 0 34px; padding: 20px 24px;
+    border-top: 2px solid var(--ink); border-bottom: 2px solid var(--ink); background: var(--paper-dark); }
+  .brief-box .label{ font-family:'Noto Serif TC', serif; font-weight:700; font-size: 13px;
+    letter-spacing: 0.14em; color: var(--accent); margin-bottom: 8px; }
+  .brief-box p{ font-size: 17px; line-height:1.75; margin:0; }
+  .brief-box p::first-letter{ font-family:'Noto Serif TC', serif; font-weight:900; font-size: 46px;
+    float:left; line-height:0.8; padding-right:8px; padding-top:4px; color: var(--accent); }
+
+  .frontpage-label{ display:flex; align-items:center; gap:14px; margin-bottom:18px; }
+  .frontpage-label h2{ font-family:'Noto Serif TC', serif; font-weight:900; font-size: 16px;
+    letter-spacing:0.1em; margin:0; color: var(--ink); }
+  .frontpage-label .line{ flex:1; border-top: 2px solid var(--ink); }
+  .frontpage-label .sub{ font-size:11.5px; color:var(--ink-soft); font-style:italic; white-space:nowrap; }
+
+  .top3-block{ padding-bottom: 24px; margin-bottom: 30px; border-bottom: 1px solid var(--rule); }
+  .top3-block:last-of-type{ border-bottom: 3px double var(--ink); margin-bottom: 36px; }
+  .pill-tag{ display:inline-block; font-size:12px; font-weight:600; letter-spacing:0.02em;
+    color:#fff; background: var(--accent-soft); border-radius: 999px; padding: 2px 12px; margin-bottom: 8px; }
+  .top3-block h2{ font-family:'Noto Sans TC', sans-serif; font-weight:700; font-size: 24px; line-height:1.4; letter-spacing:0.01em; margin: 0 0 10px; }
+  .top3-block .score{ display:inline-block; font-size:12px; color:var(--ink-soft);
+    border:1px solid var(--rule); padding:2px 8px; margin-bottom: 12px; }
+  .top3-block p{ font-size:15px; line-height:1.75; margin: 0 0 10px; }
+  .top3-block .highlight{ font-size:15px; line-height:1.7; padding-left:14px;
+    border-left: 3px solid var(--accent-soft); color: var(--ink); margin-bottom:12px; }
+  .top3-block .highlight b{ color:var(--accent); font-style:normal; }
+  .top3-block .extra b{ font-weight:600; color: var(--accent); }
+  .top3-block .sources-line{ font-size:12px; color:var(--ink-soft); margin-top:6px; }
+  .sources-line a, .article .meta a{
+    color: var(--accent-soft); text-decoration: none; border-bottom: 1px dotted var(--accent-soft);
+  }
+  .sources-line a:hover, .article .meta a:hover{ color: var(--accent); border-bottom-style: solid; }
+
+  .body-label{ text-align:center; margin: 6px 0 30px; }
+  .body-label span{ font-size:11px; letter-spacing:0.2em; color:var(--ink-soft);
+    border-top:1px solid var(--rule); border-bottom:1px solid var(--rule); padding: 4px 0; display:block; }
+
+  .category-block{ margin-bottom: 46px; }
+  .section-head{ background: var(--ink); color: var(--paper); padding: 11px 18px; margin-bottom: 20px; }
+  .section-head h2{ font-family:'Noto Serif TC', serif; font-weight:700; font-size: 20px;
+    letter-spacing: 0.1em; margin:0; }
+
+  .article-columns{ column-count: 2; column-gap: 34px; column-rule: 1px solid var(--rule); }
+  .article{ break-inside: avoid; margin-bottom: 20px; }
+  .article summary{ list-style:none; cursor:pointer; position:relative; padding-right:22px; }
+  .article summary::-webkit-details-marker{ display:none; }
+  .article summary::after{ content:"展開 ＋"; position:absolute; right:0; top:2px;
+    font-size:11px; color:var(--accent); white-space:nowrap; }
+  .article[open] summary::after{ content:"收合 －"; }
+  .article h3{ font-family:'Noto Sans TC', sans-serif; font-weight:700; font-size: 16px; line-height:1.5; letter-spacing:0.01em; margin: 0 22px 5px 0; }
+  .article .meta{ font-size: 11px; color: var(--ink-soft); margin-bottom: 7px; }
+  .article summary p{ font-size: 13.5px; line-height:1.6; margin: 0 0 10px; color: var(--ink-soft); }
+  .article .expand-body{ margin-top: 10px; padding-top: 10px; border-top: 1px dashed var(--rule); }
+  .article .expand-body p{ font-size: 13.5px; line-height:1.65; margin: 0 0 8px; }
+  .article .expand-body b{ color: var(--accent); font-weight:600; }
+  .article .keywords{ font-size:11.5px; color:var(--ink-soft); margin-top:6px; }
+
+  .colophon{ margin-top: 30px; padding-top: 16px; border-top: 1px solid var(--ink);
+    display:flex; justify-content:space-between; font-size: 11.5px; color: var(--ink-soft); }
+
+  @media (max-width: 720px){
+    .sheet{ padding: 26px 20px 40px; } .masthead h1{ font-size: 38px; }
+    .article-columns{ column-count:1; } .colophon{ flex-direction:column; gap:4px; }
+    .frontpage-label .sub{ display:none; }
+  }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <div class="masthead">
+    <div class="eyebrow-line">
+      <span>第 001 期</span>
+      <span>PERSONAL DAILY INTELLIGENCE(每日情報)</span>
+      <span>2026年10月31日 星期六</span>
+    </div>
+    <h1>每日情報</h1>
+    <div class="subtitle">今天分析 288 則資訊，篩出 13 則值得你注意 · 預估閱讀時間 6 分鐘</div>
+    <hr class="rules"><hr class="rules thin">
+  </div>
+
+  <div class="brief-box">
+    <div class="label">今日三十秒</div>
+    <p>台股今日面臨黑色十月尾聲，單日重挫超過千點，創下單月大跌二千七百多點的慘澹走勢，主因來自外資單月大幅賣超近新台幣一兆元。面對空襲警報，市場高度關注國安基金動向與回應。雪上加霜的是，美股那斯達克盤前大跌六百點，英特爾暴跌百分之二十五，台積電ADR也同步重挫，國際科技股災恐將對台股下週開盤行情造成巨大沉重的下行壓力。</p>
+  </div>
+
+  
+  <div class="frontpage-label">
+    <h2>頭版精選</h2>
+    <div class="line"></div>
+    <span class="sub">跨類別綜合評選，不重複出現於下方分類區塊</span>
+  </div>
+
+  
+  <div class="top3-block">
+    <span class="pill-tag">市場與總體經濟</span>
+    <h2>台股盤中暴跌逾千點，國安基金操盤手對外發言說明</h2>
+    <span class="score">重要度 73 · 相關度 100</span>
+    <p>台股盤中出現超過千點的重挫跌幅，引發市場恐慌。針對股市劇烈波動，國安基金操盤手已對此做出回應。</p>
+    <p class="highlight"><b>可能造成的影響：</b>(a) 短期影響：接下來1-3個月內，散戶與機構投資人的持股信心將顯著動搖，融資維持率偏低者恐面臨斷頭壓力，台股大盤與相關半導體權值股將承受沉重的調節賣壓。(b) 中長期影響：如果國際政經局勢或總體經濟利空持續延續，半年到一年後可能改變資金的流向與評價水準，進一步影響企業籌資與總體經濟的投資意願。(c) 受影響的對象或層面：市場信心與一般投資人面臨顯著利空打擊，台股資本市場與整體供應鏈的評價面臨修正壓力。</p>
+    <p class="extra"><b>接下來該觀察：</b>接下來應持續觀察國安基金後續是否有實質進場護盤的政策宣示，以及外資動向與台股大盤指數的止跌訊號。</p>
+    <div class="sources-line">來源：<a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE83V1FsYUFBYjJZUk5YQUZkWDhydUZ4Q0toUm9Ta3dUcU9UWUpBMUNVX1loQ0FMYmJRdkVBbVdJc3hRN3JubUwwZnJVSWhyd0I5Rjl6QVl6ODVJVVFFbEdV0gFkQVVfeXFMUEtIaVlJN3RnUzJWdDg0SEh6MkZRbTRWelFnRW1yMGRacEdDZEpMS0ltNWx6ZlRsOTVEYjJFVlF6cDM3VFNqdG5uR1lvMFEwamJuQ3VXYVpxX3dFcnhDNXZLVjF4Sw?oc=5" target="_blank" rel="noopener">Google News - 台股(限定媒體)</a>、<a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTE4wNzhyaFpkbUpYM0pNcFpOeUI2RDRiVEZha2hUdkNQUjJBaHlvb0JOWUctRGltLUdrQkdWN3Y0eGh3bmxMTGR4M2JVLWQzSUZpd2JBcVcwblU?oc=5" target="_blank" rel="noopener">Google News - 國際焦點(限定媒體)</a></div>
+  </div>
+  
+  <div class="top3-block">
+    <span class="pill-tag">市場與總體經濟</span>
+    <h2>美股那斯達克盤前大跌600點，英特爾暴跌25%且台積電ADR重摔，引發台股後市憂慮</h2>
+    <span class="score">重要度 72 · 相關度 100</span>
+    <p>那斯達克指數在盤前狂殺600點，其中英特爾股價暴跌25%，台積電ADR也出現重摔。市場擔憂美股科技股的劇烈震盪將直接衝擊台股表現。</p>
+    <p class="highlight"><b>可能造成的影響：</b>(a) 短期影響：台股開盤將面臨沉重的停損賣壓與信心危機，特別是半導體相關供應鏈與權值股如台積電將首當其衝面臨下殺。(b) 中長期影響：若英特爾暴跌代表PC/伺服器需求疲軟或自身競爭力流失，將改變全球半導體代工與晶片設計的市佔版圖，牽動台廠供應鏈的訂單轉移。(c) 受影響的對象與層面：投資人與外資法人對科技股的市場信心轉趨保守，台股大盤與費城半導體指數面臨短期利空修正壓力。</p>
+    <p class="extra"><b>接下來該觀察：</b>觀察美股開盤後的實際跌幅、費城半導體指數能否止跌，以及台股開盤後的法人資金流向與權值股表現。</p>
+    <div class="sources-line">來源：<a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE9rV2dyb0NvbXZXLURGZXlTQVJqYVc3WThzX3lqNUNkejU1YVo4Nk16T0RFZDNKbUpOLTJHSHRETFZGWVdXLUhqT3JwUm5uN2RRbmxEZFR4N1N0Uzk1aHJV0gFkQVVfeXFMTlRudi1FWUJqSENpYVl1aENfMzlyZnNLUndCekpUZkRjVlhWc1RSd2tNb040QjhPWE1uT3lwRGN1Ny1JdTRUOXByWlFYZVpfb3lqSnVjTDRpMEpLVzZKU3dKVFpDOQ?oc=5" target="_blank" rel="noopener">Google News - 台股(限定媒體)</a></div>
+  </div>
+  
+  <div class="top3-block">
+    <span class="pill-tag">市場與總體經濟</span>
+    <h2>10月份外資狂倒貨近兆元，導致台股單月大跌2,728點</h2>
+    <span class="score">重要度 68 · 相關度 100</span>
+    <p>10月份外資在台股市場出現大規模提款，單月賣超金額高達將近一兆元。受此龐大賣壓衝擊，台股大盤在該月內重挫2,728點。</p>
+    <p class="highlight"><b>可能造成的影響：</b>(a) 短期影響：接下來1-3個月內，散戶投資人與高槓桿融資戶將首當其衝面臨斷頭與帳面虧損壓力，台股成交量能可能因市場信心潰散而急凍。(b) 中長期影響：若外資持續外流，將迫使企業籌資成本上升，並對整體台股的估值結構與資金動能造成結構性壓抑。(c) 受影響的對象或層面：市場信心與資本市場流動性遭受全面性利空打擊，投資人的風險偏好將顯著降低。</p>
+    <p class="extra"><b>接下來該觀察：</b>接下來應持續觀察外資在台股的買賣超動向及新台幣匯率的貶勢是否趨緩。</p>
+    <div class="sources-line">來源：<a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTE5MMFVNX2tIWkNCRWJ2R2tNM0FmZkRwN0tZLTBmTi1rVFZkeW1nckk3WmtFT1d2SDhYdEZXd09JQXAzSEVOWWtwdWk4c0RVc2FjQ1EtQkpVNEw?oc=5" target="_blank" rel="noopener">Google News - 台股(限定媒體)</a></div>
+  </div>
+  
+  
+
+  <div class="body-label"><span>以下為今日完整分類報導，不含上方頭版精選 · 點擊標題可展開完整分析</span></div>
+
+  
+  
+  <div class="category-block">
+    <div class="section-head"><h2>人力資源與組織管理</h2></div>
+    <div class="article-columns">
+      
+      <details class="article">
+        <summary>
+          <h3>台灣美光發放高額獎酬，逾七百名員工年薪領超過六十個月</h3>
+          <div class="meta">Google News - 勞基法(限定媒體)</div>
+          <p>台灣美光今日入帳高額獎酬，超過七百名員工年度總報酬領取超過六十個月。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>台灣美光於今日發放獎酬，統計顯示有超過七百名員工的年領金額超過六十個月。此訊息由經濟日報報導曝光。</p>
+          <p><b>可能造成的影響：</b>(a) 短期影響：半導體產業內的人才將高度關注美光的薪酬福利，可能引發科技業跳槽與人才流動的討論熱潮。(b) 中長期影響：高額的獎酬激勵機制將使美光在爭奪頂尖工程與管理人才時更具優勢，同時也可能推高同業的整體薪資成本壓力。(c) 受影響的對象或層面：台灣高科技製造業的勞動市場與人力資源招募策略將面臨直接衝擊，整體產業薪酬競爭趨勢偏向利多。</p>
+          <p><b>接下來該觀察：</b>後續應觀察記憶體產業景氣循環變化，以及其他半導體大廠是否跟進調整獎酬結構。</p>
+          <p class="sources-line">原文連結：<a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE5aQm9YbUd1ZWtpM3dFXzBLcjNDNnFubkFwUUl6UlB2VG43OWVIMGEyOXpQLTJveWNKU2ROLWFvMmYycXg4MkNxYXJPVFR0MVlFSVVTNHhfcmZXUdIBX0FVX3lxTE10dnpwclp1Qm82SlNIbjRURmZ2RjJiWkZWOWo4ZVUzOTFuc1BUMXFBSmFBdDNhYVlubFVXQVNzOVlnaGFaczR0QlpQM2lBZGh0ZlNnRDRLVzhHdWNOSDcw?oc=5" target="_blank" rel="noopener">Google News - 勞基法(限定媒體)</a></p>
+        </div>
+      </details>
+      
+      <details class="article">
+        <summary>
+          <h3>柳營奇美醫院遭資深眼科醫師砲轟薪資制度「滿1年零底薪、月薪僅5萬」涉嫌羞辱人</h3>
+          <div class="meta">Google News - 勞基法(限定媒體)</div>
+          <p>柳營奇美醫院被爆出滿一年零底薪且月薪僅5萬，引發資深眼科醫師公開抨擊。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>柳營奇美醫院被爆出提供月薪僅5萬元且滿1年後零底薪的薪資條件，引發資深眼科醫師公開砲轟此舉太羞辱人。</p>
+          <p><b>可能造成的影響：</b>(a) 短期影響：醫療界與勞動主管機關將高度關注此事，柳營奇美醫院的招募形象與聲譽將面臨直接衝擊，院方可能需緊急對外說明薪資結構。(b) 中長期影響：若此類低底薪或無底薪制度在醫療體系蔓延，將加劇醫事人員的離職潮並影響醫療服務品質，甚至促使衛福部或勞動部針對醫療業勞動條件展開稽查與檢討。(c) 受影響的對象或層面：醫療從業人員面臨勞動權益受損的利空，醫院經營方則面臨聲譽受損與人才流失的壓力，同時可能促使政策法規針對醫療特許行業的薪資結構進行更嚴格的審視。</p>
+          <p><b>接下來該觀察：</b>觀察院方後續的官方回應、衛生主管機關是否介入調查，以及是否引發其他醫療人員的串聯抗議。</p>
+          <p class="sources-line">原文連結：<a href="https://news.google.com/rss/articles/CBMiUEFVX3lxTFBUdWlsVzFNeU9ySExDbVlqWE9fLUZEVGhfeWhaOVlwNUtDRWNGQUtOUUFMeGdLZkY4Ri1EVlhtUE1sd2hRZng4OXlDT3VwcjJR0gFWQVVfeXFMTUlwb1FBRmV1bENkY0E1UUJmM1doYmtsQVluZzZRUjhjaUhLUURJV056c2tqT0hzTXBVNHZ5TFNkU0ZWY2ZzS2FwVVhobVRHeWJpQmhsRHc?oc=5" target="_blank" rel="noopener">Google News - 勞基法(限定媒體)</a></p>
+        </div>
+      </details>
+      
+      <details class="article">
+        <summary>
+          <h3>李冠德涉嫌職場霸凌遭調回行政院，並由康嘉棋接任駐日內瓦處長</h3>
+          <div class="meta">Google News - 國際焦點(限定媒體)</div>
+          <p>外交官李冠德因涉嫌職場霸凌被調回行政院，遺缺由康嘉棋接任駐日內瓦處長。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>原任駐日內瓦處長的李冠德因涉及職場霸凌案件，遭到調回行政院接受後續處理。經相關單位核定，其職缺由康嘉棋接任駐日內瓦處長。</p>
+          <p><b>可能造成的影響：</b>(a) 短期影響：日內瓦辦事處業務交接將由康嘉棋迅速接手，行政院內部也將針對李冠德的霸凌指控進行後續調查與懲處，內部員工對職場文化的關注度將短暫升高。(b) 中長期影響：若政府持續強化公部門職場霸凌防治，將有助於改善公家機關的管理制度與人資合規性，並成為各級機關建立健康勞資與管理關係的指標案件。(c) 受影響的對象或層面：公部門人資制度與政府形象受到直接影響，影響方向偏向中性至利多，有助於推動更嚴格的職場規範。</p>
+          <p><b>接下來該觀察：</b>行政院對李冠德霸凌案的調查結果與懲處決定，以及新任處長康嘉棋上任後的駐外業務推動狀況。</p>
+          <p class="sources-line">原文連結：<a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTFAtWVFtRldpUXNKRUgxM20yNGx4TFZlb0JtY08wTzBCVWxzMWIzb3RKVFJ0d1JHcklDVkZoMGkyaU9ScmVHS2ZBTVVjZVh6cDFTU0w0LUlMUmtRX3hxbnU4?oc=5" target="_blank" rel="noopener">Google News - 國際焦點(限定媒體)</a></p>
+        </div>
+      </details>
+      
+      <details class="article">
+        <summary>
+          <h3>金管會指出保險業人才需求轉型，將著重跨領域培育國際化戰略領袖</h3>
+          <div class="meta">Google News - 國際焦點(限定媒體)</div>
+          <p>金管會表示保險業人才需求已轉向跨域培育國際化戰略領袖。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>金融監督管理委員會（金管會）針對保險業的人才需求提出政策方向或看法。內容指出保險業目前的人才需求已轉向，未來將著重於跨領域培育國際化戰略領袖。</p>
+          <p><b>可能造成的影響：</b>(a) 短期影響：各大保險公司的人力資源部門將開始檢視現行的人才培育計畫與教育訓練架構，針對跨域與國際化儲備幹部的招募與培訓進行調整。(b) 中長期影響：保險業內將逐步建立系統化的跨域戰略領袖養成機制，帶動金融保險業整體管理人才素質的轉型。(c) 受影響的對象或層面：保險業的人力資源制度、教育訓練方法論及中高階主管職涯發展將受到直接影響，整體趨勢對保險業長期的組織競爭力為中性偏多。</p>
+          <p><b>接下來該觀察：</b>後續應觀察保險業者針對跨域及國際化人才培育所推出的具體政策或相關法規辦法的落實進展。</p>
+          <p class="sources-line">原文連結：<a href="https://news.google.com/rss/articles/CBMiXkFVX3lxTE15T2xrb1gwZFV5ZktHYmFWdXFIaXB5UW1vWjh4eExzTXl3VHFtSzd1OUN3UENxMHFvS1lWbWx0LWt6RjhuUkdlWTVRZS1kaWxKRktWMDJrN3p6bnVjV1E?oc=5" target="_blank" rel="noopener">Google News - 國際焦點(限定媒體)</a></p>
+        </div>
+      </details>
+      
+    </div>
+  </div>
+  
+  
+  
+  <div class="category-block">
+    <div class="section-head"><h2>餐飲與零售</h2></div>
+    <div class="article-columns">
+      
+      <details class="article">
+        <summary>
+          <h3>星巴克（Starbucks）計畫在得來速導入AI技術，推出個人化數位點餐選單</h3>
+          <div class="meta">The Verge(美國科技媒體)</div>
+          <p>星巴克執行長透露將探索AI辨識與個人化得來速數位菜單技術。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>在週四的財報電話會議上，星巴克執行長Brian Niccol表示公司將探索一項新體驗，能在參與計畫的顧客抵達時進行辨識、呈現個人化數位菜單，並讓付款流程更輕鬆。這項技術類似於Taco Bell和麥當勞近期正在實驗的車輛辨識與動態數位菜單功能。</p>
+          <p><b>可能造成的影響：</b>(a) 短期影響：接下來1至3個月內，速食餐飲產業的科技供應商與軟硬體整合商將受到市場關注，相關概念股與技術提供者能見度提升。(b) 中長期影響：半年到一年後，若大型連鎖餐飲成功導入個人化AI得來速，將迫使同業跟進升級數位看板與AI辨識系統，推動餐飲零售業的自動化硬體與AI Agent軟體支出增加。(c) 受影響對象與層面：連鎖餐飲產業的營運效率與數位化供應鏈迎來利多，消費者將體驗到更具個人化的消費流程，而市場對AI實際落地應用於實體零售的信心也將進一步強化。</p>
+          <p><b>接下來該觀察：</b>觀察星巴克後續在特定門市實際 piloto（試點）測試的推出時間表與顧客接受度回饋。</p>
+          <p class="sources-line">原文連結：<a href="https://www.theverge.com/ai-artificial-intelligence/1023440/starbucks-ai-personalized-menu-drive-thru" target="_blank" rel="noopener">The Verge(美國科技媒體)</a></p>
+        </div>
+      </details>
+      
+      <details class="article">
+        <summary>
+          <h3>星巴克去冰加奶收費引發爭議，路易莎董事長透露業績大幅成長</h3>
+          <div class="meta">自由時報即時新聞、Google News - 餐飲業(限定媒體)</div>
+          <p>星巴克因去冰加奶收費遭到批評，同業路易莎則表示業績因而大幅成長。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>星巴克推出「去冰加奶」需額外支付15元的政策引發消費者批評。對此，路易莎董事長表示該同業政策使路易莎的業績好到翻掉。</p>
+          <p><b>可能造成的影響：</b>(a) 短期影響：接下來1-3個月內，對價格敏感的星巴克消費者可能會轉向路易莎或其他平價連鎖咖啡品牌，帶動競爭對手的客流量與短期營收。(b) 中長期影響：半年到一年後，若星巴克此項收費政策未受消費者反彈而動搖，其他連鎖餐飲業者可能跟進檢視並調整客製化服務的收費標準。(c) 受影響對象與層面：消費者面臨餐飲隱性成本增加（利空）；連鎖餐飲同業因競品決策獲得轉單效應（利多）；整體連鎖零售產業的定價策略與毛利結構將受到市場檢視。</p>
+          <p><b>接下來該觀察：</b>觀察星巴克後續是否會調整去冰加奶收費政策，以及路易莎等競爭對手的營收與客流量是否能維持長期成長。</p>
+          <p class="sources-line">原文連結：<a href="https://ec.ltn.com.tw/article/breakingnews/5624379" target="_blank" rel="noopener">自由時報即時新聞</a>、<a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE1aelVNRmdnOUpmU2x5QnJLOWdianlzclVuVngwbUZMNU8xSmpIRXJGd2tIQ1Z3UktNWmVMaHMtUWJxQmtXdHl4QTFWVzlHaVFyM01RMkpPU3Z2S2JVc1hF0gFkQVVfeXFMT3lKZ2xodVdFZGVteG9LWXRscmROVFI2eGtBYjRuVGw5UVJLVHlXUWlZMmdpREZ0NE1wV3FnLTktTXhvU1pGMEc1NFVwSW12Z3Y3NHhnNDhfNEdSYzFWWjlDQXVhSQ?oc=5" target="_blank" rel="noopener">Google News - 餐飲業(限定媒體)</a></p>
+        </div>
+      </details>
+      
+      <details class="article">
+        <summary>
+          <h3>路易莎咖啡建置AI大平台助攻營運，並將攜手小型餐飲業者擴大市場占有率</h3>
+          <div class="meta">Google News - 餐飲業(限定媒體)</div>
+          <p>路易莎咖啡將建立AI大平台優化營運，並計畫攜手小餐飲業者擴大市占。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>路易莎宣布將建立AI大平台來輔助內部營運。同時，該企業計畫與小型餐飲業者合作，藉此擴大整體市場占有率。</p>
+          <p><b>可能造成的影響：</b>(a) 短期影響：接下來1-3個月內，路易莎內部的營運流程與數據管理將率先導入AI自動化工具，相關供應商與合作的小型餐飲業者將開始評估加入該平台的可能性。(b) 中長期影響：半年到一年後，若AI平台運作成熟，可能形成餐飲業的SaaS或共享服務生態系，帶動更多獨立餐飲業者靠攏，改變傳統連鎖加盟與獨立店家的競爭態勢。(c) 受影響的對象或層面：連鎖餐飲產業的數位化競爭門檻提高（利多）；小型餐飲業者獲得低成本導入AI與擴大通路資源的機會（利多）；傳統僅依賴人工的餐飲同業將面臨更大的營運效率壓力（利空）。</p>
+          <p><b>接下來該觀察：</b>觀察路易莎AI大平台的實際導入功能模組，以及首波攜手的小型餐飲業者家數與合作模式。</p>
+          <p class="sources-line">原文連結：<a href="https://news.google.com/rss/articles/CBMiUEFVX3lxTE9lbmxxYXJiaWZDX1NyUzRWRkVXOERVMkVjMlJ3NDVCUFBEMGlISDI4bVFrSnBkUjR4RDFnZ2YzZEYyMDQyNGw2cWNCT1Qwd3Rv0gFWQVVfeXFMT1lUVUJhVTQ1emw1OFpkMkhEcC13MWNZRjBCRTVQX0NSSG5lVFFWeDR5SmQ0TWhScF90ZkczNWs5TG5ScG9jTDR5OHczUF9OTXBnSW5ma3c?oc=5" target="_blank" rel="noopener">Google News - 餐飲業(限定媒體)</a></p>
+        </div>
+      </details>
+      
+      <details class="article">
+        <summary>
+          <h3>藝康以科學化清潔體系攜手阿爾法餐飲集團，旗下五家門市獲頒模範餐廳獎牌</h3>
+          <div class="meta">The News Lens 關鍵評論網</div>
+          <p>阿爾法餐飲集團五家門市導入藝康科學化清潔方案，率先獲頒模範餐廳獎牌以落實食安。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>藝康頒贈「模範餐廳」獎牌給阿爾法餐飲集團的五家門市，肯定其導入科學化清潔衛生體系。雙方藉此深化合作夥伴關係，共同展現落實食安管理與守護消費者用餐安全的承諾。</p>
+          <p><b>可能造成的影響：</b>(a) 短期影響：阿爾法餐飲集團的五家獲獎門市在接下來1-3個月內，能藉此模範形象提升消費者用餐信心；同時藝康的科學化清潔方案在該集團內部的導入成效將成為其他門市觀摩的對象。(b) 中長期影響：若此科學化清潔與食安管理模式成效顯著，半年到一年後可能促使阿爾法集團擴大至全集團門市導入，並吸引其他連鎖餐飲同業跟進效仿，推動餐飲供應鏈與清潔服務標準的升級。(c) 受影響的對象與層面：對連鎖餐飲產業供應鏈（如清潔衛生服務商）構成利多，有助於提升B2B專業清潔服務的市場需求；對消費者而言則為用餐安全帶來實質的正面利多保障。</p>
+          <p><b>接下來該觀察：</b>觀察阿爾法餐飲集團是否將此科學化清潔方案全面推廣至旗下其他非獲獎門市，以及其他連鎖餐飲同業是否跟進導入類似的科學化食安管理機制。</p>
+          <p class="sources-line">原文連結：<a href="https://www.thenewslens.com/article/270890" target="_blank" rel="noopener">The News Lens 關鍵評論網</a></p>
+        </div>
+      </details>
+      
+    </div>
+  </div>
+  
+  
+  
+  <div class="category-block">
+    <div class="section-head"><h2>人工智慧與科技</h2></div>
+    <div class="article-columns">
+      
+      <details class="article">
+        <summary>
+          <h3>大型科技公司砸重金投資AI基礎設施的熱潮開始出現裂痕</h3>
+          <div class="meta">TechCrunch(美國科技媒體)</div>
+          <p>大型科技公司狂砸資金建構AI基礎設施，引發債務與現金流疑慮。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>科技巨頭正投入數十億美元建構AI基礎設施。然而，不斷攀升的負債、負現金流以及日益增加的投資人懷疑態度，正引發外界對這波AI支出熱潮是否具備永續性的質疑。</p>
+          <p><b>可能造成的影響：</b>(a) 短期影響：接下來1-3個月內，AI概念股與半導體供應鏈（如費城半導體指數相關個股）的股價波動將加劇，投資人會更嚴格審視科技巨頭的財報與資本支出計畫。(b) 中長期影響：如果負債與現金流壓力持續，半年到一年後科技巨頭可能放緩資料中心擴建速度，導致硬體需求降溫，甚至影響AI Agent等應用工具的開發預算。(c) 受影響對象與層面：市場信心與科技產業供應鏈將面臨明顯利空，半導體製造商與AI基礎設施供應商將首當其衝承受訂單調整的壓力。</p>
+          <p><b>接下來該觀察：</b>觀察大型科技公司接下來的季度財報中的資本支出指引與自由現金流表現。</p>
+          <p class="sources-line">原文連結：<a href="https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/" target="_blank" rel="noopener">TechCrunch(美國科技媒體)</a></p>
+        </div>
+      </details>
+      
+    </div>
+  </div>
+  
+  
+  
+  <div class="category-block">
+    <div class="section-head"><h2>市場與總體經濟</h2></div>
+    <div class="article-columns">
+      
+      <details class="article">
+        <summary>
+          <h3>外資單月狂砍台股近兆元創歷史最慘紀錄，公股行庫護盤低接2,409億元創歷史新高</h3>
+          <div class="meta">Google News - 台股(限定媒體)</div>
+          <p>外資單月大砍台股近兆元創史上最慘，公股低接2,409億元創高。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>外資在當月大幅調節台股，累計砍倉金額將近新台幣一兆元，創下歷史最慘紀錄。與此同時，公股行庫進場低接護盤，金額達2,409億元，創下歷史新高。</p>
+          <p><b>可能造成的影響：</b>(a) 短期影響：接下來1至3個月內，台股大盤與半導體等權值股將持續承受外資提款的龐大賣壓，市場波動劇烈，散戶與法人投資人的持股信心將顯著動搖。(b) 中長期影響：半年到一年後，若外資撤資趨勢未止，台股資金動能將轉為高度依賴內資與公股防線，企業籌資與估值將面臨結構性修正。(c) 受影響對象或層面：台股大盤與半導體等權值股面臨強烈利空，市場信心短期內偏向悲觀；而公股行庫則透過護盤扮演穩定市場的角色，但短期資金消耗顯著。</p>
+          <p><b>接下來該觀察：</b>後續應觀察外資賣超力道是否趨緩，以及公股行庫的護盤續航力與台股成交量變化。</p>
+          <p class="sources-line">原文連結：<a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE1WRklLUmJhbFlfTWwtYmVwNy1LamxkZnJZRzljN3BrUHV5dmlXTUhDd0k0aFFaZ09BTmJ3azd0d2pSbDhmQkp2UWM5UHZMMUpQS3VCc0ZCamVRQdIBX0FVX3lxTE51RmhUNmcwUlNxaVVfd2xfQjRxTGR2R1laNW1kSU5ITy05N205c0lLUElFa08ydjh6TkhNMUZZZ3MwU1pCcGR4TzN6TnIxd254ZnBZUDJvMXAycXN3RmZ3?oc=5" target="_blank" rel="noopener">Google News - 台股(限定媒體)</a></p>
+        </div>
+      </details>
+      
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+
+  <div class="colophon">
+    <span>每日情報 · 私人情報摘要，不對外公開發布</span>
+    <span>由 Gemini 分析生成 · 內容僅供參考</span>
+  </div>
+
+</div>
+</body>
+</html>
