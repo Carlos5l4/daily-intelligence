@@ -1,0 +1,430 @@
+{
+  "date": "2026-11-05",
+  "issue_number": 1,
+  "generated_at": "2026-11-05T00:23:15.914298+00:00",
+  "today_in_30_seconds": "台股昨日遭遇重挫，暴跌千點且外資狂砍近千億，市場正嚴格檢驗AI投資報酬率。不過，美股隨後大幅回神，帶動道瓊期指與台指期夜盤強勁飆漲，有望為今日台股注入反彈動能。而在國內民生法案方面，民眾黨提案將產假延長至14週、陪產假增至14天，獲得朝野立委高度共識，修法進展備受關注。",
+  "top3_item_ids": [
+    "c134",
+    "c187",
+    "c101"
+  ],
+  "items": [
+    {
+      "item_id": "c134",
+      "cluster_id": "c134",
+      "category": "markets_economy",
+      "headline": "美股強勢反彈帶動道瓊期指大漲1056點，台指期夜盤亦飆升逾770點",
+      "one_sentence_summary": "美股大幅回神，帶動道瓊期指與台指期夜盤強勁飆漲。",
+      "what_happened": "美股出現強烈回神，推動道瓊期指狂漲1056點。同時，受此美股漲勢激勵，台指期夜盤一度大漲超過770點。",
+      "why_it_matters": "美股大盤與期指的劇烈波動直接牽動全球資本市場信心與資金流向，對台股開盤走勢具有高度的參考與領先指標作用。",
+      "potential_impact": "(a) 短期影響：接下來1-3個月內，台股與美股投資人的市場信心將明顯回穩，空方壓力減輕，短線資金可能快速回流股市，推升相關指數與權值股表現。(b) 中長期影響：若此波回神代表總體經濟或市場悲觀情緒消除，半年到一年內有助於支撐股市多頭格局，提升企業融資與投資意願。(c) 受影響的對象或層面：直接影響層面為台美兩地股市的「市場信心」與「投資人資產配置」，方向為明確利多，有助於緩解先前市場的恐慌情緒。",
+      "what_to_watch_next": "接下來應持續觀察美股實際開盤後的續航力道，以及費城半導體指數等關鍵指標的表現。",
+      "importance_score": 72.0,
+      "personal_relevance_score": 98,
+      "keywords": [
+        "美股回神",
+        "道瓊期指",
+        "台指期夜盤",
+        "市場信心",
+        "台股大盤"
+      ],
+      "sources": [
+        {
+          "name": "Google News - 台股(限定媒體)",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1WcXNFUnN0dEJsa2ZPTk8yS1pYWlJ5SHkxc2x0OGRGV0dzZmk1SG01UUVsYjByVGhINEhvWnB4aGY2ZF9ybkdPdlZLOFVEdkc3VFBlTng5NzBWZnFIRVpR0gFkQVVfeXFMTzAwVFFxb053M1l0a0cxV3hTYk9OOWRmaTVqOGp0bVo3WGJJX3MwV3R2UkExVWN4cEZ2NkRPaVFnOTQ2WnhEX1Z1Q1VxaHRmVXBpRnhRZzJHNmJvWGxhaFJlbU92SQ?oc=5",
+          "published_at": "2026-11-04T13:57:00+00:00"
+        }
+      ],
+      "is_top3": true
+    },
+    {
+      "item_id": "c187",
+      "cluster_id": "c187",
+      "category": "hr_organization",
+      "headline": "民眾黨推動產假延長至14週、陪產假14天修法，民眾黨立委表示朝野具高度共識",
+      "one_sentence_summary": "民眾黨提案將產假與陪產假皆延長至14天與14週，朝野立委具高度共識。",
+      "what_happened": "民眾黨立委推動《勞動基準法》修法，主張將現行產假延長至14週、陪產假延長至14天。民眾黨立委指出，目前朝野立委對此修法方向已具備高度共識。",
+      "why_it_matters": "此修法直接涉及勞基法工時與假勤制度的變革，對於企業的人力成本結構、員工福利政策及人力資源管理規劃將產生直接且深遠的影響。",
+      "potential_impact": "(a) 短期影響：接下來1-3個月內，各企業的人資部門（HRBP）需開始評估假勤制度調整對人力配置的衝擊，特別是連鎖餐飲與零售等第一線人力密集的產業，將提前感受到人力調度與代班成本增加的壓力。(b) 中長期影響：如果修法正式通過並實施，半年到一年後，企業將全面修改內部教育訓練與人力備援機制，並可能加速推動排班自動化工具或AI排班系統的導入，以緩解長期人力短缺與成本上升的問題。(c) 受影響的對象或層面：政策法規與產業/供應鏈受到直接衝擊，對勞工而言為明顯利多，但對零售與連鎖餐飲等服務業雇主而言，則增加人事成本與營運管理難度，屬於經營利空。",
+      "what_to_watch_next": "接下來應密切觀察立法院審查該項勞基法修法進度及各政黨版本的具體條文內容。",
+      "importance_score": 71.7,
+      "personal_relevance_score": 98,
+      "keywords": [
+        "勞基法修法",
+        "產假延長",
+        "陪產假",
+        "民眾黨",
+        "人力資源管理"
+      ],
+      "sources": [
+        {
+          "name": "Google News - 勞基法(限定媒體)",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5XZmtmZkg3UVR6X0ZSb1NiUzdDUmYxZ2JNNTBWSzRQN2c5d2l3R2s0VUl1bVRqbzJBZkRxRU9KdlQwa1JGX0t1N2hCMnJuMzNHNi05Zk5Qby1VUdIBX0FVX3lxTE9zaFk5cW5zMFE2LWZKNE13RDhQUkN2bnRLYVVxejAwdW41SkpfT29FcWNZMW5Hby1zZHctS0xrek5oLWxmVV96Qm5La0FVN2dENGlTR01ZUkJVMG41U1VR?oc=5",
+          "published_at": "2026-11-04T12:24:06+00:00"
+        }
+      ],
+      "is_top3": true
+    },
+    {
+      "item_id": "c101",
+      "cluster_id": "c101",
+      "category": "markets_economy",
+      "headline": "台股指數劇烈震盪千點，專家邱沁宜指出外資大舉賣超1499億元並對AI投資效益提出警示",
+      "one_sentence_summary": "台股暴跌千點，外資狂砍1499億元，市場開始檢驗AI投資報酬率。",
+      "what_happened": "台股盤面出現超過千點的劇烈震盪。財經專家邱沁宜指出外資單日狂殺1499億元，並公開示警市場對AI的投資開始受到嚴格檢驗。",
+      "why_it_matters": "這反映出資本市場對當前高昂的AI基礎建設與資本支出產生了實質疑慮，外資的大幅提現可能動搖整體科技股的估值基礎與市場信心。",
+      "potential_impact": "(a) 短期影響：接下來1-3個月內，台股與美股半導體類股將面臨極大的法人拋壓與估值修正，持有台美股的投資人將直接感受到資產價值的縮水與高波動風險。(b) 中長期影響：如果AI投資效益遲遲無法展現，半年到一年後科技供應鏈的資本支出可能放緩，進而影響相關硬體製造商的營收成長動能。(c) 受影響的對象或層面：市場信心與台美股半導體供應鏈將面臨明顯利空，投資人需重新評估科技股的持股部位與風險承受度。",
+      "what_to_watch_next": "觀察外資後續續賣動向以及費城半導體指數的支撐力道。",
+      "importance_score": 81.0,
+      "personal_relevance_score": 95,
+      "keywords": [
+        "台股",
+        "外資",
+        "AI投資",
+        "邱沁宜",
+        "半導體"
+      ],
+      "sources": [
+        {
+          "name": "自由時報即時新聞",
+          "url": "https://ent.ltn.com.tw/news/breakingnews/5629857",
+          "published_at": "2026-11-04T23:23:55+00:00"
+        },
+        {
+          "name": "Google News - 台股(限定媒體)",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9UcFoxTXpRRTk3YkJuZWt6U29hREMwdndPdTRlSXBZLWZPTEtaX0dRY1JEelVKaVNTSlRoTkU5czRHaXJTc2lyMEo1WXR0N1E3M2JNd3U2cnZ6QUxt0gFiQVVfeXFMTUN0ZWxoVWZLREtJRW50MGFZWU9IYmhyZzluSEI5RHoyLW5zbUtZLXNQelVMb3REM1d2WThjODYxZE5LbDFiT200d243Z05wYnV4bHVWQ21NZGJuVl9PQktsbmc?oc=5",
+          "published_at": "2026-11-04T23:23:55+00:00"
+        }
+      ],
+      "is_top3": true
+    },
+    {
+      "item_id": "c099",
+      "cluster_id": "c099",
+      "category": "markets_economy",
+      "headline": "台股大跌卻未見融資追繳潮，昨日追繳戶數反而減少",
+      "one_sentence_summary": "台股下跌未引發預期中的融資追繳萬箭齊發，追繳戶數反而逆勢減少。",
+      "what_happened": "台股在市場預期會出現大量融資追繳的情況下，實際狀況並未如預期般萬箭齊發。統計顯示，昨日的融資追繳戶數不但沒有增加，反而比前一個交易日還要少。",
+      "why_it_matters": "這項數據反映出散戶與市場融資戶的維持率狀況可能比想像中健康，或是主力資金與散戶在當前價位具備一定的抗跌與自主調節能力，有助於釐清市場實際的籌碼安定度與多空強弱。",
+      "potential_impact": "(a) 短期影響：接下來1-3個月內，市場恐慌情緒可能因融資壓力不如預期沈重而獲得舒緩，短線賣壓有機會減輕。(b) 中長期影響：若籌碼持續保持穩定且未出現多殺多，有助於台股大盤在震盪中築底，為後續行情提供穩固支撐。(c) 受影響的對象或層面：台股散戶投資人與整體市場信心受到中性偏多影響，市場流動性與融資維持率表現將回歸基本面與技術面走勢。",
+      "what_to_watch_next": "接下來應持續觀察融資餘額變化及融資維持率的整體水準。",
+      "importance_score": 79.0,
+      "personal_relevance_score": 95,
+      "keywords": [
+        "台股",
+        "融資追繳",
+        "籌碼面",
+        "市場信心"
+      ],
+      "sources": [
+        {
+          "name": "自由時報即時新聞",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5629877",
+          "published_at": "2026-11-04T23:25:06+00:00"
+        },
+        {
+          "name": "Google News - 台股(限定媒體)",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE50RmNSYko0bDBMSDg1akNCSnJZS2VKMVBqdDRHNnM1S1BHUmpEekFIQUc1THQ5RkpDRk5fMG9OdmE3Z0drMHBrUHVGakVTaGI1RFhVLURXeVFDZGVrdEhB0gFkQVVfeXFMTUxRWkZHdTRhQTlhMVhCZUVOajdxZUYyMGRSZ1dkWkZVWUxsSjNtTHdpZVFZXzlMbGZ0MDV0WmV3cmhwWGYxeFlXeW5naHlWNGtDdmwzY21TbkEzamJPRjAwd0Nkag?oc=5",
+          "published_at": "2026-11-04T23:25:06+00:00"
+        }
+      ],
+      "is_top3": false
+    },
+    {
+      "item_id": "c074",
+      "cluster_id": "c074",
+      "category": "markets_economy",
+      "headline": "謝金河分析川普選舉失利衝擊全球股市並點名台股為最強市場",
+      "one_sentence_summary": "謝金河指出川普慘敗衝擊全球股市並點出四大危機，但認為台股仍是最強市場。",
+      "what_happened": "財信傳媒董事長謝金河針對川普選舉慘敗對全球股市的衝擊進行分析，並揭露了當前的四項危機。同時，他在分析中強調台股在該情勢下仍展現最強市場的表現。",
+      "why_it_matters": "這反映出重大政治事件與選舉結果對全球資本市場的直接連動性，並為投資人提供總體經濟與區域股市強弱的判讀基準。",
+      "potential_impact": "(a) 短期影響：接下來1-3個月內，全球金融市場將因川普選舉失利與謝金河點出的四大危機出現波動，投資人與法人機構將重新評估資產配置，台股雖被看好為最強市場，但仍會受到國際盤勢連動干擾。(b) 中長期影響：半年到一年後，若危機持續發酵或政治板塊重組，將影響跨國企業的全球供應鏈布局與資金流向，進一步牽動台股的產業基本面與外資動向。(c) 受影響的對象或層面：市場信心與台美股市投資人直接受衝擊，整體影響方向偏向多空交織的中性至震盪格局。",
+      "what_to_watch_next": "接下來應觀察川普失利後的後續政治動向、全球股市的資金流向，以及台股指數能否守住關鍵支撐。",
+      "importance_score": 78.5,
+      "personal_relevance_score": 95,
+      "keywords": [
+        "川普",
+        "謝金河",
+        "全球股市",
+        "台股",
+        "四大危機"
+      ],
+      "sources": [
+        {
+          "name": "自由時報即時新聞",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5629871",
+          "published_at": "2026-11-05T00:09:53+00:00"
+        },
+        {
+          "name": "Google News - 台股(限定媒體)",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE10QTZjY29Ic09KSjlJekQ1c1loZkFXcFM2bnpMb0Nuc1Y1RGx2LVpnR2dSX202clF3WjRzNmZ0ME9fZFlneXlhQi1UQlRKamNyWDZCSXdieVk?oc=5",
+          "published_at": "2026-11-05T00:11:04+00:00"
+        }
+      ],
+      "is_top3": false
+    },
+    {
+      "item_id": "c156",
+      "cluster_id": "c156",
+      "category": "hr_organization",
+      "headline": "外籍看護懷孕致家庭照顧出現空窗期，勞動部擬縮短遞補等待期並於明年初上路",
+      "one_sentence_summary": "外籍看護懷孕造成家庭照顧空窗，勞動部擬縮短遞補等待期盼明年初上路。",
+      "what_happened": "外籍看護因懷孕導致家庭面臨照顧空窗期問題，對此勞動部規劃縮短遞補等待期，並力拼在明年初正式上路實施。",
+      "why_it_matters": "此政策調整直接關係到國內家庭照顧人力資源的穩定性與調度彈性，對於依賴外籍看護的雇主家庭是一項重要的制度緩解措施。",
+      "potential_impact": "(a) 短期影響：預計在接下來1-3個月內，政策預告與法規修正草案將成為焦點，有急需遞補人力的雇主家庭會密切關注上路時程。 (b) 中長期影響：半年到一年後新規上路若順利實施，將能有效縮短家庭照顧空窗期，降低照顧者的壓力與勞動斷層。 (c) 受影響對象與層面：此政策主要對依賴外籍看護的家庭帶來政策面利多，同時也影響勞動部相關法規的執行效率與人力仲介產業的作業流程。",
+      "what_to_watch_next": "觀察勞動部縮短遞補等待期之具體法規修訂進度與明年初的實際施行細節。",
+      "importance_score": 77.5,
+      "personal_relevance_score": 95,
+      "keywords": [
+        "外籍看護",
+        "照顧空窗期",
+        "勞動部",
+        "遞補等待期"
+      ],
+      "sources": [
+        {
+          "name": "Google News - 餐飲業(限定媒體)",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFA5T2ZBR01mNk5nTVY4N3RlMnM0ZUI3cVZMcVNwYTdwYThWUGNQa01HeWFCRFhtUjRVMFdKWlYzOWZMUFVXTkMwenhTUWpSZnl1ZjlUdzltUzFhd9IBX0FVX3lxTE1tRDVMR0dyQjJMbEZMVVZIY2YwM2c5eFlSUkJGR08tM0RDLWw3ekM5TXFIbVFmS0t5TkhJSDd1S18xSHhGYlNrR0ZXSkwtbjlXeEQ2TWg4VXZKa0tMWl9j?oc=5",
+          "published_at": "2026-11-04T05:44:57+00:00"
+        },
+        {
+          "name": "Google News - 勞基法(限定媒體)",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1WUlpRUlRBb1c5UHdUVTJFOVNiWEJwQ0ZLRC1KYUtmUC1xeVJPUlQxT0pJUDJ3TFB0cmRHd1NTZUFPNU1zVkUycXNvTTQ3Xzh30gFWQVVfeXFMTXNiRXZjUFB2cGhsWnRWX1VsLVNlOFd1SnZNaVQ1OG80Tzl6aHlFWFdUY1MyNXp3WTA1UXZqcjFPTkh4V3hqM0loM0h0YUJhUElTRGNWRmc?oc=5",
+          "published_at": "2026-11-04T16:20:43+00:00"
+        }
+      ],
+      "is_top3": false
+    },
+    {
+      "item_id": "c159",
+      "cluster_id": "c159",
+      "category": "hr_organization",
+      "headline": "桃園工會批評美光台中工會與資方的協議違背民主，並要求洪申翰下台",
+      "one_sentence_summary": "桃園工會指控美光台中工會與資方協議違背民主，公開要求洪申翰下台。",
+      "what_happened": "桃園工會公開批評美光台中工會與資方達成的協議違背民主程序，並針對此事要求洪申翰下台負責。相關報導由UDN於2026年11月4日發布。",
+      "why_it_matters": "此事件突顯了不同工會組織之間對於勞資協議合法性與民主程序的歧見，並直接牽動勞動部或相關官員的政治與行政責任。",
+      "potential_impact": "(a) 短期影響：接下來1-3個月內，勞動部與相關官員將面臨立委質詢與輿論壓力，必須對洪申翰的去留或工會爭議做出說明；同時，美光台中工會與桃園工會之間的路線衝突將浮上檯面。(b) 中長期影響：若衝突持續，可能促使勞動主管機關重新檢視工會法規及勞資協商的民主正當性標準，甚至影響未來科技業跨廠區工會的互動模式。(c) 受影響的對象或層面：政策法規與勞動行政體系將面臨中性偏空、信任度受挑戰的影響；對科技業勞資關係而言，則增加了一層不確定性。",
+      "what_to_watch_next": "後續觀察勞動主管機關的回應、洪申翰的動向以及美光勞資雙方的進一步動作。",
+      "importance_score": 77.0,
+      "personal_relevance_score": 95,
+      "keywords": [
+        "美光",
+        "工會",
+        "洪申翰",
+        "勞資協議",
+        "勞動爭議"
+      ],
+      "sources": [
+        {
+          "name": "Google News - 餐飲業(限定媒體)",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5FT1RqTHhpTDNmakRGZ2FQR3hpWkE2dUhHbnkxUkpXTF9JdTg0WmFCUEk1TFJyd0hNLTNGazVCdkprZENVdnlkY2lwajFIS0dI0gFWQVVfeXFMTTQ3NUdjQ1pEZEZFeW9NOFMxQkU4ZFN1MFI4U0pIb1RxUHB2X2NVaDZ4djdmX1NNZDVzQXZhSm50S0hXbWdWSVFBcUpQQkZpaGp4MHJSb3c?oc=5",
+          "published_at": "2026-11-04T03:05:46+00:00"
+        },
+        {
+          "name": "Google News - 勞基法(限定媒體)",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9WeTk0em5OQm9mR1dzbmdMSEwyUVhuNXNEZTBSQVllMDRYVnNvbjQ5YUNJa2dfUUMyZ0ZybHFkQjA1OG5Jcy14QzFnenR5THpy0gFWQVVfeXFMT1lMVDBhWlVDOVFuc09BVVVLN1BOY05yMlcwckR4ZC14WWIxbl9oOFBwVUMzNm1XblBIZlN4clpzZDFfMkZlWFZWWlpxRjc1U2MzdWVuQUE?oc=5",
+          "published_at": "2026-11-04T02:25:57+00:00"
+        }
+      ],
+      "is_top3": false
+    },
+    {
+      "item_id": "c157",
+      "cluster_id": "c157",
+      "category": "hr_organization",
+      "headline": "台灣面臨人口探底、日韓搶工與移工紅利消失的國安危機挑戰",
+      "one_sentence_summary": "台灣面臨人口探底與日韓搶工，移工紅利消失敲響國安警鐘。",
+      "what_happened": "經濟日報報導指出，台灣正面臨人口探底危機，同時面臨日韓搶工及移工紅利消失的雙重挑戰。文章探討台灣在勞動力短缺下面臨的困境與如何走出危機。",
+      "why_it_matters": "勞動力短缺與移工紅利消失直接衝擊台灣基礎產業與勞動市場結構，特別是高度依賴人力之連鎖餐飲與零售產業，將面臨嚴峻的缺工與用人成本壓力。",
+      "potential_impact": "(a) 短期影響：餐飲與零售業者的第一線人力短缺問題將更加惡化，招募成本與基層員工薪資面臨上升壓力。(b) 中長期影響：企業被迫加速導入自動化工具與AI Agent來替代部分人力，並需徹底重塑HRBP的留才與教育訓練策略。(c) 受影響的對象或層面：連鎖餐飲與零售產業鏈（利空）、勞動力密集的營運模式（利空）、以及政府的勞動與移民政策法規（中性）。",
+      "what_to_watch_next": "觀察政府是否推出新的勞動引進政策或產業自動化補助方案。",
+      "importance_score": 72.0,
+      "personal_relevance_score": 95,
+      "keywords": [
+        "人口探底",
+        "日韓搶工",
+        "移工紅利",
+        "缺工危機",
+        "勞動力短缺"
+      ],
+      "sources": [
+        {
+          "name": "Google News - 餐飲業(限定媒體)",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5JazF5Wi14eTkyUURjZW9WNnl0Y0o0MEEtRlNOb2NwMV9zZEJfWGFxQlNlbm40YU5aX0tOcnZFSG5sVXBGczZZYThiSkQyaTRYeUREMXBlZk9od9IBX0FVX3lxTE5DMUM1Uk11OExuLUVzSkZUVTY3bTJWbHVEcFdSR0RwQmMyQWhBaXNYbUNPNnJEcllucVUzWjdFTGhvV1d0VlRCTDlRbHZtd1JFcXcyYUJXRWU4STVqUmRj?oc=5",
+          "published_at": "2026-11-04T05:55:38+00:00"
+        }
+      ],
+      "is_top3": false
+    },
+    {
+      "item_id": "c164",
+      "cluster_id": "c164",
+      "category": "ai_technology",
+      "headline": "美國國會議員席次變動是否將拖累AI產業投資？兩大智庫學者深入解析",
+      "one_sentence_summary": "美國國會變天是否會讓AI投資放緩，兩大智庫學者對此提出看法。",
+      "what_happened": "美國國會面臨政治版圖變天，兩大智庫學者針對此變局是否會導致人工智慧（AI）相關投資放緩提出看法與分析。相關討論聚焦於政策轉向對整體科技與AI資本支出的實質影響。",
+      "why_it_matters": "美國國會的政治動向直接牽動聯邦預算分配、科技監管法案與產業補貼政策，這將左右大型科技企業與創投對AI領域的資金投入意願與節奏。",
+      "potential_impact": "(a) 短期影響：在選舉結果底定後1-3個月內，市場與科技巨頭將高度關注新國會對科技監管與AI預算的態度，觀望氣氛可能導致相關類股短期震盪。(b) 中長期影響：若新國會推動更嚴格的AI法案或縮減補貼，半年到一年後可能使部分AI基礎建設與新創融資進度放緩；反之若維持支持態度，投資動能將持續。(c) 受影響的對象或層面：政策法規與市場信心將直接受到衝擊，進而影響半導體供應鏈、AI軟硬體企業的投資報酬預期，對整體科技股與美股大盤動態形成中短期變數。",
+      "what_to_watch_next": "觀察新國會上台後針對AI產業發展與監管的具体立法提案及預算審議動向。",
+      "importance_score": 69.0,
+      "personal_relevance_score": 90,
+      "keywords": [
+        "美國國會",
+        "AI投資",
+        "智庫學者",
+        "科技政策"
+      ],
+      "sources": [
+        {
+          "name": "Google News - 餐飲業(限定媒體)",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1uRFZOY2xnWFFIcWdSWUZxOU5sdGhRQlhkM2p1S1VMWkRBelBNOHZ3ekN0QU13QTBCTnNmR1JNbi00UlFfZzI1d0dYT2NCLUNkR2poS1E2M0xxVVnSAWBBVV95cUxNd1lQTk5xU2xveWltbmVEdmpUQ2Ewelh3SlYzLVBzdzduazlnNGlqQVhCcHR4bTNQWmI0MklwazVST05VclpkV2YwV0ZDQnV4LWdFUEtXVS1XUlZsUmtLYzU?oc=5",
+          "published_at": "2026-11-04T09:19:04+00:00"
+        }
+      ],
+      "is_top3": false
+    },
+    {
+      "item_id": "c104",
+      "cluster_id": "c104",
+      "category": "world_affairs",
+      "headline": "共和黨在美國中期選舉中慘敗的五大原因分析",
+      "one_sentence_summary": "本文分析傳統共和黨票倉選民轉向民主黨的五大關鍵原因。",
+      "what_happened": "在美國中期選舉中，共和黨面臨慘敗局面。選民的不滿情緒升高，且總統本身的支持度持續低迷。",
+      "why_it_matters": "中期選舉結果反映美國民意轉向，直接牽動執政黨的國會優勢與後續聯邦政策走向，對整體政治與經濟環境具備高度指標意義。",
+      "potential_impact": "(a) 短期影響：接下來1-3個月內，美國政壇將迅速進行權力重組，國會內的法案推動與預算審查將面臨高度僵局或轉向，政黨協商成為焦點。(b) 中長期影響：半年到一年後，執政黨的施政阻力可能加大或迎來政策修正，進而影響聯邦法規的制定與財政支出方向。(c) 受影響的對象或層面：政策法規與市場信心將受到直接衝擊，政策的不確定性可能引發金融市場波動，對投資人與企業布局帶來中性偏變數的影響。",
+      "what_to_watch_next": "接下來應觀察國會力量重組後的具體法案推動進展及市場信心指標。",
+      "importance_score": 92.3,
+      "personal_relevance_score": 85,
+      "keywords": [
+        "美國中期選舉",
+        "共和黨",
+        "民主黨",
+        "選民情緒",
+        "總統支持度"
+      ],
+      "sources": [
+        {
+          "name": "自由時報即時新聞",
+          "url": "https://news.ltn.com.tw/news/world/breakingnews/5629876",
+          "published_at": "2026-11-04T23:16:43+00:00"
+        },
+        {
+          "name": "BBC 中文網",
+          "url": "https://www.bbc.com/zhongwen/articles/cxyvrz6qrm2lo/trad?at_medium=RSS&at_campaign=rss",
+          "published_at": "2026-11-04T20:20:47+00:00"
+        },
+        {
+          "name": "The News Lens 關鍵評論網",
+          "url": "https://www.thenewslens.com/article/270987",
+          "published_at": "2026-11-04T09:51:00+00:00"
+        },
+        {
+          "name": "BBC World News",
+          "url": "https://www.bbc.co.uk/news/articles/c6x29rr8djy3o?at_medium=RSS&at_campaign=rss",
+          "published_at": "2026-11-04T13:33:30+00:00"
+        },
+        {
+          "name": "Google News - 國際焦點(限定媒體)",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1ZeGI4SVRXWmt0ZEkzUThPWXdRNUhURHp2T3lsQWxZbXprdmQzY0g0UE9fTy1qOFJmQjhKUUQ2XzE3VmpPRmluMm5SRzRYY0xKMi05SWxFWXY0UjRUaU9N?oc=5",
+          "published_at": "2026-11-04T06:22:00+00:00"
+        }
+      ],
+      "is_top3": false
+    },
+    {
+      "item_id": "c109",
+      "cluster_id": "c109",
+      "category": "world_affairs",
+      "headline": "民主黨贏得美國中期選舉對中國與全球局勢的影響分析",
+      "one_sentence_summary": "美國民主黨在期中選舉勝出掌控國會，將對川普總統剩餘任期及全球外交貿易格局產生重大變數。",
+      "what_happened": "民主黨在美國中期選舉中取得勝利，成功在川普總統餘下的任期內掌控國會。BBC記者針對此選舉結果，分析其對烏克蘭與中東衝突以及美中貿易關係等全球局勢帶來的影響。",
+      "why_it_matters": "美國國會控制權易手將牽動行政部門的權力制衡，直接影響美國在外交政策、國際衝突介入以及對中貿易等關鍵議題的決策方向，進而重塑全球地緣政治與經濟秩序。",
+      "potential_impact": "(a) 短期影響：接下來1-3個月內，美國國內政治對立將顯著升溫，國會與白宮在預算、人事任命及外交法案上恐陷入高度對峙，國際社會與金融市場將先期反應政策不確定性。(b) 中長期影響：半年到一年後，民主黨掌控的國會將在美中貿易談判、援助烏克蘭及中東政策上對川普政府形成強力牽制，使美國對外政策從單邊主義轉趨複雜。(c) 受影響的對象或層面：政策法規與市場信心將面臨利空衝擊，因為政治僵局可能干擾聯邦預算與經貿協定推進；跨國供應鏈與全球地緣政治風險則維持中性偏緊的觀望態勢。",
+      "what_to_watch_next": "接下來應觀察民主黨掌控國會後，在預算案、對外援助及美中貿易法案上對川普政府採取的具體杯葛或合作動作。",
+      "importance_score": 73.0,
+      "personal_relevance_score": 85,
+      "keywords": [
+        "美國中期選舉",
+        "民主黨",
+        "川普政府",
+        "美中貿易",
+        "地緣政治"
+      ],
+      "sources": [
+        {
+          "name": "BBC 中文網",
+          "url": "https://www.bbc.com/zhongwen/articles/ckreyrxvg3xyo/trad?at_medium=RSS&at_campaign=rss",
+          "published_at": "2026-11-04T21:02:11+00:00"
+        }
+      ],
+      "is_top3": false
+    },
+    {
+      "item_id": "c197",
+      "cluster_id": "c197",
+      "category": "world_affairs",
+      "headline": "烏克蘭稱隨身攝影機畫面證實俄軍發動致命的二次轟炸",
+      "one_sentence_summary": "烏克蘭指控俄軍對一村莊發動攻擊造成至少40人死亡，並有隨身攝影機畫面流出。",
+      "what_happened": "週一烏克蘭某村莊遭到攻擊，基輔當局表示至少造成40人死亡，另有約30人可能仍被埋在瓦礫堆下。烏克蘭官方並指出，隨身攝影機畫面顯示這是一次致命的二次轟炸（double-tap bombing）。",
+      "why_it_matters": "此類針對救援人員或在短時間內發動連續轟炸的軍事行動，加劇了人道危機與國際社會對戰事升級的擔憂。這不僅影響區域安全局勢，也持續牽動全球地緣政治風險與能源、原物料市場的敏感神經。",
+      "potential_impact": "短期內（1-3個月），國際社會對烏克蘭的軍事與人道支援壓力將再次升高，戰事相關供應鏈與區域物流受到的干擾將持續。中長期來看，這類衝突若未歇，將繼續推高全球通膨預期並壓抑市場風險偏好，對國際金融市場（如美股與台股大盤情緒）造成間接的避險情緒波動。受影響的對象包含全球金融市場信心（偏利空）、地緣政治相關政策法規的緊縮，以及歐洲區域供應鏈的穩定性。",
+      "what_to_watch_next": "後續國際組織對此次攻擊的調查報告以及全球主要股市對地緣政治風險的反應。",
+      "importance_score": 72.0,
+      "personal_relevance_score": 85,
+      "keywords": [
+        "烏克蘭",
+        "俄羅斯",
+        "空襲",
+        "地緣政治",
+        "戰事"
+      ],
+      "sources": [
+        {
+          "name": "BBC World News",
+          "url": "https://www.bbc.co.uk/news/articles/c98rz6penv86o?at_medium=RSS&at_campaign=rss",
+          "published_at": "2026-11-04T22:48:43+00:00"
+        }
+      ],
+      "is_top3": false
+    },
+    {
+      "item_id": "c001",
+      "cluster_id": "c001",
+      "category": "ai_technology",
+      "headline": "OpenAI宣布收購Pierre Computer Company",
+      "one_sentence_summary": "OpenAI宣布將收購Pierre Computer Company以擴展Codex的程式碼工具。",
+      "what_happened": "OpenAI將收購Pierre Computer Company。此舉旨在擴展Codex用於建構、理解與審查程式碼的功能。",
+      "why_it_matters": "這代表OpenAI正透過併購持續強化其AI在軟體開發與自動化工具領域的實力，有助於深化開發者生態系的布局。",
+      "potential_impact": "(a) 短期影響：接下來1-3個月內，軟體開發者與企業技術團隊將感受到OpenAI相關程式碼工具功能的整合與升級，Codex的應用範圍將更為廣泛。(b) 中長期影響：半年到一年後，這項併購可能加速AI Agent在程式碼編寫與自動化審查的成熟度，進一步改變軟體工程的工作流程與人力需求。(c) 受影響的對象或層面：軟體開發產業與技術人才將面臨工具升級帶來的效率提升與工作方法轉變，對相關AI技術供應鏈與市場信心形成利多。",
+      "what_to_watch_next": "觀察收購完成後Codex工具實際功能的更新進度以及市場對新功能的反應。",
+      "importance_score": 69.0,
+      "personal_relevance_score": 85,
+      "keywords": [
+        "OpenAI",
+        "Pierre Computer Company",
+        "Codex",
+        "AI Agent",
+        "併購"
+      ],
+      "sources": [
+        {
+          "name": "OpenAI News",
+          "url": "https://openai.com/index/openai-to-acquire-pierre",
+          "published_at": "2026-11-04T14:30:00+00:00"
+        }
+      ],
+      "is_top3": false
+    }
+  ],
+  "stats": {
+    "total_articles_collected": 2043,
+    "total_after_stage1": 211,
+    "total_selected": 13,
+    "estimated_reading_minutes": 6
+  },
+  "usage": {
+    "stage2_tokens_in": 12792,
+    "stage2_tokens_out": 5610,
+    "stage2_total_tokens": 18402
+  }
+}
