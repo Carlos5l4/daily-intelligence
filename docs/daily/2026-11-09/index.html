@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日情報 — 2026-11-09</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700;900&family=Noto+Sans+TC:wght@400;500;700;900&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper: #F3EEE1; --paper-dark: #EAE3D0; --ink: #201D18; --ink-soft: #4A453C;
+    --rule: #C9BFA5; --accent: #7A2A28; --accent-soft: #9C6B4E;
+  }
+  *{box-sizing:border-box;}
+  body{ margin:0; background: var(--paper-dark); color: var(--ink);
+    font-family: 'Source Serif 4', Georgia, serif; -webkit-font-smoothing:antialiased; }
+  .sheet{ max-width: 900px; margin: 0 auto; background: var(--paper);
+    padding: 40px 48px 60px; box-shadow: 0 0 40px rgba(0,0,0,0.08); }
+
+  .masthead{ text-align:center; padding-bottom: 18px; }
+  .masthead .eyebrow-line{ display:flex; justify-content:space-between; align-items:center;
+    font-size:12px; letter-spacing:0.08em; color: var(--ink-soft);
+    border-bottom: 1px solid var(--rule); padding-bottom: 8px; margin-bottom: 14px; }
+  .masthead h1{ font-family:'Noto Serif TC', serif; font-weight:900; font-size: 54px;
+    letter-spacing: 0.02em; margin: 4px 0 6px; line-height:1; }
+  .masthead .subtitle{ font-style: italic; color: var(--ink-soft); font-size: 15px; margin-bottom: 14px; }
+  .masthead .rules{ border: none; border-top: 3px solid var(--ink); margin: 0 0 3px; }
+  .masthead .rules.thin{ border-top: 1px solid var(--ink); margin-bottom: 0; }
+
+  .brief-box{ margin: 26px 0 34px; padding: 20px 24px;
+    border-top: 2px solid var(--ink); border-bottom: 2px solid var(--ink); background: var(--paper-dark); }
+  .brief-box .label{ font-family:'Noto Serif TC', serif; font-weight:700; font-size: 13px;
+    letter-spacing: 0.14em; color: var(--accent); margin-bottom: 8px; }
+  .brief-box p{ font-size: 17px; line-height:1.75; margin:0; }
+  .brief-box p::first-letter{ font-family:'Noto Serif TC', serif; font-weight:900; font-size: 46px;
+    float:left; line-height:0.8; padding-right:8px; padding-top:4px; color: var(--accent); }
+
+  .frontpage-label{ display:flex; align-items:center; gap:14px; margin-bottom:18px; }
+  .frontpage-label h2{ font-family:'Noto Serif TC', serif; font-weight:900; font-size: 16px;
+    letter-spacing:0.1em; margin:0; color: var(--ink); }
+  .frontpage-label .line{ flex:1; border-top: 2px solid var(--ink); }
+  .frontpage-label .sub{ font-size:11.5px; color:var(--ink-soft); font-style:italic; white-space:nowrap; }
+
+  .top3-block{ padding-bottom: 24px; margin-bottom: 30px; border-bottom: 1px solid var(--rule); }
+  .top3-block:last-of-type{ border-bottom: 3px double var(--ink); margin-bottom: 36px; }
+  .pill-tag{ display:inline-block; font-size:12px; font-weight:600; letter-spacing:0.02em;
+    color:#fff; background: var(--accent-soft); border-radius: 999px; padding: 2px 12px; margin-bottom: 8px; }
+  .top3-block h2{ font-family:'Noto Sans TC', sans-serif; font-weight:700; font-size: 24px; line-height:1.4; letter-spacing:0.01em; margin: 0 0 10px; }
+  .top3-block .score{ display:inline-block; font-size:12px; color:var(--ink-soft);
+    border:1px solid var(--rule); padding:2px 8px; margin-bottom: 12px; }
+  .top3-block p{ font-size:15px; line-height:1.75; margin: 0 0 10px; }
+  .top3-block .highlight{ font-size:15px; line-height:1.7; padding-left:14px;
+    border-left: 3px solid var(--accent-soft); color: var(--ink); margin-bottom:12px; }
+  .top3-block .highlight b{ color:var(--accent); font-style:normal; }
+  .top3-block .extra b{ font-weight:600; color: var(--accent); }
+  .top3-block .sources-line{ font-size:12px; color:var(--ink-soft); margin-top:6px; }
+  .sources-line a, .article .meta a{
+    color: var(--accent-soft); text-decoration: none; border-bottom: 1px dotted var(--accent-soft);
+  }
+  .sources-line a:hover, .article .meta a:hover{ color: var(--accent); border-bottom-style: solid; }
+
+  .body-label{ text-align:center; margin: 6px 0 30px; }
+  .body-label span{ font-size:11px; letter-spacing:0.2em; color:var(--ink-soft);
+    border-top:1px solid var(--rule); border-bottom:1px solid var(--rule); padding: 4px 0; display:block; }
+
+  .category-block{ margin-bottom: 46px; }
+  .section-head{ background: var(--ink); color: var(--paper); padding: 11px 18px; margin-bottom: 20px; }
+  .section-head h2{ font-family:'Noto Serif TC', serif; font-weight:700; font-size: 20px;
+    letter-spacing: 0.1em; margin:0; }
+
+  .article-columns{ column-count: 2; column-gap: 34px; column-rule: 1px solid var(--rule); }
+  .article{ break-inside: avoid; margin-bottom: 20px; }
+  .article summary{ list-style:none; cursor:pointer; position:relative; padding-right:22px; }
+  .article summary::-webkit-details-marker{ display:none; }
+  .article summary::after{ content:"展開 ＋"; position:absolute; right:0; top:2px;
+    font-size:11px; color:var(--accent); white-space:nowrap; }
+  .article[open] summary::after{ content:"收合 －"; }
+  .article h3{ font-family:'Noto Sans TC', sans-serif; font-weight:700; font-size: 16px; line-height:1.5; letter-spacing:0.01em; margin: 0 22px 5px 0; }
+  .article .meta{ font-size: 11px; color: var(--ink-soft); margin-bottom: 7px; }
+  .article summary p{ font-size: 13.5px; line-height:1.6; margin: 0 0 10px; color: var(--ink-soft); }
+  .article .expand-body{ margin-top: 10px; padding-top: 10px; border-top: 1px dashed var(--rule); }
+  .article .expand-body p{ font-size: 13.5px; line-height:1.65; margin: 0 0 8px; }
+  .article .expand-body b{ color: var(--accent); font-weight:600; }
+  .article .keywords{ font-size:11.5px; color:var(--ink-soft); margin-top:6px; }
+
+  .colophon{ margin-top: 30px; padding-top: 16px; border-top: 1px solid var(--ink);
+    display:flex; justify-content:space-between; font-size: 11.5px; color: var(--ink-soft); }
+
+  @media (max-width: 720px){
+    .sheet{ padding: 26px 20px 40px; } .masthead h1{ font-size: 38px; }
+    .article-columns{ column-count:1; } .colophon{ flex-direction:column; gap:4px; }
+    .frontpage-label .sub{ display:none; }
+  }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <div class="masthead">
+    <div class="eyebrow-line">
+      <span>第 001 期</span>
+      <span>PERSONAL DAILY INTELLIGENCE(每日情報)</span>
+      <span>2026年11月9日 星期一</span>
+    </div>
+    <h1>每日情報</h1>
+    <div class="subtitle">今天分析 169 則資訊，篩出 12 則值得你注意 · 預估閱讀時間 6 分鐘</div>
+    <hr class="rules"><hr class="rules thin">
+  </div>
+
+  <div class="brief-box">
+    <div class="label">今日三十秒</div>
+    <p>今日頭版焦點：最低工資調高至三萬元雖具保障意義，卻也引發薪資倒掛的連鎖危機；同時，公立醫院護理人力面臨嚴重緊繃，協會疾呼放寬危勞屆齡退休年齡以留住人才。而在金融市場方面，六大名師針對台股未來走勢與低檔支撐點提出關鍵分析。從勞動權益、醫療缺口到資本市場動向，牽動著台灣社會的整體脈動。</p>
+  </div>
+
+  
+  <div class="frontpage-label">
+    <h2>頭版精選</h2>
+    <div class="line"></div>
+    <span class="sub">跨類別綜合評選，不重複出現於下方分類區塊</span>
+  </div>
+
+  
+  <div class="top3-block">
+    <span class="pill-tag">人力資源與組織管理</span>
+    <h2>最低工資突破三萬引發骨牌效應，恐導致薪資倒掛危機</h2>
+    <span class="score">重要度 80 · 相關度 95</span>
+    <p>最低工資調升突破三萬元大關，因而產生了骨牌效應，進一步引發了市場上的薪資倒掛危機。</p>
+    <p class="highlight"><b>可能造成的影響：</b>(a) 短期影響：接下來1-3個月內，連鎖餐飲與零售業的基層員工薪資將被迫全面調升，企業HR部門必須立即重新核算薪酬結構，資深員工與新進員工的薪資差距縮小，引發內部不滿情緒。
+(b) 中長期影響：半年到一年後，企業為消化人事成本，可能加速導入自動化工具與AI Agent來替代部分人力，並可能調漲終端售價以轉嫁成本。
+(c) 受影響的對象或層面：連鎖餐飲與零售業的人力資源與財務成本面臨利空衝擊；基層勞工獲得短期薪資調升（利多），但資深員工面臨薪資倒掛（利空）；整體產業被迫加速數位轉型與自動化應用以對應政策法規的壓力。</p>
+    <p class="extra"><b>接下來該觀察：</b>觀察後續各企業針對薪資倒掛問題所推出的內部薪酬調整方案及自動化替代工具導入進度。</p>
+    <div class="sources-line">來源：<a href="https://news.google.com/rss/articles/CBMif0FVX3lxTE81RUF6MUxJZFVvcFgzaml6Wkh2OG5EVF9XdnNuRWF6SVdDa1k5NmJaczFwOEVHNWdhQUJnbGVzUGJUcGQzUzhzNms0R1h5OE9XZ1BvVk1MWk5KTlI5YlBabm5qNFV3MS02R2hhSlJ2R2ZaNDJoSlNMZTZlclY0LVk?oc=5" target="_blank" rel="noopener">Google News - 勞基法(限定媒體)</a>、<a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTFBDeXpOUUFJa2ZnWUtYZkM2ZjhwekpTN3ppdXBLUkhOVG9ZMGQxUkpRb3kzd0h3TmtmZW5KWlc3dU9ZVXY0TEE1S0JtNUJJLXl1U2hTWHdlcHY?oc=5" target="_blank" rel="noopener">Google News - 國際焦點(限定媒體)</a></div>
+  </div>
+  
+  <div class="top3-block">
+    <span class="pill-tag">市場與總體經濟</span>
+    <h2>六大名師解析台股未來走勢與低檔支撐位置</h2>
+    <span class="score">重要度 67 · 相關度 95</span>
+    <p>經濟日報於周末精選報導中，匯集了六位市場名師對台股未來走勢的看法。專家們針對台股是否已過最壞時間點以及市場低檔位置發表了專業見解。</p>
+    <p class="highlight"><b>可能造成的影響：</b>(a) 短期影響：接下來1-3個月內，散戶與機構投資人將依據專家對低檔支撐的看法調整持股比例，市場情緒可能隨指數測試支撐而出現波動。(b) 中長期影響：半年到一年後，若名師預判的低檔有效發揮支撐且總體經濟回穩，將帶動市場信心逐漸回溫，資金重新流入台股。(c) 受影響的對象或層面：市場信心與台股投資人受到直接影響，影響方向視專家預判之低檔是否確立而定。</p>
+    <p class="extra"><b>接下來該觀察：</b>接下來應觀察台股實際走勢是否能守住專家所指出的低檔支撐位置。</p>
+    <div class="sources-line">來源：<a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE1iNjN4YnhTMlhxdWJBRENQMWFTaVk5VXpmWmJRRUVLMzZoWENVOEM5c2JzWlk4RGFSQW9DTkJBT3IwSHZJaDFqNjBXX1NLd3RPLWJuTGhmMWhnd9IBX0FVX3lxTE1NZXhrZmlWaVI1MUg4dTZpNzlBNUEwSmxXODJBLUdPNEt1YlBULUczX2Y1V0xGdUlZLUVUQjctYVJOZlZKRnNvTmZvSm80bzdiOFNrNThqcElPamp3NFBz?oc=5" target="_blank" rel="noopener">Google News - 台股(限定媒體)</a></div>
+  </div>
+  
+  <div class="top3-block">
+    <span class="pill-tag">人力資源與組織管理</span>
+    <h2>公立醫院護理人力吃緊，協會建議放寬危勞職務屆齡退休年齡獲護理師團體支持</h2>
+    <span class="score">重要度 64 · 相關度 95</span>
+    <p>因應公立醫院護理人力持續緊繃，相關協會公開呼籲放寬危勞職務的屆齡退休年齡。此項提議獲得護理師團體的公開支持。</p>
+    <p class="highlight"><b>可能造成的影響：</b>(a) 短期影響：醫療相關工會與主管機關將針對危勞退休標準展開討論，護理界對於延後退休或留任機制的議論將顯著增加。(b) 中長期影響：若政策獲得調整，可能延緩資深護理人員的退休潮，緩解部分公立醫院的基層人力缺口，但也可能影響新血晉升管道與整體人力年齡結構。(c) 受影響的對象或層面：政策法規面將面臨是否放寬危勞標準的抉擇，屬於公立醫療體系人力資源調度的重大變革，對醫療服務穩定性帶來中性偏正面之影響。</p>
+    <p class="extra"><b>接下來該觀察：</b>觀察主管機關針對公立醫院護理人員危勞退休年齡放寬與否的政策回應與具體修法進度。</p>
+    <div class="sources-line">來源：<a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE5oTGh2WDZ0Q0J5UmNXMlZXUS1ObXVqN2wwd3VMLXdLNV9pRUtRNXl0dnVrckJBdS1FUVJOaXZwRzJ1ZVhpLXVPWjl0UGFCTXpMYUhtQ3lPWWlCd9IBX0FVX3lxTE9tQ0lmQU9XZHZqNzJ2YkU4cWdjbVhPbkpkcjFXNWJhajl4UVM5RXRDT0VyNzF3ZFMtMzYwRmZLd2JwM254VjZqdkVReFBGSFlnUHVhTVRNandpbjhUXzdj?oc=5" target="_blank" rel="noopener">Google News - 勞基法(限定媒體)</a></div>
+  </div>
+  
+  
+
+  <div class="body-label"><span>以下為今日完整分類報導，不含上方頭版精選 · 點擊標題可展開完整分析</span></div>
+
+  
+  
+  <div class="category-block">
+    <div class="section-head"><h2>人力資源與組織管理</h2></div>
+    <div class="article-columns">
+      
+      <details class="article">
+        <summary>
+          <h3>企業創辦人只分配股權不等於完成交棒，缺乏人才培養制度將使接班人難以應對市場變局</h3>
+          <div class="meta">經理人月刊(修正版網址)</div>
+          <p>企業交棒若僅分配財產而忽略人才培養制度，接班人將難以扛起企業營運。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>許多企業創辦人誤以為分配完股份就算完成交棒。然而，若缺乏培養人才的制度，下一代面對市場變局與老臣派系時將陷入單打獨鬥，擁有再多資產也無法支撐龐大企業。</p>
+          <p><b>可能造成的影響：</b>(a) 短期影響：接下來1-3個月內，面臨交棒的家族企業與大型連鎖零售集團將開始檢視內部的接班人計畫，並重新評估高階經理人與老臣派系的權力結構。(b) 中長期影響：半年到一年後，若企業仍未建立系統化的人才培訓與接班制度，將導致內部派系鬥爭加劇、營運決策停擺，甚至引發企業經營危機。(c) 受影響的對象或層面：產業供應鏈與內部員工對企業穩定度的信心將受到衝擊，呈現明顯利空，特別是依賴創辦人威望的連鎖餐飲與零售產業面臨的組織斷層風險最高。</p>
+          <p><b>接下來該觀察：</b>觀察家族企業與大型連鎖零售集團是否開始導入制度化的接班人教育訓練與高階人才培育計畫。</p>
+          <p class="sources-line">原文連結：<a href="https://www.managertoday.com.tw/columns/view/73283" target="_blank" rel="noopener">經理人月刊(修正版網址)</a></p>
+        </div>
+      </details>
+      
+      <details class="article">
+        <summary>
+          <h3>九大教師工會提出四項訴求，呼籲暫緩執行恐致標籤化的特殊生處遇指引</h3>
+          <div class="meta">Google News - 勞基法(限定媒體)</div>
+          <p>九大教師工會憂心特殊生處遇指引將造成標籤化，聯合呼籲暫緩執行。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>九大教師工會針對特殊生處遇指引提出四點訴求，認為該指引恐導致標籤化現象，並公開呼籲主管機關暫緩執行該指引。</p>
+          <p><b>可能造成的影響：</b>(a) 短期影響：1-3個月內，教育部與各地方教育局將面臨教師工會的輿論與行政壓力，被迫重啟對話或檢視指引內容。(b) 中長期影響：半年到一年後，若政策未經充分溝通即強行推動，可能導致第一線教師反彈加劇，並影響特殊教育現場的處遇品質與校園人際氛圍。(c) 受影響的對象或層面：政策法規與教育現場執行面臨直接衝擊，對教師群體為政策利空（增加實務困擾與標籤化風險），對特殊生家長與學生則屬中性偏利空（權益與社會接納度受政策搖擺影響）。</p>
+          <p><b>接下來該觀察：</b>觀察主管機關是否對九大教師工會的四大訴求做出具體回應，以及該特殊生處遇指引是否如期執行或暫緩修訂。</p>
+          <p class="sources-line">原文連結：<a href="https://news.google.com/rss/articles/CBMiZEFVX3lxTFAzNU1kczJubkNQRWNpT1ZlUW9UNEZIb3MzZEw0Nm8yTW90TWVKZGdvR1lNdDV5cUNnWUV4UlJhYVQxbzJCWVF0NEF4bjk0al85WG9zVkJWSHV6cXZjVEVwLTFkT07SAWpBVV95cUxOeVlGcDkxNEYxMzk2TXpKVU1oM1Z0TVozTzYxM3c5cE9TQngyQ3ZUai1YMi0yaVBWdlRCN01Ja2kyTzdRVjhHc0NpYzF4R3pNa1FoMjg4Ynp3RFJXU19yZVNLM3B3X1VzOXRR?oc=5" target="_blank" rel="noopener">Google News - 勞基法(限定媒體)</a></p>
+        </div>
+      </details>
+      
+    </div>
+  </div>
+  
+  
+  
+  <div class="category-block">
+    <div class="section-head"><h2>餐飲與零售</h2></div>
+    <div class="article-columns">
+      
+      <details class="article">
+        <summary>
+          <h3>王品董事總經理英美惠分享打破經營框架、維持品牌長青的智慧</h3>
+          <div class="meta">Google News - 餐飲業(限定媒體)</div>
+          <p>王品董事總經理英美惠分享打破框架以實現品牌長青的經營策略。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>經濟日報報導了王品集團董事總經理英美惠關於「智慧經營」的理念，探討如何透過打破傳統框架來維持品牌長青。文中並未揭露具體的財務數據或營運細節。</p>
+          <p><b>可能造成的影響：</b>(a) 短期影響：接下來1-3個月內，國內餐飲同業與連鎖零售業者將會檢視自身的品牌定位與行銷框架，尋找求新求變的切入點。(b) 中長期影響：半年到一年後，若此類創新管理思維被市場廣泛效仿，將促使餐飲零售業加速組織調整與品牌年輕化，提升整體產業的營運靈活性。(c) 受影響的對象或層面：主要影響餐飲零售產業的經營者與品牌管理團隊，方向為中性偏利多，有助於激發產業創新動能。</p>
+          <p><b>接下來該觀察：</b>觀察王品集團後續是否推出具體的組織變革、新品牌策略或數位轉型行動。</p>
+          <p class="sources-line">原文連結：<a href="https://news.google.com/rss/articles/CBMiXEFVX3lxTE1qWFRQa3NjZG9RLW9ILUlJVVJ0MHVIWTBQVzNVbkFfcTJFWm5ocFIxOG1DX2czaUZxWkttRGlMaWhWa2JwU2hlck84TXBGdzJOWkFaTE0wM1ZSYmJO0gFiQVVfeXFMTkd4TnJOMXluamNTS29qR3hJd1BEbXF5QW5pMkhLU3dHeVkzMHZubmN0d2xNLTBaU0FpVldOZGZmcHdGRVlfWHZMSVhzYzByUHktRXpZZ1RmbDJsTWRVamFrUXc?oc=5" target="_blank" rel="noopener">Google News - 餐飲業(限定媒體)</a></p>
+        </div>
+      </details>
+      
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  <div class="category-block">
+    <div class="section-head"><h2>市場與總體經濟</h2></div>
+    <div class="article-columns">
+      
+      <details class="article">
+        <summary>
+          <h3>國安基金傳出準備進場護盤，盤點前兩次護盤金額與曾入榜的股票名單</h3>
+          <div class="meta">自由時報即時新聞、Google News - 台股(限定媒體)、Google News - 勞基法(限定媒體)</div>
+          <p>國安基金將進場護盤，市場關注過往護盤金額及曾入榜的股票名單。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>媒體報導指出國安基金即將進場護盤，並回顧前2次護盤砸下超過667億元，盤點過去曾入榜的股票名單。相關資訊引發投資人對台股大盤動態的關注。</p>
+          <p><b>可能造成的影響：</b>(a) 短期影響：1-3個月內台股市場信心可能獲得支撐，權值股與過去曾入榜的防禦型標的較易受到資金關注，有助於穩定短線跌勢。(b) 中長期影響：半年到一年後若總體經濟與股市基本面未實質改善，護盤效果可能遞減，市場仍需回歸基本面檢視。(c) 受影響的對象與層面：台股散戶與法人投資人的市場信心將轉趨穩定，屬於政策面的利多訊號，有助於緩解系統性風險帶來的恐慌情緒。</p>
+          <p><b>接下來該觀察：</b>觀察國安基金是否正式宣布召開臨時委員會決議進場，以及實際的資金投入規模與護盤成效。</p>
+          <p class="sources-line">原文連結：<a href="https://ec.ltn.com.tw/article/breakingnews/5633941" target="_blank" rel="noopener">自由時報即時新聞</a>、<a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE5JSHhRSHBQaVQwXzB3LXVHZHNoWWNRZUNJRHlaY2NaM09wQ1lrVnQ1bEpIVHBDM0lrTS1VaU1YWkNXMWxwVjJpdG9qTG9kazVTTWFVMXRNeERwVHBDak5F0gFkQVVfeXFMUGJfc0xNdnFZb1pzWVdmWUtzYmE5NlRCbVZPU1NkWU5XSWFFMmtsRkREOVM2Q0RVdU9wbGZwZjRpRE8wOENjUUtLcUlVMC1hOVByRDVuZ096dnd1SnhiVWJKM1cwQw?oc=5" target="_blank" rel="noopener">Google News - 台股(限定媒體)</a>、<a href="https://news.google.com/rss/articles/CBMiXEFVX3lxTE1XQzlBb2RLdGkxWFZyalFxdHZNRDJqRDN5cDk1SWE4UXdXQXVwTjNQWjNpV21USTFraG0wSG1kc0xqOVBtZVc2VEVhN3JjVUtTSmhVb203dXhGTThr?oc=5" target="_blank" rel="noopener">Google News - 勞基法(限定媒體)</a></p>
+        </div>
+      </details>
+      
+      <details class="article">
+        <summary>
+          <h3>國安基金規模2000億恐不足，阮清華提議擴大至1兆元引發外資提款疑慮</h3>
+          <div class="meta">Google News - 台股(限定媒體)</div>
+          <p>國安基金代理人阮清華提議將基金規模由2000億元擴大至1兆元，引發股民對外資提款的擔憂。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>國安基金代理人阮清華表示現行2000億元規模不足，喊話擴編至1兆元。此發言曝光後，引發市場股民擔心可能加劇外資提款的壓力。</p>
+          <p><b>可能造成的影響：</b>(a) 短期影響：台股市場信心可能出現波動，投資人與外資對政策護盤意圖高度敏感，短期內盤勢觀望氣氛濃厚。(b) 中長期影響：若資金規模法案實質推進，將改變台股面對系統性風險時的支撐力道，但也可能引發市場對政府過度干預或資金運用效率的辯論。(c) 受影響的對象或層面：台股散戶與法人投資人的市場信心偏向中性偏空，政策法規面則面臨國安基金條例與資金額度修法的檢視。</p>
+          <p><b>接下來該觀察：</b>觀察後續立法院及財政部對於國安基金規模擴編的修法進度與具體政策拍板。</p>
+          <p class="sources-line">原文連結：<a href="https://news.google.com/rss/articles/CBMiUkFVX3lxTE4zMjZ5dS1Rc1NfMUxZbXNMR3dJaGhVdWxkajQ3U3VBaDBiazF3SjFhU2JucG9nWDJ6MlozN2xQTm00SjBhaGhZeF8wN0VxaGhxR1HSAVdBVV95cUxQMEFrb1h1NVRHZENodFNGZ2tDU3Y1UDFmZWRzMmp5TjJMV2c4MzA4Y0FIOUNHZmU5NC13aHU1S2swVlE3VDNoZzdRbXZUYkhENFhTX3FlRms?oc=5" target="_blank" rel="noopener">Google News - 台股(限定媒體)</a></p>
+        </div>
+      </details>
+      
+      <details class="article">
+        <summary>
+          <h3>台股單周急跌5,510點，法人指出下檔支撐關卡並點名反彈潛力族群</h3>
+          <div class="meta">Google News - 台股(限定媒體)</div>
+          <p>台股單周重挫5,510點，法人分析下檔支撐並點名反彈族群。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>台股在單周內大幅下跌5,510點。法人針對此波跌勢揭露了下檔的支撐關卡，並指出若盤勢反彈可關注的相關族群。</p>
+          <p><b>可能造成的影響：</b>(a) 短期影響：接下來1-3個月內，股市投資人與散戶將面臨資產大幅縮水與融資斷頭壓力，市場恐慌情緒升高，法人點名的反彈族群將成為短線資金的交投焦點。(b) 中長期影響：半年到一年後，若總體經濟與國際半導體需求未見回穩，恐影響企業資本支出與台股整體評價面，資金可能轉趨保守。(c) 受影響的對象或層面：市場信心與股市投資人面臨直接利空衝擊，法人與特定反彈族群則受惠於短線資金移轉呈現分化走勢。</p>
+          <p><b>接下來該觀察：</b>觀察法人點名的反彈族群表現以及台股下檔支撐關卡的守備力道。</p>
+          <p class="sources-line">原文連結：<a href="https://news.google.com/rss/articles/CBMiUEFVX3lxTE1VT2NKaTRhQlBFNUJPeUFGZVRCZS1ySkxiUTQ4cEdlQ3VOQ04yOHNhYzdSQUVTeEg5ODBWN1BETzFkNjhZbUQzV3NSOHhQalF40gFWQVVfeXFMTXVoSGNzaEtNcC12VGdwaUxpak1YeXFxT085UzJ4b1hUZ0pSQ3FwVnBGekRNYW9BNlU2ZURzdS1Qb09mSHhYUE5NSTdtREo0Y1V0eU50Z2c?oc=5" target="_blank" rel="noopener">Google News - 台股(限定媒體)</a></p>
+        </div>
+      </details>
+      
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  <div class="category-block">
+    <div class="section-head"><h2>世界大事</h2></div>
+    <div class="article-columns">
+      
+      <details class="article">
+        <summary>
+          <h3>波蘭克拉科夫發生極右翼隨機槍擊案造成九人死亡</h3>
+          <div class="meta">自由時報即時新聞、BBC 中文網、BBC World News(BBC國際新聞)</div>
+          <p>波蘭克拉科夫主要廣場發生極右翼隨機槍擊案，造成6人死亡，警方隨後於凶手家中再發現3具遺體。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>波蘭第二大城市克拉科夫的主要廣場發生隨機槍擊事件，造成6人喪生。警方隨後在襲擊者的家中搜出另外3具遺體，全案共計9人死亡。</p>
+          <p><b>可能造成的影響：</b>(a) 短期影響：波蘭及鄰近歐洲國家將迅速升高公眾場所的維安警戒，警方與特勤部門會加強對極右翼團體及潛在極端分子的監控，社會大眾對公共安全的疑慮將在1至3個月內顯著上升。(b) 中長期影響：若極端主義暴力趨勢延續，半年到一年內可能促使波蘭政府緊縮槍枝管制法規、強化網路與社群平台上的極端言論審查，並可能引發關於移民或社會撕裂議題的政治辯論。(c) 受影響的對象或層面：歐洲區域的旅遊業與零售餐飲業消費者信心短期內可能遭受中性偏利空的衝擊；波蘭的政策法規面將面臨反恐與治安維護的收緊壓力；整體社會對極右翼政治勢力的警戒與市場信心將轉趨保守。</p>
+          <p><b>接下來該觀察：</b>後續警方對凶手犯案動機、背景調查的官方公布，以及波蘭政府是否針對極右翼組織或公共安全祭出新的法規與安保措施。</p>
+          <p class="sources-line">原文連結：<a href="https://ent.ltn.com.tw/news/breakingnews/5634040" target="_blank" rel="noopener">自由時報即時新聞</a>、<a href="https://www.bbc.com/zhongwen/articles/c64g1n74j259o/trad?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">BBC 中文網</a>、<a href="https://www.bbc.co.uk/news/articles/c5x2vw4e1gx1o?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">BBC World News(BBC國際新聞)</a></p>
+        </div>
+      </details>
+      
+      <details class="article">
+        <summary>
+          <h3>伊朗因一月抗議活動中的「武裝動亂」罪名處決三名男子</h3>
+          <div class="meta">BBC World News(BBC國際新聞)</div>
+          <p>伊朗政府因今年一月的反政府抗議活動，處決了三名被控參與武裝動亂的男子。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>伊朗當局處決了Hassan Dioband、Hamid Kazemi與Reza Zanganeh三名男子。官方聲稱這三人參與了今年稍早發生的反政府抗議活動，並被指控涉及「武裝動亂」。</p>
+          <p><b>可能造成的影響：</b>(a) 短期影響：國際人權組織與西方國家將強力譴責伊朗的處決行為，可能引發新一波外交摩擦或加碼經濟制裁；同時伊朗國內的社會緊張與潛在抗議情緒將被高度壓制。(b) 中長期影響：若高壓統治與嚴刑峻罰持續，可能進一步深化國內民怨，導致地下反抗勢力轉趨隱蔽或引發更激烈的零星衝突，中東地緣政治風險維持高檔。(c) 受影響的對象或層面：政策法規與國際關係面臨利空，國際油市信心可能因地緣政治風險升溫而出現短期波動，跨國企業在該區域的營運安全評估也將趨於保守。</p>
+          <p><b>接下來該觀察：</b>觀察國際社會對此次處決的具體外交回應以及伊朗國內是否會出現後續的反彈抗議活動。</p>
+          <p class="sources-line">原文連結：<a href="https://www.bbc.co.uk/news/articles/ckly0ex633ydo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">BBC World News(BBC國際新聞)</a></p>
+        </div>
+      </details>
+      
+      <details class="article">
+        <summary>
+          <h3>川普聯盟已經破碎，共和黨接下來該何去何從？</h3>
+          <div class="meta">BBC World News(BBC國際新聞)</div>
+          <p>隨著川普聯盟瓦解，共和黨面臨該堅守川普主義或開闢新道路的抉擇。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>BBC華盛頓特派員丹尼爾・布希（Daniel Bush）撰文分析，指出共和黨目前的政治聯盟已經碎裂。黨內必須在繼續奉行川普主義或尋求全新發展路徑之間做出抉擇。</p>
+          <p><b>可能造成的影響：</b>(a) 短期影響：接下來1-3個月內，共和黨內部各派系將展開路線權力鬥爭，國會立法議程可能陷入混亂或僵局。(b) 中長期影響：半年到一年後，若黨內無法整合出共識，將削弱共和黨在期中選舉或重大法案推動上的凝聚力與勝算。(c) 受影響的對象或層面：政策法規與市場信心面臨不確定性，整體政治局勢轉趨中性偏空，直接衝擊美國政壇走向與投資市場對政策穩定度的信心。</p>
+          <p><b>接下來該觀察：</b>接下來應觀察共和黨內主要領袖對黨內路線的表態，以及是否有新勢力或新政治聯盟浮現。</p>
+          <p class="sources-line">原文連結：<a href="https://www.bbc.co.uk/news/articles/cm3r5gnxqz3jo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">BBC World News(BBC國際新聞)</a></p>
+        </div>
+      </details>
+      
+    </div>
+  </div>
+  
+  
+
+  <div class="colophon">
+    <span>每日情報 · 私人情報摘要，不對外公開發布</span>
+    <span>由 Gemini 分析生成 · 內容僅供參考</span>
+  </div>
+
+</div>
+</body>
+</html>
