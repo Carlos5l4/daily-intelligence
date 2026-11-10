@@ -19,7 +19,9 @@ sources:
   personal_weight: 0.8
 - id: hacker_news
   name: Hacker News (Front Page)
-  url: https://news.ycombinator.com/rss
+  # 2026-11-10 改用 hnrss.org：官方 RSS 從 GitHub Actions 呼叫持續回 419（10/2 起）。
+  # 內容同為首頁文章、連結指向原文；description=0 拿掉 Points/Comments 樣板文字，count=30 控制量
+  url: https://hnrss.org/frontpage?description=0&count=30
   category: ai_technology
   language: en
   credibility: medium
