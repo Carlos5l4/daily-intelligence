@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日情報 — 2026-11-10</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700;900&family=Noto+Sans+TC:wght@400;500;700;900&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper: #F3EEE1; --paper-dark: #EAE3D0; --ink: #201D18; --ink-soft: #4A453C;
+    --rule: #C9BFA5; --accent: #7A2A28; --accent-soft: #9C6B4E;
+  }
+  *{box-sizing:border-box;}
+  body{ margin:0; background: var(--paper-dark); color: var(--ink);
+    font-family: 'Source Serif 4', Georgia, serif; -webkit-font-smoothing:antialiased; }
+  .sheet{ max-width: 900px; margin: 0 auto; background: var(--paper);
+    padding: 40px 48px 60px; box-shadow: 0 0 40px rgba(0,0,0,0.08); }
+
+  .masthead{ text-align:center; padding-bottom: 18px; }
+  .masthead .eyebrow-line{ display:flex; justify-content:space-between; align-items:center;
+    font-size:12px; letter-spacing:0.08em; color: var(--ink-soft);
+    border-bottom: 1px solid var(--rule); padding-bottom: 8px; margin-bottom: 14px; }
+  .masthead h1{ font-family:'Noto Serif TC', serif; font-weight:900; font-size: 54px;
+    letter-spacing: 0.02em; margin: 4px 0 6px; line-height:1; }
+  .masthead .subtitle{ font-style: italic; color: var(--ink-soft); font-size: 15px; margin-bottom: 14px; }
+  .masthead .rules{ border: none; border-top: 3px solid var(--ink); margin: 0 0 3px; }
+  .masthead .rules.thin{ border-top: 1px solid var(--ink); margin-bottom: 0; }
+
+  .brief-box{ margin: 26px 0 34px; padding: 20px 24px;
+    border-top: 2px solid var(--ink); border-bottom: 2px solid var(--ink); background: var(--paper-dark); }
+  .brief-box .label{ font-family:'Noto Serif TC', serif; font-weight:700; font-size: 13px;
+    letter-spacing: 0.14em; color: var(--accent); margin-bottom: 8px; }
+  .brief-box p{ font-size: 17px; line-height:1.75; margin:0; }
+  .brief-box p::first-letter{ font-family:'Noto Serif TC', serif; font-weight:900; font-size: 46px;
+    float:left; line-height:0.8; padding-right:8px; padding-top:4px; color: var(--accent); }
+
+  .frontpage-label{ display:flex; align-items:center; gap:14px; margin-bottom:18px; }
+  .frontpage-label h2{ font-family:'Noto Serif TC', serif; font-weight:900; font-size: 16px;
+    letter-spacing:0.1em; margin:0; color: var(--ink); }
+  .frontpage-label .line{ flex:1; border-top: 2px solid var(--ink); }
+  .frontpage-label .sub{ font-size:11.5px; color:var(--ink-soft); font-style:italic; white-space:nowrap; }
+
+  .top3-block{ padding-bottom: 24px; margin-bottom: 30px; border-bottom: 1px solid var(--rule); }
+  .top3-block:last-of-type{ border-bottom: 3px double var(--ink); margin-bottom: 36px; }
+  .pill-tag{ display:inline-block; font-size:12px; font-weight:600; letter-spacing:0.02em;
+    color:#fff; background: var(--accent-soft); border-radius: 999px; padding: 2px 12px; margin-bottom: 8px; }
+  .top3-block h2{ font-family:'Noto Sans TC', sans-serif; font-weight:700; font-size: 24px; line-height:1.4; letter-spacing:0.01em; margin: 0 0 10px; }
+  .top3-block .score{ display:inline-block; font-size:12px; color:var(--ink-soft);
+    border:1px solid var(--rule); padding:2px 8px; margin-bottom: 12px; }
+  .top3-block p{ font-size:15px; line-height:1.75; margin: 0 0 10px; }
+  .top3-block .highlight{ font-size:15px; line-height:1.7; padding-left:14px;
+    border-left: 3px solid var(--accent-soft); color: var(--ink); margin-bottom:12px; }
+  .top3-block .highlight b{ color:var(--accent); font-style:normal; }
+  .top3-block .extra b{ font-weight:600; color: var(--accent); }
+  .top3-block .sources-line{ font-size:12px; color:var(--ink-soft); margin-top:6px; }
+  .sources-line a, .article .meta a{
+    color: var(--accent-soft); text-decoration: none; border-bottom: 1px dotted var(--accent-soft);
+  }
+  .sources-line a:hover, .article .meta a:hover{ color: var(--accent); border-bottom-style: solid; }
+
+  .body-label{ text-align:center; margin: 6px 0 30px; }
+  .body-label span{ font-size:11px; letter-spacing:0.2em; color:var(--ink-soft);
+    border-top:1px solid var(--rule); border-bottom:1px solid var(--rule); padding: 4px 0; display:block; }
+
+  .category-block{ margin-bottom: 46px; }
+  .section-head{ background: var(--ink); color: var(--paper); padding: 11px 18px; margin-bottom: 20px; }
+  .section-head h2{ font-family:'Noto Serif TC', serif; font-weight:700; font-size: 20px;
+    letter-spacing: 0.1em; margin:0; }
+
+  .article-columns{ column-count: 2; column-gap: 34px; column-rule: 1px solid var(--rule); }
+  .article{ break-inside: avoid; margin-bottom: 20px; }
+  .article summary{ list-style:none; cursor:pointer; position:relative; padding-right:22px; }
+  .article summary::-webkit-details-marker{ display:none; }
+  .article summary::after{ content:"展開 ＋"; position:absolute; right:0; top:2px;
+    font-size:11px; color:var(--accent); white-space:nowrap; }
+  .article[open] summary::after{ content:"收合 －"; }
+  .article h3{ font-family:'Noto Sans TC', sans-serif; font-weight:700; font-size: 16px; line-height:1.5; letter-spacing:0.01em; margin: 0 22px 5px 0; }
+  .article .meta{ font-size: 11px; color: var(--ink-soft); margin-bottom: 7px; }
+  .article summary p{ font-size: 13.5px; line-height:1.6; margin: 0 0 10px; color: var(--ink-soft); }
+  .article .expand-body{ margin-top: 10px; padding-top: 10px; border-top: 1px dashed var(--rule); }
+  .article .expand-body p{ font-size: 13.5px; line-height:1.65; margin: 0 0 8px; }
+  .article .expand-body b{ color: var(--accent); font-weight:600; }
+  .article .keywords{ font-size:11.5px; color:var(--ink-soft); margin-top:6px; }
+
+  .colophon{ margin-top: 30px; padding-top: 16px; border-top: 1px solid var(--ink);
+    display:flex; justify-content:space-between; font-size: 11.5px; color: var(--ink-soft); }
+
+  @media (max-width: 720px){
+    .sheet{ padding: 26px 20px 40px; } .masthead h1{ font-size: 38px; }
+    .article-columns{ column-count:1; } .colophon{ flex-direction:column; gap:4px; }
+    .frontpage-label .sub{ display:none; }
+  }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <div class="masthead">
+    <div class="eyebrow-line">
+      <span>第 001 期</span>
+      <span>PERSONAL DAILY INTELLIGENCE(每日情報)</span>
+      <span>2026年11月10日 星期二</span>
+    </div>
+    <h1>每日情報</h1>
+    <div class="subtitle">今天分析 303 則資訊，篩出 13 則值得你注意 · 預估閱讀時間 6 分鐘</div>
+    <hr class="rules"><hr class="rules thin">
+  </div>
+
+  <div class="brief-box">
+    <div class="label">今日三十秒</div>
+    <p>今日焦點新聞：台灣微軟因AI自動化裁員，資遣女業務遭法院判定違法並須返還百萬薪資，凸顯企業數位轉型的勞資衝突。國際方面，美國總統川普透露FBI已介入調查輝達執行長黃仁勳與疑似中國間諜的婚外情，恐牽動全球科技地緣政治。而在金融市場方面，亞股強勢狂飆，韓股大漲逾百分之五點六觸發熔斷，日經指數暴漲逾一千八百點，強勁動能同步帶動台股後市展望看俏。</p>
+  </div>
+
+  
+  <div class="frontpage-label">
+    <h2>頭版精選</h2>
+    <div class="line"></div>
+    <span class="sub">跨類別綜合評選，不重複出現於下方分類區塊</span>
+  </div>
+
+  
+  <div class="top3-block">
+    <span class="pill-tag">人力資源與組織管理</span>
+    <h2>台灣微軟坦承因導入AI而裁員，違法資遣女業務遭法院判決須返還百萬薪水</h2>
+    <span class="score">重要度 67 · 相關度 98</span>
+    <p>台灣微軟承認因導入AI而進行裁員，並爆發非法資遣女業務的勞資爭議。經法院審理後，基於特定理由判決微軟須返還百萬元薪水。</p>
+    <p class="highlight"><b>可能造成的影響：</b>(a) 短期影響：接下來1-3個月內，企業HR部門將重新審視現有的AI人力替代與裁員計畫，評估勞基法合規性以避免類似訴訟，勞資雙方對因AI導入引發的離職爭議將更趨敏感。(b) 中長期影響：半年到一年後，若法院對此案的見解成為判例，將迫使企業在導入AI代理與自動化工具時，必須建立更嚴謹的內部轉職培訓與合規資遣流程，增加企業轉型成本。(c) 受影響的對象或層面：政策法規與產業/供應鏈受到直接影響，對勞工方為利多（保障工作權與法定權益），對企業端則為營運成本與合規風險增加的中性偏利空影響。</p>
+    <p class="extra"><b>接下來該觀察：</b>觀察台灣微軟後續是否上訴，以及此判決結果是否引發更多科技業因AI裁員而產生的勞資訴訟潮。</p>
+    <div class="sources-line">來源：<a href="https://news.google.com/rss/articles/CBMiUEFVX3lxTFBWY3BRb3o4amlMM19kT2paVXlpS0pBd0JtemVLenROcXhQRGMxSERHN29CdE51Vm9HbXl4Vm1mallTelFSTmp3aUNGaTV1RUFk0gFWQVVfeXFMTVlCQTk2SHYwYkNtc2pVZF9uT3VXYjZGMFpuX2JRRHFENjRVRF93XzVieHh5UFVaU1Zqb3lQSEdXSmQ3Ry1UekV5VWxsNWFjSF96czZaYkE?oc=5" target="_blank" rel="noopener">Google News - 勞基法(限定媒體)</a></div>
+  </div>
+  
+  <div class="top3-block">
+    <span class="pill-tag">市場與總體經濟</span>
+    <h2>川普表示FBI已介入調查輝達執行長黃仁勳與疑似中國間諜的婚外情風波</h2>
+    <span class="score">重要度 86 · 相關度 96</span>
+    <p>美國總統川普表示他於週一曾與黃仁勳通話，並詢問對方關於與被指控是間諜的女子之間的婚外情。黃仁勳在通話中向川普表示，自己完全不知道該名女子是間諜。</p>
+    <p class="highlight"><b>可能造成的影響：</b>(a) 短期影響：接下來1-3個月內，市場信心可能受到情緒性干擾，輝達股價與相關半導體類股波動加劇，投資人與媒體將高度聚焦FBI調查進展。(b) 中長期影響：半年到一年後，若調查無實質不法證據，事件將逐漸淡化；反之若涉及敏感技術外洩或國安法規，將對輝達的企業治理、美中地緣政治博弈及供應鏈合規審查帶來深遠衝擊。(c) 受影響的對象或層面：市場信心與產業供應鏈面臨利空震盪，政策法規層面則可能促使美國政府對高科技企業高層的國家安全審查更加嚴格。</p>
+    <p class="extra"><b>接下來該觀察：</b>觀察FBI後續調查結果以及美國官方與輝達的正式回應。</p>
+    <div class="sources-line">來源：<a href="https://techcrunch.com/2026/11/09/jensen-huang-reportedly-engaged-a-pr-firm-with-a-history-of-handling-high-profile-sex-scandals-a-year-ago/" target="_blank" rel="noopener">TechCrunch(美國科技媒體)</a>、<a href="https://www.theverge.com/ai-artificial-intelligence/1030328/what-could-china-get-from-jensen-huang" target="_blank" rel="noopener">The Verge(美國科技媒體)</a>、<a href="https://www.marketwatch.com/story/the-short-seller-who-saw-signs-of-nvidias-china-scandal-months-ago-claims-megaspeed-isnt-the-ony-company-helping-china-access-chips-9877f544?mod=mw_rss_topstories" target="_blank" rel="noopener">MarketWatch(美國財經媒體)</a>、<a href="https://ec.ltn.com.tw/article/breakingnews/5635278" target="_blank" rel="noopener">自由時報即時新聞</a>、<a href="https://www.bbc.com/zhongwen/articles/cmx2q2pn5nv8o/trad?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">BBC 中文網</a>、<a href="https://www.thenewslens.com/article/271048" target="_blank" rel="noopener">The News Lens 關鍵評論網</a>、<a href="https://news.google.com/rss/articles/CBMid0FVX3lxTE55a3FoSFNhazl5akZxTVhUM2I3YV9Xb084aHZfbS1ldWx6b3djYklmczVkQmt2Z1ZwRkE1dDFxSWs1N3NWTlFVN0cxRFVGT3Z2UEpxQ3NWbE40Z1A1R0J3S1dpbmlSeUtIQUt1aGd4c2hfUkpWQ3ZJ?oc=5" target="_blank" rel="noopener">Google News - 勞基法(限定媒體)</a>、<a href="https://www.bbc.co.uk/news/articles/cqg7x7dpvym8o?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">BBC World News(BBC國際新聞)</a>、<a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTE5sdlpHYnJjZGZzT0poWTF5NkpmQ1dnTDM2ek0xVmxPT0U1M1BoaUN5SG1tSjJWak4wdHczUU1UT0ctOC15R1N6OHVhcXlFUFItcmsxX1hiX20?oc=5" target="_blank" rel="noopener">Google News - 國際焦點(限定媒體)</a></div>
+  </div>
+  
+  <div class="top3-block">
+    <span class="pill-tag">市場與總體經濟</span>
+    <h2>台股有望延續熱潮，韓股大漲逾5.6%觸發熔斷且日經指數大漲逾1800點</h2>
+    <span class="score">重要度 78 · 相關度 96</span>
+    <p>南韓股市強勢飆漲超過5.6%並觸發熔斷機制，同時日本日經指數也大漲超過1800點。在強烈亞股熱潮帶動下，市場預期台股有望持續發爐走高。</p>
+    <p class="highlight"><b>可能造成的影響：</b>(a) 短期影響：在1至3個月內，外資與本土資金對亞洲股市的信心將顯著提升，台股與鄰近的日韓股市將同步吸引短線熱錢湧入，推升相關權值股與半導體類股表現。(b) 中長期影響：若此波亞股狂飆趨勢延續至半年或一年後，將有助於鞏固全球半導體與科技供應鏈的資本市場評價，進一步吸引長線機構投資人配置資金。(c) 受影響的對象或層面：市場信心與台美股投資人將迎來明顯利多，資金面與風險偏好將朝正面發展。</p>
+    <p class="extra"><b>接下來該觀察：</b>持續觀察亞股熔斷後續的資金續航力以及外資在台股的買賣超動向。</p>
+    <div class="sources-line">來源：<a href="https://ec.ltn.com.tw/article/breakingnews/5635170" target="_blank" rel="noopener">自由時報即時新聞</a>、<a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTFBPM3N1c3hYLXNETlVCS1hZRWxyY0FJc0g4ZU52a3FhMzl2SVBvbDhWOGh0alBQcXdUVllDanljVFVYNHNpNTZKUTlFLWZ2Ul85Ql9MQUpqanJyUHN3dFdZ0gFkQVVfeXFMTzZGOEx1ZkZod3FvelVZRTJSbjlUd2NhNmVqWi16Yl9ZUlVyR1l0YWt6MzFXMVRobmZQbE9YWGk0Z2g4Z2VITnVtTFFia2ptRHFXMk5CUHlKNTlLNkwwcVdMMXlwZA?oc=5" target="_blank" rel="noopener">Google News - 台股(限定媒體)</a></div>
+  </div>
+  
+  
+
+  <div class="body-label"><span>以下為今日完整分類報導，不含上方頭版精選 · 點擊標題可展開完整分析</span></div>
+
+  
+  
+  <div class="category-block">
+    <div class="section-head"><h2>人力資源與組織管理</h2></div>
+    <div class="article-columns">
+      
+      <details class="article">
+        <summary>
+          <h3>違反最低工資法將採按次加罰，明年元旦起正式上路且最低罰鍰調高至5萬元</h3>
+          <div class="meta">Google News - 勞基法(限定媒體)</div>
+          <p>違反最低工資法將自明年元旦起實施按次加罰，最低罰鍰提高至5萬元。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>勞動相關法規「最低工資法」將於明年元旦起實施新制，未來違反規定者將採按次加罰，且最低罰鍰金額提高至5萬元整。</p>
+          <p><b>可能造成的影響：</b>(a) 短期影響：明年元旦實施前，各企業的人資與法務部門將全面檢視薪資結構，確保底薪與加班費等給付符合法定最低工資標準，避免新制上路後第一時間受罰。(b) 中長期影響：對於常態性依賴基層人力與計時人員的連鎖餐飲與零售產業而言，違法成本的大幅增加將迫使企業加速自動化與排班系統優化，以降低人事合規風險。(c) 受影響的對象或層面：主要影響連鎖餐飲、零售等基層勞力密集產業的雇主與人力資源管理部門，屬於明確的法規面利空，迫使企業必須更加嚴格執行薪資法遵。</p>
+          <p><b>接下來該觀察：</b>觀察各地方勞動主管機關在明年元旦新制上路後的實際裁罰案例與企業勞動檢查動態。</p>
+          <p class="sources-line">原文連結：<a href="https://news.google.com/rss/articles/CBMiUEFVX3lxTE12ZkxXcWxVd19IS3NOVW5lU1hCSURuTURQSmhyclVDZng0cEx5clJuRE1CeEpiT1FmX0U0QlpkaHNtMF85WnZadWo0cUNGTE5G0gFWQVVfeXFMT1BYWC1xbWplSjBJRzV3SXlwZWt5amxraWVIM1NrSHRwNHhPdEU5dHkwb05wR1VsTEN6VXREX203VHlhOFdnQ2VpUFMxaFFKSi1MWE1hbWc?oc=5" target="_blank" rel="noopener">Google News - 勞基法(限定媒體)</a></p>
+        </div>
+      </details>
+      
+      <details class="article">
+        <summary>
+          <h3>澳洲航空（Qantas）宣布將外包850個在地職位，多數工作將移轉至印度</h3>
+          <div class="meta">BBC World News(BBC國際新聞)</div>
+          <p>澳洲航空因應IT系統現代化與AI衝擊，將外包850個本地職位至印度。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>澳洲航空（Qantas）宣布計畫外包850個本地工作職位，其中多數角色將轉移至印度。該公司表示，這項決策旨在推動IT系統的現代化，並特別指出人工智慧（AI）帶來的影響。</p>
+          <p><b>可能造成的影響：</b>(a) 短期影響：澳洲航空內部的IT與相關支援部門員工將面臨直接的職位異動或裁員壓力，當地工會與勞工團體可能在未來1-3個月內發起抗議或勞資協商。(b) 中長期影響：半年到一年後，若成效顯著，將引發航空業與大型企業效仿，加速技術與行政工作的全球化外包與自動化替代浪潮。(c) 受影響的對象或層面：勞動市場與人力資源制度面臨利空衝擊，企業營運成本與技術效率則迎來利多，同時也將牽動跨國企業外包供應鏈的板塊重組與勞動法規的檢視。</p>
+          <p><b>接下來該觀察：</b>觀察其他大型航空公司或企業是否跟進將IT與技術職位外包至印度等海外市場，以及勞工工會的後續反制行動。</p>
+          <p class="sources-line">原文連結：<a href="https://www.bbc.co.uk/news/articles/cry838v4qzvyo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">BBC World News(BBC國際新聞)</a></p>
+        </div>
+      </details>
+      
+      <details class="article">
+        <summary>
+          <h3>商業興觀點：服務業因應人才擠出效應的三大應對策略</h3>
+          <div class="meta">Google News - 餐飲業(限定媒體)</div>
+          <p>面對人才擠出效應，服務業需採取三招策略來應對人力短缺挑戰。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>商業興觀點發表了一篇針對服務業的文章，探討在人才擠出效應下，企業如何透過三種招式來應對人力流失與招聘困難的問題。文中指出服務業當前面臨結構性的人才挑戰，並提出相應的調整方向。</p>
+          <p><b>可能造成的影響：</b>(a) 短期影響：接下來1-3個月內，連鎖餐飲與零售業者將加速檢視現有人力配置與薪酬福利，部分企業會開始導入自動化工具或調整班表以緩解人力不足的壓力。(b) 中長期影響：半年到一年後，若人才擠出效應持續，企業將被迫全面升級教育訓練與數位轉型，優化工作流程以降低對純勞力的依賴，進而改變服務業的經營模式。(c) 受影響的對象或層面：連鎖餐飲及零售產業的營運成本與人力資源管理機制將受到直接的利空與轉型壓力，迫使企業調整人事制度與服務交付方式。</p>
+          <p><b>接下來該觀察：</b>觀察後續服務業在導入自動化工具或調整人力結構上的實際成效與勞動市場的留任率變化。</p>
+          <p class="sources-line">原文連結：<a href="https://news.google.com/rss/articles/CBMiUEFVX3lxTE43cTRlLXBjcXJxVVgwZTVrQ2RjTlYyWndZQURETUpZSS1xajZmT015Q1ZOaEsyQi1KbmJNMVphTjR4bmlJZGMzZTJhclF0UzhZ?oc=5" target="_blank" rel="noopener">Google News - 餐飲業(限定媒體)</a></p>
+        </div>
+      </details>
+      
+    </div>
+  </div>
+  
+  
+  
+  <div class="category-block">
+    <div class="section-head"><h2>餐飲與零售</h2></div>
+    <div class="article-columns">
+      
+      <details class="article">
+        <summary>
+          <h3>王品與饗賓餐旅上月營收表現亮眼，雙雙創下同期歷史新高紀錄</h3>
+          <div class="meta">Google News - 餐飲業(限定媒體)</div>
+          <p>王品與饗賓兩大餐飲集團上月營收打破同期紀錄，展現強勁成長動能。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>根據報導，王品集團與饗賓餐旅在上個月的營收表現優異，成功刷新歷史同期的新高紀錄。這顯示出兩家餐飲企業在近期市場中維持了強勁的業績成長態勢。</p>
+          <p><b>可能造成的影響：</b>(a) 短期影響：接下來1-3個月內，相關餐飲集團的基層至管理階層將面臨高強度的人力調度與服務壓力，門市端需加速招募與排班優化以應付高營收帶來的來客數；資本市場對這兩家企業及餐飲類股的短期信心將獲得提振。(b) 中長期影響：若業績高成長態勢持續，半年到一年後將加速各餐飲集團的品牌擴張與分店開立，同時可能進一步推升餐飲業的薪資水準以搶奪基層與儲備幹部人才。(c) 受影響對象與層面：餐飲零售產業供應鏈為利多，因拉貨需求增加；勞動市場中的餐飲服務業從業人員面臨工作負荷增加但可能享有較佳獎金的局面；市場信心方面則對內需餐飲板塊維持偏多看法。</p>
+          <p><b>接下來該觀察：</b>接下來應觀察餐飲雙雄後續月份的營收是否能持續年增，以及是否帶動整體餐飲類股的財報表現。</p>
+          <p class="sources-line">原文連結：<a href="https://news.google.com/rss/articles/CBMiUEFVX3lxTE1zd052MXpNdHRZNlJaaE0tQ3NNanItR1c4NVlzZ0dybklYTi1wamtBV1JJVTR5NkViUFZwUm91NDBNclNEYnNTSVEyMms4VVFT0gFWQVVfeXFMTzlvcGZzNk9HTEhIN01wbW1pbkVnbGppbXQzVzNyZHdiTjFxb08tYXBkZG81SFp5NzlwbkhfbWNYd3JHamRkeTBWUEw5SFY1Y3dyTGVpdUE?oc=5" target="_blank" rel="noopener">Google News - 餐飲業(限定媒體)</a></p>
+        </div>
+      </details>
+      
+      <details class="article">
+        <summary>
+          <h3>麥當勞與Uber宣布展開多年期合作夥伴關係擴展計畫</h3>
+          <div class="meta">QSR Magazine(美國連鎖餐飲產業雜誌)、Nation's Restaurant News(美國餐飲產業媒體)</div>
+          <p>麥當勞與Uber擴大全球合作，將Uber Direct整合進麥當勞App並打通雙方會員獎勵系統。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>麥當勞與Uber Technologies宣布擴大多市場的多年期合作夥伴關係，涵蓋全球14個國家。雙方合作深化為兩大方向：Uber將成為麥當勞App內訂單的偏好外送履行夥伴（透過Uber Direct與Deliverect合作），且雙方將串聯「MyMcDonald’s Rewards」與Uber的獎勵計畫，讓用戶能互通點數與享有優惠。</p>
+          <p><b>可能造成的影響：</b>(a) 短期影響：接下來1至3個月內，合作市場（如美、加、英、法等）的消費者將陸續在麥當勞App內體驗到更順暢的內嵌外送與訂單追蹤功能，同時在特定季節活動中折抵Uber乘車優惠。 Uber的白牌外送解決方案（Uber Direct）與Deliverect的業務量將直接受惠。(b) 中長期影響：半年到一年後，若點數全面互通（即在Uber Eats下單可賺取麥當勞點數並兌換雙方福利），將大幅改變消費者的數位點餐路徑，削弱其他獨立外送平台的獨占優勢，並促使更多連鎖餐飲效仿這種「App內建白牌外送+會員生態系互通」的模式。(c) 受影響的對象或層面：連鎖餐飲與零售產業（利多，確立了自有App結合第三方底層技術的數位轉型範本）；外送平台同業如DoorDash等（利空/中性，面臨Uber深度綁定全球最大速食品牌的壓力）；消費者（利多，獲得更整合的點數回饋與消費體驗）。</p>
+          <p><b>接下來該觀察：</b>觀察MyMcDonald's Rewards與Uber Eats點數互通功能的實際推出時間，以及消費者在麥當勞App內使用Uber Direct下單的滲透率成長狀況。</p>
+          <p class="sources-line">原文連結：<a href="https://www.qsrmagazine.com/news/mcdonalds-and-uber-announce-multi-year-expansion-of-partnership/" target="_blank" rel="noopener">QSR Magazine(美國連鎖餐飲產業雜誌)</a>、<a href="https://www.nrn.com/quick-service/mcdonald-s-is-integrating-delivery-into-its-mobile-app" target="_blank" rel="noopener">Nation's Restaurant News(美國餐飲產業媒體)</a></p>
+        </div>
+      </details>
+      
+      <details class="article">
+        <summary>
+          <h3>酷澎因涉嫌濫用餐飲外送市場主導地位，遭到南韓政府重罰2.2億美元</h3>
+          <div class="meta">Google News - 餐飲業(限定媒體)</div>
+          <p>酷澎因涉及濫用餐飲外送市場主導地位，遭到南韓重罰2.2億美元。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>南韓監管機關認定電商巨頭酷澎（Coupang）在餐飲外送市場中濫用其主導地位。因此，南韓官方對酷澎祭出高達2.2億美元的重罰。</p>
+          <p><b>可能造成的影響：</b>(a) 短期影響：酷澎將面臨龐大的罰款財務衝擊，並可能被迫檢視其在南韓外送市場的促銷與定價策略，競爭對手有望獲得喘息空間。(b) 中長期影響：此案將成為各國防範平台壟斷的重要判例，促使大型零售與外送平台更加謹慎評估市場擴張與資源綁定行為，避免觸犯反壟斷法規。(c) 受影響的對象或層面：南韓國內餐飲外送供應鏈與中小商家將獲得更公平的競爭環境（利多），而酷澎的企業形象與市場擴張速度則面臨短期利空壓抑。</p>
+          <p><b>接下來該觀察：</b>觀察酷澎後續是否提出行政訴訟或調整其外送業務營運模式，以及南韓政府對其他大型平台的後續監管動作。</p>
+          <p class="sources-line">原文連結：<a href="https://news.google.com/rss/articles/CBMiUEFVX3lxTE1XY1l1M184S0xjZmg5X1NxRkdDcjlMVHFxN3c4bE4wTmt2ZWhlNC0wemtUb3ZyRlVUMlhKQnhaTVBfQnVoNkE3THdRZDhPcmdx?oc=5" target="_blank" rel="noopener">Google News - 餐飲業(限定媒體)</a></p>
+        </div>
+      </details>
+      
+    </div>
+  </div>
+  
+  
+  
+  <div class="category-block">
+    <div class="section-head"><h2>人工智慧與科技</h2></div>
+    <div class="article-columns">
+      
+      <details class="article">
+        <summary>
+          <h3>Anthropic在RSI疑慮中推出全新Mythos與Fable模型</h3>
+          <div class="meta">TechCrunch(美國科技媒體)、The Verge(美國科技媒體)</div>
+          <p>Anthropic於RSI疑慮之際發布改善編碼、推理與視覺能力的Mythos與Fable新模型。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>Anthropic宣布推出名為Mythos與Fable的全新AI模型。官方表示，這些新模型在編碼、推理、視覺能力以及與使用者溝通的清晰度上皆有所提升。</p>
+          <p><b>可能造成的影響：</b>(a) 短期影響：接下來1-3個月內，開發者與企業用戶將率先測試新模型的編碼與視覺處理效能，評估其在自動化工具中的實際應用表現。(b) 中長期影響：半年到一年後，若推理與溝通能力的升級普及，將加速各產業AI Agent的落地部署與工作流程自動化。(c) 受影響的對象或層面：軟體開發供應鏈與AI技術服務商將面臨更激烈的效能競爭，整體市場對生成式AI工具的滲透率預期將維持利多走向。</p>
+          <p><b>接下來該觀察：</b>觀察市場對Mythos與Fable模型的實際效能評價，以及Anthropic針對RSI疑慮後續採取的安全與技術對策。</p>
+          <p class="sources-line">原文連結：<a href="https://techcrunch.com/2026/11/09/anthropic-releases-new-mythos-and-fable-models-amid-rsi-concerns/" target="_blank" rel="noopener">TechCrunch(美國科技媒體)</a>、<a href="https://www.theverge.com/ai-artificial-intelligence/1030005/anthropic-claude-fable-mythos-5-2" target="_blank" rel="noopener">The Verge(美國科技媒體)</a></p>
+        </div>
+      </details>
+      
+      <details class="article">
+        <summary>
+          <h3>Meta發布全新的輕量化代理執行模型Muse Ember</h3>
+          <div class="meta">TechCrunch(美國科技媒體)</div>
+          <p>Meta推出極低成本的輕量化模型Muse Ember，挑戰現有AI Agent市場。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>Meta發布名為Muse Ember的新款輕量化模型，專門用於代理執行。其輸入成本為每百萬個Token僅需0.10美元，價格顯著低於Haiku和Luna等前沿競爭對手。</p>
+          <p><b>可能造成的影響：</b>(a) 短期影響：接下來1-3個月內，依賴API成本的軟體開發商與AI Agent新創將迅速評估並測試Muse Ember，以尋求降低營運成本。 (b) 中長期影響：半年到一年後，低成本模型將迫使其他競爭對手（如Anthropic等）跟進降價，推動AI Agent從高單價工具轉為普及化基礎設施。 (c) 受影響的對象與層面：產業供應鏈中的AI模型開發商面臨毛利壓縮壓力（利空），而積極導入自動化工具的企業與消費者則能享受到更低廉的服務成本（利多）。</p>
+          <p><b>接下來該觀察：</b>觀察競爭對手是否跟進降價，以及開發者實際導入Muse Ember後的效能與穩定度回饋。</p>
+          <p class="sources-line">原文連結：<a href="https://techcrunch.com/2026/11/09/meta-releases-muse-ember-a-new-lightweight-model-for-agent-execution/" target="_blank" rel="noopener">TechCrunch(美國科技媒體)</a></p>
+        </div>
+      </details>
+      
+    </div>
+  </div>
+  
+  
+  
+  <div class="category-block">
+    <div class="section-head"><h2>市場與總體經濟</h2></div>
+    <div class="article-columns">
+      
+      <details class="article">
+        <summary>
+          <h3>台積電ADR大漲3.5%帶動台指期夜盤強勢飆升1,064點</h3>
+          <div class="meta">Google News - 台股(限定媒體)</div>
+          <p>台積電ADR勁揚3.5%，帶動台指期夜盤大漲1,064點。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>台積電ADR勁揚3.5%，帶動台指期夜盤大漲1,064點。此為美股動態相關之市場表現。</p>
+          <p><b>可能造成的影響：</b>(a) 短期影響：接下來1-3個月內，台股半導體供應鏈與大盤指數將直接受到資金慶祝行情帶動，短線市場信心與成交量能明顯增溫。(b) 中長期影響：半年到一年後若此動能持續，將進一步推升台股權值股評價，並吸引更多外資回流布局台灣科技資產。(c) 受影響的對象或層面：台股市場信心與半導體供應鏈面臨利多影響，直接激勵投資人對台美股市的風險偏好。</p>
+          <p><b>接下來該觀察：</b>持續觀察台積電ADR後續走勢以及台股現貨市場的開盤表現與外資動向。</p>
+          <p class="sources-line">原文連結：<a href="https://news.google.com/rss/articles/CBMiXEFVX3lxTFB6R1RXVlFtYXk4czdXQ1IxQ2pnNHcyTUlseDVlUWV2b20waThIRWkxei1wTmVud0oxaWZOY2stS05kMDk3VGJ6RThJUUV6WmlTUVJuazFRWU1wc21u?oc=5" target="_blank" rel="noopener">Google News - 台股(限定媒體)</a></p>
+        </div>
+      </details>
+      
+      <details class="article">
+        <summary>
+          <h3>台股創下史上第二大漲點強勢反彈1960點，市場須留意外資期貨空單與創新高後的變數</h3>
+          <div class="meta">Google News - 台股(限定媒體)</div>
+          <p>台股迎來史上第二大漲點大反攻，大漲1960點並創下新高，但需留意高檔外資空單動向。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>台股於今日出現歷史性的大反攻，單日大漲1960點，創下台股史上第二大漲點紀錄並推升指數創新高。然而，市場同時關注到外資在期貨市場仍留有空單部位。</p>
+          <p><b>可能造成的影響：</b>(a) 短期影響：接下來1-3個月內，台股投資人與法人機構將密切評估指數創新高後的續航力，短線波動將加大，多空拉鋸會集中在權值股與外資期現貨操作策略上。(b) 中長期影響：半年到一年後，若基本面支撐力道足以消化高檔賣壓，大盤有望進一步確立多頭格局；反之，若外資空單壓抑市場信心，指數可能陷入高檔震盪整理。(c) 受影響的對象或層面：市場信心與台股投資人面臨多空交錯的心理壓力，短期內市場資金配置將更趨謹慎，偏向防禦或尋找具實質基本面支撐的標的。</p>
+          <p><b>接下來該觀察：</b>接下來應密切觀察外資在期貨市場的空單增減變化以及大盤成交量能是否能持續配合。</p>
+          <p class="sources-line">原文連結：<a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTFBsZklBNlJnVHBnMnZ2VGFNNy0xWFlYSDYzRkdtZl9BVmxYS3pvMUVVUlZwaVowOVdldVdUNVZiSlF3OWxtN2hsbXRMLWVPcnVZQ3lvdmVfYUE?oc=5" target="_blank" rel="noopener">Google News - 台股(限定媒體)</a></p>
+        </div>
+      </details>
+      
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+
+  <div class="colophon">
+    <span>每日情報 · 私人情報摘要，不對外公開發布</span>
+    <span>由 Gemini 分析生成 · 內容僅供參考</span>
+  </div>
+
+</div>
+</body>
+</html>
