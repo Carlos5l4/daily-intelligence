@@ -37,6 +37,9 @@ from dotenv import load_dotenv
 from google import genai
 from google.genai import types
 
+sys.path.insert(0, str(Path(__file__).parent))
+from gemini_fallback import generate_with_fallback
+
 RPM_THROTTLE_SECONDS = 5  # 每次深度分析呼叫之間的等待秒數，避免觸發免費層級 RPM 限制
 
 
@@ -116,8 +119,9 @@ def load_yaml(path: str) -> dict:
 
 
 def call_gemini_json(client, prompt: str, model: str) -> tuple[dict, dict]:
-    response = client.models.generate_content(
-        model=model,
+    response, _ = generate_with_fallback(
+        client,
+        model,
         contents=prompt,
         config=types.GenerateContentConfig(response_mime_type="application/json"),
     )
@@ -132,7 +136,7 @@ def call_gemini_json(client, prompt: str, model: str) -> tuple[dict, dict]:
 
 
 def call_gemini_text(client, prompt: str, model: str) -> tuple[str, dict]:
-    response = client.models.generate_content(model=model, contents=prompt)
+    response, _ = generate_with_fallback(client, model, contents=prompt)
     usage = {}
     if response.usage_metadata:
         usage = {

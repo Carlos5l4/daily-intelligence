@@ -30,6 +30,9 @@ from dotenv import load_dotenv
 from google import genai
 from google.genai import types
 
+sys.path.insert(0, str(Path(__file__).parent))
+from gemini_fallback import generate_with_fallback
+
 PERSONAL_RELEVANCE_KEEP_THRESHOLD = 50
 
 # 輸出上限拉高，避免文章多的日子回應被截斷（372則約需 2-3 萬 token，留足餘裕）
@@ -183,8 +186,9 @@ def call_gemini(prompt: str, model: str, api_key: str) -> tuple[dict, dict]:
     """回傳 (解析後的 JSON dict, usage 統計 dict)"""
     client = genai.Client(api_key=api_key)
 
-    response = client.models.generate_content(
-        model=model,
+    response, model_used = generate_with_fallback(
+        client,
+        model,
         contents=prompt,
         config=types.GenerateContentConfig(
             response_mime_type="application/json",
@@ -206,6 +210,7 @@ def call_gemini(prompt: str, model: str, api_key: str) -> tuple[dict, dict]:
     if response.candidates:
         finish_reason = str(response.candidates[0].finish_reason)
     usage["finish_reason"] = finish_reason
+    usage["model_used"] = model_used
     print(f"Gemini 結束原因: {finish_reason}，輸出 token: {usage.get('output_tokens')}", file=sys.stderr)
 
     text = response.text or ""

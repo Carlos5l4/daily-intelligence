@@ -41,7 +41,7 @@ from datetime import date, datetime, timezone
 from pathlib import Path
 
 PYTHON = sys.executable
-RETRY_DELAY_SECONDS = 15
+RETRY_DELAY_SECONDS = 60  # 2026-11-10 由15秒拉長；模型層級的重試/備援在 pipeline/gemini_fallback.py
 
 
 def child_env() -> dict:
