@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日情報 — 2026-11-12</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700;900&family=Noto+Sans+TC:wght@400;500;700;900&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper: #F3EEE1; --paper-dark: #EAE3D0; --ink: #201D18; --ink-soft: #4A453C;
+    --rule: #C9BFA5; --accent: #7A2A28; --accent-soft: #9C6B4E;
+  }
+  *{box-sizing:border-box;}
+  body{ margin:0; background: var(--paper-dark); color: var(--ink);
+    font-family: 'Source Serif 4', Georgia, serif; -webkit-font-smoothing:antialiased; }
+  .sheet{ max-width: 900px; margin: 0 auto; background: var(--paper);
+    padding: 40px 48px 60px; box-shadow: 0 0 40px rgba(0,0,0,0.08); }
+
+  .masthead{ text-align:center; padding-bottom: 18px; }
+  .masthead .eyebrow-line{ display:flex; justify-content:space-between; align-items:center;
+    font-size:12px; letter-spacing:0.08em; color: var(--ink-soft);
+    border-bottom: 1px solid var(--rule); padding-bottom: 8px; margin-bottom: 14px; }
+  .masthead h1{ font-family:'Noto Serif TC', serif; font-weight:900; font-size: 54px;
+    letter-spacing: 0.02em; margin: 4px 0 6px; line-height:1; }
+  .masthead .subtitle{ font-style: italic; color: var(--ink-soft); font-size: 15px; margin-bottom: 14px; }
+  .masthead .rules{ border: none; border-top: 3px solid var(--ink); margin: 0 0 3px; }
+  .masthead .rules.thin{ border-top: 1px solid var(--ink); margin-bottom: 0; }
+
+  .brief-box{ margin: 26px 0 34px; padding: 20px 24px;
+    border-top: 2px solid var(--ink); border-bottom: 2px solid var(--ink); background: var(--paper-dark); }
+  .brief-box .label{ font-family:'Noto Serif TC', serif; font-weight:700; font-size: 13px;
+    letter-spacing: 0.14em; color: var(--accent); margin-bottom: 8px; }
+  .brief-box p{ font-size: 17px; line-height:1.75; margin:0; }
+  .brief-box p::first-letter{ font-family:'Noto Serif TC', serif; font-weight:900; font-size: 46px;
+    float:left; line-height:0.8; padding-right:8px; padding-top:4px; color: var(--accent); }
+
+  .frontpage-label{ display:flex; align-items:center; gap:14px; margin-bottom:18px; }
+  .frontpage-label h2{ font-family:'Noto Serif TC', serif; font-weight:900; font-size: 16px;
+    letter-spacing:0.1em; margin:0; color: var(--ink); }
+  .frontpage-label .line{ flex:1; border-top: 2px solid var(--ink); }
+  .frontpage-label .sub{ font-size:11.5px; color:var(--ink-soft); font-style:italic; white-space:nowrap; }
+
+  .top3-block{ padding-bottom: 24px; margin-bottom: 30px; border-bottom: 1px solid var(--rule); }
+  .top3-block:last-of-type{ border-bottom: 3px double var(--ink); margin-bottom: 36px; }
+  .pill-tag{ display:inline-block; font-size:12px; font-weight:600; letter-spacing:0.02em;
+    color:#fff; background: var(--accent-soft); border-radius: 999px; padding: 2px 12px; margin-bottom: 8px; }
+  .top3-block h2{ font-family:'Noto Sans TC', sans-serif; font-weight:700; font-size: 24px; line-height:1.4; letter-spacing:0.01em; margin: 0 0 10px; }
+  .top3-block .score{ display:inline-block; font-size:12px; color:var(--ink-soft);
+    border:1px solid var(--rule); padding:2px 8px; margin-bottom: 12px; }
+  .top3-block p{ font-size:15px; line-height:1.75; margin: 0 0 10px; }
+  .top3-block .highlight{ font-size:15px; line-height:1.7; padding-left:14px;
+    border-left: 3px solid var(--accent-soft); color: var(--ink); margin-bottom:12px; }
+  .top3-block .highlight b{ color:var(--accent); font-style:normal; }
+  .top3-block .extra b{ font-weight:600; color: var(--accent); }
+  .top3-block .sources-line{ font-size:12px; color:var(--ink-soft); margin-top:6px; }
+  .sources-line a, .article .meta a{
+    color: var(--accent-soft); text-decoration: none; border-bottom: 1px dotted var(--accent-soft);
+  }
+  .sources-line a:hover, .article .meta a:hover{ color: var(--accent); border-bottom-style: solid; }
+
+  .body-label{ text-align:center; margin: 6px 0 30px; }
+  .body-label span{ font-size:11px; letter-spacing:0.2em; color:var(--ink-soft);
+    border-top:1px solid var(--rule); border-bottom:1px solid var(--rule); padding: 4px 0; display:block; }
+
+  .category-block{ margin-bottom: 46px; }
+  .section-head{ background: var(--ink); color: var(--paper); padding: 11px 18px; margin-bottom: 20px; }
+  .section-head h2{ font-family:'Noto Serif TC', serif; font-weight:700; font-size: 20px;
+    letter-spacing: 0.1em; margin:0; }
+
+  .article-columns{ column-count: 2; column-gap: 34px; column-rule: 1px solid var(--rule); }
+  .article{ break-inside: avoid; margin-bottom: 20px; }
+  .article summary{ list-style:none; cursor:pointer; position:relative; padding-right:22px; }
+  .article summary::-webkit-details-marker{ display:none; }
+  .article summary::after{ content:"展開 ＋"; position:absolute; right:0; top:2px;
+    font-size:11px; color:var(--accent); white-space:nowrap; }
+  .article[open] summary::after{ content:"收合 －"; }
+  .article h3{ font-family:'Noto Sans TC', sans-serif; font-weight:700; font-size: 16px; line-height:1.5; letter-spacing:0.01em; margin: 0 22px 5px 0; }
+  .article .meta{ font-size: 11px; color: var(--ink-soft); margin-bottom: 7px; }
+  .article summary p{ font-size: 13.5px; line-height:1.6; margin: 0 0 10px; color: var(--ink-soft); }
+  .article .expand-body{ margin-top: 10px; padding-top: 10px; border-top: 1px dashed var(--rule); }
+  .article .expand-body p{ font-size: 13.5px; line-height:1.65; margin: 0 0 8px; }
+  .article .expand-body b{ color: var(--accent); font-weight:600; }
+  .article .keywords{ font-size:11.5px; color:var(--ink-soft); margin-top:6px; }
+
+  .colophon{ margin-top: 30px; padding-top: 16px; border-top: 1px solid var(--ink);
+    display:flex; justify-content:space-between; font-size: 11.5px; color: var(--ink-soft); }
+
+  @media (max-width: 720px){
+    .sheet{ padding: 26px 20px 40px; } .masthead h1{ font-size: 38px; }
+    .article-columns{ column-count:1; } .colophon{ flex-direction:column; gap:4px; }
+    .frontpage-label .sub{ display:none; }
+  }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <div class="masthead">
+    <div class="eyebrow-line">
+      <span>第 001 期</span>
+      <span>PERSONAL DAILY INTELLIGENCE(每日情報)</span>
+      <span>2026年11月12日 星期四</span>
+    </div>
+    <h1>每日情報</h1>
+    <div class="subtitle">今天分析 286 則資訊，篩出 13 則值得你注意 · 預估閱讀時間 6 分鐘</div>
+    <hr class="rules"><hr class="rules thin">
+  </div>
+
+  <div class="brief-box">
+    <div class="label">今日三十秒</div>
+    <p>今日焦點財經震撼彈，輝達執行長黃仁勳驚傳涉嫌與中國間諜出軌，目前正接受調查，華爾街日報更報導輝達已在準備將其開除，這場人事地震恐將劇烈撼動全球半導體格局。不過在市場消化此震撼消息的同時，AI雲端夥伴CoreWeave繳出強勁表現，成功帶動美股與台指期夜盤走勢維持活絡。高層動盪與強勢基本面交織，成為今日市場最受矚目的雙重焦點。</p>
+  </div>
+
+  
+  <div class="frontpage-label">
+    <h2>頭版精選</h2>
+    <div class="line"></div>
+    <span class="sub">跨類別綜合評選，不重複出現於下方分類區塊</span>
+  </div>
+
+  
+  <div class="top3-block">
+    <span class="pill-tag">市場與總體經濟</span>
+    <h2>輝達執行長黃仁勳因涉嫌與中國間諜出軌而接受調查</h2>
+    <span class="score">重要度 89 · 相關度 95</span>
+    <p>輝達（Nvidia）執行長黃仁勳正因涉嫌與一名中國間諜出軌而接受調查。文章指出，他對世界秩序未來的影響遠比其他科技巨頭老闆重要得多。</p>
+    <p class="highlight"><b>可能造成的影響：</b>(a) 短期影響：接下來1-3個月內，事件調查的發展將直接衝擊輝達的股價波動與市場信心，並引發投資人對高階管理層地緣政治風險的擔憂。(b) 中長期影響：如果調查結果證實涉及國安危機，美國政府可能進一步收緊對半導體產業的高層人事審查與對中出口管制，甚至迫使輝達進行領導階層的應變規劃與權力重組。(c) 受影響的對象或層面：此事件將對全球半導體供應鏈、美股大盤與費城半導體指數帶來短期利空與高度不確定性，並對政策法規面的國安審查產生實質影響。</p>
+    <p class="extra"><b>接下來該觀察：</b>觀察相關調查的官方進展、輝達官方回應以及美國政府對半導體產業高層安全審查的後續政策動向。</p>
+    <div class="sources-line">來源：<a href="https://www.nytimes.com/2026/11/11/technology/jensen-huang-nvidia-affair.html" target="_blank" rel="noopener">Hacker News (Front Page)(科技社群論壇)</a>、<a href="https://techcrunch.com/2026/11/11/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/" target="_blank" rel="noopener">TechCrunch(美國科技媒體)</a>、<a href="https://ec.ltn.com.tw/article/breakingnews/5637747" target="_blank" rel="noopener">自由時報即時新聞</a>、<a href="https://www.bbc.com/zhongwen/articles/cm36gnenlj59o/trad?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">BBC 中文網</a>、<a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE9sdVNZcFhjMWJKeDhWeTlpQ1c3R21MZGFDbGZHWlJHZGdobTFJUHh6STQzQTMxb19jWGVmZlBDRmpTTl9tMGRqMTQ1TXl0UUU3Z19VcFp6UWpRZw?oc=5" target="_blank" rel="noopener">Google News - 勞基法(限定媒體)</a></div>
+  </div>
+  
+  <div class="top3-block">
+    <span class="pill-tag">市場與總體經濟</span>
+    <h2>華爾街日報報導稱Nvidia準備開除執行長黃仁勳</h2>
+    <span class="score">重要度 87 · 相關度 95</span>
+    <p>根據華爾街日報（WSJ）的報導，晶片大廠Nvidia正準備撤換並開除其執行長黃仁勳。目前文章內文並未提供更多細節、原因或官方證實。</p>
+    <p class="highlight"><b>可能造成的影響：</b>(a) 短期影響：訊息一出將直接衝擊Nvidia與費城半導體指數的市場信心，引發股價劇烈波動與投資人恐慌性拋售。(b) 中長期影響：若屬實將引發高層人事大地震與策略轉向，嚴重動搖市場對該公司AI晶片領導地位的預期；若為誤傳或假新聞，則會凸顯媒體資訊戰與市場焦慮。(c) 受影響對象與層面：直接衝擊台股與美股大盤、費城半導體指數及Nvidia供應鏈的市場信心，方向偏向利空與高度不確定性。</p>
+    <p class="extra"><b>接下來該觀察：</b>觀察Nvidia官方是否發布正式聲明澄清，以及美股開盤後相關股價與費城半導體指數的實際市場反應。</p>
+    <div class="sources-line">來源：<a href="https://twitter.com/watcherguru/status/2120645607866188008" target="_blank" rel="noopener">Hacker News (Front Page)(科技社群論壇)</a>、<a href="https://techcrunch.com/2026/11/11/nvidias-stock-drops-as-board-reportedly-preps-to-oust-ceo-jensen-huang/" target="_blank" rel="noopener">TechCrunch(美國科技媒體)</a>、<a href="https://www.theverge.com/tech/1031652/jensen-huang-rumor" target="_blank" rel="noopener">The Verge(美國科技媒體)</a>、<a href="https://www.marketwatch.com/story/nvidias-stock-drops-as-the-board-reportedly-prepares-to-remove-ceo-jensen-huang-9edee58d?mod=mw_rss_topstories" target="_blank" rel="noopener">MarketWatch(美國財經媒體)</a>、<a href="https://ec.ltn.com.tw/article/breakingnews/5637746" target="_blank" rel="noopener">自由時報即時新聞</a>、<a href="https://www.thenewslens.com/article/271085" target="_blank" rel="noopener">The News Lens 關鍵評論網</a></div>
+  </div>
+  
+  <div class="top3-block">
+    <span class="pill-tag">市場與總體經濟</span>
+    <h2>雲端服務商CoreWeave表現強勁，帶動美股與台指期夜盤走勢活絡</h2>
+    <span class="score">重要度 87 · 相關度 95</span>
+    <p>CoreWeave近期表現強勁，帶動了美股市場與台指期夜盤的交易熱度。相關市場行情因此受到激勵而活絡。</p>
+    <p class="highlight"><b>可能造成的影響：</b>(a) 短期影響：接下來1-3個月內，AI概念股與半導體供應鏈的市場波動可能加劇，投資人對科技股的信心將隨之起伏。(b) 中長期影響：半年到一年後若AI算力需求持續驗證，將進一步推升相關硬體供應鏈的資本支出與評價。(c) 受影響的對象或層面：台美股市的科技類股投資人、半導體供應鏈廠商的市場信心偏向利多，而整體盤勢對資金動能的敏感度將顯著提高。</p>
+    <p class="extra"><b>接下來該觀察：</b>接下來應密切觀察CoreWeave後續的財務表現、AI基建訂單能見度，以及費城半導體指數的走勢變化。</p>
+    <div class="sources-line">來源：<a href="https://techcrunch.com/2026/11/11/coreweave-turns-to-customer-prepayments-shorter-contracts-to-fund-ai-growth/" target="_blank" rel="noopener">TechCrunch(美國科技媒體)</a>、<a href="https://www.marketwatch.com/story/micron-and-other-ai-stocks-surge-as-coreweave-calms-wall-streets-worst-fears-0a18152a?mod=mw_rss_topstories" target="_blank" rel="noopener">MarketWatch(美國財經媒體)</a>、<a href="https://news.google.com/rss/articles/CBMiW0FVX3lxTE12SEdZamNaSUMtbWV3ZjFmMC1IUy1tOEtHcjVHLXBTdkFjTHpPUnladVBBeEl0YUFxang2UVVDUmRrRGdqZDhoeXpQYkpJSmFobjVQenNWTzRKZUHSAWBBVV95cUxPY3Vqb0tkaTdNVlFKRHlzUjJwV202ZVFkMGhzNEttdGlGMkl4Wkh1YUlHdjVfVm1mdDYzcGx0VHo3WG55RnhEeW54Y2pFb09XYW0yTGJRYjZFNFNKbDlDdjE?oc=5" target="_blank" rel="noopener">Google News - 台股(限定媒體)</a></div>
+  </div>
+  
+  
+
+  <div class="body-label"><span>以下為今日完整分類報導，不含上方頭版精選 · 點擊標題可展開完整分析</span></div>
+
+  
+  
+  <div class="category-block">
+    <div class="section-head"><h2>人力資源與組織管理</h2></div>
+    <div class="article-columns">
+      
+      <details class="article">
+        <summary>
+          <h3>勞動部北分署舉辦大專就業學程與企業預聘優良經驗分享會，深化產學合作共育人才</h3>
+          <div class="meta">Google News - 餐飲業(限定媒體)</div>
+          <p>勞動部北分署舉辦優良學程分享會，推動大專就業學程與企業預聘制度。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>勞動部勞動力發展署北基宜花金馬分署舉辦「大專就業學程x企業預聘」優良學程辦訓經驗分享會。活動旨在透過產學攜手合作，分享培訓經驗並共同培育產業所需人才。</p>
+          <p><b>可能造成的影響：</b>(a) 短期影響：參與計畫的大專院校與合作企業將持續交流辦訓模式，並在接下來1-3個月內檢視實習與預聘名額的媒合狀況。(b) 中長期影響：若此辦訓經驗擴大推廣，半年到一年後有助於更多企業建立系統化的內部人才儲備管道，降低招募成本。(c) 受影響的對象或層面：對餐飲與零售等基層人力需求殷切的產業屬利多，有助於緩解人力資源短缺壓力；對求職學生而言則能提升就業銜接的確定性。</p>
+          <p><b>接下來該觀察：</b>後續企業預聘制度的實際留任率以及勞動部相關補助政策的擴大效益。</p>
+          <p class="sources-line">原文連結：<a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE1EcXpJU3R2bEtqYVJOOWRsT3oyazVIUW5zZWVucW5pMFA3aDFLUC1rZEFEalVBdjRrelBBVDZfQWVkdWhQMlhiTnIyOFMya2s2LTVUcTVR?oc=5" target="_blank" rel="noopener">Google News - 餐飲業(限定媒體)</a></p>
+        </div>
+      </details>
+      
+      <details class="article">
+        <summary>
+          <h3>《主管偷偷學》新書上市：探討如何領導能力比自己強的部屬</h3>
+          <div class="meta">The News Lens 關鍵評論網</div>
+          <p>104人力銀行前總經理推出新書，分享如何領導比自己優秀的員工之管理心法。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>104人力銀行前總經理將Podcast熱門單元「主管偷偷學」的精選內容結集出書。該書聚焦於職場管理議題，探討當部屬能力比主管強時，管理者應如何調適心態並發揮領導力。</p>
+          <p><b>可能造成的影響：</b>(a) 短期影響：企業中的中階主管與HR部門將會關注此書與相關討論，並在內部管理培訓中引入類似的領導力培訓主題。(b) 中長期影響：推動企業管理文化從「權威式管理」轉向「賦能式管理」，改善優秀人才因主管能力不足而離職的痛點。(c) 受影響的對象或層面：企業內部的人資制度與教育訓練方法論將面臨轉型壓力，朝向如何建立支持專家型員工發展的環境發展，整體對企業組織效能為中性偏利多。</p>
+          <p><b>接下來該觀察：</b>觀察企業在管理培訓課程中是否增加針對「如何領導資深或專業部屬」的實戰訓練內容。</p>
+          <p class="sources-line">原文連結：<a href="https://www.thenewslens.com/article/270966" target="_blank" rel="noopener">The News Lens 關鍵評論網</a></p>
+        </div>
+      </details>
+      
+    </div>
+  </div>
+  
+  
+  
+  <div class="category-block">
+    <div class="section-head"><h2>餐飲與零售</h2></div>
+    <div class="article-columns">
+      
+      <details class="article">
+        <summary>
+          <h3>統一集團傳出收購必勝客與肯德基已進入最後談判階段，董座羅智先對此做出回應</h3>
+          <div class="meta">Google News - 餐飲業(限定媒體)</div>
+          <p>統一集團傳出正進入收購必勝客與肯德基的最後談判階段，董事長羅智先對此做出說明。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>市場傳出統一集團收購必勝客（Pizza Hut）與肯德基（KFC）已進入最後談判階段。針對此傳聞，統一集團董事長羅智先對外界做出回應與說明。</p>
+          <p><b>可能造成的影響：</b>(a) 短期影響：市場與餐飲同業將密切關注雙方談判進展與最終結果，統一集團股價與市場信心可能出現波動。(b) 中長期影響：若併購案底定，統一將全面整合旗下餐飲零售與物流資源，進一步鞏固其在台灣速食與連鎖餐飲市場的龍頭地位，並對其他競爭對手形成強大壓力。(c) 受影響對象與層面：產業與供應鏈方面（利多/擴張），統一集團的規模經濟將再升級；消費者層面（中性），未來可能在行銷活動、會員點數整合或服務體驗上迎來新變化。</p>
+          <p><b>接下來該觀察：</b>觀察統一集團官方後續是否正式發布重大訊息公告，以及公平交易委員會對於此併購案的審查態度。</p>
+          <p class="sources-line">原文連結：<a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTE52OFNFa1hYeUszS280RF9DNENIdWRNQzB3eFpIcFZSMkdxeDBQSkRXbVlnVC04VHEtSlRoODRLek5rYjRPX3lNOE5JZFlkT3pGeTY3QmwtQ2I?oc=5" target="_blank" rel="noopener">Google News - 餐飲業(限定媒體)</a></p>
+        </div>
+      </details>
+      
+      <details class="article">
+        <summary>
+          <h3>台灣餐飲三雄前三季獲利表現亮眼，饗賓與豆府每股盈餘皆超過12元，八方雲集也達10元水準</h3>
+          <div class="meta">Google News - 餐飲業(限定媒體)</div>
+          <p>台灣餐飲三雄公布前三季財報，饗賓、豆府與八方雲集每股盈餘皆賺超過一個股本。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>餐飲業指標企業公布前三季獲利數據。其中饗賓與豆府每股盈餘（EPS）皆超越12元，八方雲集每股盈餘也達到10元。</p>
+          <p><b>可能造成的影響：</b>(a) 短期影響：資本市場對餐飲類股的信心獲得支撐，相關個股在財報公布期間可能吸引資金關注，同業也會面臨同儕比較的壓力。(b) 中長期影響：獲利穩健的餐飲集團將更有餘裕加速展店、投入數位化與自動化工具應用以對抗缺工問題，進一步拉開與中小型餐飲的差距。(c) 受影響的對象或層面：投資人對內需餐飲產業信心偏向利多，連鎖餐飲品牌的勞動市場（HR部門）也將因擴張計畫面臨更激烈的招募與人才留任競爭。</p>
+          <p><b>接下來該觀察：</b>觀察餐飲三雄第四季營運表現、年終獎金發放水準，以及面對缺工問題的具體薪酬與自動化投資策略。</p>
+          <p class="sources-line">原文連結：<a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE1KcWVlQUJDcEp1UXRRbWg0TkV2c1FzRExFRERseFZqd2JWY0JPVjRvS0wweEtraFFwd2oyVWhIclhKbVVmOUg5dVd4OVpDSWhJcEFFMkFOSF9xd9IBX0FVX3lxTE8xOTg2RHlldTRRcmRSR2NjdXNDRGs0MzVucXE0NGt6cnJLdk1QZ3FmUVM2ekpMTUZ1bzlQYkRNa1JSeGlzd1l0aHNBMW16ZVRzRzVUYVNGaWR1WEJwOTJv?oc=5" target="_blank" rel="noopener">Google News - 餐飲業(限定媒體)</a></p>
+        </div>
+      </details>
+      
+      <details class="article">
+        <summary>
+          <h3>連鎖餐飲集團八方雲集前三季每股盈餘賺逾一個資本額，創下歷史同期新高紀錄</h3>
+          <div class="meta">Google News - 餐飲業(限定媒體)</div>
+          <p>八方雲集公布前三季財報，大賺超過一個資本額，創下歷年同期新高。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>八方雲集公布最新財務表現，今年前三季累計獲利大賺超過一個資本額。此財務表現打破歷年同期紀錄，創下歷史新高。</p>
+          <p><b>可能造成的影響：</b>(a) 短期影響：資本市場對八方雲集的投資信心將獲得顯著提振，股價與市場關注度可能隨財報利多短線升溫。(b) 中長期影響：穩健的財務表現有助於企業加速國內外市場擴張、數位自動化工具的導入與人才招募及留才福利的優化。(c) 受影響對象與層面：連鎖餐飲產業的同業將面臨更高的競爭標竿，而投資人對餐飲零售板塊的信心偏向利多，供應鏈夥伴也可能因其規模擴大而迎來業務成長。</p>
+          <p><b>接下來該觀察：</b>觀察其第四季營收續航力及海外市場（如美國）的擴張進度與獲利貢獻佔比。</p>
+          <p class="sources-line">原文連結：<a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE4ybFZOUUY0MzlKeTlBeXVIeFl4bjR5bFNLLVBBblJBZzFWdW9xVE85bk9BV3ZpUVRweVNreGJDQmE1SThRTXFjQi1DSXQ4Nng1RE9Fd3pBc1ZfV0FDeEkw0gFkQVVfeXFMTU5KLXRJaHg5TkFHbWVOdTAzWVhoa2xXX3J4djRaNFU1WjJUbHByNzFRb1lISU8zM1o0dUtfd2UzZmFRcUViV0F5aV80SFhjNkh4ZDVFWW4yMGl6d1VTdFNWSXpqVg?oc=5" target="_blank" rel="noopener">Google News - 餐飲業(限定媒體)</a></p>
+        </div>
+      </details>
+      
+      <details class="article">
+        <summary>
+          <h3>台灣知名餐飲集團欣葉採用二刀流策略進軍日本市場</h3>
+          <div class="meta">Google News - 餐飲業(限定媒體)</div>
+          <p>欣葉餐飲集團採取二刀流策略，正式進軍日本市場擴展業務。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>欣葉餐飲集團以二刀流策略為主題，宣布搶進日本市場。相關細節與佈局方向已於經濟日報報導中曝光。</p>
+          <p><b>可能造成的影響：</b>(a) 短期影響：接下來1-3個月內，市場與餐飲同業將密切關注欣葉在日本市場的初期選址、定位與首波營運成效。(b) 中長期影響：半年到一年後若展店順利，可能帶動更多台灣中大型餐飲集團加速海外佈局，形成一股新的出海浪潮。(c) 受影響的對象或層面：台灣連鎖餐飲產業的海外擴張信心將獲得提振，對整體餐飲類股具備中長期利多潛力。</p>
+          <p><b>接下來該觀察：</b>觀察欣葉在日本市場實際展店的營運表現及在地化調整策略。</p>
+          <p class="sources-line">原文連結：<a href="https://news.google.com/rss/articles/CBMiW0FVX3lxTFAtc2M4cmNkdmw3bW1rbjdFUVRyUzM5ODBrM1RPY3RXaWd5WmhxaGV4dU1iSVNoanhlWVN6RWxueS05Tmsta1RaYldqZzR1cHdBbzFZRjdGdHRXcFk?oc=5" target="_blank" rel="noopener">Google News - 餐飲業(限定媒體)</a></p>
+        </div>
+      </details>
+      
+    </div>
+  </div>
+  
+  
+  
+  <div class="category-block">
+    <div class="section-head"><h2>人工智慧與科技</h2></div>
+    <div class="article-columns">
+      
+      <details class="article">
+        <summary>
+          <h3>聯合航空（United Airlines）禁止AI代理代客預訂機票</h3>
+          <div class="meta">Hacker News (Front Page)(科技社群論壇)、The Verge(美國科技媒體)</div>
+          <p>聯合航空宣佈禁止AI代理程式代表旅客進行航班預訂作業。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>聯合航空近期修改規定，正式禁止AI代理程式（AI agents）代表旅客在官網或系統中預訂機票。此舉限制了自動化工具直接操作訂票流程的權限。</p>
+          <p><b>可能造成的影響：</b>(a) 短期影響：接下來1-3個月內，依賴AI代理或機器人進行自動化票務查詢與預訂的第三方新創服務將直接受阻，面臨功能失效或法律合規爭議；同時其他大型航空公司可能會觀望並評估是否跟進此項限制政策。(b) 中長期影響：半年到一年後，航司與AI技術開發商可能被迫建立官方的API授權或認證協議，而非任由不受控的AI代理直接存取消費端介面，重塑機票銷售與分銷渠道的遊戲規則。(c) 受影響的對象或層面：消費者（將暫時無法享受全自動AI代訂的便利，屬中性偏利空）、AI代理軟體開發商（面臨通路封鎖與合規風險，屬利空）、航空業者（能有效降低無效流量與伺服器負擔，並掌控直接銷售渠道，屬利多）。</p>
+          <p><b>接下來該觀察：</b>觀察其他大型航空公司是否跟進頒布類似的AI代理禁令，以及航司與AI科技公司未來是否會走向官方合作或API授權模式。</p>
+          <p class="sources-line">原文連結：<a href="https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/" target="_blank" rel="noopener">Hacker News (Front Page)(科技社群論壇)</a>、<a href="https://www.theverge.com/ai-artificial-intelligence/1031623/united-unauthorized-ai-agents" target="_blank" rel="noopener">The Verge(美國科技媒體)</a></p>
+        </div>
+      </details>
+      
+      <details class="article">
+        <summary>
+          <h3>AI網路攻擊波及各國，台灣逾十家企業受害，資安院警告攻擊尚未結束</h3>
+          <div class="meta">自由時報即時新聞</div>
+          <p>境外駭客利用AI代理工具發動網攻，台灣逾十家企業受害且攻擊持續擴大。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>自今年7月起，境外駭客利用AI代理（AI Agent）工具發動網路攻擊。近期攻擊目標已從政府機關擴大至各類企業及網路平台，目前台灣已有超過10家企業受害，數位發展部資通安全署指出攻擊尚未結束。</p>
+          <p><b>可能造成的影響：</b>(a) 短期影響：接下來1-3個月內，企業將面臨資安防護升級的龐大壓力，IT與資安部門需立即盤點系統漏洞並加強員工資安意識培訓，部分受害企業恐面臨營運中斷或資料外洩危機。(b) 中長期影響：半年到一年後，企業對自動化資安監控與AI防禦工具的需求將急遽攀升，資安合規標準與供應鏈資安稽核將變得更加嚴格。(c) 受影響的對象或層面：產業/供應鏈面臨資安成本增加的利空；資安軟體與服務供應商迎來市場需求的利多；企業整體營運與市場信心則面臨潛在的資安威脅壓力。</p>
+          <p><b>接下來該觀察：</b>觀察數位發展部資通安全署後續公布的受害產業範圍以及企業資安防禦預算編列情形。</p>
+          <p class="sources-line">原文連結：<a href="https://ec.ltn.com.tw/article/breakingnews/5637709" target="_blank" rel="noopener">自由時報即時新聞</a></p>
+        </div>
+      </details>
+      
+      <details class="article">
+        <summary>
+          <h3>Databricks執行長Ali Ghodsi利用自家AI Agent取得員工真實反饋</h3>
+          <div class="meta">TechCrunch(美國科技媒體)</div>
+          <p>Databricks執行長Ali Ghodsi透過升級版的Genie AI Agent來獲取公司內部的真實營運狀況。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>隨著Databricks規模擴張至12,000名員工，執行長Ali Ghodsi坦言無法掌握每個人狀況，且員工通常不會向他坦承錯誤。因此，他開始利用Databricks最新修訂的Genie agent來取得不加修飾的真相。</p>
+          <p><b>可能造成的影響：</b>(a) 短期影響：接下來1-3個月內，Databricks內部員工將面臨管理透明度提高的轉變，高階管理層能更快掌握專案痛點與執行盲點。(b) 中長期影響：半年到一年後，若此模式成功，將引發科技業與大型企業仿效，推動「AI管理代理人」的普及，改變傳統企業內部的向上回報機制。(c) 受影響的對象或層面：在產業/供應鏈層面屬利多，證明了B2B AI Agent在企業內部治理的實際落地價值；在人力資源與管理層面則為中性偏挑戰，迫使企業重新思考員工心理安全感與AI監控之間的平衡。</p>
+          <p><b>接下來該觀察：</b>觀察Databricks是否會將此內部AI管理應用商業化推廣，以及市場對AI Agent作為管理工具的接受度。</p>
+          <p class="sources-line">原文連結：<a href="https://techcrunch.com/2026/11/11/databricks-new-ai-agent-tells-ceo-ali-ghodsi-the-unvarnished-truth/" target="_blank" rel="noopener">TechCrunch(美國科技媒體)</a></p>
+        </div>
+      </details>
+      
+    </div>
+  </div>
+  
+  
+  
+  <div class="category-block">
+    <div class="section-head"><h2>市場與總體經濟</h2></div>
+    <div class="article-columns">
+      
+      <details class="article">
+        <summary>
+          <h3>台股短期內急彈6100點但成交量遞減，分析師陳嘉偉指出環球晶與國巨等個股表現仍未觸及10日線</h3>
+          <div class="meta">Google News - 台股(限定媒體)</div>
+          <p>台股3天暴彈6100點卻伴隨量縮，顯示部分權值與指標股如環球晶、國巨動能仍顯不足。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>台股在短時間內強彈6100點，但市場成交量卻呈現逐日遞減的現象。分析師陳嘉偉點名指出，包含環球晶與國巨在內的個股，目前連10日線都尚未碰到。</p>
+          <p><b>可能造成的影響：</b>(a) 短期影響：接下來1-3個月內，持有環球晶、國巨等弱勢個股的投資人將面臨較大的上檔解套壓力，市場資金可能高度集中在少數強勢族群，導致個股表現極端分化。(b) 中長期影響：若量能無法有效跟上指數彈幅，半年到一年內大盤可能陷入築底期或震盪整理，投資人對於電子零組件與半導體下游的信心需更長時間修復。(c) 受影響的對象與層面：對台股散戶與美台股市投資人的市場信心造成中性偏保守的影響，供應鏈中的半導體矽晶圓與被動元件廠短期內股價上攻動能受限。</p>
+          <p><b>接下來該觀察：</b>接下來應密切觀察台股反彈時的成交量是否能有效放大，以及環球晶、國巨等指標股能否帶量突破10日線反壓。</p>
+          <p class="sources-line">原文連結：<a href="https://news.google.com/rss/articles/CBMiUkFVX3lxTE4wRFJJRm42UnUwNV9xcTg0TE9zeG5LLXBhTDFkeXN5UDF5MDFrN0p4SC1TRzRQakZ2R2NEbjlLTEFUUy1XLVhXc1BVWUd6b3JzUVHSAVdBVV95cUxPcUlkNkJmWXVEbV91RzlhbWFnUDM5SEdEdkg1QWRhdXRYcUYwRVZDcXFlMEVGaHN2bHFJY0RBN25BMzZKRFVXbHpwUHlBaHJCWW1UM0U1THM?oc=5" target="_blank" rel="noopener">Google News - 台股(限定媒體)</a></p>
+        </div>
+      </details>
+      
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+
+  <div class="colophon">
+    <span>每日情報 · 私人情報摘要，不對外公開發布</span>
+    <span>由 Gemini 分析生成 · 內容僅供參考</span>
+  </div>
+
+</div>
+</body>
+</html>
