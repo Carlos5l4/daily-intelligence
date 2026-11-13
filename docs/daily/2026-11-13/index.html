@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日情報 — 2026-11-13</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700;900&family=Noto+Sans+TC:wght@400;500;700;900&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper: #F3EEE1; --paper-dark: #EAE3D0; --ink: #201D18; --ink-soft: #4A453C;
+    --rule: #C9BFA5; --accent: #7A2A28; --accent-soft: #9C6B4E;
+  }
+  *{box-sizing:border-box;}
+  body{ margin:0; background: var(--paper-dark); color: var(--ink);
+    font-family: 'Source Serif 4', Georgia, serif; -webkit-font-smoothing:antialiased; }
+  .sheet{ max-width: 900px; margin: 0 auto; background: var(--paper);
+    padding: 40px 48px 60px; box-shadow: 0 0 40px rgba(0,0,0,0.08); }
+
+  .masthead{ text-align:center; padding-bottom: 18px; }
+  .masthead .eyebrow-line{ display:flex; justify-content:space-between; align-items:center;
+    font-size:12px; letter-spacing:0.08em; color: var(--ink-soft);
+    border-bottom: 1px solid var(--rule); padding-bottom: 8px; margin-bottom: 14px; }
+  .masthead h1{ font-family:'Noto Serif TC', serif; font-weight:900; font-size: 54px;
+    letter-spacing: 0.02em; margin: 4px 0 6px; line-height:1; }
+  .masthead .subtitle{ font-style: italic; color: var(--ink-soft); font-size: 15px; margin-bottom: 14px; }
+  .masthead .rules{ border: none; border-top: 3px solid var(--ink); margin: 0 0 3px; }
+  .masthead .rules.thin{ border-top: 1px solid var(--ink); margin-bottom: 0; }
+
+  .brief-box{ margin: 26px 0 34px; padding: 20px 24px;
+    border-top: 2px solid var(--ink); border-bottom: 2px solid var(--ink); background: var(--paper-dark); }
+  .brief-box .label{ font-family:'Noto Serif TC', serif; font-weight:700; font-size: 13px;
+    letter-spacing: 0.14em; color: var(--accent); margin-bottom: 8px; }
+  .brief-box p{ font-size: 17px; line-height:1.75; margin:0; }
+  .brief-box p::first-letter{ font-family:'Noto Serif TC', serif; font-weight:900; font-size: 46px;
+    float:left; line-height:0.8; padding-right:8px; padding-top:4px; color: var(--accent); }
+
+  .frontpage-label{ display:flex; align-items:center; gap:14px; margin-bottom:18px; }
+  .frontpage-label h2{ font-family:'Noto Serif TC', serif; font-weight:900; font-size: 16px;
+    letter-spacing:0.1em; margin:0; color: var(--ink); }
+  .frontpage-label .line{ flex:1; border-top: 2px solid var(--ink); }
+  .frontpage-label .sub{ font-size:11.5px; color:var(--ink-soft); font-style:italic; white-space:nowrap; }
+
+  .top3-block{ padding-bottom: 24px; margin-bottom: 30px; border-bottom: 1px solid var(--rule); }
+  .top3-block:last-of-type{ border-bottom: 3px double var(--ink); margin-bottom: 36px; }
+  .pill-tag{ display:inline-block; font-size:12px; font-weight:600; letter-spacing:0.02em;
+    color:#fff; background: var(--accent-soft); border-radius: 999px; padding: 2px 12px; margin-bottom: 8px; }
+  .top3-block h2{ font-family:'Noto Sans TC', sans-serif; font-weight:700; font-size: 24px; line-height:1.4; letter-spacing:0.01em; margin: 0 0 10px; }
+  .top3-block .score{ display:inline-block; font-size:12px; color:var(--ink-soft);
+    border:1px solid var(--rule); padding:2px 8px; margin-bottom: 12px; }
+  .top3-block p{ font-size:15px; line-height:1.75; margin: 0 0 10px; }
+  .top3-block .highlight{ font-size:15px; line-height:1.7; padding-left:14px;
+    border-left: 3px solid var(--accent-soft); color: var(--ink); margin-bottom:12px; }
+  .top3-block .highlight b{ color:var(--accent); font-style:normal; }
+  .top3-block .extra b{ font-weight:600; color: var(--accent); }
+  .top3-block .sources-line{ font-size:12px; color:var(--ink-soft); margin-top:6px; }
+  .sources-line a, .article .meta a{
+    color: var(--accent-soft); text-decoration: none; border-bottom: 1px dotted var(--accent-soft);
+  }
+  .sources-line a:hover, .article .meta a:hover{ color: var(--accent); border-bottom-style: solid; }
+
+  .body-label{ text-align:center; margin: 6px 0 30px; }
+  .body-label span{ font-size:11px; letter-spacing:0.2em; color:var(--ink-soft);
+    border-top:1px solid var(--rule); border-bottom:1px solid var(--rule); padding: 4px 0; display:block; }
+
+  .category-block{ margin-bottom: 46px; }
+  .section-head{ background: var(--ink); color: var(--paper); padding: 11px 18px; margin-bottom: 20px; }
+  .section-head h2{ font-family:'Noto Serif TC', serif; font-weight:700; font-size: 20px;
+    letter-spacing: 0.1em; margin:0; }
+
+  .article-columns{ column-count: 2; column-gap: 34px; column-rule: 1px solid var(--rule); }
+  .article{ break-inside: avoid; margin-bottom: 20px; }
+  .article summary{ list-style:none; cursor:pointer; position:relative; padding-right:22px; }
+  .article summary::-webkit-details-marker{ display:none; }
+  .article summary::after{ content:"展開 ＋"; position:absolute; right:0; top:2px;
+    font-size:11px; color:var(--accent); white-space:nowrap; }
+  .article[open] summary::after{ content:"收合 －"; }
+  .article h3{ font-family:'Noto Sans TC', sans-serif; font-weight:700; font-size: 16px; line-height:1.5; letter-spacing:0.01em; margin: 0 22px 5px 0; }
+  .article .meta{ font-size: 11px; color: var(--ink-soft); margin-bottom: 7px; }
+  .article summary p{ font-size: 13.5px; line-height:1.6; margin: 0 0 10px; color: var(--ink-soft); }
+  .article .expand-body{ margin-top: 10px; padding-top: 10px; border-top: 1px dashed var(--rule); }
+  .article .expand-body p{ font-size: 13.5px; line-height:1.65; margin: 0 0 8px; }
+  .article .expand-body b{ color: var(--accent); font-weight:600; }
+  .article .keywords{ font-size:11.5px; color:var(--ink-soft); margin-top:6px; }
+
+  .colophon{ margin-top: 30px; padding-top: 16px; border-top: 1px solid var(--ink);
+    display:flex; justify-content:space-between; font-size: 11.5px; color: var(--ink-soft); }
+
+  @media (max-width: 720px){
+    .sheet{ padding: 26px 20px 40px; } .masthead h1{ font-size: 38px; }
+    .article-columns{ column-count:1; } .colophon{ flex-direction:column; gap:4px; }
+    .frontpage-label .sub{ display:none; }
+  }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <div class="masthead">
+    <div class="eyebrow-line">
+      <span>第 001 期</span>
+      <span>PERSONAL DAILY INTELLIGENCE(每日情報)</span>
+      <span>2026年11月13日 星期五</span>
+    </div>
+    <h1>每日情報</h1>
+    <div class="subtitle">今天分析 279 則資訊，篩出 13 則值得你注意 · 預估閱讀時間 6 分鐘</div>
+    <hr class="rules"><hr class="rules thin">
+  </div>
+
+  <div class="brief-box">
+    <div class="label">今日三十秒</div>
+    <p>台股今日經歷劇烈震盪，指數暴跌1165點，距離五萬點大關僅剩四千多點差距，市場分析指出，即便台積電上看2500元，仍需其他板塊接棒才能支撐攻勢。然而在恐慌盤勢中，外資逆勢大買特定個股逾14萬張，爆出48萬張巨量創下新天價。國際方面則傳出震撼彈，輝達執行長黃仁勳無預警辭職，由財務長克雷斯接任臨時執行長，為全球科技與資本市場再添變數。</p>
+  </div>
+
+  
+  <div class="frontpage-label">
+    <h2>頭版精選</h2>
+    <div class="line"></div>
+    <span class="sub">跨類別綜合評選，不重複出現於下方分類區塊</span>
+  </div>
+
+  
+  <div class="top3-block">
+    <span class="pill-tag">市場與總體經濟</span>
+    <h2>輝達（Nvidia）董事會宣佈黃仁勳辭任執行長</h2>
+    <span class="score">重要度 90 · 相關度 95</span>
+    <p>Nvidia董事會正式宣布黃仁勳辭去公司執行長職務。原任公司執行副總裁兼財務長的科萊特·克雷斯（Colette Kress）已同意出任臨時執行長。</p>
+    <p class="highlight"><b>可能造成的影響：</b>(a) 短期影響：美股與費城半導體指數將承受巨大賣壓與市場恐慌情緒，輝達股價短期內波動劇烈，投資人信心潰散；供應鏈與合作夥伴將高度關注臨時執行長克雷斯的接班穩定度與營運方針。(b) 中長期影響：若缺乏黃仁勳的技術願景與強力領導，輝達在AI晶片市場的壟斷優勢與創新動能可能面臨考驗，競爭對手如超微（AMD）與大型科技廠的自研晶片將獲得蠶食市占率的空間。(c) 受影響的對象或層面：市場信心與台美股半導體類股面臨全面利空衝擊，供應鏈廠商需密切評估後續高階晶片出貨與策略延續性。</p>
+    <p class="extra"><b>接下來該觀察：</b>觀察輝達後續是否公布正式執行長人選，以及黃仁勳是否完全退出公司營運或轉任其他職務。</p>
+    <div class="sources-line">來源：<a href="https://apnews.com/article/nvidia-megaspeed-china-singapore-huang-5403f152a601cf82ce939f1d24fffa0f" target="_blank" rel="noopener">Hacker News (Front Page)(科技社群論壇)</a>、<a href="https://techcrunch.com/2026/11/12/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/" target="_blank" rel="noopener">TechCrunch(美國科技媒體)</a>、<a href="https://www.theverge.com/tech/1032434/nvidia-jensen-huang-resignation-reactions" target="_blank" rel="noopener">The Verge(美國科技媒體)</a>、<a href="https://www.marketwatch.com/story/who-can-replace-jensen-huang-as-nvidia-ceo-these-four-names-are-buzzing-in-ai-circles-66c31ec2?mod=mw_rss_topstories" target="_blank" rel="noopener">MarketWatch(美國財經媒體)</a>、<a href="https://ec.ltn.com.tw/article/breakingnews/5639114" target="_blank" rel="noopener">自由時報即時新聞</a>、<a href="https://www.bbc.com/zhongwen/articles/c63egjy85wq8o/trad?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">BBC 中文網</a>、<a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTFA3UEV1a1RUSWFibTRYV3locHd3cUlSQldIRDMzTFBKRXBSVXR3alFQLUk2NEF5UHpOMFJRZGhOZlE3V2Znb29mbElmcWZPMjJLQ2RvbTZyb1o5bnlmREhF0gFkQVVfeXFMT0xJeTJNanA4cXRCbEpVMGxTM043M2FBRi1LQXFUaWFYUUZXVm04NkREWTd6aHZZcmttNzgtb2hiV2ZKZDcya0NQUDNjVzA0UkcwbDBhaVI0ZG5rQTFfYnlXaDN4Rw?oc=5" target="_blank" rel="noopener">Google News - 台股(限定媒體)</a>、<a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTFB3VFVjSkFHQlo5ZEpnTzF1N0kxYnJlbUlQNXRtZTE5bUQ1eXJic2VONFdJMWtzY21xZGNYUEtveUNQbmpFMXN5RU5pVFFJTDJHanBmWmlDSERnRGlKc0xr?oc=5" target="_blank" rel="noopener">Google News - 勞基法(限定媒體)</a>、<a href="https://www.bbc.co.uk/news/articles/cmq5vd1wdgz6o?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">BBC World News(BBC國際新聞)</a>、<a href="https://news.google.com/rss/articles/CBMiXkFVX3lxTE0xOHd4R25VcG1BZHhvWURMUXBKZzhQZE44RUdTOXNxNEZuMk5pTTdUMmNmRGJsRVRqMll3d2NhQ1RhVG80ZG5hR0QtOEtIZWFtNXNwcTZxVWI0czlVLXc?oc=5" target="_blank" rel="noopener">Google News - 國際焦點(限定媒體)</a></div>
+  </div>
+  
+  <div class="top3-block">
+    <span class="pill-tag">市場與總體經濟</span>
+    <h2>台股大跌1165點，外資逆勢買超狂掃特定個股逾14萬張並創下新天價</h2>
+    <span class="score">重要度 70 · 相關度 95</span>
+    <p>台股單日暴跌1165點，市場遭遇重挫。然而外資卻逆勢大舉掃貨某檔特定個股超過14萬張，成交量暴增至48萬張的巨量，推升股價飆上新天價。</p>
+    <p class="highlight"><b>可能造成的影響：</b>(a) 短期影響：接下來1-3個月內，市場資金將高度集中於該檔獲得外資青睞的個股與相關供應鏈，短線波動劇烈，並牽動台股大盤的資金磁吸效應。(b) 中長期影響：若外資持續鎖碼此標的，半年到一年後可能改變該產業在台股中的權重與評價結構，形成強者恆強的籌碼集中局面。(c) 受影響的對象或層面：市場信心與台股大盤面臨短期利空衝擊，但特定個股的籌碼面呈現強烈利多，直接影響投資人的資金配置與大盤走勢。</p>
+    <p class="extra"><b>接下來該觀察：</b>觀察外資後續對該檔個股的買賣超續航力以及台股大盤的止跌回穩訊號。</p>
+    <div class="sources-line">來源：<a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTE11TEpGVDg4N2huaHp2cTJJWWtKbEVDbVhnNEE1YmVYdjFGVEpXcjBST3c1M1ZRcEw3Z1NFQzUtUzVIQmo3RndERUdxejR2aGRhbFpxaEtNUnA?oc=5" target="_blank" rel="noopener">Google News - 台股(限定媒體)</a></div>
+  </div>
+  
+  <div class="top3-block">
+    <span class="pill-tag">市場與總體經濟</span>
+    <h2>台積電股價漲到2500元仍不足以推升台股達五萬點，市場正關注誰能接棒成為下一波主流動力</h2>
+    <span class="score">重要度 69 · 相關度 95</span>
+    <p>台股面臨挑戰五萬點大關，文章指出僅靠台積電達到2500元仍有約四千多點的差距，引發市場對於「誰來接棒」推升指數的討論。</p>
+    <p class="highlight"><b>可能造成的影響：</b>(a) 短期影響：台股資金可能出現輪動，投資人開始尋找除台積電以外的高成長或低基期權值股與半導體供應鏈，市場波動度可能加劇。(b) 中長期影響：若無其他產業（如AI應用、大型零售或金融等）順利接棒，台股指數在上攻高點時將面臨較大的震盪整理壓力。(c) 受影響的對象或層面：市場信心與台美股投資人的資產配置將受到直接影響，資金可能從單一龍頭股分散至其他潛力板塊。</p>
+    <p class="extra"><b>接下來該觀察：</b>觀察除台積電之外的電子權值股、半導體族群以及其他產業類股的成交量能與資金流入狀況。</p>
+    <div class="sources-line">來源：<a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE9WNlFUT1VCOF9Hb005SUZiQjRCM0N2cU9EdlhPTm1ySUVqalYwUzRCaGx6NnZlNHBVN01oemY5NFJaU21UVEtkRnV3aEw4SE1tMmRFSXRveEtUQQ?oc=5" target="_blank" rel="noopener">Google News - 台股(限定媒體)</a></div>
+  </div>
+  
+  
+
+  <div class="body-label"><span>以下為今日完整分類報導，不含上方頭版精選 · 點擊標題可展開完整分析</span></div>
+
+  
+  
+  <div class="category-block">
+    <div class="section-head"><h2>人力資源與組織管理</h2></div>
+    <div class="article-columns">
+      
+      <details class="article">
+        <summary>
+          <h3>星巴克（Starbucks）提高員工薪酬福利，透過股票獎勵與績效獎金深化「重返星巴克」策略</h3>
+          <div class="meta">QSR Magazine(美國連鎖餐飲產業雜誌)、Nation's Restaurant News(美國餐飲產業媒體)</div>
+          <p>星巴克發放近20萬份員工股票獎勵與績效獎金，落實「重返星巴克」轉型策略並深化留才機制。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>星巴克宣佈近20萬名全球全職與兼職員工獲得新的Bean Stock股票獎勵，另有13萬名員工的先前股票於本月解禁。同時，北美超過八成符合資格的計時員工透過「Best of Starbucks Reward」計畫獲得每季最高300美元的績效獎金，數位小費管道也帶動小費金額大幅增加超過22萬美元。</p>
+          <p><b>可能造成的影響：</b>(a) 短期影響：接下來1至3個月內，星巴克的北美基層員工將直接感受到首波績效獎金與數位小費增加帶來的實質收入成長，門市員工士氣與服務動能將顯著提升。(b) 中長期影響：半年到一年後，這項涵蓋股票獎勵與優渥福利的留才策略，將持續維持其低於產業平均的離職率，有助於支撐其美國同店銷售額持續超越7%成長的轉型動能。(c) 受影響的對象與層面：連鎖餐飲產業的勞動市場與人力資源制度將面臨同業競爭壓力（利多：基層員工實質所得增加；中性：資方人事成本上升，但透過低離職率與高效營運對沖）。</p>
+          <p><b>接下來該觀察：</b>觀察星巴克美國同店銷售額成長率是否能持續維持，以及其工會代表門市對相關薪酬福利調整的實質接受與談判進展。</p>
+          <p class="sources-line">原文連結：<a href="https://www.qsrmagazine.com/story/starbucks-is-putting-more-money-in-employees-pockets/" target="_blank" rel="noopener">QSR Magazine(美國連鎖餐飲產業雜誌)</a>、<a href="https://www.nrn.com/quick-service/starbucks-baristas-start-receiving-bonus-payments" target="_blank" rel="noopener">Nation's Restaurant News(美國餐飲產業媒體)</a></p>
+        </div>
+      </details>
+      
+      <details class="article">
+        <summary>
+          <h3>yes123調查顯示今年新鮮人離職率飆升至34%，等於每3個菜鳥就有1個陣亡</h3>
+          <div class="meta">Google News - 勞基法(限定媒體)</div>
+          <p>調查顯示今年新鮮人離職率高達34%，每3個菜鳥就有1人陣亡。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>根據yes123求職網最新調查，今年社會新鮮人的離職率高達34%，相當於每3個菜鳥中就有1人離職。這項數據反映出當前職場新進人員的流失情況顯著偏高。</p>
+          <p><b>可能造成的影響：</b>(a) 短期影響：企業HR部門將面臨更高的離職潮壓力，需緊急檢視新人到職前3個月的導航與輔導機制。(b) 中長期影響：若新人陣亡率持續居高不下，將迫使企業改變薪酬福利與教育訓練策略以提高留任率，甚至影響整體人力資源配置與營運成本。(c) 受影響對象或層面：連鎖餐飲與零售等基層人力需求密集的產業將面臨更嚴峻的缺工與流動率利空，增加人事管理負擔。</p>
+          <p><b>接下來該觀察：</b>後續應觀察企業針對新鮮人留任所推出的新福利政策或教育訓練調整方案。</p>
+          <p class="sources-line">原文連結：<a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTE1DS2o3VmNvWDRkTzJIWXFLcTZhbnFlcWhXWGFlTWcxVXVxYjA4TkY2YWRvYWNmUVlYRGpRQ0xDZm1TYzB3Z0Nkb3BFV29oNmRYSzhDakhPZlY?oc=5" target="_blank" rel="noopener">Google News - 勞基法(限定媒體)</a></p>
+        </div>
+      </details>
+      
+      <details class="article">
+        <summary>
+          <h3>勞動部桃竹苗分署表揚七家績優企業，肯定其在企業人才培育與育才方面的成效</h3>
+          <div class="meta">Google News - 餐飲業(限定媒體)</div>
+          <p>桃竹苗分署公開表揚七家在人才培育上有成效的績優企業。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>勞動部勞動力發展署桃竹苗分署舉辦表揚活動，針對推動企業人才培育有成且表現優異的七家企業給予公開表揚與肯定。</p>
+          <p><b>可能造成的影響：</b>(a) 短期影響：獲獎的七家企業在接下來1-3個月內將提升雇主品牌形象，有助於吸引求職者目光並強化內部員工向心力。(b) 中長期影響：半年到一年後，其他同業可能因同儕效應或政府補助政策的吸引，跟進投入更多資源在員工教育訓練與人才發展制度上。(c) 受影響的對象或層面：對餐飲與零售等缺工產業的人力資源部門（HRBP）而言是政策利多，有助於推動內部育才方案並爭取管理層對培訓預算的支持。</p>
+          <p><b>接下來該觀察：</b>後續勞動部是否會擴大相關的人才培育補助計畫或推出更多實質獎勵措施。</p>
+          <p class="sources-line">原文連結：<a href="https://news.google.com/rss/articles/CBMiUEFVX3lxTE9PN08taGZWaHZjNDdobDllN2ZQUmdBYUprUXg0M0JKU0xIVmg0QmJUbkFoVEhqTko1UXpHakZrQlNSRkRRU0o1NTVHSVhreGF40gFWQVVfeXFMTy1NRG1vVVRRbTRnNkhwV0swbGdwLVgyLWlEeGtYYmpxNG9zT3poWDJONU90OHI2MW04cERxSjBsQ2pTZDFLX0lXcFhDUjRjQU9ReVMyVXc?oc=5" target="_blank" rel="noopener">Google News - 餐飲業(限定媒體)</a></p>
+        </div>
+      </details>
+      
+    </div>
+  </div>
+  
+  
+  
+  <div class="category-block">
+    <div class="section-head"><h2>餐飲與零售</h2></div>
+    <div class="article-columns">
+      
+      <details class="article">
+        <summary>
+          <h3>蝦皮積極擴展店到店，全家便利商店改採讓包裹繞過門市直送社區的策略解析</h3>
+          <div class="meta">Google News - 餐飲業(限定媒體)</div>
+          <p>面對蝦皮店到店大軍壓境，全家採取包裹繞過門市直送社區的應對策略。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>蝦皮持續大量開設店到店門市對全家造成競爭壓力。對此，全家採取了讓包裹繞過傳統實體門市、直接送達社區的物流新策略。</p>
+          <p><b>可能造成的影響：</b>(a) 短期影響：接下來1-3個月內，全家的物流成本結構與門市店員的工作負荷將面臨調整，包裹繞過門市可望緩解店員處理電商取貨的作業壓力。(b) 中長期影響：半年到一年後，若直送社區模式成熟，將改變台灣零售與物流業的配送效率與據點經濟學，重新定義超商與電商在末端物流的競合關係。(c) 受影響的對象或層面：連鎖零售與物流供應鏈將面臨成本與效率的重新評估，對全家而言屬於營運效率優化的中性偏利多策略，對整體市場的末端配送生態則產生結構性影響。</p>
+          <p><b>接下來該觀察：</b>觀察全家直送社區包裹的實際運作覆蓋率與物流成本變化，以及蝦皮店到店的下一步擴點動向。</p>
+          <p class="sources-line">原文連結：<a href="https://news.google.com/rss/articles/CBMid0FVX3lxTE1QU19sZGFXRmYtQ1pqSjZRQTdMNllhek51d3NNdTJXT3RMS2RjNlF5bkZTZHc2SzFhd1c0bjhDUXBpb1dZU19zOTI5LThlcDZ6aF9kY3M0SElpckdZT0hoaVZMUnlrajFzM0xWMW03SktNZE0zNG93?oc=5" target="_blank" rel="noopener">Google News - 餐飲業(限定媒體)</a></p>
+        </div>
+      </details>
+      
+      <details class="article">
+        <summary>
+          <h3>欣葉台菜第三度進軍日本市場，成功打進當地400家餐廳背後的策略解析</h3>
+          <div class="meta">Google News - 餐飲業(限定媒體)</div>
+          <p>欣葉台菜第三度赴日展店並成功打進400家日本餐廳，背後策略與市場佈局備受關注。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>欣葉台菜第三度赴日發展，目前已成功打進日本400家餐廳。經濟日報針對此事件進行報導，探討其背後的商業盤算與佈局。</p>
+          <p><b>可能造成的影響：</b>(a) 短期影響：接下來1-3個月內，國內餐飲同業將聚焦欣葉在日本的營運數據與在地化調整策略，評估海外輸出的可行性。(b) 中長期影響：半年到一年後，若此模式成功，可能帶動更多台灣餐飲品牌加速海外布局，並改變國內連鎖餐飲業者的營收結構與全球化競爭態勢。(c) 受影響的對象或層面：主要影響餐飲產業與供應鏈，對台灣連鎖餐飲業者帶來擴張海外市場的利多示範效應，同時也考驗企業的人才外派與跨文化管理能力。</p>
+          <p><b>接下來該觀察：</b>觀察欣葉台菜在日本市場的實際營收表現及其在地化經營的持續性。</p>
+          <p class="sources-line">原文連結：<a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxOdHM5WVF5bExhSmh3bmZHZEhaN0VEYmFwRjhQTF85VzNtTVc2Ykw3bEl6bnBJdXJNS1N4ZWtwUnItY2VLZXpYWGpQMmU1X1RkSFZLVmlldmJmcDQ2YmZIZ3JiNi1WMHJSWk52bEN6RE5ZMmpfbDB3dVI5SXRIUTQ2Tg?oc=5" target="_blank" rel="noopener">Google News - 餐飲業(限定媒體)</a></p>
+        </div>
+      </details>
+      
+      <details class="article">
+        <summary>
+          <h3>雄獅集團旗下欣食旅積極發展餐飲事業，目標於2032年推動IPO上市</h3>
+          <div class="meta">Google News - 餐飲業(限定媒體)、Google News - 國際焦點(限定媒體)</div>
+          <p>雄獅集團孵化餐飲子公司欣食旅，訂下2032年公開發行上市（IPO）的目標。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>雄獅集團積極發展旗下餐飲事業「欣食旅」，並對外公開其營運發展規劃，明確設定於2032年達成IPO上市的目標。</p>
+          <p><b>可能造成的影響：</b>(a) 短期影響：市場與投資人將聚焦檢視欣食旅的營收規模與獲利能力，評估其能否為雄獅集團帶來實質的財務貢獻。(b) 中長期影響：若順利朝2032年IPO邁進，將吸引更多旅遊同業或集團資源投入餐飲零售市場，加劇連鎖餐飲的人才與市場競爭。(c) 受影響的對象或層面：連鎖餐飲產業供應鏈及餐飲零售市場將面臨更激烈的資本與人才競爭，對整體餐飲市場規模擴大屬利多，但對現有同業則構成競爭壓力。</p>
+          <p><b>接下來該觀察：</b>觀察欣食旅後續的展店速度、營收占比以及集團資源整合的實際成效。</p>
+          <p class="sources-line">原文連結：<a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTFBRLTI2ZGxLaTVHT3M1RzdWNUJPNGdvS1EyZHpJeXY4dVdJdmhweDg2T0xDdnlmZGJSUkRkOWFUYkJYYmNYNVlLcjMzS2dVYUlqZXVhY1BOZzByd9IBX0FVX3lxTE9ydloyZUtiOFBJTTVyN2lCczRMN3RFUTFvdl9USnVTLThGSW01ZlNBQ25zRUl2N2VsRW5Jem5yUi1KaXpibDVfWlpBSHIyRXBqWVo3aDlJc2hFTXVjQVk0?oc=5" target="_blank" rel="noopener">Google News - 餐飲業(限定媒體)</a>、<a href="https://news.google.com/rss/articles/CBMiXkFVX3lxTE5WV2MxR1pCTWIxSlN4SWJIN0N3dmRRWUM1RGpiVU1pUGVzck9yVi1EdUVxS3RzMmVKM0VEc2NyR1N3TDVEZWxVZThoeHRqWUtQa0gzeGV2dXhOdHV4R1E?oc=5" target="_blank" rel="noopener">Google News - 國際焦點(限定媒體)</a></p>
+        </div>
+      </details>
+      
+      <details class="article">
+        <summary>
+          <h3>連鎖餐飲集團豆府公布前三季財報，每股盈餘達12.21元創下歷史同期新高</h3>
+          <div class="meta">Google News - 餐飲業(限定媒體)</div>
+          <p>豆府公布前三季財報，每股盈餘12.21元創下歷年同期新高。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>豆府公布最新財務報告，統計前三季每股盈餘（EPS）達12.21元。此一獲利表現創下公司歷年同期的最高紀錄。</p>
+          <p><b>可能造成的影響：</b>(a) 短期影響：接下來1-3個月內，資本市場與餐飲同業將聚焦其第四季營運表現與年終獎金發放政策，同業可能面臨留才與薪資調整的壓力。(b) 中長期影響：半年到一年後，穩健的財務表現將支持其持續擴展店面規模與多品牌策略，進一步鞏固其在連鎖餐飲市場的市佔率。(c) 受影響的對象或層面：產業供應鏈與投資人信心為主要受影響層面，對整體連鎖餐飲產業屬正向利多，但對同業的人才招募則帶來競爭壓力。</p>
+          <p><b>接下來該觀察：</b>接下來應觀察豆府第四季的營收續航力以及其擴店計畫的實際執行進度。</p>
+          <p class="sources-line">原文連結：<a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTFB5ejlYWW5fNnFPd2VzX0prQkE2U2NQU0VYQ29JYU96YktZWkt6VXBNOW5jaG1GM09vTFBJNXRRZFFQXzVMS1d4eEZnMk05XzZYV3lsNjNOMnFTd0ZlWVpj0gFkQVVfeXFMT0ZtSEdCOGdUQTg0dWQyVkF3RzdBYjZTalBUcF8tMC1rME9yT24xdFV4WXhSU0dFMEMwcUhqTHI5ZnMtdzhBNTVYN1ctYkYySmd1TVh4NmxFR2Z3azA4NnkxTTM3aQ?oc=5" target="_blank" rel="noopener">Google News - 餐飲業(限定媒體)</a></p>
+        </div>
+      </details>
+      
+    </div>
+  </div>
+  
+  
+  
+  <div class="category-block">
+    <div class="section-head"><h2>人工智慧與科技</h2></div>
+    <div class="article-columns">
+      
+      <details class="article">
+        <summary>
+          <h3>Amplitude利用OpenAI技術在1至2天內完成產品改版</h3>
+          <div class="meta">OpenAI News(OpenAI官方新聞)</div>
+          <p>Amplitude運用OpenAI模型打造主動式產品代理Wave，實現1到2天內快速迭代產品。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>數據分析平台Amplitude主要基於OpenAI模型建構了名為Wave的主動式產品代理工具。該工具能自動識別待開發功能、透過編碼代理協助團隊發布變更，並衡量改版成效。</p>
+          <p><b>可能造成的影響：</b>(a) 短期影響：接下來1-3個月內，軟體即服務（SaaS）與科技產品團隊將加速導入類似的AI代理工具，以評估其在縮短開發週期上的實際效益。(b) 中長期影響：半年到一年後，產品開發與工程團隊的人力配置模式將面臨重組，AI處理例行編碼與流程自動化的佔比將顯著提高。(c) 受影響的對象或層面：軟體產業與產品開發供應鏈將迎來結構性效率提升（利多），同時也對軟體工程與產品管理人員的技能需求帶來轉型壓力。</p>
+          <p><b>接下來該觀察：</b>觀察更多企業導入AI代理後，產品迭代速度與實際營運效益的量化數據表現。</p>
+          <p class="sources-line">原文連結：<a href="https://openai.com/business/customer-stories/amplitude" target="_blank" rel="noopener">OpenAI News(OpenAI官方新聞)</a></p>
+        </div>
+      </details>
+      
+    </div>
+  </div>
+  
+  
+  
+  <div class="category-block">
+    <div class="section-head"><h2>市場與總體經濟</h2></div>
+    <div class="article-columns">
+      
+      <details class="article">
+        <summary>
+          <h3>台股大跌1165點，投信買超123億元卻大砍特定個股逾3萬張使股東心寒</h3>
+          <div class="meta">Google News - 台股(限定媒體)</div>
+          <p>台股暴跌1165點，投信雖買超百億但大舉出脫特定個股，引發71萬股東不滿。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>台股單日慘跌1165點，在市場大跌之際，投信法人雖整體買超123億元，卻針對特定個股進行超過3萬張的賣超操作。此舉導致該檔個股表現疲弱，使擁有71萬名股東的投資人感到心寒。</p>
+          <p><b>可能造成的影響：</b>(a) 短期影響：持有該檔標的的71萬散戶股東將面臨短期內的資產縮水與心理壓力，市場信心遭受打擊，投信的動向也將引發其他跟風投資人的恐慌性拋售。(b) 中長期影響：若法人持續調節此類高股東人數的標的，將改變台股籌碼分佈結構，散戶投資人對跟隨投信買超的投資策略會產生戒心，轉趨保守。(c) 受影響的對象與層面：市場信心與散戶投資人面臨明顯利空衝擊，同時也考驗投信法人在大型震盪盤勢中的資金配置與輿論壓力。</p>
+          <p><b>接下來該觀察：</b>觀察該檔遭投信大舉賣超個股的後續法人籌碼動向，以及台股大盤止跌回穩的訊號。</p>
+          <p class="sources-line">原文連結：<a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTFBCU3pNVmpSSFFSY3pHTHU0VnRFNkpDZUhUQkpERGp6aFRIQVhUVmtQaDNXRW1zMWhlcUQ5RW1zaWFjbkdnM2h0V2Y0TUFobDVXZEpralFzREM?oc=5" target="_blank" rel="noopener">Google News - 台股(限定媒體)</a></p>
+        </div>
+      </details>
+      
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  <div class="category-block">
+    <div class="section-head"><h2>世界大事</h2></div>
+    <div class="article-columns">
+      
+      <details class="article">
+        <summary>
+          <h3>巴勒斯坦衛生部指出，以色列空襲加薩醫院造成六人死亡</h3>
+          <div class="meta">BBC World News(BBC國際新聞)</div>
+          <p>以色列飛彈擊中加薩南部納瑟醫院的外科病房與加護病房，造成六名巴勒斯坦人死亡。</p>
+        </summary>
+        <div class="expand-body">
+          <p><b>發生什麼事：</b>根據目擊者指出，一枚飛彈擊中了位於加薩南部最大醫院納瑟醫院內包含外科病房與加護病房的建築物。巴勒斯坦衛生部表示，這起攻擊造成六名巴勒斯坦人死亡。</p>
+          <p><b>可能造成的影響：</b>(a) 短期影響：接下來1-3個月內，加薩南部的醫療能量將進一步萎縮，傷患無法獲得妥善治療，國際人道救援組織與聯合國將面臨更大的救援壓力與安全威脅。(b) 中長期影響：若衝突持續，加薩地區的醫療基礎設施將面臨全面毀壞，戰後重建與公共衛生復原的難度將呈指數級上升。(c) 受影響的對象或層面：國際人道救援組織、區域地緣政治穩定及全球金融市場信心受到中性偏空的地緣政治風險擾動，中東局勢緊張可能持續牽動國際油價與市場情緒。</p>
+          <p><b>接下來該觀察：</b>觀察國際社會與聯合國對此事件的具體外交表態，以及停火談判是否有進一步進展。</p>
+          <p class="sources-line">原文連結：<a href="https://www.bbc.co.uk/news/articles/ckzd9p7e4eqeo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">BBC World News(BBC國際新聞)</a></p>
+        </div>
+      </details>
+      
+    </div>
+  </div>
+  
+  
+
+  <div class="colophon">
+    <span>每日情報 · 私人情報摘要，不對外公開發布</span>
+    <span>由 Gemini 分析生成 · 內容僅供參考</span>
+  </div>
+
+</div>
+</body>
+</html>

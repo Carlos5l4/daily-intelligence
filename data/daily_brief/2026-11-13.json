@@ -1,0 +1,438 @@
+{
+  "date": "2026-11-13",
+  "issue_number": 1,
+  "generated_at": "2026-11-13T00:24:32.997842+00:00",
+  "today_in_30_seconds": "台股今日經歷劇烈震盪，指數暴跌1165點，距離五萬點大關僅剩四千多點差距，市場分析指出，即便台積電上看2500元，仍需其他板塊接棒才能支撐攻勢。然而在恐慌盤勢中，外資逆勢大買特定個股逾14萬張，爆出48萬張巨量創下新天價。國際方面則傳出震撼彈，輝達執行長黃仁勳無預警辭職，由財務長克雷斯接任臨時執行長，為全球科技與資本市場再添變數。",
+  "top3_item_ids": [
+    "c025",
+    "c0127",
+    "c0138"
+  ],
+  "items": [
+    {
+      "item_id": "c025",
+      "cluster_id": "c025",
+      "category": "markets_economy",
+      "headline": "輝達（Nvidia）董事會宣佈黃仁勳辭任執行長",
+      "one_sentence_summary": "輝達執行長黃仁勳無預警辭職，財務長克雷斯接任臨時執行長。",
+      "what_happened": "Nvidia董事會正式宣布黃仁勳辭去公司執行長職務。原任公司執行副總裁兼財務長的科萊特·克雷斯（Colette Kress）已同意出任臨時執行長。",
+      "why_it_matters": "黃仁勳作為輝達的靈魂人物與AI浪潮的核心推手，其卸任執行長職務將直接撼動全球半導體與AI產業的領導格局，並引發市場對公司未來策略走向的高度不確定性。",
+      "potential_impact": "(a) 短期影響：美股與費城半導體指數將承受巨大賣壓與市場恐慌情緒，輝達股價短期內波動劇烈，投資人信心潰散；供應鏈與合作夥伴將高度關注臨時執行長克雷斯的接班穩定度與營運方針。(b) 中長期影響：若缺乏黃仁勳的技術願景與強力領導，輝達在AI晶片市場的壟斷優勢與創新動能可能面臨考驗，競爭對手如超微（AMD）與大型科技廠的自研晶片將獲得蠶食市占率的空間。(c) 受影響的對象或層面：市場信心與台美股半導體類股面臨全面利空衝擊，供應鏈廠商需密切評估後續高階晶片出貨與策略延續性。",
+      "what_to_watch_next": "觀察輝達後續是否公布正式執行長人選，以及黃仁勳是否完全退出公司營運或轉任其他職務。",
+      "importance_score": 90.4,
+      "personal_relevance_score": 95,
+      "keywords": [
+        "Nvidia",
+        "黃仁勳",
+        "科萊特·克雷斯",
+        "執行長異動",
+        "半導體產業"
+      ],
+      "sources": [
+        {
+          "name": "Hacker News (Front Page)",
+          "url": "https://apnews.com/article/nvidia-megaspeed-china-singapore-huang-5403f152a601cf82ce939f1d24fffa0f",
+          "published_at": "2026-11-12T13:52:29+00:00"
+        },
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/12/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/",
+          "published_at": "2026-11-12T21:35:00+00:00"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/tech/1032434/nvidia-jensen-huang-resignation-reactions",
+          "published_at": "2026-11-12T21:45:00+00:00"
+        },
+        {
+          "name": "MarketWatch",
+          "url": "https://www.marketwatch.com/story/who-can-replace-jensen-huang-as-nvidia-ceo-these-four-names-are-buzzing-in-ai-circles-66c31ec2?mod=mw_rss_topstories",
+          "published_at": "2026-11-12T22:57:00+00:00"
+        },
+        {
+          "name": "自由時報即時新聞",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5639114",
+          "published_at": "2026-11-12T23:51:34+00:00"
+        },
+        {
+          "name": "BBC 中文網",
+          "url": "https://www.bbc.com/zhongwen/articles/c63egjy85wq8o/trad?at_medium=RSS&at_campaign=rss",
+          "published_at": "2026-11-12T14:28:57+00:00"
+        },
+        {
+          "name": "Google News - 台股(限定媒體)",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFA3UEV1a1RUSWFibTRYV3locHd3cUlSQldIRDMzTFBKRXBSVXR3alFQLUk2NEF5UHpOMFJRZGhOZlE3V2Znb29mbElmcWZPMjJLQ2RvbTZyb1o5bnlmREhF0gFkQVVfeXFMT0xJeTJNanA4cXRCbEpVMGxTM043M2FBRi1LQXFUaWFYUUZXVm04NkREWTd6aHZZcmttNzgtb2hiV2ZKZDcya0NQUDNjVzA0UkcwbDBhaVI0ZG5rQTFfYnlXaDN4Rw?oc=5",
+          "published_at": "2026-11-12T21:47:00+00:00"
+        },
+        {
+          "name": "Google News - 勞基法(限定媒體)",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFB3VFVjSkFHQlo5ZEpnTzF1N0kxYnJlbUlQNXRtZTE5bUQ1eXJic2VONFdJMWtzY21xZGNYUEtveUNQbmpFMXN5RU5pVFFJTDJHanBmWmlDSERnRGlKc0xr?oc=5",
+          "published_at": "2026-11-12T17:22:00+00:00"
+        },
+        {
+          "name": "BBC World News",
+          "url": "https://www.bbc.co.uk/news/articles/cmq5vd1wdgz6o?at_medium=RSS&at_campaign=rss",
+          "published_at": "2026-11-12T23:34:05+00:00"
+        },
+        {
+          "name": "Google News - 國際焦點(限定媒體)",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE0xOHd4R25VcG1BZHhvWURMUXBKZzhQZE44RUdTOXNxNEZuMk5pTTdUMmNmRGJsRVRqMll3d2NhQ1RhVG80ZG5hR0QtOEtIZWFtNXNwcTZxVWI0czlVLXc?oc=5",
+          "published_at": "2026-11-12T14:01:00+00:00"
+        }
+      ],
+      "is_top3": true
+    },
+    {
+      "item_id": "c0127",
+      "cluster_id": "c0127",
+      "category": "markets_economy",
+      "headline": "台股大跌1165點，外資逆勢買超狂掃特定個股逾14萬張並創下新天價",
+      "one_sentence_summary": "台股暴跌1165點之際，外資逆勢大買特定個股逾14萬張，爆出48萬張巨量創下新天價。",
+      "what_happened": "台股單日暴跌1165點，市場遭遇重挫。然而外資卻逆勢大舉掃貨某檔特定個股超過14萬張，成交量暴增至48萬張的巨量，推升股價飆上新天價。",
+      "why_it_matters": "在台股大盤重挫逾千點的恐慌氛圍中，單一標的能吸引外資逆勢巨額買超並爆出天量，顯示特定權值或熱門股具備強大的資金避風港或獨立行情特性，成為觀察盤面資金流向的重要指標。",
+      "potential_impact": "(a) 短期影響：接下來1-3個月內，市場資金將高度集中於該檔獲得外資青睞的個股與相關供應鏈，短線波動劇烈，並牽動台股大盤的資金磁吸效應。(b) 中長期影響：若外資持續鎖碼此標的，半年到一年後可能改變該產業在台股中的權重與評價結構，形成強者恆強的籌碼集中局面。(c) 受影響的對象或層面：市場信心與台股大盤面臨短期利空衝擊，但特定個股的籌碼面呈現強烈利多，直接影響投資人的資金配置與大盤走勢。",
+      "what_to_watch_next": "觀察外資後續對該檔個股的買賣超續航力以及台股大盤的止跌回穩訊號。",
+      "importance_score": 70.0,
+      "personal_relevance_score": 95,
+      "keywords": [
+        "台股暴跌",
+        "外資買超",
+        "台股大盤",
+        "成交巨量"
+      ],
+      "sources": [
+        {
+          "name": "Google News - 台股(限定媒體)",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE11TEpGVDg4N2huaHp2cTJJWWtKbEVDbVhnNEE1YmVYdjFGVEpXcjBST3c1M1ZRcEw3Z1NFQzUtUzVIQmo3RndERUdxejR2aGRhbFpxaEtNUnA?oc=5",
+          "published_at": "2026-11-12T08:35:17+00:00"
+        }
+      ],
+      "is_top3": true
+    },
+    {
+      "item_id": "c0138",
+      "cluster_id": "c0138",
+      "category": "markets_economy",
+      "headline": "台積電股價漲到2500元仍不足以推升台股達五萬點，市場正關注誰能接棒成為下一波主流動力",
+      "one_sentence_summary": "台股挑戰五萬點僅剩四千多點差距，即使台積電漲至2500元仍需其他板塊接棒。",
+      "what_happened": "台股面臨挑戰五萬點大關，文章指出僅靠台積電達到2500元仍有約四千多點的差距，引發市場對於「誰來接棒」推升指數的討論。",
+      "why_it_matters": "當單一權值股（如台積電）無法單獨支撐指數續創高點時，市場必須尋找新的產業主流或接棒族群，才能維持大盤的多頭動能與上攻力道。",
+      "potential_impact": "(a) 短期影響：台股資金可能出現輪動，投資人開始尋找除台積電以外的高成長或低基期權值股與半導體供應鏈，市場波動度可能加劇。(b) 中長期影響：若無其他產業（如AI應用、大型零售或金融等）順利接棒，台股指數在上攻高點時將面臨較大的震盪整理壓力。(c) 受影響的對象或層面：市場信心與台美股投資人的資產配置將受到直接影響，資金可能從單一龍頭股分散至其他潛力板塊。",
+      "what_to_watch_next": "觀察除台積電之外的電子權值股、半導體族群以及其他產業類股的成交量能與資金流入狀況。",
+      "importance_score": 69.0,
+      "personal_relevance_score": 95,
+      "keywords": [
+        "台積電",
+        "台股",
+        "費城半導體指數",
+        "台股大盤",
+        "投資決策"
+      ],
+      "sources": [
+        {
+          "name": "Google News - 台股(限定媒體)",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9WNlFUT1VCOF9Hb005SUZiQjRCM0N2cU9EdlhPTm1ySUVqalYwUzRCaGx6NnZlNHBVN01oemY5NFJaU21UVEtkRnV3aEw4SE1tMmRFSXRveEtUQQ?oc=5",
+          "published_at": "2026-11-12T14:18:37+00:00"
+        }
+      ],
+      "is_top3": true
+    },
+    {
+      "item_id": "c0148",
+      "cluster_id": "c0148",
+      "category": "restaurant_retail",
+      "headline": "蝦皮積極擴展店到店，全家便利商店改採讓包裹繞過門市直送社區的策略解析",
+      "one_sentence_summary": "面對蝦皮店到店大軍壓境，全家採取包裹繞過門市直送社區的應對策略。",
+      "what_happened": "蝦皮持續大量開設店到店門市對全家造成競爭壓力。對此，全家採取了讓包裹繞過傳統實體門市、直接送達社區的物流新策略。",
+      "why_it_matters": "此舉顯示超商雙雄與電商巨頭在「最後一哩路」的物流與據點爭奪戰中，正發展出截然不同的差異化防禦與運營邏輯。",
+      "potential_impact": "(a) 短期影響：接下來1-3個月內，全家的物流成本結構與門市店員的工作負荷將面臨調整，包裹繞過門市可望緩解店員處理電商取貨的作業壓力。(b) 中長期影響：半年到一年後，若直送社區模式成熟，將改變台灣零售與物流業的配送效率與據點經濟學，重新定義超商與電商在末端物流的競合關係。(c) 受影響的對象或層面：連鎖零售與物流供應鏈將面臨成本與效率的重新評估，對全家而言屬於營運效率優化的中性偏利多策略，對整體市場的末端配送生態則產生結構性影響。",
+      "what_to_watch_next": "觀察全家直送社區包裹的實際運作覆蓋率與物流成本變化，以及蝦皮店到店的下一步擴點動向。",
+      "importance_score": 68.0,
+      "personal_relevance_score": 95,
+      "keywords": [
+        "蝦皮店到店",
+        "全家便利商店",
+        "末端物流",
+        "社區直送",
+        "零售通路"
+      ],
+      "sources": [
+        {
+          "name": "Google News - 餐飲業(限定媒體)",
+          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1QU19sZGFXRmYtQ1pqSjZRQTdMNllhek51d3NNdTJXT3RMS2RjNlF5bkZTZHc2SzFhd1c0bjhDUXBpb1dZU19zOTI5LThlcDZ6aF9kY3M0SElpckdZT0hoaVZMUnlrajFzM0xWMW03SktNZE0zNG93?oc=5",
+          "published_at": "2026-11-12T06:40:41+00:00"
+        }
+      ],
+      "is_top3": false
+    },
+    {
+      "item_id": "c059",
+      "cluster_id": "c059",
+      "category": "hr_organization",
+      "headline": "星巴克（Starbucks）提高員工薪酬福利，透過股票獎勵與績效獎金深化「重返星巴克」策略",
+      "one_sentence_summary": "星巴克發放近20萬份員工股票獎勵與績效獎金，落實「重返星巴克」轉型策略並深化留才機制。",
+      "what_happened": "星巴克宣佈近20萬名全球全職與兼職員工獲得新的Bean Stock股票獎勵，另有13萬名員工的先前股票於本月解禁。同時，北美超過八成符合資格的計時員工透過「Best of Starbucks Reward」計畫獲得每季最高300美元的績效獎金，數位小費管道也帶動小費金額大幅增加超過22萬美元。",
+      "why_it_matters": "此舉展現連鎖餐飲業在面對營運轉型時，如何透過強化基層員工的財務參與與福利（如股票獎勵、績效獎金與數位小費），有效降低離職率並提升服務品質與門市營運表現。",
+      "potential_impact": "(a) 短期影響：接下來1至3個月內，星巴克的北美基層員工將直接感受到首波績效獎金與數位小費增加帶來的實質收入成長，門市員工士氣與服務動能將顯著提升。(b) 中長期影響：半年到一年後，這項涵蓋股票獎勵與優渥福利的留才策略，將持續維持其低於產業平均的離職率，有助於支撐其美國同店銷售額持續超越7%成長的轉型動能。(c) 受影響的對象與層面：連鎖餐飲產業的勞動市場與人力資源制度將面臨同業競爭壓力（利多：基層員工實質所得增加；中性：資方人事成本上升，但透過低離職率與高效營運對沖）。",
+      "what_to_watch_next": "觀察星巴克美國同店銷售額成長率是否能持續維持，以及其工會代表門市對相關薪酬福利調整的實質接受與談判進展。",
+      "importance_score": 67.0,
+      "personal_relevance_score": 95,
+      "keywords": [
+        "Starbucks",
+        "Bean Stock",
+        "人力資源",
+        "連鎖餐飲",
+        "員工福利"
+      ],
+      "sources": [
+        {
+          "name": "QSR Magazine",
+          "url": "https://www.qsrmagazine.com/story/starbucks-is-putting-more-money-in-employees-pockets/",
+          "published_at": "2026-11-12T13:00:31+00:00"
+        },
+        {
+          "name": "Nation's Restaurant News",
+          "url": "https://www.nrn.com/quick-service/starbucks-baristas-start-receiving-bonus-payments",
+          "published_at": "2026-11-12T13:31:28+00:00"
+        }
+      ],
+      "is_top3": false
+    },
+    {
+      "item_id": "c0126",
+      "cluster_id": "c0126",
+      "category": "markets_economy",
+      "headline": "台股大跌1165點，投信買超123億元卻大砍特定個股逾3萬張使股東心寒",
+      "one_sentence_summary": "台股暴跌1165點，投信雖買超百億但大舉出脫特定個股，引發71萬股東不滿。",
+      "what_happened": "台股單日慘跌1165點，在市場大跌之際，投信法人雖整體買超123億元，卻針對特定個股進行超過3萬張的賣超操作。此舉導致該檔個股表現疲弱，使擁有71萬名股東的投資人感到心寒。",
+      "why_it_matters": "這反映出法人機構在台股大盤重挫時的資金挪移與避險策略，即便整體呈現買超，但在個股選擇上採取嚴格的汰弱留強，對散戶集中的熱門標的造成直接衝擊。",
+      "potential_impact": "(a) 短期影響：持有該檔標的的71萬散戶股東將面臨短期內的資產縮水與心理壓力，市場信心遭受打擊，投信的動向也將引發其他跟風投資人的恐慌性拋售。(b) 中長期影響：若法人持續調節此類高股東人數的標的，將改變台股籌碼分佈結構，散戶投資人對跟隨投信買超的投資策略會產生戒心，轉趨保守。(c) 受影響的對象與層面：市場信心與散戶投資人面臨明顯利空衝擊，同時也考驗投信法人在大型震盪盤勢中的資金配置與輿論壓力。",
+      "what_to_watch_next": "觀察該檔遭投信大舉賣超個股的後續法人籌碼動向，以及台股大盤止跌回穩的訊號。",
+      "importance_score": 67.0,
+      "personal_relevance_score": 95,
+      "keywords": [
+        "台股大盤",
+        "投信買賣超",
+        "籌碼面",
+        "市場信心"
+      ],
+      "sources": [
+        {
+          "name": "Google News - 台股(限定媒體)",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBCU3pNVmpSSFFSY3pHTHU0VnRFNkpDZUhUQkpERGp6aFRIQVhUVmtQaDNXRW1zMWhlcUQ5RW1zaWFjbkdnM2h0V2Y0TUFobDVXZEpralFzREM?oc=5",
+          "published_at": "2026-11-12T08:19:05+00:00"
+        }
+      ],
+      "is_top3": false
+    },
+    {
+      "item_id": "c0152",
+      "cluster_id": "c0152",
+      "category": "hr_organization",
+      "headline": "yes123調查顯示今年新鮮人離職率飆升至34%，等於每3個菜鳥就有1個陣亡",
+      "one_sentence_summary": "調查顯示今年新鮮人離職率高達34%，每3個菜鳥就有1人陣亡。",
+      "what_happened": "根據yes123求職網最新調查，今年社會新鮮人的離職率高達34%，相當於每3個菜鳥中就有1人離職。這項數據反映出當前職場新進人員的流失情況顯著偏高。",
+      "why_it_matters": "高達三成以上的菜鳥離職率突顯出企業在人才招募、新人留任以及職場適應輔導上正面臨嚴重挑戰。這不僅增加企業的重複招募成本，也打擊內部團隊的穩定度與工作效率。",
+      "potential_impact": "(a) 短期影響：企業HR部門將面臨更高的離職潮壓力，需緊急檢視新人到職前3個月的導航與輔導機制。(b) 中長期影響：若新人陣亡率持續居高不下，將迫使企業改變薪酬福利與教育訓練策略以提高留任率，甚至影響整體人力資源配置與營運成本。(c) 受影響對象或層面：連鎖餐飲與零售等基層人力需求密集的產業將面臨更嚴峻的缺工與流動率利空，增加人事管理負擔。",
+      "what_to_watch_next": "後續應觀察企業針對新鮮人留任所推出的新福利政策或教育訓練調整方案。",
+      "importance_score": 67.0,
+      "personal_relevance_score": 95,
+      "keywords": [
+        "新鮮人離職率",
+        "yes123",
+        "菜鳥陣亡",
+        "人力資源",
+        "職場趨勢"
+      ],
+      "sources": [
+        {
+          "name": "Google News - 勞基法(限定媒體)",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1DS2o3VmNvWDRkTzJIWXFLcTZhbnFlcWhXWGFlTWcxVXVxYjA4TkY2YWRvYWNmUVlYRGpRQ0xDZm1TYzB3Z0Nkb3BFV29oNmRYSzhDakhPZlY?oc=5",
+          "published_at": "2026-11-12T10:21:40+00:00"
+        }
+      ],
+      "is_top3": false
+    },
+    {
+      "item_id": "c0146",
+      "cluster_id": "c0146",
+      "category": "restaurant_retail",
+      "headline": "欣葉台菜第三度進軍日本市場，成功打進當地400家餐廳背後的策略解析",
+      "one_sentence_summary": "欣葉台菜第三度赴日展店並成功打進400家日本餐廳，背後策略與市場佈局備受關注。",
+      "what_happened": "欣葉台菜第三度赴日發展，目前已成功打進日本400家餐廳。經濟日報針對此事件進行報導，探討其背後的商業盤算與佈局。",
+      "why_it_matters": "這顯示台灣餐飲品牌在海外市場的擴張模式與供應鏈整合能力已具備一定規模。對於連鎖餐飲與零售產業而言，這是本土品牌走向國際化與跨國經營的重要參考案例。",
+      "potential_impact": "(a) 短期影響：接下來1-3個月內，國內餐飲同業將聚焦欣葉在日本的營運數據與在地化調整策略，評估海外輸出的可行性。(b) 中長期影響：半年到一年後，若此模式成功，可能帶動更多台灣餐飲品牌加速海外布局，並改變國內連鎖餐飲業者的營收結構與全球化競爭態勢。(c) 受影響的對象或層面：主要影響餐飲產業與供應鏈，對台灣連鎖餐飲業者帶來擴張海外市場的利多示範效應，同時也考驗企業的人才外派與跨文化管理能力。",
+      "what_to_watch_next": "觀察欣葉台菜在日本市場的實際營收表現及其在地化經營的持續性。",
+      "importance_score": 64.5,
+      "personal_relevance_score": 95,
+      "keywords": [
+        "欣葉台菜",
+        "日本市場",
+        "連鎖餐飲",
+        "餐飲業趨勢",
+        "海外佈局"
+      ],
+      "sources": [
+        {
+          "name": "Google News - 餐飲業(限定媒體)",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOdHM5WVF5bExhSmh3bmZHZEhaN0VEYmFwRjhQTF85VzNtTVc2Ykw3bEl6bnBJdXJNS1N4ZWtwUnItY2VLZXpYWGpQMmU1X1RkSFZLVmlldmJmcDQ2YmZIZ3JiNi1WMHJSWk52bEN6RE5ZMmpfbDB3dVI5SXRIUTQ2Tg?oc=5",
+          "published_at": "2026-11-12T06:42:22+00:00"
+        }
+      ],
+      "is_top3": false
+    },
+    {
+      "item_id": "c0142",
+      "cluster_id": "c0142",
+      "category": "restaurant_retail",
+      "headline": "雄獅集團旗下欣食旅積極發展餐飲事業，目標於2032年推動IPO上市",
+      "one_sentence_summary": "雄獅集團孵化餐飲子公司欣食旅，訂下2032年公開發行上市（IPO）的目標。",
+      "what_happened": "雄獅集團積極發展旗下餐飲事業「欣食旅」，並對外公開其營運發展規劃，明確設定於2032年達成IPO上市的目標。",
+      "why_it_matters": "此舉顯示大型旅遊集團正透過多角化經營孵化餐飲小金雞，尋求本業以外的第二成長曲線，對連鎖餐飲及觀光餐旅異業結合具指標意義。",
+      "potential_impact": "(a) 短期影響：市場與投資人將聚焦檢視欣食旅的營收規模與獲利能力，評估其能否為雄獅集團帶來實質的財務貢獻。(b) 中長期影響：若順利朝2032年IPO邁進，將吸引更多旅遊同業或集團資源投入餐飲零售市場，加劇連鎖餐飲的人才與市場競爭。(c) 受影響的對象或層面：連鎖餐飲產業供應鏈及餐飲零售市場將面臨更激烈的資本與人才競爭，對整體餐飲市場規模擴大屬利多，但對現有同業則構成競爭壓力。",
+      "what_to_watch_next": "觀察欣食旅後續的展店速度、營收占比以及集團資源整合的實際成效。",
+      "importance_score": 72.0,
+      "personal_relevance_score": 90,
+      "keywords": [
+        "雄獅",
+        "欣食旅",
+        "IPO",
+        "餐飲產業",
+        "連鎖餐飲"
+      ],
+      "sources": [
+        {
+          "name": "Google News - 餐飲業(限定媒體)",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBRLTI2ZGxLaTVHT3M1RzdWNUJPNGdvS1EyZHpJeXY4dVdJdmhweDg2T0xDdnlmZGJSUkRkOWFUYkJYYmNYNVlLcjMzS2dVYUlqZXVhY1BOZzByd9IBX0FVX3lxTE9ydloyZUtiOFBJTTVyN2lCczRMN3RFUTFvdl9USnVTLThGSW01ZlNBQ25zRUl2N2VsRW5Jem5yUi1KaXpibDVfWlpBSHIyRXBqWVo3aDlJc2hFTXVjQVk0?oc=5",
+          "published_at": "2026-11-12T09:54:56+00:00"
+        },
+        {
+          "name": "Google News - 國際焦點(限定媒體)",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5WV2MxR1pCTWIxSlN4SWJIN0N3dmRRWUM1RGpiVU1pUGVzck9yVi1EdUVxS3RzMmVKM0VEc2NyR1N3TDVEZWxVZThoeHRqWUtQa0gzeGV2dXhOdHV4R1E?oc=5",
+          "published_at": "2026-11-12T09:45:00+00:00"
+        }
+      ],
+      "is_top3": false
+    },
+    {
+      "item_id": "c0160",
+      "cluster_id": "c0160",
+      "category": "world_affairs",
+      "headline": "巴勒斯坦衛生部指出，以色列空襲加薩醫院造成六人死亡",
+      "one_sentence_summary": "以色列飛彈擊中加薩南部納瑟醫院的外科病房與加護病房，造成六名巴勒斯坦人死亡。",
+      "what_happened": "根據目擊者指出，一枚飛彈擊中了位於加薩南部最大醫院納瑟醫院內包含外科病房與加護病房的建築物。巴勒斯坦衛生部表示，這起攻擊造成六名巴勒斯坦人死亡。",
+      "why_it_matters": "醫療設施在國際人道法中受保護，此類攻擊加劇了衝突地區醫療體系的癱瘓與人道危機，並可能引發國際社會對戰爭行為的進一步譴責與外交壓力。",
+      "potential_impact": "(a) 短期影響：接下來1-3個月內，加薩南部的醫療能量將進一步萎縮，傷患無法獲得妥善治療，國際人道救援組織與聯合國將面臨更大的救援壓力與安全威脅。(b) 中長期影響：若衝突持續，加薩地區的醫療基礎設施將面臨全面毀壞，戰後重建與公共衛生復原的難度將呈指數級上升。(c) 受影響的對象或層面：國際人道救援組織、區域地緣政治穩定及全球金融市場信心受到中性偏空的地緣政治風險擾動，中東局勢緊張可能持續牽動國際油價與市場情緒。",
+      "what_to_watch_next": "觀察國際社會與聯合國對此事件的具體外交表態，以及停火談判是否有進一步進展。",
+      "importance_score": 72.0,
+      "personal_relevance_score": 90,
+      "keywords": [
+        "以色列空襲",
+        "加薩醫院",
+        "納瑟醫院",
+        "人道危機"
+      ],
+      "sources": [
+        {
+          "name": "BBC World News",
+          "url": "https://www.bbc.co.uk/news/articles/ckzd9p7e4eqeo?at_medium=RSS&at_campaign=rss",
+          "published_at": "2026-11-12T16:54:12+00:00"
+        }
+      ],
+      "is_top3": false
+    },
+    {
+      "item_id": "c0143",
+      "cluster_id": "c0143",
+      "category": "restaurant_retail",
+      "headline": "連鎖餐飲集團豆府公布前三季財報，每股盈餘達12.21元創下歷史同期新高",
+      "one_sentence_summary": "豆府公布前三季財報，每股盈餘12.21元創下歷年同期新高。",
+      "what_happened": "豆府公布最新財務報告，統計前三季每股盈餘（EPS）達12.21元。此一獲利表現創下公司歷年同期的最高紀錄。",
+      "why_it_matters": "這顯示在餐飲市場競爭激烈的環境下，具規模的連鎖餐飲集團仍能透過營運優化維持強勁的獲利能力，反映出特定餐飲商業模式的抗壓性。",
+      "potential_impact": "(a) 短期影響：接下來1-3個月內，資本市場與餐飲同業將聚焦其第四季營運表現與年終獎金發放政策，同業可能面臨留才與薪資調整的壓力。(b) 中長期影響：半年到一年後，穩健的財務表現將支持其持續擴展店面規模與多品牌策略，進一步鞏固其在連鎖餐飲市場的市佔率。(c) 受影響的對象或層面：產業供應鏈與投資人信心為主要受影響層面，對整體連鎖餐飲產業屬正向利多，但對同業的人才招募則帶來競爭壓力。",
+      "what_to_watch_next": "接下來應觀察豆府第四季的營收續航力以及其擴店計畫的實際執行進度。",
+      "importance_score": 63.0,
+      "personal_relevance_score": 90,
+      "keywords": [
+        "豆府",
+        "每股盈餘",
+        "連鎖餐飲",
+        "財報表現"
+      ],
+      "sources": [
+        {
+          "name": "Google News - 餐飲業(限定媒體)",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFB5ejlYWW5fNnFPd2VzX0prQkE2U2NQU0VYQ29JYU96YktZWkt6VXBNOW5jaG1GM09vTFBJNXRRZFFQXzVMS1d4eEZnMk05XzZYV3lsNjNOMnFTd0ZlWVpj0gFkQVVfeXFMT0ZtSEdCOGdUQTg0dWQyVkF3RzdBYjZTalBUcF8tMC1rME9yT24xdFV4WXhSU0dFMEMwcUhqTHI5ZnMtdzhBNTVYN1ctYkYySmd1TVh4NmxFR2Z3azA4NnkxTTM3aQ?oc=5",
+          "published_at": "2026-11-12T00:48:57+00:00"
+        }
+      ],
+      "is_top3": false
+    },
+    {
+      "item_id": "c001",
+      "cluster_id": "c001",
+      "category": "ai_technology",
+      "headline": "Amplitude利用OpenAI技術在1至2天內完成產品改版",
+      "one_sentence_summary": "Amplitude運用OpenAI模型打造主動式產品代理Wave，實現1到2天內快速迭代產品。",
+      "what_happened": "數據分析平台Amplitude主要基於OpenAI模型建構了名為Wave的主動式產品代理工具。該工具能自動識別待開發功能、透過編碼代理協助團隊發布變更，並衡量改版成效。",
+      "why_it_matters": "這展示了AI代理（AI Agent）在軟體開發生命週期中的完整應用，將產品從構想、開發到成效衡量的週期壓縮至1至2天，大幅顛覆傳統軟體開發與產品管理的效率。",
+      "potential_impact": "(a) 短期影響：接下來1-3個月內，軟體即服務（SaaS）與科技產品團隊將加速導入類似的AI代理工具，以評估其在縮短開發週期上的實際效益。(b) 中長期影響：半年到一年後，產品開發與工程團隊的人力配置模式將面臨重組，AI處理例行編碼與流程自動化的佔比將顯著提高。(c) 受影響的對象或層面：軟體產業與產品開發供應鏈將迎來結構性效率提升（利多），同時也對軟體工程與產品管理人員的技能需求帶來轉型壓力。",
+      "what_to_watch_next": "觀察更多企業導入AI代理後，產品迭代速度與實際營運效益的量化數據表現。",
+      "importance_score": 62.0,
+      "personal_relevance_score": 90,
+      "keywords": [
+        "Amplitude",
+        "OpenAI",
+        "AI Agent",
+        "產品開發自動化"
+      ],
+      "sources": [
+        {
+          "name": "OpenAI News",
+          "url": "https://openai.com/business/customer-stories/amplitude",
+          "published_at": "2026-11-12T20:00:00+00:00"
+        }
+      ],
+      "is_top3": false
+    },
+    {
+      "item_id": "c0150",
+      "cluster_id": "c0150",
+      "category": "hr_organization",
+      "headline": "勞動部桃竹苗分署表揚七家績優企業，肯定其在企業人才培育與育才方面的成效",
+      "one_sentence_summary": "桃竹苗分署公開表揚七家在人才培育上有成效的績優企業。",
+      "what_happened": "勞動部勞動力發展署桃竹苗分署舉辦表揚活動，針對推動企業人才培育有成且表現優異的七家企業給予公開表揚與肯定。",
+      "why_it_matters": "此舉凸顯政府機關對區域內企業人力資源發展與教育訓練的重視，有助於帶動更多企業投入內部人才培育與制度建構。",
+      "potential_impact": "(a) 短期影響：獲獎的七家企業在接下來1-3個月內將提升雇主品牌形象，有助於吸引求職者目光並強化內部員工向心力。(b) 中長期影響：半年到一年後，其他同業可能因同儕效應或政府補助政策的吸引，跟進投入更多資源在員工教育訓練與人才發展制度上。(c) 受影響的對象或層面：對餐飲與零售等缺工產業的人力資源部門（HRBP）而言是政策利多，有助於推動內部育才方案並爭取管理層對培訓預算的支持。",
+      "what_to_watch_next": "後續勞動部是否會擴大相關的人才培育補助計畫或推出更多實質獎勵措施。",
+      "importance_score": 61.0,
+      "personal_relevance_score": 90,
+      "keywords": [
+        "桃竹苗分署",
+        "人才培育",
+        "績優企業",
+        "教育訓練",
+        "HRBP"
+      ],
+      "sources": [
+        {
+          "name": "Google News - 餐飲業(限定媒體)",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9PN08taGZWaHZjNDdobDllN2ZQUmdBYUprUXg0M0JKU0xIVmg0QmJUbkFoVEhqTko1UXpHakZrQlNSRkRRU0o1NTVHSVhreGF40gFWQVVfeXFMTy1NRG1vVVRRbTRnNkhwV0swbGdwLVgyLWlEeGtYYmpxNG9zT3poWDJONU90OHI2MW04cERxSjBsQ2pTZDFLX0lXcFhDUjRjQU9ReVMyVXc?oc=5",
+          "published_at": "2026-11-12T06:07:21+00:00"
+        }
+      ],
+      "is_top3": false
+    }
+  ],
+  "stats": {
+    "total_articles_collected": 2104,
+    "total_after_stage1": 223,
+    "total_selected": 13,
+    "estimated_reading_minutes": 6
+  },
+  "usage": {
+    "stage2_tokens_in": 13651,
+    "stage2_tokens_out": 5865,
+    "stage2_total_tokens": 19516
+  }
+}
