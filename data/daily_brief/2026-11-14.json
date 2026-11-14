@@ -1,0 +1,461 @@
+{
+  "date": "2026-11-14",
+  "issue_number": 1,
+  "generated_at": "2026-11-14T00:23:01.060399+00:00",
+  "today_in_30_seconds": "今日焦點：黃仁勳聲望下滑與Nvidia事件爆發，迫使台灣社會與產業界重新評估過度依賴的風險。與此同時，立法院三讀通過重大民生修法，不僅將就業保險失業給付等待期縮短至7天、取消65歲投保年齡上限，更推出育兒大禮包，擴大育嬰留停適用年齡、將津貼提高至八成薪並延長產假。科技鏈的依賴危機與勞動育兒政策的全面革新，是今天全台最受矚目的兩大關鍵發展。",
+  "top3_item_ids": [
+    "c004",
+    "c110",
+    "c111"
+  ],
+  "items": [
+    {
+      "item_id": "c004",
+      "cluster_id": "c004",
+      "category": "ai_technology",
+      "headline": "「台灣乾爹」光環褪色：黃仁勳事件如何衝擊台灣的產業、政治與社會結構",
+      "one_sentence_summary": "黃仁勳聲望下滑與事件爆發，迫使台灣社會、政界與產業界重新評估對其個人及Nvidia的依賴。",
+      "what_happened": "黃仁勳的光速跌落神壇事件發生，引發台灣社會對其崇拜、政治政績綁定以及產業個人依賴的全面重新校準。這顯示出過去被稱為「台灣乾爹」的現象面臨崩塌，各界開始檢討相關的連鎖效應。",
+      "why_it_matters": "這標誌著台灣過度依賴單一科技巨頭或個人神話的脆弱性浮現，對產業鏈布局、政治論述及社會心理皆造成結構性震盪。",
+      "potential_impact": "(a) 短期影響：接下來1-3個月內，台灣政壇將面臨政治人物過去與黃仁勳政績綁定的檢驗與輿論反撲；產業界與供應鏈則會開始內部評估對單一客戶或執行長的過度依賴風險。(b) 中長期影響：半年到一年後，若此趨勢延續，台灣企業與政府將加速推動供應鏈與合作夥伴的多元化，降低單一神話破滅帶來的市場震盪。(c) 受影響的對象與層面：市場信心方面偏向利空，短期內投資人對相關概念股與半導體供應鏈的情緒可能趨於保守；政策法規與政治層面則面臨政策宣傳與政績連結的信譽危機。",
+      "what_to_watch_next": "觀察後續台灣政界對此事件的政策回應，以及Nvidia相關供應鏈夥伴在訂單與資本市場上的實際反應。",
+      "importance_score": 89.2,
+      "personal_relevance_score": 95,
+      "keywords": [
+        "黃仁勳",
+        "台灣產業",
+        "政治綁定",
+        "產業依賴"
+      ],
+      "sources": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/",
+          "published_at": "2026-11-13T22:43:00+00:00"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/tech/1033051/nvidia-jensen-huang-chips-gpu-supply-chain-climate-pollution",
+          "published_at": "2026-11-13T17:44:22+00:00"
+        },
+        {
+          "name": "自由時報即時新聞",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5640195",
+          "published_at": "2026-11-13T23:04:08+00:00"
+        },
+        {
+          "name": "BBC 中文網",
+          "url": "https://www.bbc.com/zhongwen/articles/cmn80j39wq06o/trad?at_medium=RSS&at_campaign=rss",
+          "published_at": "2026-11-13T09:51:11+00:00"
+        },
+        {
+          "name": "經理人月刊(修正版網址)",
+          "url": "https://www.managertoday.com.tw/articles/view/73331",
+          "published_at": "2026-11-13T04:39:20+00:00"
+        },
+        {
+          "name": "The News Lens 關鍵評論網",
+          "url": "https://www.thenewslens.com/article/271139",
+          "published_at": "2026-11-13T23:59:00+00:00"
+        },
+        {
+          "name": "Google News - 台股(限定媒體)",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9sOEZFZUxzWmdBUE5qTVF3UUFCLUhubGQ5Z2Y1U3h6UkZiNkFDdDdJS2dlRk0zeWV0VHdTdjdkVVAzME93TkVjOFVUMmJveG1KNTdKMERGUU4?oc=5",
+          "published_at": "2026-11-13T09:58:24+00:00"
+        },
+        {
+          "name": "Google News - 勞基法(限定媒體)",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1WWFd6NmRUXzlNVUtiUFRlbTEyZnZCaVlfekNSckVhODE0OFVQbDBtV2JidkZBeWdnTzJENGZYMFVTa2NGNUFmTUVJa3V2ZXNlcVkxWVJMUWY5YzJIZnk0Wlg1eG9tZ9IBa0FVX3lxTFBFaDlnTDA0UWMzNjM1SlVSRmQyNFJyMXR2dWIxdkVKQVhkWkFFQkE1U3N0YWlmVVdOLXphX3R4NFBzc0FiSEUxMk9taTVDQnN6QzZyZms2SmdXOWs3cVZuUmNJbEU0NHFrZUZN?oc=5",
+          "published_at": "2026-11-13T04:03:48+00:00"
+        },
+        {
+          "name": "BBC World News",
+          "url": "https://www.bbc.co.uk/news/articles/cqvg2d1eg7zro?at_medium=RSS&at_campaign=rss",
+          "published_at": "2026-11-13T19:53:57+00:00"
+        },
+        {
+          "name": "Google News - 國際焦點(限定媒體)",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1ORVNQWHZ3YXdhU2NTS2JfUktwSlNLQnJleUFfMDBfOVQ0Si1vZEhnLUpXYnQ0RlVkcDQzRnp4dGR5X1JWZWpwbENCMEREVDAteVFzMVRyZ3psRE1xMTFn?oc=5",
+          "published_at": "2026-11-13T08:56:00+00:00"
+        }
+      ],
+      "is_top3": true
+    },
+    {
+      "item_id": "c110",
+      "cluster_id": "c110",
+      "category": "hr_organization",
+      "headline": "就業保險法三讀通過：失業給付等待期縮短至7天並取消65歲投保上限",
+      "one_sentence_summary": "立法院三讀通過就保法修法，縮短失業給付等待期至7天，並取消65歲投保年齡上限。",
+      "what_happened": "立法院三讀通過就業保險法部分條文修正案。此次修法重點包含將失業給付的等待期由現行14天縮短至7天，同時正式取消65歲以上的投保年齡上限。",
+      "why_it_matters": "此項修法直接變更了國內勞動市場的社會安全網結構，對於企業的人力資源規劃、員工退休與留任機制，以及整體勞動成本皆會產生實質影響。",
+      "potential_impact": "(a) 短期影響：接下來1-3個月內，各企業HR部門需立即調整薪資扣繳系統及就保投保作業，特別是針對65歲以上仍在職或準備延齡就業的員工重新評估投保與成本。同時，剛失業的勞工能更快領到失業給付，實質減緩短期經濟壓力。(b) 中長期影響：半年到一年後，取消65歲投保上限將進一步鼓勵高齡勞動人口留在職場或重新投入勞動市場，有助於緩解部分產業缺工壓力；而失業給付等待期縮短則可能微幅增加就保基金的短期財務壓力。(c) 受影響的對象或層面：政策法規與人力資源制度面臨直接變動（利多）；連鎖餐飲與零售等面臨缺工的服務業，在吸引與留任高齡勞動力時將更有制度面的保障（利多/中性）。",
+      "what_to_watch_next": "勞動部針對修法上路後的就保基金財務變化，以及企業落實65歲以上員工投保與資遣通報的實際執行細節。",
+      "importance_score": 70.0,
+      "personal_relevance_score": 95,
+      "keywords": [
+        "就業保險法",
+        "失業給付",
+        "等待期縮短",
+        "65歲投保上限",
+        "人力資源"
+      ],
+      "sources": [
+        {
+          "name": "Google News - 餐飲業(限定媒體)",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1EYXBSaV9maElMVHpnS2Y2RGJBazlBYnRqemd4RWZ2TmxmUjc1cng3bEJBMG9JQWRRd3ZzODRRQU9JYVNvLVoyYUoxb3l1cExz0gFWQVVfeXFMTWNTUkNUTnJyYTVkcW9abkh4U3Q2QzlQYkg5bXFvNjRUWkVqR3U0RmlmTEFTUW8yNzFXRkV6YWR3VFRVNkZVTHVJMmhZbXdXQ21qR2k4Y2c?oc=5",
+          "published_at": "2026-11-13T11:17:20+00:00"
+        }
+      ],
+      "is_top3": true
+    },
+    {
+      "item_id": "c111",
+      "cluster_id": "c111",
+      "category": "hr_organization",
+      "headline": "育兒相關法案三讀通過，留職停薪擴大至八歲並提供八成薪資津貼，產假延長至14週",
+      "one_sentence_summary": "立法院三讀通過育兒大禮包修法，擴大留停適用年齡、提高津貼至八成薪並延長產假。",
+      "what_happened": "育兒相關修法草案已正式三讀通過。此次修法內容包含育嬰留職停薪適用年齡擴大至八歲、相關津貼調高至薪資的八成，以及產假延長至14週。",
+      "why_it_matters": "此項政策大幅提升了育兒支持力度與職場家長福利，直接改變企業的人力資源配置與勞動成本結構，對各產業的人資管理與排班制度產生深遠影響。",
+      "potential_impact": "(a) 短期影響：企業人資（HRBP）部門需在接下來1-3個月內立即檢視現行請假與留停管理辦法，並因應產假延長與留停年齡擴大調整人力調配與代理人機制。(b) 中長期影響：半年到一年後，企業人事成本將顯著增加，特別是連鎖餐飲與零售等基層人力吃緊的產業，將面臨更嚴峻的排班壓力與缺工挑戰。(c) 受影響的對象或層面：連鎖餐飲與零售產業的人力成本與營運排班（利空）；職場勞工與育兒家庭的福利保障（利多）；政府勞動政策與法規遵循（中性）。",
+      "what_to_watch_next": "觀察各企業針對該修法的實施細則調整，以及勞動部後續公布的相關配套與補助申請辦法。",
+      "importance_score": 69.5,
+      "personal_relevance_score": 95,
+      "keywords": [
+        "育兒大禮包",
+        "育嬰留職停薪",
+        "產假延長",
+        "人力資源管理",
+        "勞動政策"
+      ],
+      "sources": [
+        {
+          "name": "Google News - 餐飲業(限定媒體)",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBkQzJfUzRtbWoycHdOU09zbWhScjZxOFhsbkluOHNNUC02WF90bzdQbVJ3M05WcEhZRW1FbkNsR2VyZXd4dEZFcld2Zlg0bkNx0gFWQVVfeXFMUGs0V2kzd1VfZGJ4QTBzbk9IVXVRakFCeXZ5V014eHl3UGUwak5QNVRFbE1BRHMyVEJqRmJ0eEhMdm1yalVlVzBkNFBvMDBsNEhYRGpFQnc?oc=5",
+          "published_at": "2026-11-13T08:12:09+00:00"
+        }
+      ],
+      "is_top3": true
+    },
+    {
+      "item_id": "c093",
+      "cluster_id": "c093",
+      "category": "markets_economy",
+      "headline": "分析師朱成志指出，台股多頭不受AI監管與黃仁勳風波影響，依50年統計數據預期明年4月前挑戰5萬點",
+      "one_sentence_summary": "分析師朱成志看好台股多頭行情，預估明年4月前有望挑戰5萬點。",
+      "what_happened": "資深分析師朱成志表示，儘管面臨AI監管與黃仁勳相關風波，仍無法阻擋台股多頭氣勢。根據50年來的統計數據推估，台股行情將持續走強，並預期在明年4月前挑戰5萬點大關。",
+      "why_it_matters": "此觀點為台股大盤走勢提供樂觀的歷史統計依據，有助於定調市場多頭格局，並提供投資人對於大盤與半導體相關指數的信心參考。",
+      "potential_impact": "(a) 短期影響：1-3個月內，市場信心將受到激勵，投資人對台股及半導體相關類股的關注度提升，即使面臨短期AI監管或新聞雜音，拉回時買盤承接意願可能較強。(b) 中長期影響：若行情如預期延續至半年到一年後，將帶動整體資本市場熱絡，企業籌資與資金流動性增加。(c) 受影響的對象或層面：市場信心與台股投資人明顯受到正面利多影響，呈現偏多解讀；半導體供應鏈與大盤走勢也因多頭氣勢而具備較強的支撐力道。",
+      "what_to_watch_next": "後續應密切觀察台股大盤實際成交量能、費城半導體指數表現，以及AI相關監管政策的實際落地情況。",
+      "importance_score": 67.0,
+      "personal_relevance_score": 95,
+      "keywords": [
+        "朱成志",
+        "台股多頭",
+        "AI監管",
+        "黃仁勳",
+        "費城半導體指數"
+      ],
+      "sources": [
+        {
+          "name": "Google News - 台股(限定媒體)",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9FTmFSdUxVRGtPLU1zZHJsZzJZeE43UDZUM0FDQlgtTjV3WE9faVJyczN0dEl2NE8tLU5meko5VHJtcjNiUlFXZkZXc21qWlJJZk9pV3JuaXFOUdIBX0FVX3lxTFBzdEM0Rm9fOWNpdVVOMTZPMFBNOHNIaVJyZlB2dTFHUldqa1ExLXp2Z1p2QlVXc0tMZGpFXzh3XzNGYkF5MjdMdjAxaHRzQTFOYXdHcFVJX3VrUk1oSzk0?oc=5",
+          "published_at": "2026-11-13T15:47:23+00:00"
+        }
+      ],
+      "is_top3": false
+    },
+    {
+      "item_id": "c101",
+      "cluster_id": "c101",
+      "category": "markets_economy",
+      "headline": "美國AI資料中心建設面臨放緩隱憂，台股獲得政策護盤並尋求反彈契機",
+      "one_sentence_summary": "美國AI資料中心恐踩煞車，但台股迎來政策護盤，專家點出下一波反彈目標。",
+      "what_happened": "美國AI資料中心建置面臨可能踩煞車的疑慮，同時台股獲得政策面護盤，專家並針對市場走勢揭露了下一波的反彈目標。",
+      "why_it_matters": "這反映出美國AI基礎設施擴張速度可能出現變數，直接牽動全球半導體與台股供應鏈的資金動向與市場信心。",
+      "potential_impact": "(a) 短期影響：接下來1-3個月內，台股相關AI概念股與半導體族群將直接受到政策護盤力道與美股AI利空消息的雙重拉鋸，股價波動加劇。(b) 中長期影響：若美國AI資料中心建置放緩趨勢確立，半年到一年後將對上游晶片供應商與代工廠的訂單能見度帶來修正壓力，迫使供應鏈調整資本支出。(c) 受影響的對象或層面：台股半導體供應鏈與市場信心面臨短期震盪（利空），而政策護盤則對大盤指數提供下檔支撐（中性偏多）。",
+      "what_to_watch_next": "美國AI資料中心實際資本支出變化以及台股政策護盤的實際資金動能與反彈表現。",
+      "importance_score": 67.0,
+      "personal_relevance_score": 95,
+      "keywords": [
+        "AI資料中心",
+        "台股",
+        "政策護盤",
+        "半導體",
+        "反彈目標"
+      ],
+      "sources": [
+        {
+          "name": "Google News - 台股(限定媒體)",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFB1MzFpaVRmZGY1RTZFajRKbHVKa1VvQ1dKLWkzRm5pMkV1WnR2VzE2UUJPQWQwN3JOYlRxbzU2dHh6US1VRG5CUXQ5aUE0VEJLMGdDTExlNTlUV1E?oc=5",
+          "published_at": "2026-11-13T08:17:38+00:00"
+        }
+      ],
+      "is_top3": false
+    },
+    {
+      "item_id": "c045",
+      "cluster_id": "c045",
+      "category": "markets_economy",
+      "headline": "Nvidia（輝達）股價遭遇14年來罕見連跌紀錄，接下來會如何發展？",
+      "one_sentence_summary": "Nvidia創下連續六週下跌紀錄，市值本週蒸發高達5,730億美元。",
+      "what_happened": "Nvidia的股價遭遇了14年來罕見的連續六週下跌走勢。僅在本週內，其市值就蒸發了5,730億美元。",
+      "why_it_matters": "作為全球AI晶片與半導體產業的風向球，Nvidia的持續重挫反映出資本市場對AI概念股的高檔震盪與信心鬆動，直接牽動費城半導體指數與科技股大盤的走勢。",
+      "potential_impact": "(a) 短期影響：接下來1-3個月內，美台股市的半導體族群與AI概念股將面臨沉重的賣壓與籌碼調整，投資人與法人機構將重新評估科技股的本益比。(b) 中長期影響：如果這波跌勢延續至半年到一年後，可能導致AI基礎設施的資本支出放緩，進而影響整體半導體供應鏈的擴產計畫與營收成長。(c) 受影響的對象或層面：市場信心與台美股投資人將受到直接的利空衝擊，高科技產業供應鏈的評價面也將轉趨保守。",
+      "what_to_watch_next": "接下來應密切觀察Nvidia的股價能否止跌回穩，以及費城半導體指數的支撐力道與市場對AI相關支出的最新預測。",
+      "importance_score": 64.0,
+      "personal_relevance_score": 95,
+      "keywords": [
+        "Nvidia",
+        "股價下跌",
+        "市值蒸發",
+        "半導體",
+        "美股大盤"
+      ],
+      "sources": [
+        {
+          "name": "MarketWatch",
+          "url": "https://www.marketwatch.com/story/nvidias-stock-is-on-a-losing-streak-not-seen-in-14-years-what-comes-next-a07e801e?mod=mw_rss_topstories",
+          "published_at": "2026-11-13T22:21:00+00:00"
+        }
+      ],
+      "is_top3": false
+    },
+    {
+      "item_id": "c090",
+      "cluster_id": "c090",
+      "category": "markets_economy",
+      "headline": "台股大漲583點，展現強勁力道對抗黃仁勳風暴",
+      "one_sentence_summary": "台股逆勢大漲583點，展現抗跌能力對抗市場上的黃仁勳風暴。",
+      "what_happened": "台股在市場傳出黃仁勳相關風暴或利空消息的情況下，逆勢大漲了583點。具體細節與個股表現依文章標題所示，並未在內文中提供進一步的數據或事件脈絡。",
+      "why_it_matters": "這顯示出台股在大盤面對指標性人物或事件（如黃仁勳相關動態）帶來的市場波動時，具備強大的抗壓性與買盤支撐。對於關注台股與美股大盤動態的投資人而言，這反映出市場情緒並未被單一利空全面擊潰。",
+      "potential_impact": "(a) 短期影響：接下來1-3個月內，台股短線投資人與法人機構將重新評估市場對科技巨頭言論的敏感度，恐慌情緒可能獲得緩解，資金回補意願增加。(b) 中長期影響：如果這股抗跌力道延續，半年到一年後有助於穩定台股在面對國際半導體變數時的評價水準，降低因單一消息面引發的系統性恐慌。(c) 受影響的對象或層面：市場信心與台股加權指數表現受到正面激勵，展現出多方承接的力道（利多）。",
+      "what_to_watch_next": "接下來應密切觀察黃仁勳相關事件的後續發展，以及台股成交量能與外資動向是否能持續支撐大盤。",
+      "importance_score": 62.3,
+      "personal_relevance_score": 95,
+      "keywords": [
+        "台股",
+        "黃仁勳",
+        "股市要聞",
+        "大盤動態"
+      ],
+      "sources": [
+        {
+          "name": "Google News - 台股(限定媒體)",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9tZGVSZzJXYWJ1RTRYVThHblRxbGw0dVg4eDc0VkNsWTZPRTJDOGpNeENTdUdqaTR3OWZyNGNFOWt0aUwwUktOZUp0LUFrT0xa?oc=5",
+          "published_at": "2026-11-13T18:09:08+00:00"
+        }
+      ],
+      "is_top3": false
+    },
+    {
+      "item_id": "c001",
+      "cluster_id": "c001",
+      "category": "ai_technology",
+      "headline": "OpenAI推出「ChatGPT Wallet」錢包功能",
+      "one_sentence_summary": "OpenAI推出ChatGPT Wallet，讓AI代理在使用者批准下完成支付。",
+      "what_happened": "OpenAI發表了「ChatGPT Wallet」，這是一項安全工具，能讓ChatGPT Work、Codex和dots中的AI代理在獲得使用者批准與現有信用卡保護的情況下，直接完成購買交易。",
+      "why_it_matters": "此舉標誌著AI代理從單純的資訊處理與內容生成，正式跨入具有自主交易能力的「代理商務（Agentic Commerce）」階段，打通了AI應用落實商業變現的關鍵金流環節。",
+      "potential_impact": "(a) 短期影響：接下來1-3個月內，企業內部的開發者與導入ChatGPT Work的組織會先感受到AI工具具備直接採購軟體授權或工具的能力，提升工作自動化效率。(b) 中長期影響：半年到一年後，這類支付錢包若普及，將大幅改變消費者的網購習慣，從手動瀏覽結帳轉為透過AI代理一站式比價與自動下單。(c) 受影響的對象或層面：產業供應鏈與支付網關將迎來利多，因為AI代理將成為新的流量與交易入口；同時消費者與企業的資安規範、授權政策法規則面臨中性偏挑戰的監管壓力，需嚴防AI代理誤刷或遭受授權濫用。",
+      "what_to_watch_next": "觀察ChatGPT Wallet首波開放的合作支付夥伴、實際支援的企業應用場景以及資安防護機制的落實情況。",
+      "importance_score": 90.7,
+      "personal_relevance_score": 90,
+      "keywords": [
+        "ChatGPT Wallet",
+        "AI Agent",
+        "代理商務",
+        "OpenAI",
+        "自動化支付"
+      ],
+      "sources": [
+        {
+          "name": "OpenAI News",
+          "url": "https://openai.com/index/introducing-chatgpt-wallet",
+          "published_at": "2026-11-13T15:00:00+00:00"
+        },
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/13/chatgpts-new-wallet-lets-ai-agents-shop-and-check-out-for-you/",
+          "published_at": "2026-11-13T16:00:12+00:00"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1033425/openai-chatgpt-wallet",
+          "published_at": "2026-11-13T20:45:10+00:00"
+        }
+      ],
+      "is_top3": false
+    },
+    {
+      "item_id": "c008",
+      "cluster_id": "c008",
+      "category": "ai_technology",
+      "headline": "美國司法部正著手調查輝達（Nvidia）晶片是否違法輸往中國",
+      "one_sentence_summary": "美國司法部已展開調查，關注輝達晶片是否遭到違法輸往中國市場。",
+      "what_happened": "美國司法部已正式著手調查輝達的晶片是否涉及違法輸往中國。此事件由中央社進行相關報導與關注。",
+      "why_it_matters": "這項調查直接觸及美中科技戰與晶片出口管制的關鍵核心，牽動全球半導體供應鏈的合規審查標準，並對高科技企業的出口政策遵循帶來高度壓力。",
+      "potential_impact": "(a) 短期影響：接下來1-3個月內，輝達及其主要供應鏈夥伴將面臨嚴格的合規審查與市場觀望壓力，股價波動風險升高，費城半導體指數可能受到情緒面衝擊。(b) 中長期影響：半年到一年後若調查坐實違法或擴大出口禁令，將迫使半導體產業全面緊縮對中出貨渠道，重塑全球AI晶片的分銷與監管格局。(c) 受影響的對象或層面：產業供應鏈與市場信心將承受利空壓力，政策法規層面的出口管制將進一步收緊，直接打擊相關科技巨頭的海外布局。",
+      "what_to_watch_next": "美國司法部調查結果的官方公布、輝達官方回應，以及美國對半導體出口管制的後續政策動向。",
+      "importance_score": 90.3,
+      "personal_relevance_score": 90,
+      "keywords": [
+        "美國司法部",
+        "輝達",
+        "晶片輸中",
+        "出口管制",
+        "半導體"
+      ],
+      "sources": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/",
+          "published_at": "2026-11-13T18:40:30+00:00"
+        },
+        {
+          "name": "自由時報即時新聞",
+          "url": "https://news.ltn.com.tw/news/aichannel/breakingnews/5640231",
+          "published_at": "2026-11-13T23:28:31+00:00"
+        },
+        {
+          "name": "Google News - 國際焦點(限定媒體)",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5SckQyYkNnUG4zOUtVay1feVhUeF96d1JfOVhQZGRmbjVwQmpRZkJNMzhXM3NlbmoySmlqdnN2S2tJWnNqMWxTQXl5MldrRU1NNlRV?oc=5",
+          "published_at": "2026-11-13T08:24:53+00:00"
+        }
+      ],
+      "is_top3": false
+    },
+    {
+      "item_id": "c108",
+      "cluster_id": "c108",
+      "category": "ai_technology",
+      "headline": "太空探索科技公司（SpaceX）規劃投入740億美元在德州與亞利桑那州建設AI運算園區",
+      "one_sentence_summary": "SpaceX計畫砸下740億美元巨資，在德州與亞利桑那州興建AI運算園區以衝刺算力。",
+      "what_happened": "SpaceX規劃投資高達740億美元，分別選址於德州與亞利桑那州，用以興建大規模的AI運算園區。此舉旨在滿足日益增長的AI算力需求。",
+      "why_it_matters": "這顯示出民間太空與科技巨頭正全力擴展基礎設施，大規模爭奪AI運算資源，將進一步推升全球對高效能運算硬體與能源的需求。",
+      "potential_impact": "(a) 短期影響：相關半導體晶片、伺服器供應鏈與電力設備廠商將直接感受到龐大訂單詢問與市場資金關注，台股與美股相關半導體族群信心獲得提振。(b) 中長期影響：半年至一年後隨著園區硬體陸續採購與建置，將進一步加劇全球高階算力與能源消耗的競賽，並帶動AI基礎設施供應鏈的營收成長。(c) 受影響的對象與層面：產業供應鏈（半導體、AI伺服器硬體製造商）為利多；電力與能源供應網面臨負載壓力為中性偏挑戰；整體科技類股市場信心受惠於大型資本支出而偏向利多。",
+      "what_to_watch_next": "觀察該運算園區的實際動工進度、硬體設備採購清單以及相關晶片與伺服器供應商的訂單實質受惠程度。",
+      "importance_score": 71.0,
+      "personal_relevance_score": 90,
+      "keywords": [
+        "SpaceX",
+        "AI算力",
+        "運算園區",
+        "德州",
+        "亞利桑那州"
+      ],
+      "sources": [
+        {
+          "name": "Google News - 餐飲業(限定媒體)",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5XeHVXTTFSanluRzZ4Mlo0MEh4Q1JZenRnVlA0cDYySGRHd3d1Y2xIblp0VERCYi1hMnB5OUdmVmlzYkNIZXRTTnU2dm84c3BESHNvTVc2NlRjd9IBX0FVX3lxTE5XR216LUZYTnNwSnJ3clZLYmJUN2VEaGQzWGNhcEdWNGp3LWJ6akVnWTI2UExXT0lwd1E5eUxTQ3RZeGlCZ192VVkyVUpXaDZXQTM4QzVieU5fbTIxTGRF?oc=5",
+          "published_at": "2026-11-13T05:46:13+00:00"
+        }
+      ],
+      "is_top3": false
+    },
+    {
+      "item_id": "c116",
+      "cluster_id": "c116",
+      "category": "hr_organization",
+      "headline": "基隆知名麵包店爆發職場霸凌遭判賠15萬元，市府稽查揪出多項違規並限期改善",
+      "one_sentence_summary": "基隆知名麵包店因職場霸凌被判賠15萬元，並遭市府勞動稽查揪出多項違規開罰。",
+      "what_happened": "基隆一家知名麵包店涉及職場霸凌案件，遭到法院判決須賠償15萬元。隨後，地方市政府針對該店進行勞動稽查，發現多項勞動法規缺失，當場開罰並要求限期改善。",
+      "why_it_matters": "此事件凸顯餐飲與零售服務業在內部管理與人力資源制度上的漏洞，顯示司法與勞動主管機關對職場霸凌與勞基法規的執法力度正在收緊，對重視勞資關係與品牌形象的企業敲響警鐘。",
+      "potential_impact": "(a) 短期影響：接下來1-3個月內，地方勞動局將加強對餐飲及零售業的勞動條件與職場環境稽查，該知名麵包店需立即調整內部管理與教育訓練以符合法規。(b) 中長期影響：半年到一年後，同業將更審視自身的HR制度、內部申訴管道及主管領導風格，以避免類似的職場霸凌訴訟與商譽受損。(c) 受影響的對象或層面：產業/供應鏈的基層員工勞權獲得保障（利多），但資方人事與合規成本增加（利空），且企業品牌形象與消費者信任度將直接受到衝擊。",
+      "what_to_watch_next": "觀察該麵包店後續的限期改善落實情況，以及地方勞動局是否會針對餐飲零售業發動更大規模的專案勞動檢查。",
+      "importance_score": 64.0,
+      "personal_relevance_score": 90,
+      "keywords": [
+        "職場霸凌",
+        "勞基法稽查",
+        "人力資源管理",
+        "餐飲零售業",
+        "勞資爭議"
+      ],
+      "sources": [
+        {
+          "name": "Google News - 勞基法(限定媒體)",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9pMEx0Zkk5d2JUeko1ejI1VFJfM3R2OGlhVXhrcW96NU9ZUUtwdUxMN3l2WVJhaHEyNzlVLXVIalhLYl8yWk5NWjdEcXFKM1pM0gFWQVVfeXFMUFo0U25uTllLZlktbEFtcTZTbjZxZktrYTVqb0N2bmNqTEhwX2pQM0R4ZkxBcWVVcTBUSzBaMWJkdzNMTmhkNS15RzBfUld1aVZfVDU0cVE?oc=5",
+          "published_at": "2026-11-13T10:59:18+00:00"
+        }
+      ],
+      "is_top3": false
+    },
+    {
+      "item_id": "c118",
+      "cluster_id": "c118",
+      "category": "hr_organization",
+      "headline": "勞動部宣布九合一大選11月28日投票日，具體投票權勞工依法放假一日",
+      "one_sentence_summary": "勞動部宣布九合一大選於11月28日舉行，具備投票權的勞工當天依法放假一日。",
+      "what_happened": "勞動部針對即將於11月28日登場的九合一大選發布規定，明確指出具備投票權的勞工在投票當日應放假一日。雇主依法須給予勞工前往投票的時間並妥善安排出勤與薪資計算。",
+      "why_it_matters": "此規定直接牽動全台企業的營運排班與人力調度，特別是排班制的零售與餐飲服務業，必須提前因應放假與出勤加班費的法遵合規問題。",
+      "potential_impact": "(a) 短期影響：接下來1個月內，各企業人資部門需全面清查員工投票權資格，調整11月28日的班表並計算國定假日加班費或調移休假，連鎖餐飲與零售業將面臨部分人力短缺與人事成本上升的壓力。(b) 中長期影響：隨著勞動法規執行趨嚴，企業排班系統與自動化出勤管理工具的需求將持續增加，促使業者加速導入排班自動化以降低合規風險。(c) 受影響的對象或層面：政策法規與產業/供應鏈受到直接影響，對勞方為利多（保障投票權與加班費），對採行排班制的資方（如零售餐飲業）則為短期營運成本增加的中性偏利空影響。",
+      "what_to_watch_next": "觀察勞動部後續對於投票日出勤工資給付的稽查動態，以及各企業因應排班調整的實際執行狀況。",
+      "importance_score": 58.0,
+      "personal_relevance_score": 90,
+      "keywords": [
+        "勞動部",
+        "九合一大選",
+        "投票日放假",
+        "勞基法",
+        "人力資源"
+      ],
+      "sources": [
+        {
+          "name": "Google News - 勞基法(限定媒體)",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5XdGtjeUVHbndIeVdFU3dHV0pQRTR1dDBYZ0EzUkdmNE5TMlpxNU41SWV2ZFhjZWtvVS03UUpwNnU1bDFESzZkdXk4c0NCMkFnNXVkd1V2NVBySmMtdDNZ?oc=5",
+          "published_at": "2026-11-13T06:57:00+00:00"
+        }
+      ],
+      "is_top3": false
+    },
+    {
+      "item_id": "c077",
+      "cluster_id": "c077",
+      "category": "world_affairs",
+      "headline": "菲律賓即將舉辦東協峰會，民間團體發起抗議川普來訪的活動",
+      "one_sentence_summary": "菲律賓將舉辦東協峰會，當地民間團體上街抗議美國總統川普來訪。",
+      "what_happened": "菲律賓即將主辦東協峰會。當地民間團體趁此機會發動抗議活動，表達對美國總統川普來訪的不滿。",
+      "why_it_matters": "東協峰會為區域地緣政治的重要多邊外交場合，美國領導人的出席與否及當地民間的反彈，反映出亞太地區複雜的大國角力與反美情緒，牽動區域外交與安全局勢。",
+      "potential_impact": "(a) 短期影響：在峰會舉辦期間，菲律賓當地維安將全面升級，抗議活動可能導致部分交通管制，並使與會各國領袖的行程受到安全關注。(b) 中長期影響：若反美示威持續或擴大，可能對美菲雙邊軍事與經貿合作帶來政治壓力，並影響美國在東南亞區域的政策推動與外交部署。(c) 受影響的對象或層面：主要影響區域外交政策、跨國安保供應鏈與市場對地緣政治穩定度的信心，整體對區域經貿與地緣政治情勢偏向中性偏空的中短期干擾。",
+      "what_to_watch_next": "觀察東協峰會期間各國領袖的互動、美菲雙邊協議進展以及菲律賓當地抗議活動的後續規模與維安動態。",
+      "importance_score": 87.7,
+      "personal_relevance_score": 85,
+      "keywords": [
+        "東協峰會",
+        "菲律賓",
+        "川普",
+        "民間抗議",
+        "地緣政治"
+      ],
+      "sources": [
+        {
+          "name": "自由時報即時新聞",
+          "url": "https://news.ltn.com.tw/news/world/breakingnews/5640215",
+          "published_at": "2026-11-13T22:08:19+00:00"
+        },
+        {
+          "name": "The News Lens 關鍵評論網",
+          "url": "https://www.thenewslens.com/article/271133",
+          "published_at": "2026-11-13T04:49:00+00:00"
+        },
+        {
+          "name": "Google News - 國際焦點(限定媒體)",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1ZM1g0OWpQLW0tTzFiR0RGVTR0ZGlRN3dOVnUwVDcwYnNDTXV0eXloSlViV2N0MkRWZ1hLc3g1X0hHNVZqQlQ3cmFkX05EajRQUzhj?oc=5",
+          "published_at": "2026-11-13T04:00:04+00:00"
+        }
+      ],
+      "is_top3": false
+    }
+  ],
+  "stats": {
+    "total_articles_collected": 2072,
+    "total_after_stage1": 179,
+    "total_selected": 13,
+    "estimated_reading_minutes": 6
+  },
+  "usage": {
+    "stage2_tokens_in": 12804,
+    "stage2_tokens_out": 6070,
+    "stage2_total_tokens": 18874
+  }
+}

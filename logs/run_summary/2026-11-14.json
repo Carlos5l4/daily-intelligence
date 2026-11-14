@@ -1,0 +1,32 @@
+{
+  "date": "2026-11-14",
+  "run_at": "2026-11-14T00:23:02.121131+00:00",
+  "status": "SUCCESS",
+  "failed_step": null,
+  "sources": {
+    "attempted": 19,
+    "succeeded": 18,
+    "failed": 1,
+    "failures": [
+      {
+        "name": "Hacker News (Front Page)",
+        "error": "連線失敗: 502 Server Error: Bad Gateway for url: https://hnrss.org/frontpage?description=0&count=30"
+      }
+    ]
+  },
+  "pipeline": {
+    "raw_articles_fetched": 2072,
+    "after_recency_and_dedupe": 244,
+    "stage1_kept": 179,
+    "stage1_dropped": 65,
+    "news_clusters": 102,
+    "stage2_analyzed": 13,
+    "final_brief_items": 13
+  },
+  "gemini_usage": {
+    "stage1_total_tokens": 54481,
+    "stage2_total_tokens": 18874
+  },
+  "html_generated": true,
+  "line_sent": true
+}
