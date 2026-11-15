@@ -1,0 +1,32 @@
+{
+  "date": "2026-11-15",
+  "run_at": "2026-11-15T00:23:04.064230+00:00",
+  "status": "SUCCESS",
+  "failed_step": null,
+  "sources": {
+    "attempted": 19,
+    "succeeded": 18,
+    "failed": 1,
+    "failures": [
+      {
+        "name": "Hacker News (Front Page)",
+        "error": "連線失敗: HTTPSConnectionPool(host='hnrss.org', port=443): Read timed out. (read timeout=20)"
+      }
+    ]
+  },
+  "pipeline": {
+    "raw_articles_fetched": 2071,
+    "after_recency_and_dedupe": 162,
+    "stage1_kept": 94,
+    "stage1_dropped": 68,
+    "news_clusters": 54,
+    "stage2_analyzed": 13,
+    "final_brief_items": 13
+  },
+  "gemini_usage": {
+    "stage1_total_tokens": 36396,
+    "stage2_total_tokens": 18206
+  },
+  "html_generated": true,
+  "line_sent": true
+}
