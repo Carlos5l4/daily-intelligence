@@ -1,0 +1,36 @@
+{
+  "date": "2026-11-17",
+  "run_at": "2026-11-17T00:34:38.013326+00:00",
+  "status": "SUCCESS",
+  "failed_step": null,
+  "sources": {
+    "attempted": 19,
+    "succeeded": 17,
+    "failed": 2,
+    "failures": [
+      {
+        "name": "Federal Reserve Press Releases",
+        "error": "連線失敗: 404 Client Error: Not Found for url: https://www.federalreserve.gov/feeds/press_all.xml"
+      },
+      {
+        "name": "Google News - 國際焦點(限定媒體)",
+        "error": "連線失敗: 429 Client Error: Too Many Requests for url: https://news.google.com/rss/search?q=%E5%9C%8B%E9%9A%9B%E7%84%A6%E9%BB%9E%20OR%20%E5%9C%8B%E9%9A%9B%E6%83%85%E5%8B%A2%20%28site%3Acna.com.tw%20OR%20site%3Abbc.com%20OR%20site%3Altn.com.tw%29&hl=zh-TW&gl=TW&ceid=TW:zh-Hant"
+      }
+    ]
+  },
+  "pipeline": {
+    "raw_articles_fetched": 1988,
+    "after_recency_and_dedupe": 303,
+    "stage1_kept": 195,
+    "stage1_dropped": 108,
+    "news_clusters": 135,
+    "stage2_analyzed": 13,
+    "final_brief_items": 13
+  },
+  "gemini_usage": {
+    "stage1_total_tokens": 64749,
+    "stage2_total_tokens": 19826
+  },
+  "html_generated": true,
+  "line_sent": true
+}
